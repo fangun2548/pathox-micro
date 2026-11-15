@@ -1,0 +1,13 @@
+node_modules
+npm-debug.log
+cloudflared.exe
+*.exe
+data/*.pdf
+data/*.bak
+data/incoming/
+*.pdf
+scratch/
+.git
+.gitignore
+.env
+*.log

@@ -1,0 +1,20 @@
+{
+  "name": "pathox-micro",
+  "version": "1.0.0",
+  "description": "Pathox-Micro: Interactive 2D Clinical Microbiology Visualizer & Lesion Atlas for NL1 & USMLE Step 1",
+  "type": "module",
+  "main": "server.mjs",
+  "scripts": {
+    "start": "node server.mjs",
+    "validate": "node scripts/ingest_lecture.mjs --validate"
+  },
+  "dependencies": {
+    "cloudflared": "^0.7.3",
+    "pdfjs-dist": "^6.5.438",
+    "qrcode": "^1.5.4",
+    "three": "^0.187.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

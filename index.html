@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pathox-Micro · Clinical Microbiology Atlas (Real Case Photos)</title>
+  
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app-container">
+    
+    <!-- ======================================================================
+         Top Header Navigation
+         ====================================================================== -->
+    <header class="app-header">
+      <div class="brand-section">
+        <div class="brand-logo">
+          <span class="brand-icon">🔬</span>
+          <span class="brand-title">PATHOX</span>
+        </div>
+        <div class="brand-badge">
+          <span class="pulse-dot"></span>
+          <span class="badge-text">CDC/WHO Cases</span>
+        </div>
+      </div>
+
+      <!-- Center: Pathogen Category Filters & Search -->
+      <div class="nav-center">
+        <div class="category-filters">
+          <button class="cat-btn active" data-category="all" title="เชื้อทั้งหมด"><span>ทั้งหมด</span></button>
+          <button class="cat-btn" data-category="virus" title="ไวรัส (Viruses)"><i class="fa-solid fa-virus"></i> <span>ไวรัส</span></button>
+          <button class="cat-btn" data-category="bacteria" title="แบคทีเรีย (Bacteria)"><i class="fa-solid fa-bacterium"></i> <span>แบคทีเรีย</span></button>
+          <button class="cat-btn" data-category="fungi" title="เชื้อรา (Fungi)"><i class="fa-solid fa-disease"></i> <span>เชื้อรา</span></button>
+          <button class="cat-btn" data-category="parasite" title="ปรสิต (Parasites)"><i class="fa-solid fa-worm"></i> <span>ปรสิต</span></button>
+        </div>
+
+        <!-- Quick Selector Pills -->
+        <div class="quick-pathogens-bar" id="quick-pathogens-container">
+          <!-- Populated dynamically via JS -->
+        </div>
+
+        <!-- Search Bar with Smart Autocomplete Prediction -->
+        <div class="search-wrapper" id="search-wrapper">
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          <input type="text" id="search-input" class="search-input" placeholder="ค้นหาเชื้อ / รอยโรค (Variola, Anthrax, Staph)..." autocomplete="off" spellcheck="false">
+          <button id="btn-clear-search" class="search-clear-btn" style="display: none;" title="ล้างการค้นหา"><i class="fa-solid fa-xmark"></i></button>
+          
+          <!-- Dropdown Suggestions Container -->
+          <div id="search-suggestions" class="search-suggestions-dropdown" style="display: none;"></div>
+        </div>
+      </div>
+
+      <!-- Right Header Actions -->
+      <div class="header-actions">
+        <button id="btn-share-modal" class="action-btn share-btn" title="แชร์ & ควบคุมสิทธิ์ (ต้องใช้รหัสผ่าน 2549gmail)">
+          <span class="share-status-dot online" id="share-dot"></span>
+          <i class="fa-solid fa-lock" id="share-btn-icon"></i>
+          <span class="btn-label" id="share-btn-label">แชร์</span>
+        </button>
+        <button id="btn-draw-random" class="action-btn" title="สุ่มเลือกเชื้อศึกษา">
+          <i class="fa-solid fa-shuffle"></i>
+          <span class="btn-label">สุ่มศึกษา</span>
+        </button>
+        <button id="btn-open-drawer" class="action-btn" title="เปิด/ปิด High-Yield Medical Drawer">
+          <i class="fa-solid fa-book-medical"></i>
+          <span class="btn-label">Drawer</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- ======================================================================
+         Main Workspace: Netter Medical Plate Viewer + High-Yield Drawer
+         ====================================================================== -->
+    <div class="workspace">
+      
+      <!-- Central Medical Plate Container -->
+      <div id="canvas-container">
+        
+        <!-- Interactive Netter Stage -->
+        <div id="card-table-stage" class="card-table-stage">
+          <div id="svg-viewport" class="svg-viewport">
+            <!-- Netter Atlas SVG Plate Injected Here -->
+          </div>
+        </div>
+
+        <!-- Minimalist HUD Controls Layer -->
+        <div class="hud-layer">
+          
+          <!-- Hover / Interactive Part Callout -->
+          <div id="hud-part-callout" class="hud-part-callout hud-interactive">
+            <div class="hud-part-indicator"></div>
+            <div class="hud-part-info">
+              <span id="callout-part-name" class="hud-part-name">Anatomical Structure</span>
+              <span class="hud-part-hint">คลิกชิ้นส่วนในภาพเพื่อเปิดดูข้อมูลใน Medical Drawer ▸</span>
+            </div>
+          </div>
+
+          <!-- Bottom Control Dock: Plate Navigation & Zoom Controls -->
+          <div class="hud-bottom-dock hud-interactive">
+            <div class="dock-panel">
+              <!-- Plate Navigation -->
+              <button id="btn-prev-card" class="dock-btn" title="ภาพก่อนหน้า (Previous Plate)">
+                <i class="fa-solid fa-chevron-left"></i>
+                <span>ก่อนหน้า</span>
+              </button>
+
+              <div class="deck-counter" id="deck-counter">
+                <span>1 / 9</span>
+              </div>
+
+              <button id="btn-next-card" class="dock-btn" title="ภาพถัดไป (Next Plate)">
+                <span>ถัดไป</span>
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+
+              <div class="dock-divider"></div>
+
+              <!-- Zoom & View buttons -->
+              <button id="btn-zoom-in" class="icon-btn" title="ซูมขยาย (Zoom In)">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+              </button>
+              
+              <button id="btn-zoom-out" class="icon-btn" title="ซูมย่อ (Zoom Out)">
+                <i class="fa-solid fa-magnifying-glass-minus"></i>
+              </button>
+
+              <button id="btn-reset-view" class="icon-btn" title="รีเซ็ตตำแหน่งภาพ (Reset View)">
+                <i class="fa-solid fa-arrows-rotate"></i>
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Floating Button to re-open Drawer when collapsed -->
+      <button id="btn-floating-drawer" class="btn-toggle-drawer">
+        <i class="fa-solid fa-book-medical"></i>
+        <span>High-Yield Medical Drawer</span>
+      </button>
+
+      <!-- ======================================================================
+           High-Yield Medical Side Drawer (5 Dimensions for NL1 / USMLE)
+           ====================================================================== -->
+      <aside class="medical-drawer" id="medical-drawer">
+        
+        <!-- Drawer Header -->
+        <div class="drawer-header">
+          <div class="drawer-title-area">
+            <span class="brand-icon">📚</span>
+            <div>
+              <h3 id="drawer-pathogen-name">Variola Virus (Smallpox)</h3>
+              <span id="drawer-thai-name" style="font-size: 0.75rem; color: var(--text-muted);">ไวรัสไข้ทรพิษ</span>
+            </div>
+          </div>
+          <div style="display: flex; align-items: center; gap: 8px;">
+            <span class="drawer-badge">NL1 / USMLE High-Yield</span>
+            <button id="btn-close-drawer" class="drawer-close-btn" title="Close Drawer">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Active Recall / Flashcard Study Mode Switch -->
+        <div style="padding: 12px 20px 0 20px;">
+          <div class="study-mode-box">
+            <span class="study-mode-label"><i class="fa-solid fa-graduation-cap"></i> Study / Flashcard Mode (เบลอคำเฉลย)</span>
+            <label class="switch">
+              <input type="checkbox" id="study-mode-toggle">
+              <span class="switch-slider"></span>
+            </label>
+          </div>
+        </div>
+
+        <!-- 5 High-Yield Dimension Tabs Navigation -->
+        <div class="drawer-tabs">
+          <button class="tab-btn active" data-tab="tab-morphology" title="1. รอยโรค &amp; แผล (Morphology)">
+            <i class="fa-solid fa-shapes"></i>
+            <span>1. รอยโรค</span>
+          </button>
+          <button class="tab-btn" data-tab="tab-pathogenesis" title="2. กลไกก่อโรค &amp; ปัจจัยความรุนแรง (Pathogenesis)">
+            <i class="fa-solid fa-shield-virus"></i>
+            <span>2. กลไก</span>
+          </button>
+          <button class="tab-btn" data-tab="tab-diagnosis" title="3. ตรวจวินิจฉัย &amp; Lab (Diagnosis)">
+            <i class="fa-solid fa-flask-vial"></i>
+            <span>3. วินิจฉัย</span>
+          </button>
+          <button class="tab-btn" data-tab="tab-clinical" title="4. ข้อสอบ Clinical &amp; โจทย์ NL1 (Clinical Vignettes)">
+            <i class="fa-solid fa-user-doctor"></i>
+            <span>4. NL1 Case</span>
+          </button>
+          <button class="tab-btn" data-tab="tab-treatment" title="5. ยาและการรักษา First-line (Treatment)">
+            <i class="fa-solid fa-pills"></i>
+            <span>5. การรักษา</span>
+          </button>
+        </div>
+
+        <!-- Tab Contents Area -->
+        <div class="drawer-content" id="drawer-content">
+          
+          <!-- Tab 1: Morphological Anatomy -->
+          <div class="tab-panel active" id="tab-morphology">
+            <div class="content-card">
+              <div class="content-card-title">
+                <i class="fa-solid fa-camera-retro"></i>
+                <span>ภาพถ่ายเคสจริง &amp; จุดสังเกตสำคัญของรอยโรค</span>
+              </div>
+              <div id="morphology-parts-list">
+                <!-- Injected via JS -->
+              </div>
+            </div>
+
+            <div class="content-card">
+              <div class="content-card-title">
+                <i class="fa-solid fa-microscope"></i>
+                <span>ลักษณะสัณฐานวิทยาสำคัญ (High-Yield Lesion Morphology)</span>
+              </div>
+              <ul class="bullet-list" id="morphology-highlights">
+                <!-- Injected via JS -->
+              </ul>
+            </div>
+          </div>
+
+          <!-- Tab 2: Pathogenesis & Virulence Factors -->
+          <div class="tab-panel" id="tab-pathogenesis">
+            <div class="content-card">
+              <div class="content-card-title">
+                <i class="fa-solid fa-burst"></i>
+                <span>สารพิษและปัจจัยความรุนแรง (Virulence Factors)</span>
+              </div>
+              <div id="virulence-factors-container">
+                <!-- Injected via JS -->
+              </div>
+            </div>
+
+            <div class="content-card">
+              <div class="content-card-title">
+                <i class="fa-solid fa-route"></i>
+                <span>ช่องทางการแพร่กระจายเชื้อ (Transmission)</span>
+              </div>
+              <p id="transmission-text" style="font-size: 0.82rem; line-height: 1.5; color: var(--text-main);"></p>
+            </div>
+          </div>
+
+          <!-- Tab 3: Lab Diagnosis & Culture -->
+          <div class="tab-panel" id="tab-diagnosis">
+            <div class="content-card">
+              <div class="content-card-title">
+                <i class="fa-solid fa-eye-dropper"></i>
+                <span>การตรวจชิ้นเนื้อ &amp; ย้อมสี (Microscopy &amp; Biopsy)</span>
+              </div>
+              <ul class="bullet-list" id="diagnosis-stains">
+                <!-- Injected via JS -->
+              </ul>
+            </div>
+
+            <div class="content-card">
+              <div class="content-card-title">
+                <i class="fa-solid fa-petri-dish"></i>
+                <span>การเพาะเชื้อ / ยืนยันเชื้อ (Culture &amp; Confirmatory)</span>
+              </div>
+              <ul class="bullet-list" id="diagnosis-culture">
+                <!-- Injected via JS -->
+              </ul>
+            </div>
+
+            <div class="content-card" id="biochemical-card">
+              <div class="content-card-title">
+                <i class="fa-solid fa-vial-circle-check"></i>
+                <span>การทดสอบทางชีวเคมี / พิเศษ (Biochemical Tests)</span>
+              </div>
+              <ul class="bullet-list" id="diagnosis-biochemical">
+                <!-- Injected via JS -->
+              </ul>
+            </div>
+          </div>
+
+          <!-- Tab 4: Clinical Vignettes & NL1 Pearls -->
+          <div class="tab-panel" id="tab-clinical">
+            <div class="content-card">
+              <div class="content-card-title">
+                <i class="fa-solid fa-file-waveform"></i>
+                <span>โจทย์เคสคลินิกจำลอง (Clinical Vignette)</span>
+              </div>
+              <div class="vignette-box" id="clinical-vignette-text">
+                <!-- Injected via JS -->
+              </div>
+            </div>
+
+            <div class="content-card">
+              <div class="content-card-title">
+                <i class="fa-solid fa-key"></i>
+                <span>คำบอกใบ้ออกสอบบ่อย (Exam Buzzwords)</span>
+              </div>
+              <div class="buzzwords-tag-cloud" id="clinical-buzzwords">
+                <!-- Injected via JS -->
+              </div>
+            </div>
+
+            <div class="content-card" style="border-left: 3px solid var(--accent-amber);">
+              <div class="content-card-title" style="color: var(--accent-amber);">
+                <i class="fa-solid fa-lightbulb"></i>
+                <span>จุดลวงและสูตรจำข้อสอบ (High-Yield Pearls)</span>
+              </div>
+              <p id="clinical-highyield-note" style="font-size: 0.82rem; line-height: 1.5; color: #fde68a;"></p>
+            </div>
+          </div>
+
+          <!-- Tab 5: Treatment & Antimicrobials -->
+          <div class="tab-panel" id="tab-treatment">
+            <div class="content-card">
+              <div class="content-card-title">
+                <i class="fa-solid fa-prescription"></i>
+                <span>ยาอันดับหนึ่งที่เลือกใช้ (Drug of Choice)</span>
+              </div>
+              <p id="treatment-firstline" style="font-size: 0.84rem; font-weight: 600; color: #38bdf8; line-height: 1.5;"></p>
+            </div>
+
+            <div class="content-card">
+              <div class="content-card-title">
+                <i class="fa-solid fa-shield-halved"></i>
+                <span>การดูแลแผล / ทางเลือก (Wound Care &amp; Secondary Prevention)</span>
+              </div>
+              <p id="treatment-resistance" style="font-size: 0.82rem; line-height: 1.5; color: #fda4af;"></p>
+            </div>
+
+            <div class="content-card">
+              <div class="content-card-title">
+                <i class="fa-solid fa-syringe"></i>
+                <span>การป้องกันและวัคซีน (Prevention &amp; Prophylaxis)</span>
+              </div>
+              <p id="treatment-prevention" style="font-size: 0.82rem; line-height: 1.5; color: var(--text-main);"></p>
+            </div>
+          </div>
+
+        </div>
+
+      </aside>
+
+    </div>
+
+  </div>
+
+  <!-- ======================================================================
+       Share Link & Kill Switch Modal (Access Control)
+       ====================================================================== -->
+  <div id="share-access-modal" class="share-access-modal">
+    <div class="share-modal-overlay" id="share-modal-overlay"></div>
+    <div class="share-modal-dialog">
+      <div class="share-modal-header">
+        <div class="share-header-title">
+          <i class="fa-solid fa-tower-broadcast" style="color: #38bdf8;"></i>
+          <h3>แชร์ลิงก์ให้เพื่อน &amp; ควบคุมการเข้าถึง (Kill Switch)</h3>
+        </div>
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <button id="btn-lock-admin" class="btn-lock-session" title="ล็อคระบบอีกครั้ง"><i class="fa-solid fa-lock"></i> <span>ล็อคสิทธิ์</span></button>
+          <button class="share-modal-close" id="btn-close-share-modal"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+      </div>
+
+      <div class="share-modal-body">
+        <!-- Master Kill Switch Banner -->
+        <div class="kill-switch-banner" id="kill-switch-banner">
+          <div class="kill-switch-info">
+            <div class="kill-status-badge online" id="kill-status-badge">
+              <span class="status-indicator-dot"></span>
+              <span id="kill-status-text">สถานะ: เปิดให้ภายนอกเข้าชมได้ (Active)</span>
+            </div>
+            <p class="kill-hint-text">คุณสามารถกดสวิตช์ด้านขวาเพื่อ <strong>"ตัดสัญญาณทันที (Kill Switch)"</strong> ทุกคนที่เปิดลิงก์อยู่จะถูกบล็อกทันที แม้ลิงก์จะยังเปิดอยู่</p>
+          </div>
+          <label class="switch-control">
+            <input type="checkbox" id="public-access-checkbox" checked>
+            <span class="switch-control-slider"></span>
+          </label>
+        </div>
+
+        <!-- Sharing Methods -->
+        <div class="share-options-container">
+          <!-- Active Live Tunnel Link (Direct iPad / Mobile access) -->
+          <div class="share-live-card">
+            <div class="method-header">
+              <span class="method-tag">🚀 กำลังทำงานแบบสด (Live Active Tunnel)</span>
+              <h4><i class="fa-solid fa-tablet-screen-button"></i> ลิงก์สดสำหรับเปิดใน iPad / iPhone / ส่งให้เพื่อน</h4>
+            </div>
+            <p class="method-desc">เปิดได้ทันทีจากทุกเครือข่าย ทั้ง Wi-Fi ร้านกาแฟ, เน็ตมือถือ 4G/5G และ iPad Safari</p>
+            <div class="code-copy-box">
+              <code id="live-tunnel-url-text">https://vocal-telephony-debian-referenced.trycloudflare.com</code>
+              <button class="btn-copy-code" id="btn-copy-live-url" data-copy="https://vocal-telephony-debian-referenced.trycloudflare.com" title="คัดลอกลิงก์"><i class="fa-regular fa-copy"></i></button>
+            </div>
+
+            <!-- Dynamic Token Rotate & Security Notice -->
+            <div class="token-action-row">
+              <button type="button" class="btn-rotate-token" id="btn-rotate-token">
+                <i class="fa-solid fa-arrows-rotate"></i>
+                <span>ออกลิงก์ &amp; QR Code ใหม่ (Revoke Old Link &amp; QR)</span>
+              </button>
+            </div>
+            <div class="security-notice-box">
+              <i class="fa-solid fa-shield-halved"></i>
+              <span><strong>Single-Channel Security:</strong> ต้องเปิดผ่าน QR Code หรือลิงก์ที่แชร์เท่านั้น (เข้าผ่านลิงก์ทั่วไปไม่ได้) และหากกดตัดสัญญาณหรือออกรหัสใหม่ ลิงก์เดิมทั้งหมดจะถูกยกเลิกทันที</span>
+            </div>
+
+            <div class="qr-scan-section">
+              <div class="qr-box">
+                <img id="live-qr-image" src="assets/images/ipad-qr.png" alt="iPad QR Code" class="qr-image" />
+              </div>
+              <div class="qr-instructions">
+                <h5><i class="fa-solid fa-qrcode"></i> วิธีเปิดใน iPad ใน 3 วินาที</h5>
+                <p>1. เปิดแอป <strong>กล้อง (Camera)</strong> บน iPad<br>
+                   2. ส่องกล้องมาที่ QR Code บนจอนี้<br>
+                   3. แตะลิงก์สีเหลืองที่ขึ้นมาเพื่อเปิดใช้งานได้ทันที!</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Method 1: Cloudflare Tunnel Command -->
+          <div class="share-method-card recommended">
+            <div class="method-header">
+              <span class="method-tag">คำสั่งเบื้องหลัง • ปลอดภัย 100%</span>
+              <h4><i class="fa-solid fa-cloud"></i> รัน Tunnel เพิ่มเติม (Cloudflare Quick Tunnel)</h4>
+            </div>
+            <p class="method-desc">ระบบเชื่อมต่อผ่าน Cloudflare Tunnel ให้เรียบร้อยแล้ว ไม่ต้องเปิดพอร์ตเราเตอร์</p>
+            <div class="code-copy-box">
+              <code>.\cloudflared.exe tunnel --url http://localhost:3000</code>
+              <button class="btn-copy-code" data-copy=".\cloudflared.exe tunnel --url http://localhost:3000" title="คัดลอกคำสั่ง"><i class="fa-regular fa-copy"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       Admin Password Verification Dialog (Protected with password: 2549gmail)
+       ====================================================================== -->
+  <div class="password-auth-modal" id="password-auth-modal" style="display: none;">
+    <div class="share-modal-overlay" id="password-modal-overlay"></div>
+    <div class="password-dialog">
+      <div class="password-dialog-header">
+        <div class="password-icon-badge">
+          <i class="fa-solid fa-shield-halved"></i>
+        </div>
+        <div>
+          <h3>ยืนยันสิทธิ์ผู้ดูแล (Admin)</h3>
+          <p>เมนูแชร์และระบบ Kill Switch ถูกล็อคไว้<br>กรุณากรอกรหัสผ่านเพื่อเข้าใช้งาน</p>
+        </div>
+        <button class="share-modal-close" id="btn-close-pass-modal" type="button"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+
+      <form id="admin-pass-form" class="password-dialog-body" autocomplete="off">
+        <div class="pass-input-wrapper">
+          <i class="fa-solid fa-key pass-key-icon"></i>
+          <input type="password" id="admin-password-input" class="admin-password-input" placeholder="กรอกรหัสผ่าน (Password)..." autofocus required>
+          <button type="button" id="btn-toggle-pass-visibility" class="btn-toggle-eye" title="แสดง/ซ่อนรหัสผ่าน">
+            <i class="fa-regular fa-eye"></i>
+          </button>
+        </div>
+        <div id="password-error-msg" class="password-error-msg" style="display: none;">
+          <i class="fa-solid fa-triangle-exclamation"></i>
+          <span>รหัสผ่านไม่ถูกต้อง กรุณาลองใหม่อีกครั้ง</span>
+        </div>
+        <div class="password-dialog-actions">
+          <button type="button" class="btn-pass-cancel" id="btn-cancel-pass">ยกเลิก</button>
+          <button type="submit" class="btn-pass-submit" id="btn-submit-pass">
+            <span>ปลดล็อก</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       Fullscreen Live Revoked Overlay for Guest Devices
+       ====================================================================== -->
+  <div id="guest-revoked-overlay" class="guest-revoked-overlay" style="display: none;">
+    <div class="guest-revoked-card">
+      <div class="revoked-icon">🔒</div>
+      <div class="revoked-badge">ACCESS REVOKED</div>
+      <h3>การเข้าถึงถูกตัดสัญญาณแล้ว</h3>
+      <p id="guest-revoked-msg">เจ้าของระบบได้ทำการตัดการเชื่อมต่อ (Kill Switch) หรือรีเซ็ตรหัสช่องทางใหม่แล้ว ช่องทางเดิมนี้ไม่สามารถใช้งานได้อีกต่อไป</p>
+      <div class="revoked-hint">
+        <i class="fa-solid fa-qrcode"></i> กรุณาขอสแกน QR Code ใหม่จากหน้าจอเจ้าของระบบเพื่อเข้าใช้งานอีกครั้ง
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Application Script (ES Module) -->
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

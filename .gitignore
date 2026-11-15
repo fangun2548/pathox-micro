@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Large binaries & binaries
+cloudflared.exe
+*.exe
+
+# Large PDFs & Backups (Prevent exceeding GitHub 100MB limit)
+data/*.pdf
+data/*.bak
+data/incoming/
+*.pdf
+
+# Environment variables & secrets
+.env
+.env.*
+!.env.example
+
+# Temporary & Scratch files
+scratch/
+.agent/
+*.log
+npm-debug.log*
+
+# OS specific
+.DS_Store
+Thumbs.db

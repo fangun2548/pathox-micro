@@ -1,0 +1,1619 @@
+[
+  {
+    "id": "variola-virus",
+    "name": "Variola Virus (Smallpox)",
+    "thaiName": "ไวรัสไข้ทรพิษ (ฝีดาษคน)",
+    "scientificName": "Variola virus (Orthopoxvirus)",
+    "category": "virus",
+    "categoryLabel": "ไวรัส (Viruses)",
+    "cardTitle": "DON'T POP ME!",
+    "cardSubtitle": "all lesions mature at the SAME STAGE. try to pop one and discard all cards",
+    "cardBadge": "VIRUS",
+    "lesionTitle": "Smallpox Umbilicated Pustule",
+    "lesionThai": "ตุ่มหนองแข็งลึกมีรอยบุ๋มสะดือตรงกลาง (Umbilicated Pustule)",
+    "badgeColor": "#00a8e8",
+    "quickStats": {
+      "depth": "Mid-to-Deep Dermis (ทิ้งรอยบุ๋ม Pockmark Scar)",
+      "morphology": "Dome-shaped with central umbilication (รอยบุ๋มสะดือ)",
+      "palpation": "Hard, shotty feel ('BB-pellet' under the skin)",
+      "distribution": "Centrifugal (ใบหน้า แขน ขา มากกว่าลำตัว)",
+      "synchrony": "All lesions at the SAME STAGE (สุกพร้อมกันทั่วตัว)"
+    },
+    "morphologicalParts": [
+      {
+        "id": "umbilication",
+        "name": "Central Umbilication (รอยบุ๋มสะดือตรงกลาง)",
+        "thaiName": "รอยบุ๋มสะดือตรงกลางตุ่มหนอง",
+        "color": "#e11d48",
+        "description": "Hallmark central dimple formed by tissue necrosis and cellular collapse tethered to dermal ducts."
+      },
+      {
+        "id": "shotty_dome",
+        "name": "Hard Shotty Pustule Dome (ตุ่มหนองแข็งลึก)",
+        "thaiName": "ตุ่มหนองแข็งคล้ายลูกปืนฝังใต้ผิว",
+        "color": "#facc15",
+        "description": "Tense, firm 'BB-pellet' feeling embedded deep in the reticular dermis, making it extremely difficult to pop."
+      },
+      {
+        "id": "guarnieri_bodies",
+        "name": "Guarnieri Inclusion Bodies (ก้อนอินคลูชัน)",
+        "thaiName": "ก้อน Guarnieri bodies ในไซโทพลาซึม",
+        "color": "#8b5cf6",
+        "description": "Eosinophilic intracytoplasmic inclusion bodies packed with replicated viral particles."
+      }
+    ],
+    "tabs": {
+      "morphology": {
+        "title": "สัณฐานวิทยาของรอยโรค (Lesion Morphology)",
+        "highlights": [
+          "ตุ่มมีลักษณะแข็งลึกคล้ายลูกปืนกลมฝังใต้ผิวหนัง (Hard, shotty 'BB-pellet' feel)",
+          "จุดเด่นสำคัญที่สุด: บุ๋มตรงกลางคล้ายสะดือ (Central Umbilication) ในระยะตุ่มหนอง",
+          "รอยโรคฝังลึกถึงชั้นหนังแท้ (Deep-seated in dermis) ต่างจากอีสุกอีใสที่อยู่ตื้นในชั้น Epidermis",
+          "ตุ่มทุกตำแหน่งบนร่างกายจะอยู่ในระยะเดียวกันทั้งหมด (Synchronous development: Macule -> Papule -> Vesicle -> Pustule -> Crust)"
+        ]
+      },
+      "pathogenesis": {
+        "title": "กลไกก่อโรค (Pathogenesis)",
+        "virulenceFactors": [
+          {
+            "name": "Viral Capillary Endothelial Infection",
+            "mechanism": "เชื้อไวรัส Variola แพร่ผ่านกระแสเลือดเข้าสู่ Capillary endothelial cells ของชั้น Dermis ทำให้หลอดเลือดอักเสบ บวมน้ำ และเม็ดเลือดขาวแทรกซึม"
+          },
+          {
+            "name": "Reticular Colliquation & Ballooning",
+            "mechanism": "Keratinocytes ในชั้น Epidermis เกิดการบวมพองและแตกสลาย กลายเป็นโพรงตุ่มน้ำหลายห้อง (Multilocular) ที่มี Neutrophils หลั่งเข้ามากลายเป็น Pustule"
+          },
+          {
+            "name": "SPICE (Smallpox Inhibitor of Complement Enzymes)",
+            "mechanism": "ยับยั้ง Complement cascade ป้องกันการเกิด Membrane Attack Complex (MAC) ช่วยให้ไวรัสเพิ่มจำนวนในเนื้อเยื่อผิวหนังได้อย่างรวดเร็ว"
+          }
+        ],
+        "transmission": "ละอองฝอยทางเดินหายใจ (Respiratory droplets) และสัมผัสสารคัดหลั่งจากแผลหรือเสื้อผ้าผู้ป่วย"
+      },
+      "diagnosis": {
+        "title": "การตรวจรอยโรคและ Lab (Lesion Exam & Lab)",
+        "stains": [
+          "Tzanck Smear / ชิ้นเนื้อ: พบ Guarnieri inclusion bodies (ก้อน Eosinophilic inclusions ขนาดใหญ่ใน Cytoplasm)",
+          "Electron Microscopy จากของเหลวในตุ่ม: พบอนุภาคไวรัสรูปทรงอิฐ (Brick-shaped virions) ขนาดใหญ่ ~300 nm"
+        ],
+        "culture": [
+          "Egg CAM (Chorioallantoic membrane): เพาะเชื้อเกิด Pocks นูน ขาว ขุ่น",
+          "Real-time PCR: Orthopoxvirus species-specific PCR (Gold standard ในปัจจุบัน)"
+        ],
+        "biosafety": "BSL-4 Level Pathogen (Category A Bioterrorism agent)"
+      },
+      "clinical": {
+        "title": "Clinical Vignettes & NL1 Pearls",
+        "buzzwords": [
+          "Centrifugal rash distribution (ใบหน้า แขน ขา มากกว่าลำตัว)",
+          "All lesions at the SAME STAGE (สุกพร้อมกัน ต่างจาก VZV)",
+          "Deep-seated, umbilicated pustules with pockmark scar",
+          "Palms and Soles involved (พบตุ่มที่ฝ่ามือและฝ่าเท้าชัดเจน)",
+          "Guarnieri bodies in cytoplasm"
+        ],
+        "vignette": "ผู้ป่วยชายมีไข้สูง ปวดศีรษะ และปวดหลังรุนแรง 3 วัน ต่อมามีตุ่มแดงขึ้นที่ใบหน้า ลำคอ แขนขา ฝ่ามือและฝ่าเท้า ตุ่มพัฒนาพร้อมกันทั่วร่างกายจนกลายเป็นตุ่มหนองขนาด 4-6 มม. มีลักษณะแข็งลึก (Shotty) และมีรอยบุ๋มสะดือตรงกลาง (Umbilicated) ทุกตุ่มอยู่ในระยะเดียวกัน ตรวจชิ้นเนื้อพบ Guarnieri bodies ใน cytoplasm ของเซลล์ผิวหนัง",
+        "highYieldNote": "ตารางเปรียบเทียบออกสอบ NL1: Variola (ฝีดาษ) = Centrifugal, Same stage, Deep-seated, ฝ่ามือฝ่าเท้าพบตุ่ม | Varicella (อีสุกอีใส) = Centripetal (เน้นลำตัว), Different stages ('Dew drops on a rose petal'), ตุ่มผิวเผิน ไม่ค่อยพบฝ่ามือฝ่าเท้า!"
+      },
+      "treatment": {
+        "title": "การดูแลแผลและการรักษา (Wound Care & Rx)",
+        "firstLine": "Tecovirimat (TPOXX) - ยับยั้งโปรตีน VP37 ป้องกันการหลุดออกของไวรัสจากเซลล์",
+        "woundCare": "รักษาความสะอาดตุ่มแผล ไม่เจาะตุ่มหนอง ป้องกัน Secondary bacterial infection (มักเกิดจาก S. aureus หรือ S. pyogenes)",
+        "prevention": "วัคซีน Vaccinia (ACAM2000 / JYNNEOS) ฉีดป้องกันหรือให้ภายใน 4 วันหลังสัมผัสเชื้อ"
+      }
+    },
+    "viewType": "humanoid",
+    "locationName": "Centrifugal: Face, Forearms, Hands & Soles (ใบหน้า แขน ขา ฝ่ามือฝ่าเท้า)",
+    "clinicalCases": [
+      {
+        "id": "smallpox-case-1",
+        "title": "Case 1: Centrifugal Pan-Corporeal Rash (การกระจายตัวของผื่น)",
+        "badge": "เคสที่ 1: ผื่นทั้งตัว",
+        "image": "assets/images/clinical/smallpox_case1.jpg",
+        "source": "CDC Public Health Image Library (PHIL #4728)",
+        "description": "ภาพถ่ายเคสจริงจาก CDC แสดงเด็กผู้ป่วยไข้ทรพิษ (Variola major) ที่มีผื่นตุ่มหนองกระจายตัวหนาแน่นบริเวณใบหน้าและแขนขามากกว่าลำตัว (Centrifugal distribution) ซึ่งเป็นข้อสังเกตสำคัญที่สุดในการแยกจากโรคอีสุกอีใส (Centripetal)",
+        "keyFindings": [
+          "Centrifugal distribution: ใบหน้า แขน และขา หนาแน่นกว่าบริเวณหน้าอกและลำตัว",
+          "Synchronous development: ตุ่มทุกตำแหน่งทั่วตัวสุกและตกสะเก็ดในระยะเวลาเดียวกัน",
+          "Deep-seated lesions: รอยโรคฝังลึกถึงชั้นหนังแท้ เมื่อหายจึงทิ้งรอยแผลเป็นหลุมลึก (Pockmark)"
+        ]
+      },
+      {
+        "id": "smallpox-case-2",
+        "title": "Case 2: Umbilicated Pustules Close-up (ตุ่มหนองบุ๋มคล้ายสะดือ)",
+        "badge": "เคสที่ 2: รอยบุ๋มสะดือ",
+        "image": "assets/images/clinical/smallpox_case2_umbilicated.jpg",
+        "source": "WHO / CDC Smallpox Eradication Program (Rahima Banu Case, Bangladesh 1973)",
+        "description": "ภาพระยะใกล้แสดงตุ่มหนองระยะสุก (Pustular stage) กึ่งกลางตุ่มมีรอยบุ๋มลงอย่างชัดเจน (Central umbilication) เกิดจากการตายของเซลล์ผิวหนังตรงกลางที่ยึดติดกับท่อต่อมเหงื่อ ตุ่มมีความตึงแข็งคล้ายลูกปืนกลม (Hard shotty BB-pellet feel)",
+        "keyFindings": [
+          "Central umbilication: รอยบุ๋มกึ่งกลางตุ่มหนอง (Pathognomonic hallmark)",
+          "Hard shotty feel: คลำแล้วรู้สึกแข็งแน่นเหมือนลูกปืนบีบีฝังใต้ผิวหนัง บีบแตกยากมาก",
+          "Pustule-to-Crust transition: เริ่มเข้าสู่ระยะตกสะเก็ดพร้อมกันทั้งใบหน้าและแขน"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "staphylococcus-aureus",
+    "name": "Staphylococcus aureus",
+    "thaiName": "สแตฟิโลค็อกคัส ออเรียส (สแตฟสีทอง)",
+    "scientificName": "Staphylococcus aureus",
+    "category": "bacteria",
+    "categoryLabel": "แบคทีเรีย (Bacteria)",
+    "cardTitle": "HONEY, I'M CRUSTY!",
+    "cardSubtitle": "cover your face in golden honey crusts. next player must perform incision & drainage",
+    "cardBadge": "BACTERIA",
+    "lesionTitle": "Honey-Colored Crusts (Impetigo) & Abscess",
+    "lesionThai": "แผลสะเก็ดสีน้ำผึ้ง (Impetigo) และฝีหนอง (Abscess/Furuncle)",
+    "badgeColor": "#7c3aed",
+    "quickStats": {
+      "depth": "Epidermis (Impetigo) / Deep Dermis-Subcutis (Abscess)",
+      "classicSign": "Honey-colored (Amber) golden crusts on face",
+      "abscessSign": "Fluctuant tender erythematous nodule with central pus",
+      "toxin": "Exfoliatin A/B (Impetigo) / Panton-Valentine Leukocidin (PVL in Abscess)",
+      "commonSites": "Perioral / Perinasal (เด็ก) หรือ รูขุมขน/จุดอับชื้น (ฝี)"
+    },
+    "morphologicalParts": [
+      {
+        "id": "honey_crust",
+        "name": "Honey-Colored Golden Crust (สะเก็ดสีน้ำผึ้ง)",
+        "thaiName": "สะเก็ดแห้งกรังสีเหลืองทองน้ำผึ้ง",
+        "color": "#f59e0b",
+        "description": "Hallmark amber-yellow crust formed by dried serous exudate, cellular debris, and teeming clusters of Staphylococcus aureus."
+      },
+      {
+        "id": "subcorneal_cleft",
+        "name": "Subcorneal Cleavage (รอยแยกใต้ชั้นขี้ไคล)",
+        "thaiName": "รอยแยกใต้ชั้น Stratum Corneum",
+        "color": "#fde047",
+        "description": "Superficial blister cavity created by Staphylococcal Exfoliative toxin cleaving Desmoglein-1, leading to easy epidermal detachment (Impetigo/SSSS)."
+      },
+      {
+        "id": "fibrin_capsule",
+        "name": "Coagulase Fibrin Wall (กำแพงไฟบริน)",
+        "thaiName": "ผนังไฟบรินที่เกิดจาก Coagulase",
+        "color": "#8b5cf6",
+        "description": "Thick fibrin barrier synthesized via Staphylococcal Coagulase enzyme, sequestering the abscess and shielding bacteria from antibiotic penetration."
+      }
+    ],
+    "tabs": {
+      "morphology": {
+        "title": "สัณฐานวิทยาของรอยโรค (Lesion Morphology)",
+        "highlights": [
+          "Non-bullous Impetigo: ตุ่มน้ำแตกออกเร็ว กลายเป็นสะเก็ดสีเหลืองอำพันคล้ายน้ำผึ้ง (Honey-colored crusts) พบบ่อยรอบปากและจมูกในเด็ก",
+          "Cutaneous Abscess / Furuncle: ก้อนบวมแดง ร้อน กดเจ็บ และมีจุดกึ่งกลางนิ่มยวบ (Fluctuance) บ่งบอกถึงโพรงหนองภายใน",
+          "มีผนังไฟบริน (Fibrin capsule) ห่อหุ้มกั้นโพรงหนองไว้ ทำให้ยาปฏิชีวนะซึมเข้าไปได้ยาก ต้องระบายหนอง (Incision & Drainage)",
+          "การแตะลอกสะเก็ดจะพบก้นแผลแดงชุ่มน้ำ (Moist red base) ที่ยังมีน้ำเหลืองซึมต่อเนื่อง"
+        ]
+      },
+      "pathogenesis": {
+        "title": "กลไกก่อโรค (Pathogenesis)",
+        "virulenceFactors": [
+          {
+            "name": "Exfoliative Toxins A & B",
+            "mechanism": "เอนไซม์ Serine protease ย่อยสลาย Desmoglein-1 ในชั้น Stratum granulosum ทำให้เซลล์ผิวหนังกำพร้าแยกตัว เกิด Bullous impetigo และ SSSS"
+          },
+          {
+            "name": "Coagulase Enzyme",
+            "mechanism": "เปลี่ยน Fibrinogen เป็นก้อน Fibrin mesh ล้อมรอบตัวเชื้อ สร้างเป็นกำแพงฝี (Abscess wall) ขัดขวางการเข้าถึงของเม็ดเลือดขาว"
+          },
+          {
+            "name": "Panton-Valentine Leukocidin (PVL)",
+            "mechanism": "เจาะรูผนังเซลล์ Neutrophils ทำให้เซลล์แตกตาย ปล่อยเอนไซม์ย่อยเนื้อเยื่อ ก่อโพรงหนองเหลวขนาดใหญ่และเนื้อตายรุนแรง (Necrotizing lesion)"
+          }
+        ],
+        "transmission": "สัมผัสโดยตรงกับแผลหรือสะเก็ด, แผลถลอก/แมลงกัดที่เป็นทางเปิดให้เชื้อประจำถิ่นบุกรุก"
+      },
+      "diagnosis": {
+        "title": "การตรวจรอยโรคและ Lab (Lesion Exam & Lab)",
+        "stains": [
+          "Gram Stain จากหนองใต้สะเก็ด: พบ Gram-positive cocci in clusters (พวงองุ่นสีม่วงเข้ม) ปะปนกับ Neutrophils จำนวนมาก"
+        ],
+        "culture": [
+          "Blood Agar: Golden-yellow colonies พร้อม Beta-hemolysis วงใสชัดเจน",
+          "Mannitol Salt Agar (MSA): ทนเกลือ 7.5% NaCl และ Ferment mannitol เปลี่ยนสีอาหารจากแดงเป็นเหลืองสด"
+        ],
+        "biochemical": [
+          "Catalase: POSITIVE (+) ฟองฟู่ O2 (แยกจาก Streptococcus)",
+          "Coagulase: POSITIVE (+) จับก้อนลิ่มพลาสมา (แยกจาก S. epidermidis)"
+        ]
+      },
+      "clinical": {
+        "title": "Clinical Vignettes & NL1 Pearls",
+        "buzzwords": [
+          "Honey-colored crusts around mouth/nose in children (Impetigo)",
+          "Fluctuant tender subcutaneous abscess / boil",
+          "Golden-yellow colonies on blood agar with beta-hemolysis",
+          "Catalase (+), Coagulase (+) Gram-positive cocci",
+          "Incision & Drainage is primary treatment for mature abscess"
+        ],
+        "vignette": "เด็กชายอายุ 5 ขวบ มีแผลรอบริมฝีปากและจมูก เริ่มต้นจากตุ่มน้ำเล็กๆ ที่แตกออกง่ายอย่างรวดเร็ว ต่อมามีน้ำเหลืองเยิ้มและแห้งกรังกลายเป็นสะเก็ดสีเหลืองอำพันคล้ายน้ำผึ้ง (Honey-colored crusts) ตรวจไม่พบไข้ ขูดสารคัดหลั่งใต้สะเก็ดไปย้อม Gram stain พบ Gram-positive cocci in clusters, Catalase (+), Coagulase (+)",
+        "highYieldNote": "ข้อสอบมักถามการแยก Impetigo: สาเหตุส่วนใหญ่คือ S. aureus (พบมากที่สุด) และรองลงมาคือ S. pyogenes (Group A Strep) | ถ้าเป็นฝีหนอง (Abscess) หลักการรักษาสำคัญที่สุดคือ Incision & Drainage (I&D) เพราะยาปฏิชีวนะซึมผ่านผนังไฟบรินเข้าไปได้ไม่ดี!"
+      },
+      "treatment": {
+        "title": "การดูแลแผลและการรักษา (Wound Care & Rx)",
+        "firstLine": "Impetigo แผลน้อย: Topical Mupirocin 2% ointment หรือ Fusidic acid ทาวันละ 2-3 ครั้ง",
+        "systemic": "Impetigo แผลกว้าง / มีไข้: Oral Cloxacillin, Cephalexin หรือ Amoxicillin-clavulanate (Augmentin)",
+        "abscessManagement": "Abscess / Furuncle: Incision & Drainage (I&D) ผ่าระบายหนองออกให้หมด พร้อมล้างแผลด้วย Normal saline"
+      }
+    },
+    "viewType": "humanoid",
+    "locationName": "Perioral Facial Region (รอบปาก ร่องจมูก และคาง)",
+    "clinicalCases": [
+      {
+        "id": "staph-case-1",
+        "title": "Case 1: Non-Bullous Impetigo (สะเก็ดน้ำผึ้งกรังรอบปาก)",
+        "badge": "เคสที่ 1: สะเก็ดน้ำผึ้งกรัง",
+        "image": "assets/images/clinical/staph_case1_impetigo_crust.jpg",
+        "source": "Clinical Dermatology Case Archive (Wikimedia Commons / Open Access)",
+        "description": "ภาพผู้ป่วยเด็กที่เป็นโรคแผลพุพองชนิดไม่เป็นตุ่มพอง (Non-bullous impetigo) พบลักษณะเฉพาะคือ สะเก็ดหนากร้านสีเหลืองทองคล้ายน้ำผึ้งกรัง (Stuck-on honey-colored meliceric crusts) บริเวณรอบริมฝีปากและคาง เกิดจากการติดเชื้อ S. aureus ทำลายชั้นผิวเผิน",
+        "keyFindings": [
+          "Honey-colored crusts: สะเก็ดสีทองติดแน่นคล้ายน้ำตาลไหม้/น้ำผึ้งกรังรอบปากและจมูก",
+          "Erythematous base: เมื่อลอกสะเก็ดออกจะพบผิวหนังด้านล่างแดงชื้นและมีน้ำเหลืองเยิ้ม",
+          "Highly contagious: ติดต่อได้ง่ายจากการสัมผัสหรือเกา ลุกลามไปตำแหน่งอื่นได้อย่างรวดเร็ว"
+        ]
+      },
+      {
+        "id": "staph-case-2",
+        "title": "Case 2: Bullous Impetigo (ตุ่มพองน้ำใสแตกง่าย)",
+        "badge": "เคสที่ 2: ตุ่มพอง Bullous",
+        "image": "assets/images/clinical/staph_case2_bullous.jpg",
+        "source": "Clinical Case Dermatology (Wikimedia Commons / Open Access)",
+        "description": "ภาพรอยโรคแบบตุ่มพอง (Bullous impetigo) เกิดจากสายพันธุ์ S. aureus ที่หลั่ง Exfoliative toxin A เข้าไปตัดทำลายโมเลกุลยึดเซลล์ Desmoglein-1 ทำให้เกิดการแยกตัวของชั้นผิวหนังเกิดเป็นตุ่มน้ำพองใสขนาดใหญ่ที่ผนังบาง ยวบยาบ (Flaccid bullae) และแตกออกเป็นรอยถลอกกลม",
+        "keyFindings": [
+          "Flaccid bullae: ตุ่มพองผนังบาง ยวบยาบ บรรจุของเหลวใสปนเหลือง",
+          "Subcorneal cleavage plane: การแยกชั้นผิวหนังเฉพาะใต้ Stratum corneum (Desmoglein-1 target)",
+          "Collarette of scale: เมื่อตุ่มน้ำแตกออกจะทิ้งขอบสะเก็ดบางๆ ล้อมรอบรอยถลอกสีแดง"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bacillus-anthracis",
+    "name": "Bacillus anthracis",
+    "thaiName": "บาซิลลัส แอนทราซิส (เชื้อแอนแทรกซ์)",
+    "scientificName": "Bacillus anthracis",
+    "category": "bacteria",
+    "categoryLabel": "แบคทีเรีย (Bacteria)",
+    "cardTitle": "I FEEL NOTHING!",
+    "cardSubtitle": "grow a coal-black necrotic eschar. it is completely PAINLESS so ignore 2 attacks",
+    "cardBadge": "BACTERIA",
+    "lesionTitle": "Malignant Pustule (Coal-Black Eschar)",
+    "lesionThai": "แผลสะเก็ดเนื้อตายสีดำสนิท ไม่เจ็บ (Black Eschar)",
+    "badgeColor": "#f59e0b",
+    "quickStats": {
+      "depth": "Epidermis to Deep Dermis with vascular thrombosis",
+      "hallmark": "Coal-black necrotic sunken eschar (ถ่านหิน = Anthrax)",
+      "pain": "PAINLESS (ไม่เจ็บ ปวดน้อยมาก ต่างจากการอักเสบทั่วไป!)",
+      "edema": "Marked non-pitting gelatinous edema (บวมน้ำรุนแรงมาก)",
+      "satellites": "Ring of small vesicular blisters around central eschar"
+    },
+    "morphologicalParts": [
+      {
+        "id": "black_eschar",
+        "name": "Coal-Black Sunken Eschar (สะเก็ดดำสนิท)",
+        "thaiName": "สะเก็ดเนื้อตายสีดำคล้ายถ่านหิน",
+        "color": "#18181b",
+        "description": "Tough, adherent, sunken black necrotic crust produced by Lethal Factor (LF) induced macrophage apoptosis and microvascular thrombosis."
+      },
+      {
+        "id": "satellite_vesicles",
+        "name": "Satellite Vesicle Ring (วงตุ่มน้ำใสบริวาร)",
+        "thaiName": "วงตุ่มน้ำใสล้อมรอบสะเก็ดดำ",
+        "color": "#38bdf8",
+        "description": "Characteristic gelatinous vesicular ring containing hemorrhagic-serous fluid and enormous numbers of large anthrax bacilli."
+      },
+      {
+        "id": "gelatinous_edema",
+        "name": "Gelatinous Non-Pitting Edema (ชั้นบวมน้ำเยลลี่)",
+        "thaiName": "บริเวณเนื้อเยื่อบวมน้ำไม่กดบุ๋ม",
+        "color": "#fde68a",
+        "description": "Striking non-pitting gelatinous dermal swelling driven by Edema Factor (EF), an adenylate cyclase flooding tissues with cAMP."
+      }
+    ],
+    "tabs": {
+      "morphology": {
+        "title": "สัณฐานวิทยาของรอยโรค (Lesion Morphology)",
+        "highlights": [
+          "เริ่มต้นจากตุ่มคันไม่เจ็บ กลายเป็นตุ่มน้ำ และกลายเป็นแผลสะเก็ดสีดำสนิทคล้ายถ่านหิน (Coal-black eschar)",
+          "เอกลักษณ์สำคัญ: 'PAINLESS' (แผลไม่ปวด) แม้ภายนอกจะดูน่ากลัวและมีเนื้อตายสีดำขนาดใหญ่",
+          "มีวงตุ่มน้ำใสขนาดเล็ก (Satellite vesicles) เรียงตัวล้อมรอบสะเก็ดดำตรงกลาง",
+          "เนื้อเยื่อรอบแผลมีอาการบวมน้ำอย่างรุนแรงแบบไม่กดบุ๋ม (Marked non-pitting gelatinous edema)"
+        ]
+      },
+      "pathogenesis": {
+        "title": "กลไกก่อโรค (Pathogenesis)",
+        "virulenceFactors": [
+          {
+            "name": "Lethal Factor (LF) + PA",
+            "mechanism": "LF เป็น Zinc metalloprotease ตัดย่อย MAPKK ทำให้ Macrophages และ Endothelial cells ตายเฉียบพลัน นำไปสู่การเกิดเนื้อตายสีดำ (Black Eschar)"
+          },
+          {
+            "name": "Edema Factor (EF) + PA",
+            "mechanism": "EF ทำงานเป็น Calmodulin-dependent adenylate cyclase เพิ่มปริมาณ intracellular cAMP อย่างมหาศาล ก่อภาวะบวมน้ำเยลลี่รุนแรง (Gelatinous Edema)"
+          },
+          {
+            "name": "Poly-D-glutamic Acid Capsule",
+            "mechanism": "แคปซูลโปรตีนชนิดพิเศษ (Polypeptide ไม่ใช่น้ำตาล) ต้านทานการกลืนกินของเม็ดเลือดขาว (Anti-phagocytic)"
+          }
+        ],
+        "transmission": "สปอร์เชื้อเข้าทางบาดแผลถลอกที่ผิวหนัง จากการสัมผัสหนังสัตว์ ขนสัตว์ หรือดินปนเปื้อน (Woolsorter's disease)"
+      },
+      "diagnosis": {
+        "title": "การตรวจรอยโรคและ Lab (Lesion Exam & Lab)",
+        "stains": [
+          "Gram Stain จากสารคัดหลั่งใต้สะเก็ด: พบ Gram-positive bacilli ขนาดใหญ่มาก เรียงตัวเป็นสายยาวคล้าย 'ตู้รถไฟ' (Boxcar rods in chains)",
+          "M'Fadyean capsule stain: เห็น Pink/Purple capsule ล้อมรอบตัวเชื้อสีน้ำเงิน"
+        ],
+        "culture": [
+          "Blood Agar: โคโลนีสีเทาด้าน ขอบหยักไม่สม่ำเสมอ คล้าย 'หัวเมดูซา' (Medusa head colonies) และ Non-hemolytic (แกมม่า-ฮีโมไลซิส)"
+        ]
+      },
+      "clinical": {
+        "title": "Clinical Vignettes & NL1 Pearls",
+        "buzzwords": [
+          "Painless black eschar with striking surrounding edema",
+          "Boxcar-shaped Gram-positive rods in chains",
+          "Medusa head colonies on blood agar (Non-hemolytic)",
+          "Poly-D-glutamate capsule",
+          "History of handling animal hides, wool, leather, or cattle"
+        ],
+        "vignette": "คนงานโรงงานฟอกหนังสัตว์และขนแกะ มีแผลสะเก็ดสีดำสนิทตรงกลาง (Black eschar) ขนาด 2 ซม. จมลึก ขอบแผลมีตุ่มน้ำใสขนาดเล็กเรียงล้อมรอบ แขนท่อนล่างมีอาการบวมตึงรุนแรงมาก แต่น่าประหลาดใจที่ผู้ป่วยแทบไม่รู้สึกเจ็บแผลเลย (Painless) ย้อม Gram stain พบแท่งสี่เหลี่ยมสีม่วงขนาดใหญ่ต่อกันเป็นสายยาว",
+        "highYieldNote": "สูตรจำข้อสอบ NL1/USMLE: 'Anthrax = Anthracite (ถ่านหินสีดำ) = Black Eschar' | จุดแยกโรค: แผลแอนแทรกซ์ 'ไม่เจ็บ (Painless)' บวมน้ำมหาศาล (Edema factor) และโคลอนีเป็น 'Medusa head' ไม่แตกเม็ดเลือดแดง (Non-hemolytic)!"
+      },
+      "treatment": {
+        "title": "การดูแลแผลและการรักษา (Wound Care & Rx)",
+        "firstLine": "Ciprofloxacin หรือ Doxycycline รับประทานต่อเนื่อง 60 วัน",
+        "woundCare": "ห้ามขูด ขูดลอก หรือผ่าตัดสะเก็ดดำเด็ดขาด (ห้าม I&D หรือ Debridement) เพราะจะกระตุ้นให้เชื้อและสารพิษแพร่กระจายเข้ากระแสเลือดจนเกิด Systemic Anthrax!",
+        "antitoxin": "Raxibacumab หรือ Obiltoxaximab (Monoclonal antibodies ต่อ Protective Antigen)"
+      }
+    },
+    "viewType": "humanoid",
+    "locationName": "Exposed Forearm & Hand Skin (ท่อนแขนและมือ)",
+    "clinicalCases": [
+      {
+        "id": "anthrax-case-1",
+        "title": "Case 1: Cutaneous Anthrax Neck Eschar (แผลสะเก็ดดำไหม้ที่คอ)",
+        "badge": "เคสที่ 1: แผลสะเก็ดดำไหม้",
+        "image": "assets/images/clinical/anthrax_case1_neck_eschar.jpg",
+        "source": "CDC Public Health Image Library (PHIL #1934)",
+        "description": "ภาพถ่ายประวัติศาสตร์ทางการแพทย์จาก CDC แสดงผู้ป่วยโรคแอนแทรกซ์ที่ผิวหนัง (Cutaneous Anthrax) บริเวณลำคอ ปรากฏรอยโรคที่เป็นเอกลักษณ์คือ แผลเนื้อตายสะเก็ดสีดำสนิทตรงกลางคล้ายถ่านหิน (Coal-black necrotic eschar) ล้อมรอบด้วยตุ่มน้ำใสบริวาร (Satellite vesicles)",
+        "keyFindings": [
+          "Coal-black eschar: สะเก็ดเนื้อตายสีดำด้าน แห้งกรัง คล้ายก้อนถ่านหิน (ที่มาของชื่อ Anthrax ในภาษากรีก)",
+          "Painless ulcer: แผลไม่มีอาการเจ็บปวดเลยอย่างน่าแปลกใจ (Painless) ยกเว้นมีเชื้อแบคทีเรียอื่นแทรกซ้อน",
+          "Ring of satellite vesicles: วงแหวนของตุ่มน้ำใสขนาดเล็กล้อมรอบขอบแผลสีดำ"
+        ]
+      },
+      {
+        "id": "anthrax-case-2",
+        "title": "Case 2: Cutaneous Anthrax Forearm & Gelatinous Edema (บวมเจลาตินที่แขน)",
+        "badge": "เคสที่ 2: บวมเจลาตินที่แขน",
+        "image": "assets/images/clinical/anthrax_case2_arm_lesion.png",
+        "source": "CDC Public Health Image Library (PHIL #2033)",
+        "description": "ภาพแผลแอนแทรกซ์ที่แขน แสดงผลกระทบจากสารพิษ Edema Toxin (Edema Factor ทำหน้าที่เป็น Adenylate cyclase เพิ่ม intracellular cAMP) ทำให้เนื้อเยื่อรอบข้างบวมน้ำอย่างมหาศาลแบบกดไม่บุ๋ม (Gelatinous non-pitting edema) แผ่ขยายออกไปไกลกว่าตัวแผลสะเก็ดดำ",
+        "keyFindings": [
+          "Gelatinous non-pitting edema: เนื้อเยื่อรอบข้างบวมตึง มีลักษณะหยุ่นคล้ายวุ้นเจลาติน กดไม่บุ๋ม",
+          "Mechanism of edema: Edema Factor (EF) เพิ่ม cAMP ในเซลล์ ทำให้ของเหลวรั่วซึมออกจากหลอดเลือด",
+          "Occupational exposure: ประวัติสัมผัสขนสัตว์ หนังสัตว์ หรือสปอร์ในดิน (Woolsorter disease)"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "treponema-pallidum",
+    "name": "Treponema pallidum (Syphilis)",
+    "thaiName": "ทรีโพนีมา พัลลิดุม (เชื้อซิฟิลิส)",
+    "scientificName": "Treponema pallidum (Spirochete)",
+    "category": "bacteria",
+    "categoryLabel": "แบคทีเรีย (Bacteria)",
+    "cardTitle": "HARD AS A ROCK!",
+    "cardSubtitle": "reveal a painless indurated chancre with clean base. immune to all painful traps",
+    "cardBadge": "BACTERIA",
+    "lesionTitle": "Primary Syphilis Hard Chancre",
+    "lesionThai": "แผลริมแข็ง ก้นสะอาด ไม่เจ็บ (Hard Chancre)",
+    "badgeColor": "#0284c7",
+    "quickStats": {
+      "depth": "Epidermal ulceration with dense Dermal infiltrate",
+      "pain": "PAINLESS (ไม่เจ็บเลย ต่างจาก Chancroid แผลริมอ่อน!)",
+      "border": "Indurated, elevated, rolled cartilaginous margin (ขอบแข็งเหมือนกระดูกอ่อน)",
+      "base": "Clean, smooth granulating red base (ก้นแผลสะอาด ไม่มีหนอง)",
+      "lymphNode": "Bilateral painless, rubbery inguinal lymphadenopathy"
+    },
+    "morphologicalParts": [
+      {
+        "id": "indurated_rim",
+        "name": "Indurated Elevated Margin (ขอบแผลยกนูนแข็ง)",
+        "thaiName": "ขอบแผลยกนูนแข็งเหนียวเหมือนกระดูกอ่อน",
+        "color": "#0284c7",
+        "description": "Firm, button-like cartilaginous border packed with dense mononuclear inflammatory cells and proliferating endothelial pericytes (Induration)."
+      },
+      {
+        "id": "clean_ulcer_base",
+        "name": "Clean Granulating Ulcer Bed (ก้นแผลสะอาดเรียบ)",
+        "thaiName": "พื้นก้นแผลสีชมพูแดงสะอาด ไร้หนอง",
+        "color": "#f43f5e",
+        "description": "Glistening, clean reddish-pink base with serous exudate (teeming with highly infectious Treponemes) and complete absence of purulent slough."
+      },
+      {
+        "id": "endarteritis_vessels",
+        "name": "Endarteritis Obliterans (หลอดเลือดตีบตัน)",
+        "thaiName": "หลอดเลือดเล็กในชั้นหนังแท้ที่หนาตัวตีบตัน",
+        "color": "#9333ea",
+        "description": "Concentric endothelial proliferation and perivascular cuffing of Plasma cells, choking local microcirculation."
+      }
+    ],
+    "tabs": {
+      "morphology": {
+        "title": "สัณฐานวิทยาของรอยโรค (Lesion Morphology)",
+        "highlights": [
+          "แผลเดี่ยวรูปกลมหรือรี ขอบแผลยกนูนชัดเจนและมีความแข็งคล้ายกระดูกอ่อนเมื่อคลำ (Cartilaginous induration)",
+          "จุดสังเกตสำคัญ: 'PAINLESS' (ไม่เจ็บปวดเลย)",
+          "ก้นแผลสะอาด เรียบ สีแดงสดหรือชมพู (Clean base) ไม่มีหนองเยิ้มสกปรก",
+          "พบร่วมกับต่อมน้ำเหลืองขาหนีบโตทั้งสองข้างแบบไม่เจ็บ คลำได้หยุ่นคล้ายยาง (Painless rubbery lymphadenopathy)"
+        ]
+      },
+      "pathogenesis": {
+        "title": "กลไกก่อโรค (Pathogenesis)",
+        "virulenceFactors": [
+          {
+            "name": "Endarteritis Obliterans",
+            "mechanism": "Treponemes บุกรุกผนังหลอดเลือดขนาดเล็ก กระตุ้นให้ Endothelial cells หนาตัวจนรูหลอดเลือดตีบตัน นำไปสู่การขาดเลือดเฉพาะจุดและเกิดแผลหลุมแข็ง"
+          },
+          {
+            "name": "Hyaluronidase & Mucopolysaccharidase",
+            "mechanism": "ย่อยสลายสารเคลือบเนื้อเยื่อเกี่ยวพัน ทำให้เชื้อเกลียวสว่านสามารถเจาะทะลุผิวหนังและแทรกซึมเข้าหลอดเลือดได้อย่างรวดเร็ว"
+          },
+          {
+            "name": "Dense Plasma Cell Infiltration",
+            "mechanism": "การตอบสนองทางภูมิคุ้มกันเรื้อรังทำให้เกิดการสะสมของ Plasma cells หนาแน่นรอบหลอดเลือดในชั้นหนังแท้"
+          }
+        ],
+        "transmission": "การสัมผัสทางเพศสัมพันธ์โดยตรงกับรอยโรคที่มีเชื้อ (Sexual contact) หรือการถ่ายทอดจากแม่สู่ทารก"
+      },
+      "diagnosis": {
+        "title": "การตรวจรอยโรคและ Lab (Lesion Exam & Lab)",
+        "stains": [
+          "Darkfield Microscopy จากน้ำเหลืองที่ก้นแผล: เห็น Spirochetes รูปร่างเกลียวสว่านบาง เคลื่อนที่หมุนควงสว่าน (Corkscrew motility) ทันที",
+          "Direct Fluorescent Antibody (DFA-TP): ตรวจหาแอนติเจนของ T. pallidum ด้วยแอนติบอดีเรืองแสง"
+        ],
+        "serology": [
+          "Nontreponemal tests (VDRL / RPR): ตรวจคัดกรอง (แต่อาจให้ผลลบปลอมได้ในระยะแผลแรกเริ่ม 1-2 สัปดาห์แรก!)",
+          "Treponemal tests (FTA-ABS / TP-PA): ตรวจยืนยันความจำเพาะสูง ติดบวกตลอดชีวิต"
+        ]
+      },
+      "clinical": {
+        "title": "Clinical Vignettes & NL1 Pearls",
+        "buzzwords": [
+          "Painless, indurated ulcer with clean base (Hard Chancre)",
+          "Bilateral painless rubbery inguinal lymphadenopathy",
+          "Darkfield microscopy shows corkscrew motility spirochetes",
+          "Endarteritis obliterans with plasma cell infiltrate on biopsy",
+          "Heals spontaneously within 3-6 weeks without scar"
+        ],
+        "vignette": "ชายอายุ 27 ปี มาตรวจด้วยแผลที่อวัยวะเพศ ตรวจพบแผลเดี่ยวขอบกลม ขนาด 1.2 ซม. ขอบแผลยกนูน แข็งคล้ายกระดูกอ่อน (Indurated) ก้นแผลสะอาดสีแดงสด ไม่มีหนอง ผู้ป่วยไม่มีอาการเจ็บปวดที่แผลเลย คลำพบต่อมน้ำเหลืองขาหนีบโตทั้งสองข้าง กดไม่เจ็บ ตรวจน้ำเหลืองก้นแผลด้วย Darkfield microscope พบแบคทีเรียรูปเกลียวสว่านเคลื่อนที่หมุนควงสว่าน",
+        "highYieldNote": "ข้อสอบ NL1/USMLE ชอบเปรียบเทียบแผลที่อวัยวะเพศ: Syphilis (แผลริมแข็ง) = PAINLESS, Clean base, Hard induration | Chancroid (แผลริมอ่อน จาก H. ducreyi) = PAINFUL ('You cry with ducreyi'), Dirty necrotic base, Soft margin!"
+      },
+      "treatment": {
+        "title": "การดูแลแผลและการรักษา (Wound Care & Rx)",
+        "firstLine": "Benzathine Penicillin G 2.4 million units IM ฉีดเข็มเดียวครั้งเดียว (Single dose)",
+        "allergy": "หากแพ้ Penicillin: Doxycycline 100 mg รับประทานวันละ 2 ครั้ง นาน 14 วัน (หญิงตั้งครรภ์ต้องทำ Penicillin Desensitization!)",
+        "reaction": "เฝ้าระวัง Jarisch-Herxheimer reaction (ไข้ หนาวสั่น ปวดกล้ามเนื้อ หลังฉีดยา 2-24 ชม. จากการแตกสลายของ Spirochetes)"
+      }
+    },
+    "viewType": "humanoid",
+    "locationName": "Genital & Inguinal Area (อวัยวะเพศภายนอกและขาหนีบ)",
+    "clinicalCases": [
+      {
+        "id": "syphilis-case-1",
+        "title": "Case 1: Primary Syphilis Hard Chancre (แผลริมแข็งระยะแรก)",
+        "badge": "เคสที่ 1: แผลริมแข็ง Chancre",
+        "image": "assets/images/clinical/syphilis_case1_primary_chancre.jpg",
+        "source": "CDC Public Health Image Library (PHIL #6803)",
+        "description": "ภาพแผลริมแข็ง (Hard Chancre) ของซิฟิลิสระยะแรก (Primary Syphilis) เป็นแผลเดี่ยวรูปกลมหรือรี ขอบแผลยกนูนแข็งตึงคล้ายกระดูกอ่อน (Indurated cartilaginous border) ก้นแผลสะอาดสีแดงสดไม่มีหนอง และไม่มีอาการเจ็บปวด (Painless)",
+        "keyFindings": [
+          "Solitary & Painless: แผลเดี่ยว ไม่เจ็บ ไม่ปวด ก้นแผลสะอาด (Clean granulating base, no purulence)",
+          "Cartilage-hard induration: คลำขอบแผลจะรู้สึกแข็งแน่นเหมือนแผ่นกระดูกอ่อนหรือปุ่มกระดุมฝังใต้ผิว",
+          "Endarteritis obliterans: พยาธิสภาพเกิดจากเชื้อ Treponema เข้าไปอุดตันหลอดเลือดขนาดเล็กและมี Plasma cells ล้อมรอบ"
+        ]
+      },
+      {
+        "id": "syphilis-case-2",
+        "title": "Case 2: Secondary Syphilis Copper-Penny Palmar Rash (ผื่นฝ่ามือระยะที่ 2)",
+        "badge": "เคสที่ 2: ผื่นเหรียญทองแดงที่ฝ่ามือ",
+        "image": "assets/images/clinical/syphilis_case2_secondary_palms.png",
+        "source": "Clinical Dermatology Archive (Wikimedia Commons)",
+        "description": "ภาพผื่นของซิฟิลิสระยะที่สอง (Secondary Syphilis) บริเวณฝ่ามือ มีลักษณะเป็นปื้นนูนสีแดงอมน้ำตาลคล้ายเหรียญทองแดง (Copper-penny / Ham-colored maculopapular rash) ซึ่งเป็นหนึ่งในโรคผิวหนังไม่กี่ชนิดที่ขึ้นเด่นชัดที่ฝ่ามือและฝ่าเท้า",
+        "keyFindings": [
+          "Palms & Soles involvement: ผื่นขึ้นที่ฝ่ามือและฝ่าเท้า (High-yield board buzzword ร่วมกับ RMSF, Coxsackie A)",
+          "Copper-penny color: รอยโรคนูนราบสีแดงหม่นอมน้ำตาลคล้ายเหรียญสตางค์แดง มีสะเก็ดลอกที่ขอบ (Biett collarette)",
+          "Systemic dissemination: เชื้อกระจายไปทั่วร่างกาย มีต่อมน้ำเหลืองโตทั่วตัว (Lymphadenopathy) และ Condylomata lata"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "varicella-zoster",
+    "name": "Varicella-Zoster Virus (VZV / HSV)",
+    "thaiName": "ไวรัสอีสุกอีใสและงูสวัด (VZV & HSV)",
+    "scientificName": "Human alphaherpesvirus 3 (VZV)",
+    "category": "virus",
+    "categoryLabel": "ไวรัส (Viruses)",
+    "cardTitle": "DEW DROP DRAMA!",
+    "cardSubtitle": "sprout clear dew drops on a rose petal base. all other players scramble in different stages",
+    "cardBadge": "VIRUS",
+    "lesionTitle": "Dew Drops on a Rose Petal",
+    "lesionThai": "ตุ่มน้ำใสบนฐานแดงคล้ายหยดน้ำค้างบนกลีบกุหลาบ",
+    "badgeColor": "#10b981",
+    "quickStats": {
+      "depth": "Intraepidermal (ตุ่มน้ำตื้นในชั้นหนังกำพร้า แตกง่าย)",
+      "classicLook": "'Dew drops on a rose petal' (หยดน้ำค้างบนกลีบกุหลาบ)",
+      "fluid": "Crystal-clear serous fluid turning cloudy/crusting",
+      "sensation": "Pruritic / Burning / Painful (คัน แสบ ปวดแปลบตามแนวประสาท)",
+      "histology": "Multinucleated giant cells with Cowdry A inclusion bodies"
+    },
+    "morphologicalParts": [
+      {
+        "id": "clear_vesicle",
+        "name": "Crystal-Clear Dew-Drop Blister (ตุ่มน้ำใสรูปหยดน้ำ)",
+        "thaiName": "ตุ่มน้ำใสรูปทรงหยดน้ำค้าง",
+        "color": "#38bdf8",
+        "description": "Superficial intraepidermal blister filled with crystal-clear viral-rich serous fluid, fragile roof that ruptures easily upon scratching."
+      },
+      {
+        "id": "erythematous_base",
+        "name": "Rose-Petal Erythematous Base (ฐานผิวหนังสีแดงกุหลาบ)",
+        "thaiName": "ฐานผิวหนังสีแดงสดคล้ายกลีบกุหลาบ",
+        "color": "#f43f5e",
+        "description": "Vibrant, circumscribed macular erythema resulting from dermal neurogenic vasodilation."
+      },
+      {
+        "id": "giant_cells",
+        "name": "Multinucleated Giant Cells (เซลล์ยักษ์หลายนิวเคลียส)",
+        "thaiName": "เซลล์ยักษ์หลายนิวเคลียส (Tzanck Positive)",
+        "color": "#8b5cf6",
+        "description": "Fused keratinocytes containing multiple molded nuclei with Cowdry A eosinophilic intranuclear inclusion bodies."
+      }
+    ],
+    "tabs": {
+      "morphology": {
+        "title": "สัณฐานวิทยาของรอยโรค (Lesion Morphology)",
+        "highlights": [
+          "ลักษณะคลาสสิก: ตุ่มน้ำใสรูปหยดน้ำค้างตั้งอยู่บนฐานผิวหนังสีแดงสด ('Dew drop on a rose petal')",
+          "ตุ่มน้ำอยู่ตื้นในชั้น Epidermis ผนังบาง แตกง่าย กลายเป็นสะเก็ดตื้นๆ (Superficial crust)",
+          "ใน Varicella (อีสุกอีใส): พบตุ่มหลายระยะพร้อมกันบนร่างกาย (Macule, Papule, Vesicle, Crust at different stages) กระจายแบบ Centripetal (ลำตัวมากกว่าใบหน้าแขนขา)",
+          "ใน Herpes Zoster (งูสวัด): ตุ่มน้ำใสเรียงตัวเป็นกลุ่มตามแนวเส้นประสาทรับความรู้สึกข้างเดียว (Dermatomal distribution)"
+        ]
+      },
+      "pathogenesis": {
+        "title": "กลไกก่อโรค (Pathogenesis)",
+        "virulenceFactors": [
+          {
+            "name": "Retrograde Axonal Transport & Reactivation",
+            "mechanism": "เชื้อไวรัสแฝงตัวใน Dorsal Root Ganglion เมื่อร่างกายอ่อนแอ ไวรัสจะเดินทางย้อนกลับตาม Sensory axon สู่ผิวหนัง ก่ออาการปวดแสบร้อนและตุ่มน้ำ"
+          },
+          {
+            "name": "Intraepidermal Acantholysis",
+            "mechanism": "การเพิ่มจำนวนของไวรัสใน Keratinocytes ทำให้เกิด Ballooning degeneration และเซลล์หลุดลอยจากกัน กลายเป็นตุ่มน้ำใสชั้นตื้น"
+          },
+          {
+            "name": "Cell-Cell Fusion (Syncytia Formation)",
+            "mechanism": "Viral glycoprotein spikes บนผิวเซลล์กระตุ้นให้เซลล์ข้างเคียงหลอมรวมกัน กลายเป็น Multinucleated Giant Cells"
+          }
+        ],
+        "transmission": "ละอองฝอยทางเดินหายใจ (VZV) หรือการสัมผัสตุ่มน้ำและสารคัดหลั่งโดยตรง (HSV/VZV)"
+      },
+      "diagnosis": {
+        "title": "การตรวจรอยโรคและ Lab (Lesion Exam & Lab)",
+        "stains": [
+          "Tzanck Smear: ขูดก้นตุ่มน้ำใส ป้ายสไลด์ ย้อม Wright-Giemsa stain พบ Multinucleated Giant Cells ชัดเจน (แยกไวรัสกลุ่ม Herpes ออกจากสาเหตุอื่น)",
+          "Biopsy: พบ Cowdry A inclusions (ก้อน Eosinophilic inclusions ภายใน Nucleus พร้อมมี Halos ล้อมรอบ)"
+        ],
+        "culture": [
+          "PCR: VZV/HSV DNA detection (วิธีตรวจที่มีความไวและแม่นยำสูงสุด)",
+          "Direct Fluorescent Antibody (DFA): แยกสายพันธุ์ระหว่าง HSV-1, HSV-2 และ VZV"
+        ]
+      },
+      "clinical": {
+        "title": "Clinical Vignettes & NL1 Pearls",
+        "buzzwords": [
+          "'Dew drops on a rose petal' clear vesicles on red base",
+          "Lesions in different stages of development (Varicella)",
+          "Dermatomal distribution not crossing midline (Herpes Zoster)",
+          "Positive Tzanck smear showing multinucleated giant cells",
+          "Cowdry A intranuclear inclusions",
+          "Post-herpetic neuralgia (ปวดปลายประสาทเรื้อรังหลังแผลหาย)"
+        ],
+        "vignette": "ชายสูงอายุ 68 ปี มีอาการปวดแสบร้อนแปลบๆ (Burning neuropathic pain) บริเวณหน้าอกซีกขวามา 2 วัน ต่อมาสังเกตเห็นผื่นแดงและมีตุ่มน้ำใสขนาดเล็กคล้ายหยดน้ำค้าง (Dew drops on a rose petal) ขึ้นเรียงตัวเป็นกลุ่มตามแนวซี่โครงระดับ T4 ข้างขวา ไม่ข้ามแนวกึ่งกลางลำตัว ขูดก้นตุ่มน้ำไปทำ Tzanck smear พบเซลล์เคราติโนไซต์ขนาดใหญ่หลอมรวมกัน มีหลายนิวเคลียส (Multinucleated giant cells)",
+        "highYieldNote": "ข้อสอบ NL1/USMLE: Tzanck smear บอกได้ว่าเป็นกลุ่ม Herpesviridae (HSV หรือ VZV) แต่แยกชนิดระหว่าง HSV กับ VZV ไม่ได้! หากต้องการแยกชนิดต้องใช้ PCR หรือ DFA | และจำ 'Cowdry A = Intranuclear (Herpes)' ต่างจาก 'Guarnieri = Intracytoplasmic (Poxvirus)'!"
+      },
+      "treatment": {
+        "title": "การดูแลแผลและการรักษา (Wound Care & Rx)",
+        "firstLine": "Acyclovir, Valacyclovir หรือ Famciclovir เริ่มยาให้เร็วที่สุดภายใน 72 ชม.",
+        "woundCare": "ประคบเย็นด้วยน้ำเกลือสะอาด (Normal saline compresses) ไม่แกะเกา ป้องกันการติดเชื้อแบคทีเรียแทรกซ้อน (Impetiginization)",
+        "prevention": "วัคซีนป้องกันอีสุกอีใส (Varicella vaccine) และวัคซีนป้องกันงูสวัด (Shingrix - Recombinant zoster vaccine)"
+      }
+    },
+    "viewType": "humanoid",
+    "locationName": "Centripetal: Trunk, Chest & Back (เน้นลำตัว อก และหลัง)",
+    "clinicalCases": [
+      {
+        "id": "vzv-case-1",
+        "title": "Case 1: Primary Varicella / Chickenpox (ผื่นตุ่มน้ำใสอีสุกอีใส)",
+        "badge": "เคสที่ 1: อีสุกอีใสหลายระยะ",
+        "image": "assets/images/clinical/vzv_case1_chickenpox.jpg",
+        "source": "Clinical Pediatric Dermatology Archive (Wikimedia Commons)",
+        "description": "ภาพผู้ป่วยโรคอีสุกอีใส (Chickenpox) แสดงลักษณะคลาสสิก หยดน้ำค้างบนกลีบกุหลาบ (Dew drop on a rose petal) คือตุ่มน้ำใสบางๆ บนฐานสีแดงเรื่อ และที่สำคัญคือมีรอยโรคหลายระยะปรากฏอยู่พร้อมๆ กันในบริเวณเดียวกัน (Asynchronous pleomorphism)",
+        "keyFindings": [
+          "Dew drop on a rose petal: ตุ่มน้ำใสผนังบางมาก ตั้งอยู่บนผิวหนังที่แดงเป็นปื้น",
+          "Asynchronous Pleomorphism: พบทั้ง ผื่นแดงราบ (Macule), ตุ่มนูน (Papule), ตุ่มน้ำ (Vesicle), และสะเก็ด (Crust) ในเวลาเดียวกัน",
+          "Centripetal distribution: ผื่นเริ่มขึ้นที่ลำตัวและหน้าอก แล้วค่อยกระจายออกไปแขนขา"
+        ]
+      },
+      {
+        "id": "vzv-case-2",
+        "title": "Case 2: Herpes Zoster / Shingles (งูสวัดตามแนวประสาท Dermatome)",
+        "badge": "เคสที่ 2: งูสวัดตามแนวเดอร์มาโทม",
+        "image": "assets/images/clinical/vzv_case2_shingles_dermatome.png",
+        "source": "Clinical Dermatology Case (Wikimedia Commons)",
+        "description": "ภาพโรคงูสวัด (Herpes Zoster / Shingles) เกิดจากเชื้อ VZV ที่แฝงตัวอยู่ในปมประสาทรับความรู้สึก (Dorsal root ganglion) กำเริบขึ้นมาใหม่ ปรากฏเป็นกลุ่มตุ่มน้ำใสบนฐานแดง เรียงตัวเป็นแนวยาวข้างเดียวของร่างกายตามแนวเส้นประสาทรับความรู้สึก (Unilateral dermatome) พร้อมอาการปวดแสบร้อนรุนแรง",
+        "keyFindings": [
+          "Unilateral dermatomal pattern: รอยโรคหยุดที่แนวกึ่งกลางลำตัวอย่างเด็ดขาด (Does not cross midline)",
+          "Severe neuropathic pain: ปวดแสบร้อนเหมือนไฟช็อต นำมาก่อนที่ผื่นจะขึ้น 2-3 วัน (Prodromal pain)",
+          "Reactivation: กำเริบเมื่อภูมิคุ้มกันลดลง เช่น วัยชรา ความเครียด หรือได้รับยากดภูมิ"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "borrelia-burgdorferi",
+    "name": "Borrelia burgdorferi (Lyme Disease)",
+    "thaiName": "บอร์เรเลีย เบิร์กดอร์เฟอไร (โรคไลม์)",
+    "scientificName": "Borrelia burgdorferi (Spirochete)",
+    "category": "bacteria",
+    "categoryLabel": "แบคทีเรีย (Bacteria)",
+    "cardTitle": "TARGET PRACTICE!",
+    "cardSubtitle": "a tick bites you and draws a giant bull's-eye rash. expand outward by 5 cm",
+    "cardBadge": "BACTERIA",
+    "lesionTitle": "Erythema Migrans (Bull's Eye Rash)",
+    "lesionThai": "ผื่นเป้าตาวัวขอบแดงขยายกว้าง (Erythema Migrans)",
+    "badgeColor": "#e11d48",
+    "quickStats": {
+      "depth": "Epidermal & Superficial/Deep Dermal Perivascular",
+      "classicLook": "Bull's-eye / Target appearance with central clearing",
+      "expansion": "Centrifugal expansion (ขยายออกด้านนอกเรื่อยๆ > 5 cm)",
+      "symptom": "Mild burning or warm, non-tender (มักไม่เจ็บหรือคันเล็กน้อย)",
+      "vector": "Ixodes tick (เห็บกวาง Ixodes scapularis)"
+    },
+    "morphologicalParts": [
+      {
+        "id": "central_bite",
+        "name": "Central Punctum / Bite Papule (จุดกัดตรงกลาง)",
+        "thaiName": "ตุ่มแดงบริเวณรอยกัดของเห็บ",
+        "color": "#be123c",
+        "description": "Initial erythematous macule or papule representing the tick bite inoculation site teeming with spirochetes."
+      },
+      {
+        "id": "clearing_zone",
+        "name": "Intermediate Clearing Ring (วงใสระหว่างกลาง)",
+        "thaiName": "วงผิวหนังสีซีดจางระหว่างกลาง",
+        "color": "#fed7aa",
+        "description": "Pale or normal-colored skin ring as spirochetes migrate centrifugally away from the initial inoculation bite."
+      },
+      {
+        "id": "expanding_border",
+        "name": "Expanding Annular Red Border (ขอบแดงวงขยาย)",
+        "thaiName": "ขอบแดงรูปวงแหวนที่ขยายขนาดออกต่อเนื่อง",
+        "color": "#ef4444",
+        "description": "Advancing wavefront of actively migrating Borrelia spirochetes triggering dermal capillary dilation."
+      }
+    ],
+    "tabs": {
+      "morphology": {
+        "title": "สัณฐานวิทยาของรอยโรค (Lesion Morphology)",
+        "highlights": [
+          "ลักษณะคลาสสิก: ผื่นแดงรูป 'เป้าตาวัว' (Bull's-eye / Target appearance)",
+          "มีจุดแดงตรงกลาง (Bite site) ล้อมรอบด้วยวงผิวสีใส (Clearing ring) และมีขอบแดงเข้มขยายวงออกด้านนอก (Expanding annular border)",
+          "ผื่นขยายขนาดออกเรื่อยๆ วันละหลายเซนติเมตร จนมีขนาดใหญ่กว่า 5 ซม. ขึ้นไป",
+          "มักอุ่น แต่ไม่เจ็บและไม่ค่อยคัน (Warm, generally non-tender and non-pruritic)"
+        ]
+      },
+      "pathogenesis": {
+        "title": "กลไกก่อโรค (Pathogenesis)",
+        "virulenceFactors": [
+          {
+            "name": "Centrifugal Spirochetal Migration",
+            "mechanism": "เชื้อเกลียวสว่าน Borrelia เคลื่อนที่หมุนควงสว่านผ่านชั้นเนื้อเยื่อเกี่ยวพันและคอลลาเจน ขยายวงออกจากจุดกัดไปสู่รอบนอกอย่างต่อเนื่อง"
+          },
+          {
+            "name": "OspC & VlsE Antigenic Variation",
+            "mechanism": "สับเปลี่ยนแอนติเจนบนผิวเซลล์อย่างรวดเร็วเพื่อหลบหลีกแอนติบอดีของร่างกาย ทำให้การติดเชื้อลุกลามเรื้อรัง"
+          }
+        ],
+        "transmission": "เห็บกวาง Ixodes scapularis / Ixodes ricinus กัดดูดเลือดอย่างน้อย 36-48 ชั่วโมง"
+      },
+      "diagnosis": {
+        "title": "การตรวจรอยโรคและ Lab (Lesion Exam & Lab)",
+        "stains": [
+          "Clinical Diagnosis: หากพบผื่น Erythema Migrans ชัดเจนในพื้นที่ระบาด สามารถวินิจฉัยและเริ่มรักษาได้ทันทีโดยไม่ต้องรอผลเลือด!",
+          "Warthin-Starry silver stain: ย้อมชิ้นเนื้อขอบผื่นเพื่อดูตัวเชื้อเกลียวสว่าน Borrelia"
+        ],
+        "serology": [
+          "Two-tier testing: ELISA คัดกรอง ตามด้วย Western Blot ยืนยัน (IgM / IgG)"
+        ]
+      },
+      "clinical": {
+        "title": "Clinical Vignettes & NL1 Pearls",
+        "buzzwords": [
+          "Bull's-eye rash with central clearing (Erythema Migrans)",
+          "Ixodes tick bite after hiking in wooded/forested areas",
+          "Bilateral facial nerve (Bell's) palsy in Stage 2",
+          "AV nodal block / Lyme carditis",
+          "Migratory large joint arthritis (Knee joint) in Stage 3"
+        ],
+        "vignette": "ผู้ป่วยชายอายุ 30 ปี หลังกลับจากการเดินป่าในรัฐคอนเนตทิคัต (Lyme, CT) 2 สัปดาห์ สังเกตเห็นผื่นแดงที่ต้นขา ขนาด 12 ซม. มีลักษณะคล้ายเป้าตาวัว (Bull's-eye lesion) มีจุดแดงตรงกลางและวงขอบแดงล้อมรอบ ผื่นขยายขนาดใหญ่ขึ้นเรื่อยๆ ตรวจร่างกายไม่พบอาการเจ็บแผล",
+        "highYieldNote": "สูตรจำข้อสอบ NL1/USMLE: Lyme disease stage 1 = Erythema Migrans | stage 2 = Bilateral Bell's palsy + AV block | stage 3 = Chronic knee arthritis | ยาอันดับหนึ่งคือ Doxycycline (เด็กเล็กหรือหญิงตั้งครรภ์ให้ Amoxicillin)!"
+      },
+      "treatment": {
+        "title": "การดูแลแผลและการรักษา (Wound Care & Rx)",
+        "firstLine": "Doxycycline 100 mg รับประทานวันละ 2 ครั้ง นาน 14-21 วัน",
+        "childrenPregnant": "เด็กอายุน้อยกว่า 8 ปี หรือหญิงตั้งครรภ์: ให้ Amoxicillin หรือ Cefuroxime axetil (หลีกเลี่ยง Doxycycline เพราะผลข้างเคียงต่อฟันและกระดูก)",
+        "neurologic": "Lyme meningitis / Severe carditis: Intravenous Ceftriaxone (IV)"
+      }
+    },
+    "viewType": "humanoid",
+    "locationName": "Thigh & Inguinal Tick Bite Site (ต้นขาและบริเวณถูกเห็บกัด)",
+    "clinicalCases": [
+      {
+        "id": "lyme-case-1",
+        "title": "Case 1: Classic Erythema Migrans Bull's-Eye Target (ผื่นเป้าตาวัว)",
+        "badge": "เคสที่ 1: ผื่นเป้าตาวัว Bull's-eye",
+        "image": "assets/images/clinical/lyme_case1_bullseye.jpg",
+        "source": "CDC Public Health Image Library (PHIL #9875)",
+        "description": "ภาพผื่นผิวหนังเฉพาะตัวของโรคไลม์ (Lyme Disease) เรียกว่า Erythema Migrans มีลักษณะเป็นวงกลมคล้ายเป้ายิงปืนหรือตาวัว (Bull's-eye / Target lesion) ตรงกลางมีจุดรอยเห็บกัด ล้อมรอบด้วยวงผิวหนังปกติ และมีขอบนอกสีแดงเข้มที่ค่อยๆ ขยายขนาดกว้างขึ้นเรื่อยๆ (> 5 ซม.)",
+        "keyFindings": [
+          "Bull's-eye / Target appearance: รอยแดงตรงกลาง -> วงใสคั่นกลาง (Central clearing) -> ขอบแดงขยายออก",
+          "Expanding size: รอยโรคค่อยๆ ขยายเส้นผ่านศูนย์กลางใหญ่ขึ้นเรื่อยๆ ทุกวัน (จึงเรียกว่า Migrans) ขนาดมักเกิน 5 ซม.",
+          "Tick bite transmission: ติดต่อจากเห็บกวาง Ixodes scapularis หลังถูกกัดนานกว่า 36-48 ชั่วโมง"
+        ]
+      },
+      {
+        "id": "lyme-case-2",
+        "title": "Case 2: Erythema Migrans Annular Expanding Ring (ผื่นวงแหวนขยายตัว)",
+        "badge": "เคสที่ 2: ผื่นวงแหวนแดงกว้าง",
+        "image": "assets/images/clinical/lyme_case2_target_ring.jpg",
+        "source": "Clinical Case Archive (Wikimedia Commons)",
+        "description": "ภาพผื่น Erythema Migrans อีกรูปแบบหนึ่งที่พบได้บ่อย คือเป็นวงแหวนสีแดงสม่ำเสมอขนาดใหญ่ที่มีขอบเขตชัดเจนบนแขนขา แม้อาจไม่มีรอยเคลียร์ตรงกลางที่ชัดเจนเท่าเป้ายิงปืน แต่มีขนาดใหญ่กว่า 5-10 ซม. และค่อยๆ เคลื่อนตัวแผ่ออกไป",
+        "keyFindings": [
+          "Annular erythematous plaque: ปื้นนูนแดงรูปวงแหวนขนาดใหญ่ ร้อนเล็กน้อยแต่ไม่คันและไม่เจ็บ",
+          "Early localized stage (Stage 1): ระยะนี้เชื้อยังอยู่เฉพาะที่ผิวหนัง สามารถรักษาหายขาดได้ด้วย Doxycycline ทันที",
+          "Systemic symptoms: มักพบร่วมกับอาการคล้ายไข้หวัดใหญ่ ปวดศีรษะ ปวดเมื่อยกล้ามเนื้อและข้อ"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "candida-albicans",
+    "name": "Candida albicans",
+    "thaiName": "แคนดิดา อัลบิแคนส์ (เชื้อรายีสต์)",
+    "scientificName": "Candida albicans",
+    "category": "fungi",
+    "categoryLabel": "เชื้อรา (Fungi)",
+    "cardTitle": "SCRAPE IT OFF!",
+    "cardSubtitle": "scrape off a curd-like plaque. reveal a raw bleeding tongue and stun leukoplakia",
+    "cardBadge": "FUNGI",
+    "lesionTitle": "Oral Thrush & Curd-Like Mucosal Plaques",
+    "lesionThai": "ฝ้าขาวขูดออกได้บนเยื่อบุสีแดงสด (Oral Thrush)",
+    "badgeColor": "#059669",
+    "quickStats": {
+      "depth": "Superficial mucosal epithelium & stratum corneum",
+      "hallmark": "White curd-like plaques that CAN BE SCRAPED OFF",
+      "base": "Raw, erythematous, bleeding base underneath scraped plaques",
+      "predisposition": "Inhaled corticosteroids, antibiotics, diabetes, HIV/AIDS",
+      "vaginalLook": "Thick 'cottage-cheese' curd-like discharge with itching"
+    },
+    "morphologicalParts": [
+      {
+        "id": "white_curds",
+        "name": "White Curd-like Pseudomembranous Plaques (ฝ้าขาวคล้ายคราบน้ำนม)",
+        "thaiName": "คราบฝ้าขาวคล้ายนมบูดหรือคอตเทจชีส",
+        "color": "#f8fafc",
+        "description": "Dense fungal mats of pseudohyphae, budding blastoconidia, desquamated epithelial cells, and inflammatory fibrin."
+      },
+      {
+        "id": "erythematous_mucosa",
+        "name": "Underlying Erythematous Mucosa (เยื่อบุแดงเลือดซึม)",
+        "thaiName": "พื้นเยื่อบุสีแดงสดมีเลือดซึมหลังขูดฝ้า",
+        "color": "#f43f5e",
+        "description": "Raw, inflamed mucosal basement membrane exposed when white curds are scraped away (Pathognomonic differentiation from Leukoplakia)."
+      }
+    ],
+    "tabs": {
+      "morphology": {
+        "title": "สัณฐานวิทยาของรอยโรค (Lesion Morphology)",
+        "highlights": [
+          "รอยโรคฝ้าขาวคล้ายคราบน้ำนมหรือคอตเทจชีส (White curd-like / Cottage-cheese plaques) บนลิ้น เพดานปาก หรือเยื่อบุกระพุ้งแก้ม",
+          "จุดเด่นสำคัญที่สุด: เป็นฝ้าที่ 'ขูดออกได้ (CAN BE SCRAPED OFF)' แตกต่างจาก Leukoplakia ที่ขูดไม่ออก",
+          "เมื่อขูดฝ้าขาวออก จะพบพื้นผิวเยื่อบุสีแดงสด มีเลือดออกซึมๆ (Raw, bleeding erythematous base)",
+          "ในทารก: ผื่นผ้าอ้อม (Diaper dermatitis) บวมแดงจัดและมีตุ่มหนองบริวารรอบข้าง (Satellite lesions)"
+        ]
+      },
+      "pathogenesis": {
+        "title": "กลไกก่อโรค (Pathogenesis)",
+        "virulenceFactors": [
+          {
+            "name": "Yeast-to-Hyphae Morphological Transition",
+            "mechanism": "การเปลี่ยนรูปจาก Yeast แตกหน่อ เป็น Pseudohyphae และ True hyphae ช่วยให้เชื้อราเจาะแทรกผ่านเซลล์เยื่อบุผิวได้ลึกขึ้น"
+          },
+          {
+            "name": "Secreted Aspartyl Proteases (SAPs)",
+            "mechanism": "เอนไซม์ย่อยสลาย Keratin, Collagen และ Secretory IgA บนผิวเยื่อบุ ก่อให้เกิดการหลุดลอกของเซลล์ผิวและการอักเสบแดง"
+          }
+        ],
+        "transmission": "Opportunistic endogenous overgrowth เมื่อแบคทีเรียประจำถิ่นลดลงจากการใช้ยาปฏิชีวนะ, การพ่นยาสเตียรอยด์ไม่บ้วนปาก, หรือภูมิคุ้มกันบกพร่อง"
+      },
+      "diagnosis": {
+        "title": "การตรวจรอยโรคและ Lab (Lesion Exam & Lab)",
+        "stains": [
+          "10-20% KOH Preparation: ขูดฝ้าขาวตรวจใต้กล้อง พบ Pseudohyphae ร่วมกับ Oval budding yeast cells",
+          "Gram Stain: ติดสี Gram-positive (สีม่วงเข้ม) ขนาดใหญ่กว่าแบคทีเรียทั่วไป 3-5 เท่า"
+        ],
+        "culture": [
+          "Sabouraud Dextrose Agar (SDA): โคโลนีสีขาวนวล ผิวเรียบมันคล้ายครีม (Creamy white colonies) มีกลิ่นยีสต์",
+          "Germ Tube Test: POSITIVE (+) งอกท่อ Germ tube ภายใน 3 ชม. เมื่อบ่มในซีรัมที่ 37°C"
+        ]
+      },
+      "clinical": {
+        "title": "Clinical Vignettes & NL1 Pearls",
+        "buzzwords": [
+          "White curd-like plaques that CAN BE SCRAPED OFF",
+          "Pseudohyphae and budding yeasts on 10% KOH prep",
+          "Germ tube positive at 37°C in human serum",
+          "Cottage-cheese vaginal discharge with severe pruritus",
+          "Erythematous diaper rash with satellite lesions"
+        ],
+        "vignette": "ผู้ป่วยเด็กโรคหอบหืดที่ใช้ยาพ่น Inhaled corticosteroid เป็นประจำโดยไม่ได้บ้วนปากหลังพ่นยา มีอาการเจ็บคอ แสบปาก รับประทานอาหารลำบาก ตรวจในช่องปากพบแผ่นฝ้าสีขาวคล้ายคราบน้ำนมเกาะหนาแน่นที่ลิ้นและเพดานปาก เมื่อใช้ไม้กดลิ้นขูดคราบขาวออกพบว่าหลุดออกได้ง่าย และเห็นพื้นเยื่อบุด้านล่างเป็นสีแดงสดมีเลือดซึม ขูดฝ้าไปตรวจ 10% KOH พบสายราเทียมและเซลล์ยีสต์แตกหน่อ",
+        "highYieldNote": "ข้อสอบ NL1/USMLE ชอบถาม: Oral Thrush ของ Candida เป็นฝ้าขาวที่ 'ขูดออกได้ (Scrapes off)' ต่างจาก Oral Hairy Leukoplakia (จาก EBV ในผู้ป่วย HIV) ที่เป็นรอยขาวด้านข้างลิ้นซึ่ง 'ขูดไม่ออก (Cannot be scraped off)'!"
+      },
+      "treatment": {
+        "title": "การดูแลแผลและการรักษา (Wound Care & Rx)",
+        "firstLine": "Oral Thrush: Nystatin oral suspension (บ้วนกลั้วปากแล้วกลืน Swish and swallow) หรือ Clotrimazole troches อมวันละ 4-5 ครั้ง",
+        "prevention": "บ้วนปากด้วยน้ำสะอาดทุกครั้งหลังพ่นยาสเตียรอยด์ (Rinse mouth after steroid inhaler)",
+        "systemic": "Severe / Esophageal Candidiasis: Oral หรือ Intravenous Fluconazole"
+      }
+    },
+    "viewType": "organ",
+    "organName": "Oral Cavity & Dorsal Tongue (ช่องปากและลิ้น)",
+    "locationName": "Oral Cavity & Tongue (ช่องปากและลิ้น)",
+    "clinicalCases": [
+      {
+        "id": "candida-case-1",
+        "title": "Case 1: Oral Thrush / Pseudomembranous Candidiasis (ฝ้าขาวบนลิ้น)",
+        "badge": "เคสที่ 1: ฝ้าขาวคอทเทจชีสบนลิ้น",
+        "image": "assets/images/clinical/candida_case1_oral_thrush.jpg",
+        "source": "Clinical Oral Pathology Archive (Wikimedia Commons)",
+        "description": "ภาพการติดเชื้อราแคนดิดาในช่องปาก (Oral Thrush) พบคราบแผ่นเยื่อหลอกสีขาวหนาคล้ายคราบนมบูดหรือคอทเทจชีส (Curd-like cottage cheese plaques) เกาะอยู่ทั่วบริเวณโคนลิ้นและเพดานปาก เมื่อใช้ไม้กดลิ้นขูดคราบจะหลุดลอกออก เผยให้เห็นเยื่อบุสีแดงสดและมีเลือดซึมออกมา (Raw bleeding base)",
+        "keyFindings": [
+          "Cottage-cheese plaques: คราบขาวเกาะหนาบนเยื่อบุผิวปาก ลิ้น และกระพุ้งแก้ม",
+          "Scrapes off with bleeding: ขูดออกได้และมีเลือดออกซึม (ต่างจาก Leukoplakia และ Oral Hairy Leukoplakia ที่ขูดไม่ออก)",
+          "Risk factors: ผู้ที่พ่นยาสเตียรอยด์โดยไม่บ้วนปาก, ผู้ป่วยเบาหวาน, ผู้ป่วยเอชไอวี/ภูมิคุ้มกันบกพร่อง, ทารกแรกเกิด"
+        ]
+      },
+      {
+        "id": "candida-case-2",
+        "title": "Case 2: Candidal Intertrigo & Satellite Pustules (ผื่นตามซอกพับและตุ่มบริวาร)",
+        "badge": "เคสที่ 2: ผื่นซอกพับและตุ่มบริวาร",
+        "image": "assets/images/clinical/candida_case2_intertrigo.jpg",
+        "source": "Dermatology Clinical Archive (Wikimedia Commons)",
+        "description": "ภาพการติดเชื้อราที่ผิวหนังบริเวณซอกพับ (Candidal Intertrigo) เช่น ใต้ราวนม ซอกขา หรือซอกนิ้ว พบผิวหนังแดงเปื่อยแฉะ (Macerated erythematous plaques) และมีลักษณะสำคัญที่สุดคือ ตุ่มหนองเม็ดเล็กๆ กระจายอยู่นอกขอบแผลหลัก เรียกว่า ตุ่มบริวาร (Satellite pustules)",
+        "keyFindings": [
+          "Satellite pustules / lesions: ตุ่มน้ำใสหรือตุ่มหนองเล็กๆ กระจายตัวล้อมรอบปื้นแดงใหญ่ (Key diagnostic clue)",
+          "Macerated beefy red: ผิวหนังสีแดงสดเหมือนเนื้อวัว เปื่อยยุ่ยจากความอับชื้นและความร้อน",
+          "KOH Preparation: ตรวจพบ Pseudohyphae และ Budding yeast cells ชัดเจน"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "clostridioides-difficile",
+    "name": "Clostridioides difficile (C. diff)",
+    "thaiName": "คลอสทริเดียม ดิฟฟิไซล์ (ลำไส้ใหญ่อักเสบมีเนื้อเยื่อหลอก)",
+    "scientificName": "Clostridioides difficile (Gram-positive spore-forming rod)",
+    "category": "bacteria",
+    "categoryLabel": "แบคทีเรีย (Bacteria - ทางเดินอาหาร)",
+    "viewType": "organ",
+    "organName": "Large Intestine / Colon (ลำไส้ใหญ่)",
+    "locationName": "Colonic Mucosa (เยื่อบุผนังลำไส้ใหญ่)",
+    "lesionTitle": "Pseudomembranous Colitis (แผ่นเยื่อหลอกภูเขาไฟในลำไส้)",
+    "lesionThai": "แผ่นเยื่อหลอกสีเหลืองขาวนูนคล้ายภูเขาไฟบนเยื่อบุลำไส้ใหญ่",
+    "badgeColor": "#f59e0b",
+    "quickStats": {
+      "depth": "Mucosa & Submucosa of Colon",
+      "morphology": "Raised yellow-white volcano plaque pseudomembranes",
+      "palpation": "Severe lower abdominal cramping & tenderness",
+      "distribution": "Patchy-to-confluent along rectosigmoid and colon",
+      "synchrony": "Correlates with recent antibiotic therapy (e.g. Clindamycin)"
+    },
+    "morphologicalParts": [
+      {
+        "id": "pseudomembrane_plaque",
+        "name": "Eruptive Pseudomembrane Plaque (แผ่นเยื่อหลอกสีเหลืองขาว)",
+        "thaiName": "แผ่นเยื่อหลอกสีเหลืองขาวนูนคล้ายภูเขาไฟปะทุ",
+        "color": "#fef08a",
+        "description": "Classic volcano-like eruption of mucopurulent exudate composed of dense fibrin meshwork, necrotic epithelial cells, and neutrophils adhering tenaciously to colonic mucosa."
+      },
+      {
+        "id": "erythematous_colonic_mucosa",
+        "name": "Hyperemic Fragile Colonic Mucosa (เยื่อบุลำไส้บวมแดงช้ำ)",
+        "thaiName": "เยื่อบุลำไส้ใหญ่อักเสบ แดงจัด มีเลือดซึมและเปราะบาง",
+        "color": "#dc2626",
+        "description": "Intensely congested and friable mucosal surface resulting from Toxin B-induced actin depolymerization, tight junction loss, and microvascular necrosis."
+      },
+      {
+        "id": "volcano_exudate_core",
+        "name": "Volcano Core Exudate Flow (ท่อระบายหนองไฟบริน)",
+        "thaiName": "ทางระบายหนองและเม็ดเลือดขาวจากชั้น Lamina Propria",
+        "color": "#f59e0b",
+        "description": "Microscopic hallmark on biopsy: explosive rupture of mucosal crypts spouting fibrin and neutrophils directly onto the colonic lumen surface."
+      }
+    ],
+    "tabs": {
+      "morphology": {
+        "title": "สัณฐานวิทยาของรอยโรคในลำไส้ (Colonic Lesion Morphology)",
+        "highlights": [
+          "ส่องกล้อง Sigmoidoscopy/Colonoscopy: พบแผ่นเยื่อหลอกสีเหลือง-ขาว (Yellow-white raised plaques ขนาด 2-10 มม.) กระจายอยู่บนเยื่อบุลำไส้ใหญ่ที่บวมแดง",
+          "พยาธิวิทยาชิ้นเนื้อ: ลักษณะคลาสสิกรูปภูเขาไฟปะทุ (Volcano lesion / Mushroom eruption) ของ Fibrin และ Neutrophils พุ่งออกจาก Crypts",
+          "เยื่อบุรอบข้างจะบวมน้ำ แดงจัด และเปราะง่าย (Friable, bleeding on light touch)",
+          "กรณีรุนแรง แผ่นเยื่อหลอกจะเชื่อมต่อกันเป็นปื้นใหญ่ (Confluent membrane) และเสี่ยงเกิด Toxic Megacolon"
+        ]
+      },
+      "pathogenesis": {
+        "title": "กลไกก่อโรค (Pathogenesis & Toxins)",
+        "virulenceFactors": [
+          {
+            "name": "Toxin A (Enterotoxin)",
+            "mechanism": "จับกับ Brush border ของเยื่อบุลำไส้ กระตุ้นการหลั่งของเหลวปริมาณมหาศาล (Massive secretomotor watery diarrhea) และดึงดูด Neutrophils"
+          },
+          {
+            "name": "Toxin B (Cytotoxin - สำคัญที่สุด)",
+            "mechanism": "ยับยั้ง Rho GTPases ทำให้เกิด Actin depolymerization ทำลายโครงสร้าง Cytoskeleton ของเซลล์เยื่อบุ เกิดการตายแบบ Apoptosis และทะลุผ่าน Tight junctions"
+          },
+          {
+            "name": "Spore Formation & Antibiotic Resistance",
+            "mechanism": "สร้างสปอร์ทนทานสูงต่อความร้อนและแอลกอฮอล์ แพร่กระจายในโรงพยาบาลได้ง่าย รอดชีวิตเมื่อผู้ป่วยได้รับยาปฏิชีวนะกวาด Normal flora"
+          }
+        ],
+        "transmission": "Fecal-oral route (สัมผัสสปอร์จากสิ่งแวดล้อมหรือมือบุคลากร) มักเกิดหลังได้รับยาปฏิชีวนะ เช่น Clindamycin, Cephalosporins, Fluoroquinolones"
+      },
+      "diagnosis": {
+        "title": "การตรวจรอยโรคและ Lab (Colonoscopy & Stool Tests)",
+        "stains": [
+          "Colonoscopy / Sigmoidoscopy: พบแผ่นเยื่อหลอกสีเหลืองขาวนูน (Pathognomonic Pseudomembranes)",
+          "Biopsy: Volcano-like eruptive exudate of neutrophils and fibrin bursting from crypts"
+        ],
+        "culture": [
+          "Stool PCR for C. difficile toxin genes (tcdA, tcdB): ไวที่สุด (High sensitivity)",
+          "Stool EIA for GDH antigen + Toxin A/B: ยืนยันการมี active toxin production"
+        ],
+        "biochemical": [
+          "Leukocytosis รุนแรง (WBC > 15,000 /uL มักเป็นตัวบ่งชี้ความรุนแรง)",
+          "Serum Creatinine เพิ่มขึ้น > 1.5 เท่าจากเดิม"
+        ]
+      },
+      "clinical": {
+        "title": "Clinical Vignettes & NL1 Pearls",
+        "buzzwords": [
+          "Post-antibiotic watery diarrhea (Clindamycin, Fluoroquinolones)",
+          "Yellow-white volcanic mucosal plaques on colonoscopy",
+          "Toxin A (Enterotoxin) and Toxin B (Cytotoxin)",
+          "Wash hands with SOAP AND WATER (Alcohol gel kills not spores!)",
+          "First-line Oral Vancomycin or Fidaxomicin"
+        ],
+        "vignette": "ผู้ป่วยหญิงอายุ 68 ปี นอนโรงพยาบาลด้วยโรคปอดอักเสบและได้รับยา Clindamycin ทางหลอดเลือดดำครบ 7 วัน ต่อมามีไข้ ปวดเกร็งท้องส่วนล่างรุนแรง และถ่ายเหลวเป็นน้ำกลิ่นเหม็นมาก 8-10 ครั้งต่อวัน ตรวจเลือดพบ WBC 22,000 /uL แพทย์ส่งส่องกล้องลำไส้ใหญ่ พบเยื่อบุลำไส้ใหญ่บวมแดงจัดและมีแผ่นเยื่อหลอกสีเหลืองขาวนูนคล้ายภูเขาไฟเกาะเป็นหย่อมๆ ทั่ว Rectosigmoid",
+        "highYieldNote": "สูตรจำออกสอบ NL1: แอลกอฮอล์เจลฆ่าสปอร์ C. diff ไม่ได้! ต้องล้างมือด้วยน้ำและสบู่ (Soap & Water) เท่านั้น! | ยารักษาอันดับ 1: Oral Vancomycin หรือ Fidaxomicin (ห้ามให้ IV Vancomycin เพราะยาไม่ซึมเข้าลำไส้!)"
+      },
+      "treatment": {
+        "title": "การรักษาและการป้องกัน (Antimicrobial Rx)",
+        "firstLine": "Oral Vancomycin 125 mg 4 ครั้ง/วัน หรือ Fidaxomicin 200 mg 2 ครั้ง/วัน นาน 10 วัน",
+        "woundCare": "หยุดยาปฏิชีวนะตัวเดิมที่กระตุ้นให้เร็วที่สุด, หลีกเลี่ยงยาหยุดถ่าย (Anti-motility drugs เช่น Loperamide เพราะเสี่ยงเกิด Toxic megacolon)",
+        "prevention": "สวมถุงมือและเสื้อคลุม (Contact Precautions) และล้างมือด้วยน้ำและสบู่เท่านั้น (Soap and water washes spores mechanically)"
+      }
+    },
+    "clinicalCases": [
+      {
+        "id": "cdiff-case-1",
+        "title": "Case 1: Pseudomembranous Colitis Colonoscopy (การส่องกล้องพบคราบเยื่อหลอก)",
+        "badge": "เคสที่ 1: ส่องกล้องลำไส้ใหญ่",
+        "image": "assets/images/clinical/cdiff_case1_colonoscopy_close.jpg",
+        "source": "Endoscopic Clinical Atlas (Wikimedia Commons)",
+        "description": "ภาพจากการส่องกล้องตรวจลำไส้ใหญ่ (Colonoscopy) ในผู้ป่วยลำไส้อักเสบจากเชื้อ C. diff แสดงแผ่นเยื่อหลอกสีเหลืองอมขาวขนาด 2-10 มม. ยกตัวนูนขึ้นมาคล้ายปากปล่องภูเขาไฟ (Volcano-like pseudomembranes) บนเยื่อบุลำไส้ที่บวม แดงก่ำ และเปราะช้ำจากการถูกทำลายด้วย Toxin A และ Toxin B",
+        "keyFindings": [
+          "Volcano-like plaques: คราบแผ่นเยื่อหลอกสีขาวปนเหลืองปะทุขึ้นมาจากต่อมเมือกในผนังลำไส้",
+          "Friable erythematous mucosa: เยื่อบุผิวลำไส้บวมแดง เลือดออกง่ายจากการแตกของเส้นเลือดฝอย",
+          "Antibiotic history: มักเกิดหลังได้รับยาปฏิชีวนะกลุ่ม Clindamycin, Fluoroquinolones, หรือ Cephalosporins"
+        ]
+      },
+      {
+        "id": "cdiff-case-2",
+        "title": "Case 2: Gross Colectomy Specimen (ชิ้นเนื้อลำไส้ใหญ่ที่ตัดตรวจ)",
+        "badge": "เคสที่ 2: ชิ้นเนื้อตัดตรวจ Colectomy",
+        "image": "assets/images/clinical/cdiff_case2_gross_colectomy.jpg",
+        "source": "Surgical Pathology Archive (Wikimedia Commons)",
+        "description": "ภาพชิ้นเนื้อลำไส้ใหญ่ที่ถูกผ่าตัดออก (Colectomy specimen) ในเคสที่มีอาการรุนแรงขั้นวิกฤต (Toxic megacolon / Fulminant colitis) จะเห็นคราบเยื่อหลอกสีเหลืองหนาแน่นเชื่อมติดกันเป็นแผ่นใหญ่ปกคลุมทั่วผิวด้านในของลำไส้ใหญ่ทั้งหมด ผนังลำไส้บางตัวลงและเสี่ยงต่อการทะลุ",
+        "keyFindings": [
+          "Confluent pseudomembranes: คราบเมือกไฟบรินและเซลล์เม็ดเลือดขาวที่ตายแล้วเกาะตัวหนาทึบทั่วลำไส้",
+          "Toxic Megacolon: ภาวะแทรกซ้อนอันตรายถึงชีวิต ลำไส้ใหญ่โป่งพองผิดปกติ ขาดการบีบตัว และผนังบางเสี่ยงแตกทะลุ",
+          "Treatment: ยาหลักคือ Oral Vancomycin หรือ Fidaxomicin (ห้ามให้แบบฉีด IV เพราะยาไม่เข้าสู่โพรงลำไส้)"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "entamoeba-histolytica",
+    "name": "Entamoeba histolytica (Amoebic Dysentery)",
+    "thaiName": "เชื้อบิดมีตัว (แผลรูปขวดชมพู่ในลำไส้ใหญ่และฝีในตับ)",
+    "scientificName": "Entamoeba histolytica (Amoebic protozoan)",
+    "category": "parasite",
+    "categoryLabel": "ปรสิต (Parasites - ทางเดินอาหาร)",
+    "viewType": "organ",
+    "organName": "Colon Wall & Liver (ผนังลำไส้ใหญ่และตับ)",
+    "locationName": "Cecum, Colon & Liver (กระพุ้งไส้ใหญ่ ผนังลำไส้ และตับ)",
+    "lesionTitle": "Flask-Shaped Colonic Ulcer (แผลรูปขวดชมพู่)",
+    "lesionThai": "แผลเปื่อยลึกรูปขวดชมพู่ปากแคบก้นกว้างในชั้นใต้เยื่อบุลำไส้",
+    "badgeColor": "#10b981",
+    "quickStats": {
+      "depth": "Mucosa penetrating deep into Submucosa",
+      "morphology": "Classic Flask-shaped ulcer (Narrow neck, wide undermined base)",
+      "palpation": "Right lower quadrant pain / Cecal tenderness",
+      "distribution": "Cecum and ascending colon (most common site)",
+      "synchrony": "May seed portal circulation -> Amoebic Liver Abscess"
+    },
+    "morphologicalParts": [
+      {
+        "id": "flask_neck",
+        "name": "Narrow Mucosal Neck (ปากแผลแคบที่เยื่อบุ)",
+        "thaiName": "ปากแผลขนาดเล็กที่ชั้นเยื่อบุ Mucosa",
+        "color": "#be123c",
+        "description": "Small, punctate mucosal breach where trophozoites attach via Gal/GalNAc lectin and secrete amoebapores to punch through epithelial cells."
+      },
+      {
+        "id": "flask_base",
+        "name": "Broad Submucosal Necrotic Cavity (ก้นแผลกว้างในชั้น Submucosa)",
+        "thaiName": "โพรงแผลเนื้อตายกว้างลึกรูปขวดชมพู่",
+        "color": "#7f1d1d",
+        "description": "Extensive lateral undermining necrosis in the loose submucosal connective tissue, produced by amoebic cysteine proteases breaking down extracellular matrix."
+      },
+      {
+        "id": "trophozoite_rbc",
+        "name": "Trophozoite with Ingested RBCs (ตัวโทรโฟซอยต์กินเม็ดเลือดแดง)",
+        "thaiName": "ตัวอะมีบาที่มีเม็ดเลือดแดงในไซโทพลาซึม (Erythrophagocytosis)",
+        "color": "#ef4444",
+        "description": "Pathognomonic hallmark under microscopy: motile trophozoites actively engulfing host red blood cells, confirming invasive Entamoeba histolytica."
+      }
+    ],
+    "tabs": {
+      "morphology": {
+        "title": "สัณฐานวิทยาของแผลในลำไส้ (Colonic Ulcer Morphology)",
+        "highlights": [
+          "ลักษณะเฉพาะตัวออกสอบบ่อยที่สุด: แผลรูปขวดชมพู่ (Flask-shaped ulcer) ปากแผลที่ชั้น Mucosa มีขนาดเล็กแคบ แต่กัดเซาะแผ่กว้างในชั้น Submucosa",
+          "ตำแหน่งที่พบบ่อยที่สุด: Cecum (กระพุ้งไส้ใหญ่) และ Ascending colon",
+          "รอยโรคระหว่างแผล (Intervening mucosa) มักจะปกติ (Normal mucosa between ulcers ต่างจาก IBD หรือ Bacillary dysentery)",
+          "ภาวะแทรกซ้อน: เชื้อหลุดเข้ากระแสเลือด Portal vein ไปฝังตัวที่ตับ เกิดเป็นฝีในตับหนองสีกะปิ (Anchovy paste abscess)"
+        ]
+      },
+      "pathogenesis": {
+        "title": "กลไกก่อโรค (Pathogenesis & Invasion)",
+        "virulenceFactors": [
+          {
+            "name": "Gal/GalNAc Lectin",
+            "mechanism": "ใช้เกาะติดกับสายน้ำตาล Galactose บน Glycocalyx ของเซลล์เยื่อบุผิวลำไส้ใหญ่ ทำให้ไม่สามารถหลุดลอกไปกับอุจจาระ"
+          },
+          {
+            "name": "Amoebapores",
+            "mechanism": "เปปไทด์เจาะรูเยื่อหุ้มเซลล์ (Pore-forming peptides) ทำให้เซลล์เม็ดเลือดและเซลล์เยื่อบุผิวลำไส้เกิด Osmotic lysis แตกตัว"
+          },
+          {
+            "name": "Cysteine Proteases",
+            "mechanism": "ย่อยสลายคอลลาเจนและ Extracellular matrix ในชั้น Submucosa ทำให้เนื้อเยื่อละลายกลายเป็นโพรงแผลกว้าง"
+          }
+        ],
+        "transmission": "Fecal-oral route (ดื่มน้ำหรือรับประทานอาหารที่ปนเปื้อน Cysts ผนังหนา 4 นิวเคลียส ทนกรดกระเพาะอาหาร)"
+      },
+      "diagnosis": {
+        "title": "การตรวจแผลและ Lab (Microscopy & Stool Exam)",
+        "stains": [
+          "Stool Direct Exam / Trichrome stain: พบ Trophozoite เคลื่อนที่ด้วย Pseudopodia และมี Erythrophagocytosis (กินเม็ดเลือดแดง)",
+          "Stool Iodine stain: พบ Cysts ทรงกลม ขนาด 10-15 um มี 1-4 นิวเคลียส พร้อม Chromatoid bodies ขอบมนคล้ายซิการ์"
+        ],
+        "culture": [
+          "Stool Antigen Detection / Multiplex PCR: แยก E. histolytica แท้ ออกจาก E. dispar ที่ไม่ก่อโรค",
+          "Ulcer Biopsy: ตรวจพบ Trophozoites ที่ขอบแผลเนื้อตาย"
+        ],
+        "biochemical": [
+          "Serum Amoebic Serology (IHA / ELISA): ไวมากสำหรับ Extra-intestinal amoebiasis (Liver abscess)",
+          "Ultrasound / CT Upper Abdomen: ตรวจพบ Single liver abscess ในตับกลีบขวา"
+        ]
+      },
+      "clinical": {
+        "title": "Clinical Vignettes & NL1 Pearls",
+        "buzzwords": [
+          "Flask-shaped ulcer in cecum / colon",
+          "Trophozoites with ingested RBCs (Erythrophagocytosis)",
+          "Bloody mucoid stool (Amoebic dysentery) without toxic look",
+          "Anchovy paste exudate from liver abscess",
+          "Metronidazole (Tissue agent) followed by Paromomycin (Luminal agent)"
+        ],
+        "vignette": "ผู้ป่วยชายอายุ 35 ปี มีอาการถ่ายอุจจาระเหลวปนเลือดและมูก ปวดเบ่งท้องน้อย (Tenesmus) และปวดท้องด้านขวาล่างมา 2 สัปดาห์ ไม่มีไข้สูง ส่องกล้องลำไส้ใหญ่พบแผลเปื่อยลึกปากแคบก้นกว้างรูปขวดชมพู่ (Flask-shaped ulcer) กระจายอยู่ในกระพุ้งไส้ใหญ่ โดยเนื้อเยื่อระหว่างแผลดูปกติ ตรวจอุจจาระสดพบ Trophozoites กำลังเคลื่อนที่และมีเม็ดเลือดแดงอยู่ภายในไซโทพลาซึม",
+        "highYieldNote": "สูตรจำออกสอบ NL1: การรักษา Amoebiasis ต้องให้ยาสองขั้นตอนเสมอ! ขั้นที่ 1: ให้ Tissue amoebicide (Metronidazole หรือ Tinidazole) ฆ่าตัวเชื้อที่ฝังในเนื้อเยื่อ + ขั้นที่ 2: ต้องตามด้วย Luminal amoebicide (Paromomycin หรือ Iodoquinol) เพื่อกวาดล้าง Cysts ในโพรงลำไส้ให้หมด ป้องกันการกลับเป็นซ้ำ!"
+      },
+      "treatment": {
+        "title": "การรักษาและการกำจัดเชื้อ (Stepwise Rx)",
+        "firstLine": "Metronidazole 750 mg 3 ครั้ง/วัน นาน 7-10 วัน (ฆ่าเชื้อในเนื้อเยื่อแผล)",
+        "woundCare": "ตามด้วย Paromomycin 500 mg 3 ครั้ง/วัน นาน 7 วัน (Luminal agent เพื่อกำจัด Cysts ในทางเดินอาหารให้เกลี้ยง)",
+        "prevention": "ต้มน้ำดื่มให้เดือด (คลอรีนในระบบประปาฆ่า Cysts ไม่ตาย!) ล้างผักสดให้สะอาด ปรับปรุงสุขาภิบาลอาหารและน้ำดื่ม"
+      }
+    },
+    "clinicalCases": [
+      {
+        "id": "entamoeba-case-1",
+        "title": "Case 1: Colonic Flask-Shaped Ulcers (แผลเปื่อยรูปขวดชมพู่ในลำไส้)",
+        "badge": "เคสที่ 1: แผลในลำไส้รูปขวดชมพู่",
+        "image": "assets/images/clinical/entamoeba_case1_colonic_ulcer.jpg",
+        "source": "Gastrointestinal Pathology Archive (Wikimedia Commons)",
+        "description": "ภาพชิ้นเนื้อลำไส้ใหญ่จากผู้ป่วยบิดมีตัว (Amoebic Dysentery) แสดงแผลเปื่อยลึกรูปขวดชมพู่ (Flask-shaped ulcer) โดยเชื้อใช้น้ำย่อย Cysteine proteinase กัดทะลุชั้นเยื่อบุเมือก (Mucosa) เป็นรูแคบๆ แล้วไชเข้าไปแผ่ขยายทำลายเนื้อเยื่อเกี่ยวพันชั้นใต้เยื่อบุ (Submucosa) จนกลวงกว้างออกคล้ายขวดชมพู่ก้นบาน",
+        "keyFindings": [
+          "Flask-shaped ulcer: ปากแผลแคบในชั้น Mucosa แต่ก้นแผลผายกว้างลึกในชั้น Submucosa",
+          "Dysentery with bloody diarrhea: ถ่ายอุจจาระเหลวเป็นมูกปนเลือดสด ปวดเบ่งรุนแรง (Tenesmus)",
+          "Tissue necrosis: ก้นแผลเต็มไปด้วยเศษเซลล์และของเหลวเนื้อตายสีน้ำตาลอมเทา"
+        ]
+      },
+      {
+        "id": "entamoeba-case-2",
+        "title": "Case 2: Amoebic Liver Abscess Gross Specimen (ฝีในตับหนองสีกะปิ)",
+        "badge": "เคสที่ 2: ฝีในตับหนองสีกะปิ",
+        "image": "assets/images/clinical/entamoeba_case2_liver_abscess.jpg",
+        "source": "CDC Public Health Image Library (PHIL #3MG0042)",
+        "description": "ภาพชิ้นเนื้อตับแสดงฝีในตับจากเชื้อบิด (Amoebic Liver Abscess) ซึ่งเกิดจากเชื้อไชเข้าสู่กระแสเลือดดำ Portal vein ไปยังตับ มักพบเป็นโพรงหนองเดี่ยวขนาดใหญ่ที่กลีบตับขวา (Solitary right lobe abscess) ภายในบรรจุของเหลวสีน้ำตาลแดงข้นคล้ายกะปิหรือน้ำพริกเผา (Anchovy paste pus)",
+        "keyFindings": [
+          "Anchovy paste exudate: หนองสีน้ำตาลแดงข้น ไร้กลิ่นเน่า (เกิดจากการละลายตัวของเนื้อเยื่อตับ necrotic hepatocytes)",
+          "Right lobe predilection: มักพบบริเวณกลีบตับด้านขวามากกว่าด้านซ้ายเนื่องจากทิศทางของกระแสเลือด Portal flow",
+          "Clinical triad: ไข้สูง, ปวดตึงชายโครงขวา (RUQ pain / tenderness), และตับโต"
+        ]
+      },
+      {
+        "id": "entamoeba-case-3",
+        "title": "Case 3: Trophozoite with Ingested Erythrocytes (โทรโฟซอยต์กินเม็ดเลือดแดง)",
+        "badge": "เคสที่ 3: ส่องกล้องจุลทรรศน์",
+        "image": "assets/images/clinical/entamoeba_case3_erythrophagocytosis.jpg",
+        "source": "CDC / DPDx Diagnostic Parasitology Laboratory",
+        "description": "ภาพตรวจอุจจาระด้วยกล้องจุลทรรศน์ แสดงตัวโทรโฟซอยต์ของ Entamoeba histolytica ที่กำลังกลืนกินเม็ดเลือดแดงของโฮสต์ (Erythrophagocytosis) ซึ่งเป็นลักษณะเฉพาะเจาะจง (Pathognomonic) ที่ใช้แยกเชื้อก่อโรค E. histolytica ออกจากเชื้อที่ไม่ก่อโรค เช่น E. dispar",
+        "keyFindings": [
+          "Erythrophagocytosis: เม็ดเลือดแดงสีแดงเข้มถูกกลืนเข้าไปอยู่ในไซโทพลาซึมของตัวเชื้อบิด",
+          "Bull's-eye central karyosome: นิวเคลียสมีจุดโครมาตินตรงกลางกลมชัดเจน ล้อมรอบด้วยขอบบางๆ",
+          "Definitive diagnostic proof: ยืนยันว่าผู้ป่วยติดเชื้อชนิดรุกรานเนื้อเยื่อ (Invasive amoebiasis)"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "streptococcus-pyogenes",
+    "name": "Streptococcus pyogenes (Group A Strep - GAS)",
+    "thaiName": "สเตรปโตคอคคัส ไพโอจีนัส (แบคทีเรียกินเนื้อ / ผื่นไฟลามทุ่ง)",
+    "scientificName": "Streptococcus pyogenes (Group A beta-hemolytic streptococcus)",
+    "category": "bacteria",
+    "categoryLabel": "แบคทีเรีย (Bacteria)",
+    "cardTitle": "PAIN OUT OF PROPORTION!",
+    "cardSubtitle": "rapidly progressive necrosis along deep fascial planes. surgical emergency!",
+    "cardBadge": "BACTERIA",
+    "lesionTitle": "Necrotizing Fasciitis & Erysipelas",
+    "lesionThai": "การอักเสบตายของพังผืดชั้นลึก (แบคทีเรียกินเนื้อ) และผื่นไฟลามทุ่ง",
+    "badgeColor": "#f43f5e",
+    "quickStats": {
+      "depth": "Deep Fascia / Subcutaneous Fat (ทำลายพังผืดและไขมันชั้นลึก)",
+      "morphology": "Hemorrhagic Bullae & Dusky Skin Discoloration (ตุ่มพองเลือดและผิวสีคล้ำม่วง)",
+      "palpation": "Severe Pain Out of Proportion, Crepitus (ปวดรุนแรงเกินขนาดแผลและมีเสียงกรอบแกรบ)",
+      "distribution": "Lower Extremities, Perineum (Fournier gangrene), Face",
+      "speed": "Rapidly Progressive (ลุกลามเป็นชั่วโมงต่อชั่วโมง)"
+    },
+    "morphologicalParts": [
+      {
+        "id": "hemorrhagic_bullae",
+        "name": "Hemorrhagic Bullae (ตุ่มพองเลือด)",
+        "thaiName": "ตุ่มน้ำพองปนเลือดสีม่วงคล้ำ",
+        "color": "#991b1b",
+        "description": "Bullae filled with dark hemorrhagic fluid indicating severe ischemia and microvascular thrombosis in deep fascial planes."
+      },
+      {
+        "id": "dusky_necrosis",
+        "name": "Dusky Violaceous Necrosis (ผิวสีม่วงคล้ำเนื้อตาย)",
+        "thaiName": "ผิวหนังเปลี่ยนเป็นสีม่วงคล้ำเนื้อตาย",
+        "color": "#4c0519",
+        "description": "Progressive discoloration from erythematous to dusky purple/grey indicating full-thickness dermal necrosis and anesthesia (cutaneous nerve infarction)."
+      },
+      {
+        "id": "fascial_edema",
+        "name": "Dishwater Pus & Fascial Edema (หนองน้ำล้างเนื้อ)",
+        "thaiName": "ของเหลวสีเทาจางไร้กลิ่นคล้ายน้ำล้างเนื้อ",
+        "color": "#78716c",
+        "description": "Thin, watery foul-smelling or dishwater fluid escaping from the fascial plane with loss of resistance to finger probe passage."
+      }
+    ],
+    "clinicalCases": [
+      {
+        "id": "gas-case-1",
+        "title": "Case 1: Necrotizing Fasciitis with Dusky Bullae (แผลพังผืดอักเสบตายขั้นรุนแรง)",
+        "badge": "เคสที่ 1: แบคทีเรียกินเนื้อ (NF)",
+        "downloadSource": "Necrotizing_fasciitis_left_leg.JPEG",
+        "localFileName": "gas_case1_necrotizing_fasciitis.jpg",
+        "image": "assets/images/clinical/gas_case1_necrotizing_fasciitis.jpg",
+        "source": "CDC Public Health Image Library (PHIL #2167)",
+        "description": "ภาพเคสจริงจาก CDC แสดงผู้ป่วยโรคพังผืดอักเสบตาย (Necrotizing Fasciitis) บริเวณขาซ้าย พบลักษณะสำคัญคือ ผิวหนังเปลี่ยนเป็นสีม่วงคล้ำเนื้อตายอย่างรวดเร็ว (Dusky violaceous skin) ร่วมกับมีตุ่มน้ำพองปนเลือด (Hemorrhagic bullae) ผู้ป่วยมีอาการปวดรุนแรงเกินกว่าแผลที่มองเห็น (Pain out of proportion to physical findings) ซึ่งเป็นสัญญาณเตือนภัยฉุกเฉิน (Red Flag) ที่ต้องผ่าตัดกรีดเปิดแผลระบายเนื้อตายทันที",
+        "keyFindings": [
+          "Pain out of proportion to exam: ปวดรุนแรงมหาศาลเกินขนาดรอยโรคที่เห็นภายนอก",
+          "Hemorrhagic bullae & Skin necrosis: ตุ่มพองบรรจุของเหลวสีคล้ำปนเลือดและผิวหนังเปลี่ยนเป็นสีม่วง",
+          "Rapid progression & Crepitus: รอยโรคลุกลามอย่างรวดเร็วเป็นรายชั่วโมง มีอาการชา (Anesthesia) จากเส้นประสาทผิวหนังขาดเลือด"
+        ]
+      },
+      {
+        "id": "gas-case-2",
+        "title": "Case 2: Facial Erysipelas (ผื่นไฟลามทุ่งขอบเขตชัด)",
+        "badge": "เคสที่ 2: ผื่นไฟลามทุ่ง Erysipelas",
+        "downloadSource": "Facial_erysipelas.jpg",
+        "localFileName": "gas_case2_erysipelas.jpg",
+        "image": "assets/images/clinical/gas_case2_erysipelas.jpg",
+        "source": "Clinical Dermatology Case Archive (Wikimedia Commons)",
+        "description": "ภาพผู้ป่วยผื่นไฟลามทุ่ง (Erysipelas) บริเวณใบหน้า เกิดจากการติดเชื้อ Streptococcus pyogenes ในชั้นหนังแท้ส่วนบนและท่อน้ำเหลือง (Upper dermis and superficial lymphatics) ปรากฏเป็นปื้นบวมแดงสดคล้ายเปลวไฟ ขอบเขตยกนูนและคมชัดมาก (Sharply demarcated raised border) ต่างจาก Cellulitis ที่ขอบจะเบลอไม่ชัดเจน",
+        "keyFindings": [
+          "Sharply demarcated margin: ขอบแผลยกนูนและตัดกับผิวหนังปกติอย่างเด็ดขาดชัดเจน",
+          "Fiery red butterfly plaque: ปื้นบวมแดงร้อนจัด ผิวเต่งตึงคล้ายผิวเปลือกส้ม (Peau d'orange)",
+          "Superficial dermal/lymphatic invasion: เชื้อทำลายท่อน้ำเหลืองผิวเผิน ทำให้มีไข้หนาวสั่นเฉียบพลัน"
+        ]
+      }
+    ],
+    "tabs": {
+      "morphology": {
+        "depth": "Fascia & Subcutaneous Space (ชั้นพังผืดกล้ามเนื้อและไขมันลึก)",
+        "palpation": "Severe pain out of proportion, Tense wooden edema, Subcutaneous crepitus",
+        "highlights": [
+          "Necrotizing fasciitis: อาการปวดรุนแรงเกินแผลที่เห็น (Pain out of proportion) คือ Buzzword สำคัญที่สุด",
+          "Erysipelas: ขอบแผลยกนูน คมชัด (Sharply demarcated) ต่างจาก Cellulitis ที่ขอบเขตจางกลืนไปกับผิว",
+          "Fournier gangrene: ภาวะพังผืดอักเสบตายบริเวณฝีเย็บและอวัยวะสืบพันธุ์"
+        ]
+      },
+      "pathogenesis": {
+        "virulenceFactors": [
+          {
+            "name": "Streptococcal Pyrogenic Exotoxins (SpeA, SpeC)",
+            "desc": "Superantigens กระตุ้น T cells จำนวนมหาศาล ปล่อย Cytokine storm นำไปสู่ภาวะช็อกและอวัยวะล้มเหลว (STSS)"
+          },
+          {
+            "name": "SpeB (Streptococcal Cysteine Protease)",
+            "desc": "เอนไซม์ย่อยสลายโปรตีนเนื้อเยื่อเกี่ยวพัน Fascia และทำลายอิมมูโนโกลบูลินของโฮสต์อย่างรวดเร็ว"
+          },
+          {
+            "name": "M Protein",
+            "desc": "แอนติเจนหลักบนผนังเซลล์ ยับยั้ง Phagocytosis และการจับตัวของ Complement C3b (Antigenic mimicry ก่อโรครูมาติก)"
+          },
+          {
+            "name": "Streptolysin O & S",
+            "desc": "สารพิษเจาะทำลายเยื่อหุ้มเม็ดเลือดแดงและเม็ดเลือดขาว (Beta-hemolysis)"
+          }
+        ],
+        "immuneEvasion": [
+          "Hyaluronic acid capsule คล้ายเนื้อเยื่อของมนุษย์ ทำให้ระบบภูมิคุ้มกันตรวจไม่พบ",
+          "C5a peptidase ย่อยสลายสารเคมีดึงดูดเม็ดเลือดขาว C5a"
+        ]
+      },
+      "diagnosis": {
+        "staining": "Gram-positive cocci in chains (แบคทีเรียทรงกลมแกรมบวกเรียงตัวเป็นสายยาว)",
+        "culture": "Sheep Blood Agar: แสดงการย่อยเม็ดเลือดแดงอย่างสมบูรณ์แบบใสกระจ่าง (Beta-hemolysis)",
+        "biochemical": [
+          "Catalase negative (แยกจาก Staphylococcus)",
+          "Bacitracin (A-disc) Sensitive (ยับยั้งการเจริญเติบโตด้วยยา Bacitracin)",
+          "PYR (Pyrrolidonyl arylamidase) Positive"
+        ]
+      },
+      "clinical": {
+        "boardBuzzwords": [
+          "Pain out of proportion to physical findings",
+          "Dishwater pus (ของเหลวสีน้ำล้างเนื้อ)",
+          "Subcutaneous crepitus & gas on imaging (CT/X-ray)",
+          "Rapid progression over hours",
+          "Sharply demarcated fiery red plaque (Erysipelas)"
+        ],
+        "classicVignette": "ผู้ป่วยชายอายุ 52 ปี มีประวัติโรคเบาหวาน ได้รับบาดเจ็บมีรอยถลอกเล็กน้อยที่หน้าแข้ง 24 ชั่วโมงต่อมามีไข้สูง หนาวสั่น ขาบวมแดงปวดรุนแรงอย่างมหาศาลจนไม่สามารถแตะต้องได้ ต่อมาผิวหนังเปลี่ยนเป็นสีม่วงคล้ำและมีตุ่มพองเลือดแตกออก",
+        "riskGroups": [
+          "ผู้ป่วยเบาหวาน (Diabetes Mellitus)",
+          "ผู้ป่วยตับแข็ง",
+          "ผู้ที่ใช้สารเสพติดชนิดฉีด",
+          "ผู้สูงอายุและผู้มีภูมิคุ้มกันต่ำ"
+        ]
+      },
+      "treatment": {
+        "firstLine": "Immediate Surgical Debridement (ผ่าตัดเปิดล้างเนื้อตายฉุกเฉิน) + IV Penicillin G PLUS Clindamycin",
+        "alternative": "Cefazolin / Meropenem + Vancomycin (กรณีสงสัย MRSA ร่วมด้วย)",
+        "resistance": "Clindamycin มีความสำคัญอย่างยิ่งเนื่องจากยับยั้งการสร้างสารพิษ (Toxin synthesis shutdown) และขจัด Eagle effect ของ Penicillin"
+      }
+    }
+  },
+  {
+    "id": "neisseria-gonorrhoeae",
+    "name": "Neisseria gonorrhoeae (Gonococcus)",
+    "thaiName": "ไนซีเรีย โกโนร์เรียอี (เชื้อหนองใน / ข้ออักเสบติดเชื้อในวัยเจริญพันธุ์)",
+    "scientificName": "Neisseria gonorrhoeae (Gram-negative diplococcus)",
+    "category": "bacteria",
+    "categoryLabel": "แบคทีเรีย (Bacteria)",
+    "cardTitle": "SEPTIC JOINT & PURULENT EXUDATE!",
+    "cardSubtitle": "most common cause of septic arthritis in sexually active young adults.",
+    "cardBadge": "BACTERIA",
+    "lesionTitle": "Gonococcal Septic Arthritis & DGI Pustules",
+    "lesionThai": "ข้ออักเสบติดเชื้อหนองและตุ่มหนองเนื้อตายตามแขนขา (DGI)",
+    "badgeColor": "#0ea5e9",
+    "quickStats": {
+      "depth": "Synovial Cavity & Acral Epidermis (ช่องข้อและผิวหนังส่วนปลาย)",
+      "morphology": "Hemorrhagic Necrotic Pustules & Purulent Synovial Effusion (ตุ่มหนองเนื้อตายและน้ำไขข้อขุ่นเป็นหนอง)",
+      "palpation": "Warm, Tense Effusion, Severe Joint Tenderness (ข้อบวมตึง ร้อน แตะเจ็บมาก ลงน้ำหนักไม่ได้)",
+      "distribution": "Knees, Wrists, Ankles, Fingers, Genitourinary Tract",
+      "host": "Sexually Active Young Adults (วัยรุ่นและวัยเจริญพันธุ์)"
+    },
+    "morphologicalParts": [
+      {
+        "id": "dgi_pustule",
+        "name": "Acral Hemorrhagic Pustule (ตุ่มหนองขอบแดง)",
+        "thaiName": "ตุ่มหนองเนื้อตายบนฐานสีแดงตามปลายแขนปลายขา",
+        "color": "#ef4444",
+        "description": "Discrete, sparse (2-10) painless pustules with a central necrotic/hemorrhagic gray center on an erythematous base on distal extremities."
+      },
+      {
+        "id": "purulent_synovitis",
+        "name": "Septic Synovial Effusion (น้ำไขข้อขุ่นเป็นหนอง)",
+        "thaiName": "ภาวะข้ออักเสบเป็นหนองบวมเต่ง",
+        "color": "#eab308",
+        "description": "Marked joint effusion containing > 50,000 WBCs/mm3 (mostly neutrophils) causing inability to bear weight and intense swelling."
+      },
+      {
+        "id": "purulent_discharge",
+        "name": "Copious Urethral Discharge (หนองข้นสีเหลืองเขียว)",
+        "thaiName": "มูกหนองไหลจากท่อปัสสาวะ",
+        "color": "#84cc16",
+        "description": "Thick, copious, creamy yellow-green purulent exudate dripping from the urethral meatus with severe burning dysuria."
+      }
+    ],
+    "clinicalCases": [
+      {
+        "id": "gc-case-1",
+        "title": "Case 1: Disseminated Gonococcal Infection (DGI) Acral Pustule (ตุ่มหนองกระจายตามปลายแขนขา)",
+        "badge": "เคสที่ 1: ตุ่มหนอง DGI",
+        "downloadSource": "Gonococcal_lesion_on_the_skin_PHIL_2038_lores.jpg",
+        "localFileName": "gc_case1_dgi_pustule.jpg",
+        "image": "assets/images/clinical/gc_case1_dgi_pustule.jpg",
+        "source": "CDC Public Health Image Library (PHIL #2038)",
+        "description": "ภาพเคสจริงจาก CDC แสดงรอยโรคผิวหนังของภาวะติดเชื้อหนองในแพร่กระจายเข้าสู่กระแสเลือด (Disseminated Gonococcal Infection - DGI) พบเป็นตุ่มหนองขนาดเล็ก 2-5 มม. บนฐานสีแดงเรื่อ ตรงกลางเริ่มมีเนื้อตายสีเทาคล้ำ (Necrotic pustule on erythematous base) กระจายตัวตามปลายแขนขา มักพบร่วมกับภาวะเอ็นข้ออักเสบหลายตำแหน่ง (Tenosynovitis) และปวดข้อเร่ร่อน (Migratory polyarthralgia)",
+        "keyFindings": [
+          "Acral necrotic pustules: ตุ่มหนองบนฐานแดง มักพบจำนวนน้อย (2-10 เม็ด) ตามปลายมือปลายเท้า",
+          "Triad of DGI: Tenosynovitis (ปลอกเอ็นอักเสบ) + Dermatitis (ผื่นตุ่มหนอง) + Migratory polyarthralgia (ปวดข้อย้ายที่)",
+          "Purulent monoarthritis: ระยะต่อมาเชื้อจะไปฝังตัวในข้อเดี่ยว (เช่น ข้อเข่า ข้อเท้า) กลายเป็นหนองรุนแรง"
+        ]
+      },
+      {
+        "id": "gc-case-2",
+        "title": "Case 2: Acute Purulent Gonococcal Urethritis (หนองในแท้ไหลจากท่อปัสสาวะ)",
+        "badge": "เคสที่ 2: หนองในแท้ Urethritis",
+        "downloadSource": "Gonococcal_urethritis_PHIL_4085_lores.jpg",
+        "localFileName": "gc_case2_urethral_discharge.jpg",
+        "image": "assets/images/clinical/gc_case2_urethral_discharge.jpg",
+        "source": "CDC Public Health Image Library (PHIL #4085)",
+        "description": "ภาพผู้ป่วยโรคหนองในแท้ (Gonorrhea) แสดงอาการคลาสสิกคือ มีหนองข้นสีเหลืองอมเขียวปริมาณมาก (Copious creamy purulent discharge) ไหลเยิ้มออกมาจากรูเปิดท่อปัสสาวะ ร่วมกับอาการปัสสาวะแสบขัดรุนแรงเหมือนแก้วบาด โดยอาการมักเกิดขึ้นอย่างรวดเร็วหลังสัมผัสโรค 2-5 วัน",
+        "keyFindings": [
+          "Copious purulent discharge: หนองข้นปริมาณมาก ไหลซึมตลอดวัน (ต่างจากหนองในเทียม Chlamydia ที่มักเป็นมูกใสกว่า)",
+          "Severe dysuria: ปวดแสบขัดขณะปัสสาวะอย่างรุนแรง",
+          "Gram-negative intracellular diplococci: ตรวจย้อมหนองพบแบคทีเรียคู่รูปเมล็ดกาแฟอยู่ภายในเม็ดเลือดขาว PMN"
+        ]
+      }
+    ],
+    "tabs": {
+      "morphology": {
+        "depth": "Synovial Cavity / Urethral & Cervical Mucosa (โพรงข้อ เยื่อบุท่อปัสสาวะและปากมดลูก)",
+        "palpation": "Warm, tense swollen joint with restricted active/passive range of motion",
+        "highlights": [
+          "สาเหตุอันดับ 1 ของข้ออักเสบติดเชื้อ (Septic Arthritis) ในวัยหนุ่มสาวที่มีเพศสัมพันธ์",
+          "DGI Triad: ปวดข้อย้ายที่ (Migratory Polyarthralgia) + ปลอกเอ็นอักเสบ (Tenosynovitis) + ผื่นตุ่มหนองที่ปลายมือเท้า (Dermatitis)",
+          "ในเพศหญิงอาจนำไปสู่ Pelvic Inflammatory Disease (PID) และภาวะมีบุตรยาก (Infertility)"
+        ]
+      },
+      "pathogenesis": {
+        "virulenceFactors": [
+          {
+            "name": "Pili (Fimbriae)",
+            "desc": "ช่วยยึดเกาะเยื่อบุผิว มีคุณสมบัติ Antigenic & Phase Variation ทำให้ภูมิคุ้มกันจดจำไม่ได้และติดเชื้อซ้ำได้เรื่อยๆ"
+          },
+          {
+            "name": "Opa (Opacity-associated) Proteins",
+            "desc": "โปรตีนช่วยในการยึดเกาะและรุกรานเข้าสู่เซลล์เยื่อบุผิวโฮสต์"
+          },
+          {
+            "name": "LOS (Lipooligosaccharide)",
+            "desc": "เอนโดทอกซินที่ขาด O-antigen แต่กระตุ้นการอักเสบและหลั่ง TNF-alpha รุนแรง"
+          },
+          {
+            "name": "IgA1 Protease",
+            "desc": "เอนไซม์ย่อยสลาย Secretory IgA บนผิวเยื่อบุ ทำให้เชื้อสามารถตั้งรกรากได้"
+          }
+        ],
+        "immuneEvasion": [
+          "PorB protein ป้องกันการรวมตัวของ Phagolysosome ภายในเม็ดเลือดขาว",
+          "Phase variation ของ Pili และ Opa ป้องกันการสร้างภูมิคุ้มกันถาวร"
+        ]
+      },
+      "diagnosis": {
+        "staining": "Gram-negative diplococci with flattened adjacent sides ('kidney bean' or 'coffee bean' shaped) inside polymorphonuclear leukocytes (PMNs)",
+        "culture": "Thayer-Martin Chocolate Agar (มียาปฏิชีวนะ VCN: Vancomycin ฆ่าแกรมบวก, Colistin ฆ่าแกรมลบอื่น, Nystatin ฆ่าเชื้อรา, Trimethoprim ฆ่า Proteus)",
+        "biochemical": [
+          "Oxidase positive (เกิดสีม่วงเข้มอย่างรวดเร็ว)",
+          "Glucose fermenter only (หมักได้เฉพาะกลูโคส ไม่หมักมอลโตส ต่างจาก N. meningitidis)",
+          "NAAT (Nucleic Acid Amplification Test): Gold standard สำหรับตรวจคัดกรองปัสสาวะและสวอบ"
+        ]
+      },
+      "clinical": {
+        "boardBuzzwords": [
+          "Septic arthritis in sexually active young adult",
+          "Kidney-bean shaped intracellular diplococci",
+          "Thayer-Martin selective media (VCN)",
+          "Migratory polyarthralgia + tenosynovitis + pustular dermatitis",
+          "Fitz-Hugh-Curtis syndrome ('violin-string' adhesions of liver capsule)"
+        ],
+        "classicVignette": "หญิงสาวอายุ 23 ปี ไม่มีโรคประจำตัว มาพบแพทย์ด้วยอาการปวดบวมข้อเข่าขวาเฉียบพลัน ลงน้ำหนักไม่ได้ 3 วันก่อนหน้านี้มีอาการปวดข้อสลับไปมาตามข้อมือและข้อเท้า ตรวจร่างกายพบข้อเข่าขวาบวม แดง ร้อน มีน้ำในข้อปริมาณมาก และพบตุ่มหนองขนาดเล็ก 3 เม็ดที่ข้อมือและหลังเท้า",
+        "riskGroups": [
+          "วัยรุ่นและวัยเจริญพันธุ์ที่มีเพศสัมพันธ์โดยไม่สวมถุงยางอนามัย",
+          "ผู้มีคู่นอนหลายคน",
+          "ผู้มีภาวะขาด Complement C5-C9 (Terminal complement deficiency เสี่ยงต่อ Neisseria กระจายตัวรุนแรง)"
+        ]
+      },
+      "treatment": {
+        "firstLine": "Ceftriaxone 500 mg IM single dose (หากเป็น Septic Arthritis ให้ Ceftriaxone 1 g IV q 24h นาน 7 วัน)",
+        "alternative": "Cefixime 800 mg PO หรือ Gentamicin IM + Azithromycin PO (กรณีแพ้ Cephalosporin รุนแรง)",
+        "resistance": "ควรรักษาโรคร่วม Chlamydia trachomatis เสมอด้วย Doxycycline 100 mg PO วันละ 2 ครั้ง นาน 7 วัน มีการดื้อยา Fluoroquinolones และ Penicillin สูงมากทั่วโลก"
+      }
+    }
+  },
+  {
+    "id": "burkholderia-pseudomallei",
+    "name": "Burkholderia pseudomallei (Melioidosis)",
+    "thaiName": "เบอร์โคลเดอเรีย สูโดมัลลิอาย (โรคเมลิออยโดสิส / มงคล่อเทียม)",
+    "scientificName": "Burkholderia pseudomallei (Aerobic Gram-negative motile bacillus)",
+    "category": "bacteria",
+    "categoryLabel": "แบคทีเรีย (Bacteria)",
+    "cardTitle": "SAFETY-PIN BIPOLAR ROD!",
+    "cardSubtitle": "endemic in Northeast Thailand. wet-soil exposure in diabetic farmers.",
+    "cardBadge": "BACTERIA",
+    "lesionTitle": "Cutaneous Melioidosis Abscess & Sepsis",
+    "lesionThai": "ฝีหนองเมลิออยด์ที่ผิวหนังและภาวะติดเชื้อในกระแสเลือด",
+    "badgeColor": "#f59e0b",
+    "quickStats": {
+      "depth": "Subcutaneous Tissue, Lungs, Liver, Spleen (ผิวหนัง ปอด ตับ และม้าม)",
+      "morphology": "Multiple Abscesses & Non-healing Granulomatous Ulcers (ฝีหนองหลายตำแหน่งและแผลเรื้อรัง)",
+      "palpation": "Fluctuant, Tender Subcutaneous Mass (ก้อนฝีกดเจ็บ คลำพบการกระเพื่อมของหนอง)",
+      "distribution": "Limbs, Abdominal Wall, Parotid Gland (เด็ก), Internal Viscera",
+      "epidemiology": "Northeast Thailand / Southeast Asia / Northern Australia (เกษตรกรสัมผัสดินและน้ำ)"
+    },
+    "morphologicalParts": [
+      {
+        "id": "cutaneous_abscess",
+        "name": "Cutaneous Abscess & Ulcer (ฝีหนองผิวหนัง)",
+        "thaiName": "ก้อนฝีใต้ผิวหนังและแผลเปื่อยเรื้อรัง",
+        "color": "#d97706",
+        "description": "Tender subcutaneous abscess with central necrotic purulent liquefaction following inoculation through minor abrasions during agricultural work."
+      },
+      {
+        "id": "safety_pin_morphology",
+        "name": "Safety-Pin Bipolar Rods (การติดสีหัวท้ายแบบเข็มกลัด)",
+        "thaiName": "แบคทีเรียแท่งแกรมลบติดสีหัวท้ายคล้ายเข็มกลัดซ่อนปลาย",
+        "color": "#a855f7",
+        "description": "Characteristic bipolar staining on Gram, Wayson, or Giemsa stain where ends retain dye while the center remains clear."
+      },
+      {
+        "id": "swiss_cheese_viscera",
+        "name": "Disseminated Microabscesses (ฝีหนองกระจายในอวัยวะภายใน)",
+        "thaiName": "ฝีหนองเม็ดเล็กๆ กระจายทั่วตับและม้ามคล้ายเนยสวิส",
+        "color": "#ea580c",
+        "description": "Multiple small microabscesses in the spleen, liver, and kidneys seen on ultrasound/CT giving a pathognomonic 'honeycomb' or 'Swiss-cheese' appearance."
+      }
+    ],
+    "clinicalCases": [
+      {
+        "id": "bps-case-1",
+        "title": "Case 1: Cutaneous Melioidosis Abscess (ฝีหนองเมลิออยโดสิสที่หน้าท้อง)",
+        "badge": "เคสที่ 1: ฝีหนองเมลิออยด์",
+        "downloadSource": "One_of_the_melioidosis_abscesses_on_the_abdomen.jpg",
+        "localFileName": "bps_case1_cutaneous_abscess.jpg",
+        "image": "assets/images/clinical/bps_case1_cutaneous_abscess.jpg",
+        "source": "Clinical Tropical Medicine Case Archive (Wikimedia Commons)",
+        "description": "ภาพเคสจริงแสดงฝีหนองขนาดใหญ่บริเวณผนังหน้าท้องจากโรคเมลิออยโดสิส (Cutaneous Melioidosis) ในเกษตรกรที่มีประวัติสัมผัสดินโคลนและน้ำขัง รอยโรคเริ่มจากตุ่มแดงแข็งกลายเป็นถุงหนองแตกเป็นแผลเปื่อยขอบนูนไม่ยอมหาย เชื้อมีความสามารถในการรุกรานเข้าสู่กระแสเลือดนำไปสู่ภาวะช็อกจากการติดเชื้อ (Septic shock) ที่มีอัตราเสียชีวิตสูงถึง 40-50%",
+        "keyFindings": [
+          "Subcutaneous abscess: ก้อนฝีใต้ผิวหนังที่รักษาด้วยยาปฏิชีวนะทั่วไปไม่ตอบสนอง",
+          "Wet soil exposure: ประวัติลุยน้ำ ย่ำโคลน หรือทำนาในช่วงฤดูฝน (โดยเฉพาะภาคอีสานของไทย)",
+          "Great mimicker: อาการทางปอดและผิวหนังคล้ายวัณโรค (Tuberculosis) อย่างมาก"
+        ]
+      },
+      {
+        "id": "bps-case-2",
+        "title": "Case 2: Safety-Pin Gram Stain & Ashdown Medium (การย้อมติดสีเข็มกลัดและโคโลนี)",
+        "badge": "เคสที่ 2: การย้อมสีเข็มกลัด",
+        "downloadSource": "Burkholderia_pseudomallei_gram_stain_safety_pin_apperance.jpg",
+        "localFileName": "bps_case2_safetypin_stain.jpg",
+        "image": "assets/images/clinical/bps_case2_safetypin_stain.jpg",
+        "source": "Diagnostic Microbiology Laboratory Archive (Wikimedia Commons)",
+        "description": "ภาพย้อมสีแกรมจากสิ่งส่งตรวจหนอง แสดงลักษณะเด่นเฉพาะตัวของ Burkholderia pseudomallei คือ แบคทีเรียแท่งแกรมลบติดสีเข้มเฉพาะส่วนหัวและท้าย ปล่อยให้ตรงกลางจางคล้ายเข็มกลัดซ่อนปลาย (Safety-pin bipolar appearance) เมื่อเพาะบนอาหารเลี้ยงเชื้อจำเพาะ Ashdown Agar โคโลนีจะมีลักษณะย่นคล้ายขนมเปี๊ยะหรือดอกกะหล่ำ (Wrinkled purple colonies) และมีกลิ่นหอมคล้ายดินเปียกหรือข้าวโพดคั่ว",
+        "keyFindings": [
+          "Safety-pin appearance: ติดสีเข้มหัวท้าย ติดสีจางตรงกลาง (Bipolar staining)",
+          "Ashdown Selective Agar: โคโลนีสีม่วงแห้งย่น (Wrinkled colonies) มีกลิ่นหอมเฉพาะตัว (Earthy/corn odor)",
+          "Motile Gram-negative rod: เป็นเชื้อเคลื่อนที่ได้ และให้ผลทดสอบ Oxidase เป็นบวก"
+        ]
+      }
+    ],
+    "tabs": {
+      "morphology": {
+        "depth": "Subcutaneous tissue, Lungs, Spleen, Liver (เนื้อเยื่อใต้ผิวหนังและอวัยวะภายใน)",
+        "palpation": "Fluctuant tender masses, Hepatosplenomegaly",
+        "highlights": [
+          "โรคติดเชื้ออันดับต้นๆ ที่เป็นสาเหตุการเสียชีวิตจากภาวะติดเชื้อในกระแสเลือดในภาคตะวันออกเฉียงเหนือของไทย",
+          "ฉายา 'The Great Mimicker': สามารถเลียนแบบได้เกือบทุกโรค ตั้งแต่ปอดบวมธรรมดา วัณโรค ไปจนถึงฝีในตับ",
+          "ภาพอัลตราซาวด์ตับและม้ามพบ 'Swiss cheese' หรือ 'Honeycomb' microabscesses เป็นสัญญาณเฉพาะโรค"
+        ]
+      },
+      "pathogenesis": {
+        "virulenceFactors": [
+          {
+            "name": "Type III & Type VI Secretion Systems",
+            "desc": "ทิ่มแทงเยื่อหุ้มเซลล์ของโฮสต์ หลั่งเอฟเฟกเตอร์โปรตีนเพื่อควบคุมการทำงานของเซลล์และหลบหนีออกจาก Phagosome"
+          },
+          {
+            "name": "Polysaccharide Capsule",
+            "desc": "แคปซูลหนาป้องกันการทำลายจาก Complement และยับยั้งการจับกินของเม็ดเลือดขาว Macrophages"
+          },
+          {
+            "name": "Burkholderia Lethal Factor 1 (BLF1)",
+            "desc": "สารพิษยับยั้งการสังเคราะห์โปรตีนของเซลล์โฮสต์โดยตรง ทำให้เซลล์เกิดเนื้อตาย"
+          },
+          {
+            "name": "Actin-based Motility",
+            "desc": "ใช้ Actin ของเซลล์โฮสต์ในการเคลื่อนที่จากเซลล์หนึ่งไปยังอีกเซลล์หนึ่ง ทำให้เกิด Multinucleated giant cell formation"
+          }
+        ],
+        "immuneEvasion": [
+          "Facultative intracellular organism สามารถรอดชีวิตและแบ่งตัวภายใน Macrophages",
+          "ดื้อยาปฏิชีวนะตามธรรมชาติหลายกลุ่ม (Intrinsic resistance) รวมถึง Penicillins, 1st/2nd Cephalosporins, Aminoglycosides, และ Macrolides"
+        ]
+      },
+      "diagnosis": {
+        "staining": "Gram-negative bacillus with bipolar staining ('safety-pin' appearance) on Wayson or Gram stain",
+        "culture": "Ashdown's Agar: โคโลนีสีม่วงเข้ม ย่นเป็นลอน (Wrinkled cornflower colonies) หลังเพาะเชื้อ 48-72 ชม. ส่งกลิ่นหอมคล้ายดินเปียกหรือข้าวโพด",
+        "biochemical": [
+          "Oxidase positive (ต่างจาก Enterobacteriaceae ส่วนใหญ่)",
+          "Resistant to Colistin & Polymyxin B (ใช้แยกจาก Pseudomonas aeruginosa)",
+          "Hemagglutination assay (IHA) หรือ PCR เพื่อยืนยันการวินิจฉัย"
+        ]
+      },
+      "clinical": {
+        "boardBuzzwords": [
+          "Safety-pin bipolar staining",
+          "Ashdown medium with wrinkled purple colonies",
+          "Northeast Thailand (Isan) farmer with diabetes",
+          "Wet soil / water exposure during rainy season",
+          "Swiss-cheese spleen and liver microabscesses",
+          "The Great Mimicker"
+        ],
+        "classicVignette": "ชายไทยอายุ 55 ปี อาชีพทำนาในจังหวัดอุบลราชธานี มีประวัติโรคเบาหวานควบคุมไม่ดี มีไข้สูง หนาวสั่น หายใจเหนื่อยหอบ และมีแผลฝีหนองเรื้อรังที่หน้าแข้งซ้ายหลังเดินลุยโคลนดำนา 1 สัปดาห์ ตรวจร่างกายพบภาวะ Septic shock และ CT ช่องท้องพบฝีหนองขนาดเล็กจำนวนมากกระจายทั่วตับและม้าม",
+        "riskGroups": [
+          "ผู้ป่วยโรคเบาหวาน (Diabetes Mellitus - เสี่ยงสูงกว่าคนทั่วไป 12 เท่า)",
+          "ผู้ป่วยโรคไตเรื้อรัง (CKD)",
+          "ผู้ป่วยโรคธาลัสซีเมียและฮีโมโครมาโตซิส (Iron overload)",
+          "เกษตรกรชาวนาชาวไร่ที่สัมผัสดินและน้ำโดยไม่สวมรองเท้าบูท"
+        ]
+      },
+      "treatment": {
+        "firstLine": "Intensive Phase (ระยะเฉียบพลัน): IV Ceftazidime 2 g q 8h หรือ Meropenem 1 g q 8h นานอย่างน้อย 10-14 วัน",
+        "alternative": "Eradication Phase (ระยะขจัดเชื้อป้องกันกลับเป็นซ้ำ): Oral Co-trimoxazole (TMP-SMX) นาน 3 ถึง 6 เดือน",
+        "resistance": "ดื้อยาตามธรรมชาติ (Intrinsic resistance) ต่อยา Aminoglycosides (Gentamicin/Amikacin), Macrolides, และ Cephalosporin รุ่นที่ 1-2 อย่างเด็ดขาด ห้ามใช้เด็ดขาด!"
+      }
+    }
+  }
+]
