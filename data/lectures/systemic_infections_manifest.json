@@ -1,0 +1,1399 @@
+[
+  {
+    "id": "orientia-tsutsugamushi",
+    "name": "Orientia tsutsugamushi (Scrub Typhus)",
+    "thaiName": "โอเรียนเชีย ซูซูกามูชิ (ไข้รากสาดใหญ่สครับไทฟัส)",
+    "scientificName": "Orientia tsutsugamushi (Obligate intracellular bacterium, family Rickettsiaceae)",
+    "category": "bacteria",
+    "categoryLabel": "แบคทีเรีย (Bacteria)",
+    "cardTitle": "CIGARETTE-BURN ESCHAR!",
+    "cardSubtitle": "chigger mite bite in brush/jungle. rapid defervescence with doxycycline within 48h.",
+    "cardBadge": "BACTERIA",
+    "lesionTitle": "Tache Noire / Cigarette-Burn Eschar & Maculopapular Rash",
+    "lesionThai": "แผลบุหรี่จี้ (Eschar) ขอบแดงก้นดำ และผื่นแดงตามตัว",
+    "badgeColor": "#ea580c",
+    "quickStats": {
+      "depth": "Dermal Inoculation Site, Vascular Endothelium, Reticuloendothelial System",
+      "morphology": "Pathognomonic Cigarette-Burn Necrotic Eschar (30-60%) & Centrifugal Rash",
+      "palpation": "Painless, Non-tender Indurated Ulcer with Dry Black Crusted Escutcheon",
+      "distribution": "Hidden warm intertriginous folds: Groin, Axilla, Perineum, Waistband, Bra-line",
+      "epidemiology": "Southeast Asia (Tsutsugamushi Triangle), agriculturalists, hikers, soldiers"
+    },
+    "morphologicalParts": [
+      {
+        "id": "necrotic_eschar",
+        "name": "Cigarette-Burn Eschar (แผลสะเก็ดดำบุหรี่จี้)",
+        "thaiName": "แผลบุหรี่จี้ ขอบนูนแดง ตรงกลางเป็นสะเก็ดสีดำด้าน",
+        "color": "#1c1917",
+        "description": "Painless, punched-out ulcer (5-15 mm) capped with a hard black necrotic crust (eschar) resembling a cigarette burn, surrounded by an erythematous halo."
+      },
+      {
+        "id": "lymphadenopathy",
+        "name": "Regional Lymphadenopathy (ต่อมน้ำเหลืองโตเฉพาะที่)",
+        "thaiName": "ต่อมน้ำเหลืองบริเวณระบายของแผลโตและกดเจ็บ",
+        "color": "#f59e0b",
+        "description": "Prominent regional lymphadenopathy draining the mite bite site, often accompanied by generalized tender lymphadenopathy and splenomegaly."
+      },
+      {
+        "id": "systemic_vasculitis",
+        "name": "Systemic Endothelial Vasculitis (หลอดเลือดฝอยอักเสบทั่วตัว)",
+        "thaiName": "การทำลายเซลล์เยื่อบุหลอดเลือด ทำให้หลอดเลือดรั่ว ปอดอักเสบ และไตวาย",
+        "color": "#dc2626",
+        "description": "Invasion of microvascular endothelial cells causing widespread vasculitis, perivascular round cell infiltration, microvascular leakage, ARDS, and meningoencephalitis."
+      }
+    ],
+    "clinicalCases": [
+      {
+        "id": "orientia-case-1",
+        "title": "Case 1: Classic Cigarette-Burn Eschar on Left Arm (แผลเอสชาร์ที่แขน)",
+        "badge": "เคสที่ 1: แผลบุหรี่จี้ Eschar",
+        "downloadSource": "Scrub typhus eschar.jpg",
+        "localFileName": "orientia_case1_eschar.jpg",
+        "image": "assets/images/clinical/orientia_case1_eschar.jpg",
+        "source": "CDC / Dr. Thomas F. Sellers (Wikimedia Commons / Public Domain)",
+        "description": "ภาพเคสจริงแสดงรอยโรคเฉพาะตัว (Pathognomonic eschar) บนแขนซ้ายของผู้ป่วย Scrub typhus รอยโรคเกิดจากการกัดของตัวอ่อนไรอ่อน (Chigger mite) เชื้อเพิ่มจำนวนทำให้เกิดการขาดเลือดและเนื้อตายเฉพาะจุดจนกลายเป็นสะเก็ดสีดำแห้งขอบแดง (Tache noire) ผู้ป่วยมักไม่รู้สึกเจ็บแผล จึงต้องตรวจค้นหาอย่างละเอียดตามข้อพับ ขาหนีบ และใต้ร่มผ้า",
+        "keyFindings": [
+          "Painless necrotic ulcer: แผลหลุมก้นดำสนิทเหมือนรอยบุหรี่จี้ ขนาด 5-10 มม. กดไม่เจ็บ",
+          "Erythematous halo: ขอบแผลยกนูนสีแดงล้อมรอบสะเก็ดดำชัดเจน",
+          "Regional adenopathy: คลำได้ต่อมน้ำเหลืองบริเวณรักแร้ข้างเคียงโตและกดเจ็บ",
+          "High remittent fever: มีไข้สูงเฉียบพลัน หนาวสั่น ปวดศีรษะรุนแรง และตาแดง (Conjunctival injection)"
+        ]
+      },
+      {
+        "id": "orientia-case-2",
+        "title": "Case 2: Leptotrombidium Vector (ตัวอ่อนไรอ่อนพาหะนำโรค)",
+        "badge": "เคสที่ 2: พาหะตัวอ่อนไรอ่อน",
+        "downloadSource": "Leptotrombidium, chigger mites (15041128245).jpg",
+        "localFileName": "orientia_case2_vector_chigger.jpg",
+        "image": "assets/images/clinical/orientia_case2_vector_chigger.jpg",
+        "source": "CDC / Dr. Hans Schenker / CDC PHIL (Wikimedia Commons)",
+        "description": "ภาพกล้องจุลทรรศน์แสดงตัวอ่อนไรอ่อนสกุล Leptotrombidium (Chigger mite larva) ซึ่งเป็นทั้งรังโรค (Reservoir) และพาหะนำเชื้อ (Vector) ตัวอ่อนจะไต่ขึ้นตามหญ้าเตี้ยหรือพงหญ้าในป่าละเมาะ เมื่อคนเดินลุยป่าจะถูกตัวอ่อนเกาะและกัดเพื่อดูดกินน้ำเหลือง ส่งผ่านเชื้อ Orientia tsutsugamushi เข้าสู่ชั้นผิวหนัง",
+        "keyFindings": [
+          "Chigger mite larva: เฉพาะตัวอ่อนระยะ larva เท่านั้นที่ดูดกินน้ำเหลืองและกัดคน (ตัวเต็มวัยกินแมลง)",
+          "Transovarial transmission: เชื้อสามารถส่งผ่านรุ่นสู่รุ่นทางไข่ของไรอ่อนได้โดยตรง",
+          "Habitat: ป่าละเมาะ ชายป่า ไร่สวน พื้นที่รกร้าง (Scrub vegetation)",
+          "Bite predilection: ชอบกัดบริเวณที่รัดแน่นหรืออบอุ่น เช่น ขอบกางเกง เอว ซอกขาหนีบ ราวนม"
+        ]
+      }
+    ],
+    "tabs": {
+      "morphology": {
+        "depth": "Epidermis, Dermis, Vascular Endothelium, Multi-organ microvasculature",
+        "palpation": "Painless indurated crusted ulcer (แผลไม่เจ็บ ก้นแข็ง สะเก็ดแห้งสีดำ)",
+        "highlights": [
+          "แผล Eschar เป็นหัวใจสำคัญที่สุดของการตรวจร่างกาย พบได้ประมาณ 30-60% ของผู้ป่วยในไทย",
+          "ตำแหน่งที่พบบ่อยมักอยู่ในที่ลับและร่มผ้า: ขาหนีบ, ใต้ร่มผ้า, ราวนม, รอบสะดือ, รักแร้ จึงต้องถอดเสื้อผ้าตรวจให้หมด",
+          "ในสัปดาห์ที่ 2 อาจพบผื่นแดง Maculopapular rash กระจายจากลำตัวออกสู่แขนขา (Centrifugal spread)"
+        ]
+      },
+      "pathogenesis": {
+        "virulenceFactors": [
+          {
+            "name": "56-kDa Major Outer Membrane Protein (TSA56)",
+            "desc": "โปรตีนสำคัญบนเยื่อหุ้มเซลล์ทำหน้าที่เป็น Adhesin ยึดเกาะกับ Integrins ของโฮสต์และหลบหลีกภูมิคุ้มกัน มีความแปรปรวนทางสายพันธุ์สูง (Karp, Gilliam, Kato)"
+          },
+          {
+            "name": "Endothelial Tropism & Obligate Intracellular Survival",
+            "desc": "เข้าสู่เซลล์ Endothelium ผ่าน Induced phagocytosis แล้วหลบหนีออกจาก Phagosome สู่ Cytosol อย่างรวดเร็ว แบ่งตัวจนเซลล์แตก"
+          },
+          {
+            "name": "Perivascular Lymphocytic Vasculitis",
+            "desc": "การทำลายเซลล์เยื่อบุหลอดเลือดฝอยทั่วร่างกาย ทำให้ผนังหลอดเลือดรั่ว (Increased vascular permeability), Interstitial pneumonitis, ARDS, และ Menigoencephalitis"
+          }
+        ],
+        "immuneEvasion": [
+          "แบ่งตัวใน Cytosol ของเซลล์โฮสต์ จึงรอดพ้นจากการทำลายของ Lysosomal enzymes",
+          "ไม่มีผนังเซลล์ Peptidoglycan และ LPS แบบดั้งเดิม จึงดื้อยาต่อกลุ่ม Beta-lactams อย่างสมบูรณ์"
+        ]
+      },
+      "diagnosis": {
+        "staining": "Obligate intracellular bacteria: ย้อม Gram stain ไม่ติด ต้องย้อมด้วย Giemsa หรือ Gimenez stain พบเชื้อขนาดเล็กในไซโตพลาสซึม",
+        "culture": "เพาะเชื้อยากมาก ต้องใช้เซลล์เพาะเลี้ยง (Cell culture) หรือฉีดเข้าถุงไข่ไก่ฟัก (BSL-3 containment)",
+        "biochemical": [
+          "Therapeutic Diagnosis: 'ไข้ลดลงสู่เกณฑ์ปกติภายใน 24-48 ชั่วโมงหลังได้รับ Doxycycline' ถือเป็นหลักฐานวินิจฉัยทางคลินิกที่สำคัญยิ่ง (Rapid defervescence)",
+          "IFA (Indirect Immunofluorescence Assay): Gold standard ทาง Serology แสดงการเพิ่มขึ้น 4 เท่าของ IgG titer",
+          "Weil-Felix Reaction: OX-K positive (ส่วน OX-19 และ OX-2 ให้ผลลบ ช่วยแยกจาก Murine/Epidemic typhus และ Spotted fevers)",
+          "Lab: Leukopenia ในสัปดาห์แรก, Transaminitis (AST/ALT สูง 2-5 เท่า), Thrombocytopenia"
+        ]
+      },
+      "clinical": {
+        "boardBuzzwords": [
+          "Cigarette-burn eschar (black crust with red halo)",
+          "Chigger mite (Leptotrombidium) larva bite",
+          "Definitively afebrile within 48h of Doxycycline",
+          "Weil-Felix OX-K positive",
+          "Endothelial vasculitis leading to ARDS and shock",
+          "Warm skin folds examination (groin, axilla, waistband)"
+        ],
+        "classicVignette": "ทหารหนุ่มอายุ 24 ปี เดินลาดตระเวนในป่าจังหวัดกาญจนบุรี 10 วันก่อน มีไข้สูงเฉียบพลัน หนาวสั่น ปวดศีรษะเบ้าตารุนแรง ตาแดงก่ำ ตรวจร่างกายพบต่อมน้ำเหลืองที่รักแร้และขาหนีบโต คลำพบแผลสะเก็ดสีดำขนาด 8 มม. ขอบนูนแดงที่บริเวณรอยพับขาหนีบด้านขวาโดยที่ผู้ป่วยไม่รู้สึกเจ็บ ให้ยา Doxycycline อาการไข้ลดลงเป็นปกติอย่างรวดเร็วภายใน 36 ชั่วโมง",
+        "riskGroups": [
+          "ทหารลาดตระเวน, เจ้าหน้าที่ป่าไม้, นักเดินป่ากางเต็นท์",
+          "เกษตรกรทำไร่ทำสวนในพื้นที่ป่าละเมาะ (Scrub habitat)",
+          "ประชากรในแถบเอเชียแปซิฟิก (Tsutsugamushi triangle)"
+        ]
+      },
+      "treatment": {
+        "firstLine": "Oral Doxycycline 100 mg วันละ 2 ครั้ง นาน 7 วัน (หรือ IV Doxycycline ในผู้ป่วยอาการหนัก) ให้ผลตอบสนองรวดเร็วมาก",
+        "alternative": "Oral Azithromycin 500 mg วันละครั้ง นาน 3-5 วัน (เป็นยาทางเลือกอันดับ 1 ในสตรีมีครรภ์และเด็กอายุต่ำกว่า 8 ปี)",
+        "resistance": "ดื้อยาตามธรรมชาติ (Intrinsic resistance) ต่อยา Beta-lactams ทุกชนิด (Penicillins, Cephalosporins, Carbapenems) และ Aminoglycosides ห้ามใช้เด็ดขาด!"
+      }
+    }
+  },
+  {
+    "id": "salmonella-typhi",
+    "name": "Salmonella enterica serotype Typhi (Typhoid Fever)",
+    "thaiName": "ซัลโมเนลลา ไทฟี (ไข้รากสาดน้อย / ไข้ไทฟอยด์)",
+    "scientificName": "Salmonella enterica subsp. enterica serovar Typhi (Gram-negative motile facultative intracellular bacillus)",
+    "category": "bacteria",
+    "categoryLabel": "แบคทีเรีย (Bacteria)",
+    "cardTitle": "ROSE SPOTS & STEP-LADDER FEVER!",
+    "cardSubtitle": "relative bradycardia (faget sign). bone marrow culture highest yield. ppeyer patch perforation.",
+    "cardBadge": "BACTERIA",
+    "lesionTitle": "Rose Spots on Abdomen & Hepatosplenomegaly",
+    "lesionThai": "ผื่นกุหลาบ (Rose spots) ที่หน้าท้องและหน้าอก และตับม้ามโต",
+    "badgeColor": "#d97706",
+    "quickStats": {
+      "depth": "Intestinal Peyer's Patches, Mesenteric Lymph Nodes, Reticuloendothelial System",
+      "morphology": "Faint Salmon-Pink Blanching Macules (Rose Spots) on Trunk (10-30%)",
+      "palpation": "Soft, Blanching, Non-indurated 2-4 mm Macules that disappear on pressure",
+      "distribution": "Anterior abdominal wall, lower chest, flanks, upper abdomen",
+      "epidemiology": "Contaminated food/water, fecal-oral, chronic gallbladder carriage (Typhoid Mary)"
+    },
+    "morphologicalParts": [
+      {
+        "id": "rose_spots",
+        "name": "Rose Spots (ผื่นสีกุหลาบ)",
+        "thaiName": "จุดแดงสีกุหลาบขนาด 2-4 มม. กดแล้วจางหาย กระจายที่หน้าท้อง",
+        "color": "#f43f5e",
+        "description": "Bacterial emboli in dermal capillaries creating faint, rose-pink blanching macules (5-15 in number) appearing during the 2nd week of illness."
+      },
+      {
+        "id": "peyer_patch_necrosis",
+        "name": "Peyer's Patch Necrosis (เนื้อตายที่ต่อมน้ำเหลืองลำไส้เล็ก)",
+        "thaiName": "การอักเสบและเนื้อตายของ Peyer's patches เสี่ยงต่อลำไส้ทะลุในสัปดาห์ที่ 3",
+        "color": "#b91c1c",
+        "description": "Mononuclear infiltration and mucosal ischemia of terminal ileal Peyer's patches leading to longitudinal oval ulceration, massive bleeding, or intestinal perforation."
+      },
+      {
+        "id": "gallbladder_carriage",
+        "name": "Gallbladder Chronic Carriage (การฝังตัวเรื้อรังในถุงน้ำดี)",
+        "thaiName": "เชื้อก่อไบโอฟิล์มบนนิ่วในถุงน้ำดี กลายเป็นพาหะแพร่เชื้อเรื้อรัง",
+        "color": "#15803d",
+        "description": "Biofilm formation on cholesterol gallstones allowing asymptomatic lifelong colonization and continuous fecal shedding (Typhoid Mary phenomenon)."
+      }
+    ],
+    "clinicalCases": [
+      {
+        "id": "salmonella-case-1",
+        "title": "Case 1: Rose Spots on Abdomen in Typhoid Fever (ผื่นกุหลาบที่หน้าท้อง)",
+        "badge": "เคสที่ 1: ผื่น Rose Spots",
+        "downloadSource": "Salmonella typhi typhoid fever PHIL 2215 lores.jpg",
+        "localFileName": "salmonella_case1_rose_spots.jpg",
+        "image": "assets/images/clinical/salmonella_case1_rose_spots.jpg",
+        "source": "CDC / Armed Forces Institute of Pathology (AFIP) PHIL 2215 (Public Domain)",
+        "description": "ภาพเคสจริงแสดงผื่นสีกุหลาบ (Rose spots) บริเวณหน้าอกและหน้าท้องของผู้ป่วยไข้ไทฟอยด์ ผื่นนี้เกิดจากการที่เชื้อ Salmonella typhi หลุดลอยตามกระแสเลือดไปอุดตันในเส้นเลือดฝอยของชั้นหนังแท้ (Bacterial embolization) ผื่นมีลักษณะเป็นตุ่มแดงอมชมพูจางๆ ขนาด 2-4 มม. เมื่อใช้นิ้วกดจะจางหายไป มักปรากฏในสัปดาห์ที่ 2 ของโรคและคงอยู่ 3-5 วัน",
+        "keyFindings": [
+          "Salmon-pink macules: จุดแดงอมชมพู 2-4 มม. ประมาณ 5-15 จุดบนหน้าท้องและหน้าอก",
+          "Blanching on pressure: กดแล้วสีแดงจางหายไป (ต่างจาก Petechiae ที่กดไม่จาง)",
+          "Step-ladder fever: ไข้สูงลอยแบบขั้นบันได ค่อยๆ ไต่ระดับขึ้นในสัปดาห์แรก",
+          "Faget sign: ชีพจรเต้นช้าสวนทางกับระดับความร้อนของไข้ (Relative bradycardia)"
+        ]
+      },
+      {
+        "id": "salmonella-case-2",
+        "title": "Case 2: Hektoen Enteric Agar Culture (โคโลนีดำบน Hektoen Agar)",
+        "badge": "เคสที่ 2: เพาะเชื้อบน Hektoen Agar",
+        "downloadSource": "Hektoen Enteric Agar.jpg",
+        "localFileName": "salmonella_case2_hektoen_agar.jpg",
+        "image": "assets/images/clinical/salmonella_case2_hektoen_agar.jpg",
+        "source": "CDC / Dr. P.B. Smith / Wikimedia Commons",
+        "description": "ภาพจานเพาะเชื้อ Hektoen Enteric Agar แสดงโคโลนีของ Salmonella ที่สร้างก๊าซไฮโดรเจนซัลไฟด์ (H2S production) ทำให้เกิดจุดศูนย์กลางสีดำสนิท (Black-centered colonies) และไม่หมักน้ำตาลแลคโตส (Non-lactose fermenter: อาหารเลี้ยงเชื้อรอบโคโลนีคงสีเขียวอมฟ้า) แตกต่างจาก Shigella ที่ไม่สร้าง H2S",
+        "keyFindings": [
+          "Non-lactose fermenter: โคโลนีใส ไม่มีสี ไม่เปลี่ยนอาหารเป็นสีเหลืองส้ม",
+          "H2S positive: ตกตะกอน Ferrous sulfide ทำให้จุดกลางโคโลนีเป็นสีดำสนิท",
+          "Motility: เคลื่อนที่ได้ด้วย Peritrichous flagella (เคลื่อนที่ต่างจาก Shigella)",
+          "Bile-tolerant: ทนทานต่อเกลือน้ำดี ทำให้เจริญและฝังตัวในถุงน้ำดีได้ดี"
+        ]
+      }
+    ],
+    "tabs": {
+      "morphology": {
+        "depth": "Terminal Ileum (Peyer's patches), Mesenteric Lymph Nodes, Spleen, Liver, Bone Marrow",
+        "palpation": "Abdominal distension with diffuse doughy tenderness, palpable splenomegaly",
+        "highlights": [
+          "สัปดาห์ที่ 1: ไข้ค่อยๆ สูงขึ้นแบบขั้นบันได (Step-ladder pattern), ปวดศีรษะ, ท้องผูก (Constipation พบบ่อยกว่า Diarrhea ในผู้ใหญ่)",
+          "สัปดาห์ที่ 2: ผื่น Rose spots ที่หน้าท้อง, ชีพจรเต้นช้าไม่สัมพันธ์กับไข้ (Relative bradycardia / Faget's sign), ตับม้ามโต",
+          "สัปดาห์ที่ 3: ภาวะแทรกซ้อนอันตรายถึงชีวิตคือ เลือดออกในทางเดินอาหาร (GI bleeding) และลำไส้เล็กทะลุ (Ileal perforation)"
+        ]
+      },
+      "pathogenesis": {
+        "virulenceFactors": [
+          {
+            "name": "Vi (Virulence) Capsular Polysaccharide Antigen",
+            "desc": "แคปซูลป้องกันการตรวจจับของ Toll-like receptors, ยับยั้ง Complement opsonization และยับยั้งการจับกินของ Phagocytes"
+          },
+          {
+            "name": "Type III Secretion System (T3SS-1 and T3SS-2)",
+            "desc": "T3SS-1 ช่วยให้เชื้อบุกรุกเข้า M cells ของ Peyer's patches; T3SS-2 ช่วยให้รอดชีวิตและแบ่งตัวภายใน Macrophages"
+          },
+          {
+            "name": "Facultative Intracellular Survival in Mononuclear Phagocytes",
+            "desc": "หลบซ่อนและเพิ่มจำนวนใน Macrophages ของต่อมน้ำเหลืองและม้าม ก่อนจะหลั่งเข้าสู่กระแสเลือดรอบสอง (Secondary bacteremia)"
+          }
+        ],
+        "immuneEvasion": [
+          "ทนต่อกรดในกระเพาะอาหารปานกลาง (ต้องใช้ Inoculum ขนาด 10^5 - 10^9 ตัว ยกเว้นในคนกินยาลดกรดที่ติดเชื้อง่ายขึ้น)",
+          "การสร้าง Biofilm บนผิวหน้านิ่วในถุงน้ำดีทำให้กลายเป็นพาหะเรื้อรัง (Chronic carrier) ตลอดชีวิต"
+        ]
+      },
+      "diagnosis": {
+        "staining": "Gram-negative motile bacillus with peritrichous flagella (แบคทีเรียแท่งแกรมลบ มีแฟลกเจลลารอบตัว)",
+        "culture": "Bone Marrow Culture: มีความไวสูงสุด (>90% sensitivity) แม้ผู้ป่วยได้รับยาปฏิชีวนะมาก่อน; Blood Culture ไวสูงสุดในสัปดาห์ที่ 1 (60-80%); Stool/Urine Culture ไวในสัปดาห์ที่ 2-3",
+        "biochemical": [
+          "Non-lactose fermenter บน MacConkey agar (โคโลนีใสไม่มีสี)",
+          "H2S positive บน Hektoen หรือ TSI (Triple Sugar Iron: K/A with black precipitate + gas)",
+          "Urease negative, Indole negative, Motile (เคลื่อนที่ได้ แยกจาก Shigella และ Klebsiella)",
+          "CBC: Leukopenia with relative lymphocytosis, Left shift with band forms, Eosinopenia (ขาด Eosinophils เป็นเอกลักษณ์)"
+        ]
+      },
+      "clinical": {
+        "boardBuzzwords": [
+          "Step-ladder fever pattern",
+          "Relative bradycardia (Faget sign)",
+          "Rose spots on anterior trunk in 2nd week",
+          "Bone marrow culture has highest diagnostic yield (>90%)",
+          "Terminal ileal Peyer's patches perforation in 3rd week",
+          "Chronic gallbladder carrier state (Typhoid Mary)"
+        ],
+        "classicVignette": "หญิงอายุ 28 ปี เดินทางกลับจากอินเดีย 2 สัปดาห์ มีไข้สูงลอย ค่อยๆ เพิ่มระดับขึ้น ปวดศีรษะตื้อๆ ท้องอืด และท้องผูก ตรวจร่างกายพบ T 39.8 C แต่ PR เพียง 72 ครั้ง/นาที (Relative bradycardia) ตับม้ามโตเล็กน้อย บริเวณหน้าท้องส่วนบนพบจุดสีชมพูจางๆ ขนาด 3 มม. จำนวน 8 จุดที่กดแล้วจาง ตรวจเลือดพบ WBC 3,800/μL มี Band form 12% และไม่พบ Eosinophil",
+        "riskGroups": [
+          "ผู้ที่เดินทางไปยังแถบที่มีการสุขาภิบาลต่ำ (South Asia, Southeast Asia, Africa)",
+          "ผู้ที่ดื่มน้ำไม่ต้มสุก หรือรับประทานอาหารปรุงไม่สุก ผักสดล้างน้ำไม่สะอาด",
+          "ผู้ป่วยที่ใช้ยาลดกรดในกระเพาะ (PPIs / H2-blockers) ทำให้กรดทำลายเชื้อไม่ได้"
+        ]
+      },
+      "treatment": {
+        "firstLine": "IV Ceftriaxone 2 g วันละครั้ง นาน 10-14 วัน หรือ Oral Azithromycin 1 g ในวันแรก ตามด้วย 500 mg ต่อวัน นาน 7 วัน (เนื่องจากเชื้อในเอเชียดื้อยากลุ่ม Fluoroquinolone สูงมาก)",
+        "alternative": "Ciprofloxacin 500 mg วันละ 2 ครั้ง (เฉพาะในสายพันธุ์ที่ผลเพาะเชื้อยืนยันว่าไวต่อยา) หรือ Meropenem สำหรับเชื้อดื้อยาขั้นรุนแรง (XDR Salmonella typhi)",
+        "resistance": "MDR และ XDR Strains: ดื้อต่อ Ampicillin, Chloramphenicol, Co-trimoxazole, และ Fluoroquinolones จากการส่งผ่านพลาสมิด IncHI1 และยีน qnr/gyrA mutation"
+      }
+    }
+  },
+  {
+    "id": "cryptococcus-neoformans",
+    "name": "Cryptococcus neoformans (Cryptococcosis)",
+    "thaiName": "คริปโตค็อกคัส นีโอฟอร์แมนส์ (โรคคริปโตค็อกโคสิส)",
+    "scientificName": "Cryptococcus neoformans (Encapsulated, narrow-based budding yeast)",
+    "category": "fungi",
+    "categoryLabel": "เชื้อรา (Fungi)",
+    "cardTitle": "INDIA INK HALO & UMBILICATED PAPULES!",
+    "cardSubtitle": "pigeon droppings. cd4 < 100. soap-bubble brain lesions. echinocandins have ZERO activity.",
+    "cardBadge": "FUNGI",
+    "lesionTitle": "Umbilicated Papulonecrotic Lesions & Cryptococcal Meningitis",
+    "lesionThai": "ตุ่มบุ๋มตรงกลางคล้ายหูดข้าวสุก และเยื่อหุ้มสมองอักเสบเรื้อรัง",
+    "badgeColor": "#059669",
+    "quickStats": {
+      "depth": "Meninges, Subarachnoid Space, Brain Parenchyma (Virchow-Robin spaces), Dermis",
+      "morphology": "Narrow-based Budding Yeast (4-10 μm) with Massive Gelatinous Capsule",
+      "palpation": "Firm to cystic umbilicated papules/nodules with central ulceration/crusting",
+      "distribution": "Face, neck, scalp, trunk (resembling Molluscum contagiosum in AIDS)",
+      "epidemiology": "Soil enriched with pigeon/bird droppings, severely immunocompromised (CD4 < 100)"
+    },
+    "morphologicalParts": [
+      {
+        "id": "polysaccharide_capsule",
+        "name": "Glucuronoxylomannan Capsule (แคปซูลเมือกหนา)",
+        "thaiName": "แคปซูลโพลีแซคคาไรด์หนา ป้องกันการจับกินและเห็นเป็นวงใสใน India Ink",
+        "color": "#06b6d4",
+        "description": "Thick mucopolysaccharide capsule composed primarily of glucuronoxylomannan (GXM) that creates a wide negative halo around the yeast cell wall."
+      },
+      {
+        "id": "soap_bubble_lesions",
+        "name": "Soap-Bubble Brain Lesions (รอยโรคฟองสบู่ในเนื้อสมอง)",
+        "thaiName": "ซีสต์เมือกขยายตัวตามช่องรอบเส้นเลือด Virchow-Robin ในเนื้อสมอง",
+        "color": "#8b5cf6",
+        "description": "Distension of perivascular Virchow-Robin spaces by gelatinous pseudocysts packed with encapsulated yeast cells in the basal ganglia."
+      },
+      {
+        "id": "umbilicated_skin_papule",
+        "name": "Umbilicated Cutaneous Papule (ตุ่มผิวหนังบุ๋มตรงกลาง)",
+        "thaiName": "ตุ่มนูนสีเนื้อที่มีรอยบุ๋มตรงกลาง คล้ายหูดข้าวสุก (Molluscum contagiosum)",
+        "color": "#f59e0b",
+        "description": "Disseminated cutaneous lesion presenting as a discrete, smooth papule with central umbilication and crusting mimicking molluscum contagiosum."
+      }
+    ],
+    "clinicalCases": [
+      {
+        "id": "cryptococcus-case-1",
+        "title": "Case 1: India Ink Negative Stain of CSF (ย้อมหมึกดำ India Ink)",
+        "badge": "เคสที่ 1: ตรวจหมึกดำ India Ink",
+        "downloadSource": "Cryptococcus in India Ink.jpg",
+        "localFileName": "cryptococcus_case1_india_ink.jpg",
+        "image": "assets/images/clinical/cryptococcus_case1_india_ink.jpg",
+        "source": "CDC / Dr. Leanor Haley / PHIL (Wikimedia Commons)",
+        "description": "ภาพกล้องจุลทรรศน์จากการตรวจน้ำไขสันหลัง (CSF) ด้วยหมึกดำ India ink แสดงเซลล์ยีสต์ Cryptococcus neoformans ที่มีแคปซูลหนาโปร่งแสงขนาดใหญ่ล้อมรอบ อนุภาคคาร์บอนของหมึกดำไม่สามารถแทรกซึมผ่านแคปซูล Glucuronoxylomannan ได้ จึงเห็นเป็นวงรัศมีใส (Clear halo) รอบเซลล์ยีสต์ที่มีการแตกหน่อฐานแคบ (Narrow-based budding)",
+        "keyFindings": [
+          "Clear wide halo: วงแหวนโปร่งแสงขนาดใหญ่รอบเซลล์ยีสต์ที่หมึกดำย้อมไม่ติด",
+          "Narrow-based budding: การแตกหน่อแบบฐานแคบ รอยต่อระหว่างเซลล์แม่และลูกมีขนาดเล็ก",
+          "Spherical yeast: เซลล์รูปกลมหรือรีขนาด 4-10 ไมโครเมตร",
+          "High opening pressure: การเจาะหลังมักพบแรงดันน้ำไขสันหลังสูงเกิน 200-250 mmH2O"
+        ]
+      },
+      {
+        "id": "cryptococcus-case-2",
+        "title": "Case 2: Cutaneous Cryptococcosis Lesions (รอยโรคที่ผิวหนัง)",
+        "badge": "เคสที่ 2: รอยโรคผิวหนังในผู้ป่วยเอดส์",
+        "downloadSource": "Cryptococcosis (5185612334).jpg",
+        "localFileName": "cryptococcus_case2_skin_lesions.jpg",
+        "image": "assets/images/clinical/cryptococcus_case2_skin_lesions.jpg",
+        "source": "CDC / Public Health Image Library (Wikimedia Commons)",
+        "description": "ภาพเคสจริงแสดงรอยโรคผิวหนังจากการกระจายของเชื้อคริปโตค็อกคัส (Cutaneous Cryptococcosis) ในผู้ป่วยภูมิคุ้มกันบกพร่องขั้นรุนแรง มีลักษณะเป็นตุ่มนูนแดงที่มีรอยบุ๋มตรงกลาง (Umbilicated papules) และสะเก็ดแผล คล้ายคลึงกับหูดข้าวสุก (Molluscum contagiosum) มาก การตรวจสะกิดตุ่มไปย้อมจะพบยีสต์มีแคปซูลจำนวนมาก",
+        "keyFindings": [
+          "Molluscum-like umbilication: ตุ่มนูนที่มีรอยบุ๋มตรงกลางคล้ายหูดข้าวสุก",
+          "Facial predilection: พบบ่อยบริเวณใบหน้า รอบจมูก และลำคอ",
+          "Marker of dissemination: การมีแผลที่ผิวหนังบ่งบอกว่าเชื้อแพร่กระจายเข้าสู่กระแสเลือดแล้ว",
+          "Severely low CD4: เกือบทั้งหมดพบในผู้ป่วยที่มีเม็ดเลือดขาว CD4 < 100 cells/μL"
+        ]
+      }
+    ],
+    "tabs": {
+      "morphology": {
+        "depth": "Central Nervous System (Leptomeninges, Basal ganglia), Lungs, Skin",
+        "palpation": "Neck stiffness with positive Kernig/Brudzinski signs, papilledema on funduscopy",
+        "highlights": [
+          "เป็นสาเหตุของเยื่อหุ้มสมองอักเสบจากเชื้อราที่พบบ่อยที่สุดในผู้ป่วย HIV/AIDS ในประเทศไทย",
+          "อาการนำมักเป็นแบบกึ่งเฉียบพลันหรือเรื้อรัง (Subacute-to-chronic): ปวดศีรษะตื้อๆ ต่อเนื่องหลายสัปดาห์, ไข้ต่ำๆ, ซึม, สับสน",
+          "ตุ่มที่ผิวหนังมักเป็นรอยบุ๋มตรงกลาง (Umbilicated papules) ซึ่งต้องแยกจาก Molluscum contagiosum และ Talaromyces marneffei"
+        ]
+      },
+      "pathogenesis": {
+        "virulenceFactors": [
+          {
+            "name": "Glucuronoxylomannan (GXM) Capsule",
+            "desc": "แคปซูลโพลีแซคคาไรด์ขนาดใหญ่ ยับยั้ง Phagocytosis, ยับยั้ง Leukocyte migration และกระตุ้น L-selectin shedding"
+          },
+          {
+            "name": "Laccase (Phenoloxidase) Enzyme & Melanin",
+            "desc": "สังเคราะห์เม็ดสี Melanin ในผนังเซลล์จาก Diphenolic compounds ปกป้องเชื้อจากสารอนุมูลอิสระ (ROS) และการทำลายของ Macrophages"
+          },
+          {
+            "name": "Mannitol & High Intracranial Pressure Production",
+            "desc": "สร้าง Mannitol และเมือกแคปซูลไปอุดตัน Arachnoid villi ทำให้การดูดซึม CSF ลดลง เกิดแรงดันในกะโหลกศีรษะสูงอย่างรุนแรง"
+          }
+        ],
+        "immuneEvasion": [
+          "ยับยั้งการหลั่ง Pro-inflammatory cytokines (TNF-alpha, IL-12) และเหนี่ยวนำให้เกิด Immune paralysis",
+          "Phenotypic switching ของขนาดแคปซูลและเซลล์ยักษ์ (Titan cells ขนาดใหญ่ถึง 100 μm) ทำให้เม็ดเลือดขาวกลืนกินไม่ได้"
+        ]
+      },
+      "diagnosis": {
+        "staining": "India Ink Preparation: Negative contrast แสดงวงใสของแคปซูลรอบเซลล์ยีสต์; Mucicarmine Stain: ย้อมแคปซูลติดสีแดงชมพูสด (Mucicarmine positive ช่วยแยกจาก Histoplasma); Fontana-Masson: ย้อมเมลานินติดสีน้ำตาลดำ",
+        "culture": "Birdseed Agar (Niger seed / Staib medium): โคโลนีเปลี่ยนเป็นสีน้ำตาลเข้มหรือดำเนื่องจากการสร้าง Melanin โดยเอนไซม์ Phenoloxidase; Sabouraud Dextrose Agar (SDA): โคโลนีขาวนวล ผิวมันเงาเป็นเมือกคล้ายครีม (Mucoid)",
+        "biochemical": [
+          "Cryptococcal Antigen (CrAg) Lateral Flow Assay: มีความไวและความจำเพาะสูงมาก (>98%) ทั้งในเลือดและ CSF รู้ผลใน 10 นาที",
+          "Urease Test: Positive (+) สร้างเอนไซม์ยูรีเอส เปลี่ยนอาหารเป็นสีชมพู (แยกจาก Candida albicans ซึ่งเป็น Urease negative)",
+          "LP: Opening pressure สูงมาก (> 200-300 mmH2O), CSF โปรตีนสูง, น้ำตาลต่ำ, เม็ดเลือดขาวเด่นเป็น Mononuclear cells"
+        ]
+      },
+      "clinical": {
+        "boardBuzzwords": [
+          "Pigeon droppings exposure",
+          "Narrow-based budding yeast with thick capsule",
+          "India ink positive clear halo",
+          "Mucicarmine stain stains capsule bright pink/red",
+          "CrAg lateral flow assay high sensitivity",
+          "Soap-bubble gelatinous pseudocysts in basal ganglia",
+          "Echinocandins (Caspofungin) have NO activity"
+        ],
+        "classicVignette": "ชายอายุ 36 ปี ติดเชื้อ HIV ไม่ได้รับยาต้านไวรัส (CD4 28 cells/μL) มีอาการปวดศีรษะตื้อๆ ทั่วศีรษะมา 3 สัปดาห์ ร่วมกับคลื่นไส้ อาเจียนพุ่ง และเห็นภาพซ้อน ตรวจร่างกายพบ Stiff neck และตรวจก้นตาพบ Papilledema ที่ใบหน้าพบตุ่มนูนบุ๋มตรงกลางขนาด 3 มม. 4 ตุ่ม เจาะน้ำไขสันหลังพบ Opening pressure 360 mmH2O ย้อมหมึกดำ India ink พบยีสต์กลมแตกหน่อฐานแคบมีวงใสล้อมรอบ",
+        "riskGroups": [
+          "ผู้ป่วยติดเชื้อ HIV/AIDS ที่มีระดับ CD4 < 100 cells/μL",
+          "ผู้ป่วยปลูกถ่ายอวัยวะที่ได้รับยากดภูมิคุ้มกัน (Organ transplant recipients)",
+          "ผู้ป่วยที่ได้รับยาสเตียรอยด์ขนาดสูงเป็นเวลานาน หรือยาชีววัตถุกลุ่ม Anti-TNF"
+        ]
+      },
+      "treatment": {
+        "firstLine": "Induction Phase (อย่างน้อย 2 สัปดาห์): IV Liposomal Amphotericin B (3-4 mg/kg/day) + Oral Flucytosine (100 mg/kg/day แบ่งให้ 4 ครั้ง) พร้อมทำ Therapeutic LP ระบายน้ำไขสันหลังทุกวันหาก Opening pressure > 200 mmH2O",
+        "alternative": "Consolidation Phase: Oral Fluconazole 400 mg/day นาน 8 สัปดาห์ ตามด้วย Maintenance Phase: Oral Fluconazole 200 mg/day จนกว่า CD4 > 100 ต่อเนื่องเกิน 3 เดือน",
+        "resistance": "CRITICAL PEARL: เชื้อ Cryptococcus ดื้อต่อยากลุ่ม Echinocandins (Caspofungin, Micafungin, Anidulafungin) ตามธรรมชาติ 100% ห้ามสั่งใช้เด็ดขาด!"
+      }
+    }
+  },
+  {
+    "id": "histoplasma-capsulatum",
+    "name": "Histoplasma capsulatum (Histoplasmosis)",
+    "thaiName": "ฮิสโตพลาสมา แคปซูลาตัม (โรคฮิสโตพลาสโมซิส)",
+    "scientificName": "Histoplasma capsulatum (Thermal dimorphic fungus, intracellular pathogen)",
+    "category": "fungi",
+    "categoryLabel": "เชื้อรา (Fungi)",
+    "cardTitle": "INTRACELLULAR YEASTS & ORAL ULCERS!",
+    "cardSubtitle": "bat/bird guano in caves. macrophages packed with 2-4 um yeasts. adrenal destruction.",
+    "cardBadge": "FUNGI",
+    "lesionTitle": "Mucosal Painful Ulcers & Disseminated Reticuloendothelial Granulomas",
+    "lesionThai": "แผลเปื่อยเรื้อรังที่เยื่อบุในช่องปากและลิ้น ตับม้ามโต และต่อมหมวกไตวาย",
+    "badgeColor": "#059669",
+    "quickStats": {
+      "depth": "Reticuloendothelial System, Alveolar Macrophages, Bone Marrow, Adrenals, Oral Mucosa",
+      "morphology": "Tiny Oval Budding Yeasts (2-4 μm) densely packed inside Macrophages",
+      "palpation": "Indurated, painful mucosal ulcers with rolled borders and granulomatous bed",
+      "distribution": "Tongue, palate, buccal mucosa, liver, spleen, adrenals, lungs",
+      "epidemiology": "Soil enriched with bat/bird guano, cave exploration (spelunking), Southern Thailand"
+    },
+    "morphologicalParts": [
+      {
+        "id": "intracellular_yeast",
+        "name": "Intracellular Yeasts in Macrophages (ยีสต์ในเซลล์มาโครฟาจ)",
+        "thaiName": "เซลล์ยีสต์ขนาดเล็ก 2-4 ไมโครเมตร อัดแน่นในไซโตพลาสซึมของเม็ดเลือดขาว",
+        "color": "#0d9488",
+        "description": "Small oval yeasts (2-4 μm) with narrow budding residing and replicating inside phagolysosomes of reticuloendothelial macrophages ('Histo Hides in Histiocytes')."
+      },
+      {
+        "id": "oral_mucosal_ulcer",
+        "name": "Oral Painful Ulcer (แผลเปื่อยเรื้อรังในปาก)",
+        "thaiName": "แผลเปื่อยเจ็บที่ลิ้นและเยื่อบุกระพุ้งแก้ม ขอบนูนแข็งคล้ายมะเร็งช่องปาก",
+        "color": "#e11d48",
+        "description": "Painful, indurated mucosal ulcer with rolled borders on the tongue, palate, or buccal mucosa in disseminated histoplasmosis, frequently mimicking squamous cell carcinoma."
+      },
+      {
+        "id": "adrenal_destruction",
+        "name": "Adrenal Insufficiency (การทำลายต่อมหมวกไต)",
+        "thaiName": "ต่อมหมวกไตโตสองข้างและเกิดเนื้อตาย ทำให้ความดันตกและโซเดียมต่ำ",
+        "color": "#d97706",
+        "description": "Bilateral adrenal enlargement with caseating necrosis and granulomas leading to primary adrenal insufficiency (Addisonian crisis) with hypotension and hyperkalemia."
+      }
+    ],
+    "clinicalCases": [
+      {
+        "id": "histoplasma-case-1",
+        "title": "Case 1: Cutaneous & Mucosal Lesions in Histoplasmosis (แผลเปื่อยเรื้อรัง)",
+        "badge": "เคสที่ 1: แผลเปื่อยฮิสโตพลาสโมซิส",
+        "downloadSource": "Histoplasmosis, due to the fungus Histoplasma capsulatum skin lesion 6840 lores.jpg",
+        "localFileName": "histoplasma_case1_skin_ulcer.jpg",
+        "image": "assets/images/clinical/histoplasma_case1_skin_ulcer.jpg",
+        "source": "CDC / Dr. Thomas F. Sellers / PHIL 6840 (Public Domain)",
+        "description": "ภาพเคสจริงแสดงรอยโรคแผลเปื่อยเรื้อรังที่ผิวหนังและเยื่อบุ (Disseminated Cutaneous Histoplasmosis) แผลมีลักษณะขอบนูนแข็ง ก้นแผลมีเนื้อเยื่อแกรนูเลชัน (Granulation tissue) ในผู้ป่วยมักตรวจพบแผลเจ็บที่ลิ้นและเพดานปากร่วมด้วย ชิ้นเนื้อตรวจพบมาโครฟาจอัดแน่นไปด้วยเซลล์ยีสต์ขนาดเล็กจำนวนมาก",
+        "keyFindings": [
+          "Painful indurated ulcer: แผลเปื่อยเจ็บ ขอบยกนูน แข็ง คล้ายมะเร็งผิวหนัง",
+          "Oral and tongue lesions: แผลที่ลิ้นและเพดานปากเป็นจุดสังเกตสำคัญในผู้ป่วยแพร่กระจาย",
+          "Adrenal enlargement: มักพบต่อมหมวกไตโตทั้งสองข้างจากภาพ CT ช่องท้อง",
+          "Cave exploration history: มีประวัติเข้าไปสำรวจถ้ำหรือสัมผัสมูลค้างคาว/มูลนก"
+        ]
+      },
+      {
+        "id": "histoplasma-case-2",
+        "title": "Case 2: Tuberculate Macroconidia at 25°C (สปอร์หนาม Tuberculate)",
+        "badge": "เคสที่ 2: มาโครโคนิเดียรูปหนาม",
+        "downloadSource": "Tuberculate macroconida of the Jamaican isolate of Histoplasma capsulatum PHIL 4023 lores.jpg",
+        "localFileName": "histoplasma_case2_macroconidia.jpg",
+        "image": "assets/images/clinical/histoplasma_case2_macroconidia.jpg",
+        "source": "CDC / Dr. Libero Ajello / PHIL 4023 (Public Domain)",
+        "description": "ภาพกล้องจุลทรรศน์จากการเพาะเชื้อที่อุณหภูมิห้อง 25°C แสดง Tuberculate macroconidia ผนังหนาขนาด 8-15 ไมโครเมตรที่มีส่วนยื่นคล้ายหนามหรือปุ่มนิ้วมือ (Finger-like projections / Spikes) รอบวง ซึ่งเป็นลักษณะเฉพาะตัวที่ใช้ยืนยันการวินิจฉัยเชื้อราสองรูป Histoplasma capsulatum ในห้องปฏิบัติการ",
+        "keyFindings": [
+          "Tuberculate macroconidia: สปอร์ขนาดใหญ่ที่มีปุ่มหนามกลมยื่นรอบผนังเซลล์",
+          "Thermal dimorphism: อุณหภูมิ 25°C เป็น Mold มีสปอร์หนาม; อุณหภูมิ 37°C ในร่างกายเป็น Tiny yeast",
+          "Microconidia: สปอร์ขนาดเล็ก 2-5 ไมโครเมตรที่เป็นตัวการถูกสูดดมลงสู่ถุงลมปอด",
+          "SDA culture: โคโลนีเส้นใยสีขาวปนน้ำตาลอ่อน เจริญช้า ใช้เวลา 2-4 สัปดาห์"
+        ]
+      }
+    ],
+    "tabs": {
+      "morphology": {
+        "depth": "Lungs, Spleen, Liver, Bone Marrow, Adrenals, Mucocutaneous tissue",
+        "palpation": "Hepatosplenomegaly, generalized lymphadenopathy, painful tongue ulcer",
+        "highlights": [
+          "เชื้อราสองรูป (Thermal dimorphic fungus): อุณหภูมิห้อง (25°C) เป็นราสายสร้าง Tuberculate macroconidia; อุณหภูมิร่างกาย (37°C) เป็นยีสต์ขนาดเล็กจิ๋ว (2-4 μm) อยู่ใน Macrophages",
+          "จำสูตรเด็ด: 'Histoplasma Hides within Histiocytes' (เซลล์ยีสต์ซ่อนตัวอัดแน่นในเซลล์เม็ดเลือดขาว)",
+          "ในประเทศไทย พบบ่อยในภาคใต้และพื้นที่ที่มีถ้ำค้างคาวหรือเล้าไก่เก่า"
+        ]
+      },
+      "pathogenesis": {
+        "virulenceFactors": [
+          {
+            "name": "Intracellular Survival in Phagolysosome",
+            "desc": "ยับยั้งการรวมตัวของ Phagosome-lysosome และควบคุมค่า pH ภายใน Phagolysosome ให้เป็นด่างอ่อนๆ ทำให้เอนไซม์ย่อยสลายไม่ทำงาน"
+          },
+          {
+            "name": "Alpha-(1,3)-Glucan in Yeast Cell Wall",
+            "desc": "กลบเกลื่อน Beta-glucan ทำให้ไม่ถูกตรวจจับโดย Dectin-1 receptor บนผิวของ Macrophages"
+          },
+          {
+            "name": "Adrenal Tropism & Necrosis",
+            "desc": "แพร่กระจายไปทำลายต่อมหมวกไตทั้งสองข้าง ทำให้เกิดภาวะต่อมหมวกไตวายเฉียบพลัน (Addisonian crisis) โซเดียมต่ำ โพแทสเซียมสูง ความดันตก"
+          }
+        ],
+        "immuneEvasion": [
+          "ซ่อนตัวอยู่ใน Macrophages หลบหลีกภูมิคุ้มกันแบบ Humoral (แอนติบอดีไม่มีผลในการกำจัดเชื้อ)",
+          "ต้องอาศัย Cell-Mediated Immunity (Th1, IFN-gamma, TNF-alpha) ในการควบคุมเชื้อ ผู้ป่วย HIV หรือคนกินยากดภูมิคุ้มกันจึงติดเชื้อรุนแรง"
+        ]
+      },
+      "diagnosis": {
+        "staining": "Wright-Giemsa Stain ของ Bone Marrow, Buffy coat หรือชิ้นเนื้อ: พบ Tiny oval yeasts (2-4 μm) มีขอบใสลวงตา (Pseudocapsule) อัดแน่นเต็ม Cytoplasm ของ Macrophages; GMS / PAS: ติดสีชัดเจน",
+        "culture": "Sabouraud Dextrose Agar ที่ 25°C ขึ้นราสายสีขาวฟู ตรวจพบ Tuberculate macroconidia; ปรับอุณหภูมิเป็น 37°C เพื่อดูการเปลี่ยนเป็น Yeast (ยืนยัน Dimorphism)",
+        "biochemical": [
+          "Histoplasma Urine & Serum Antigen EIA: มีความไวสูงมาก (>90%) ในผู้ป่วย Disseminated disease และใช้ติดตามผลการรักษา",
+          "Lab: Pancytopenia (จากไขกระดูกถูกแทนที่), Elevated Ferritin สูงมาก (> 10,000 ng/mL), Elevated LDH, Hyponatremia + Hyperkalemia (Addison disease)"
+        ]
+      },
+      "clinical": {
+        "boardBuzzwords": [
+          "Bat or bird guano exposure (caving / spelunking)",
+          "Thermal dimorphism (Tuberculate macroconidia at 25°C vs Yeast at 37°C)",
+          "Tiny 2-4 um intracellular yeasts packed inside macrophages",
+          "Painful tongue / palate ulcers mimicking oral carcinoma",
+          "Bilateral adrenal enlargement and Addisonian crisis",
+          "Histoplasma urine antigen test high yield"
+        ],
+        "classicVignette": "ชายอายุ 42 ปี มีประวัติชอบสำรวจถ้ำในจังหวัดกระบี่ มีไข้เรื้อรัง น้ำหนักลด 8 กก. ใน 1 เดือน อ่อนเพลียมาก ตรวจร่างกายพบตับม้ามโต คลำได้ต่อมน้ำเหลืองหลายตำแหน่ง และมีแผลเปื่อยขอบนูนกดเจ็บที่ข้างลิ้นด้านขวา ตรวจเลือดพบ Na 128 mEq/L, K 5.6 mEq/L ภาพ CT ช่องท้องพบต่อมหมวกไตสองข้างโตผิดปกติ เจาะตรวจไขกระดูกย้อม Wright stain พบมาโครฟาจอัดแน่นไปด้วยเซลล์ยีสต์รูปไข่ขนาด 2-4 ไมโครเมตร",
+        "riskGroups": [
+          "นักสำรวจถ้ำ (Spelunkers), นักท่องเที่ยวเข้าถ้ำค้างคาว",
+          "คนงานรื้อถอนอาคารเก่า, เกษตรกรผู้เลี้ยงไก่หรือนก",
+          "ผู้ป่วยภูมิคุ้มกันบกพร่อง (HIV/AIDS ที่มี CD4 < 150 cells/μL, ผู้ใช้ Anti-TNF)"
+        ]
+      },
+      "treatment": {
+        "firstLine": "Severe / Disseminated Disease: IV Liposomal Amphotericin B (3 mg/kg/day นาน 1-2 สัปดาห์) จนอาการคงที่ จากนั้นเปลี่ยนเป็น Oral Itraconazole 200 mg วันละ 3 ครั้ง นาน 3 วัน แล้วลดเหลือ 200 mg วันละ 2 ครั้ง นานอย่างน้อย 12 เดือน",
+        "alternative": "Mild-to-moderate Pulmonary Disease: Oral Itraconazole 200 mg วันละ 3 ครั้ง นาน 3 วัน ตามด้วย 200 mg วันละ 2 ครั้ง นาน 6-12 สัปดาห์ (ต้องตรวจวัดระดับยา Itraconazole ในเลือด)",
+        "resistance": "ข้อควรระวัง: Fluconazole มีประสิทธิภาพด้อยกว่า Itraconazole มากในการรักษา Histoplasmosis จึงไม่แนะนำให้ใช้เป็นยาขนานแรก ยกเว้นผู้ป่วยทนยาอื่นไม่ได้"
+      }
+    }
+  },
+  {
+    "id": "talaromyces-marneffei",
+    "name": "Talaromyces marneffei (Talaromycosis, formerly Penicilliosis)",
+    "thaiName": "ทาลาโรไมซีส มาร์เนฟเฟอิ (โรคทาลาโรไมโคสิส / เดิมเพนิซิลลิโอซิส)",
+    "scientificName": "Talaromyces marneffei (formerly Penicillium marneffei; Thermal dimorphic fission yeast)",
+    "category": "fungi",
+    "categoryLabel": "เชื้อรา (Fungi)",
+    "cardTitle": "BINARY FISSION YEAST & RED PIGMENT!",
+    "cardSubtitle": "endemic in Northern Thailand. bamboo rat reservoir. umbilicated papules with necrotic center.",
+    "cardBadge": "FUNGI",
+    "lesionTitle": "Molluscum-Like Umbilicated Papules with Central Necrosis",
+    "lesionThai": "ตุ่มบุ๋มตรงกลางมีสะเก็ดเนื้อตายสีดำ (Central necrotic umbilicated papules) และตับม้ามโต",
+    "badgeColor": "#059669",
+    "quickStats": {
+      "depth": "Reticuloendothelial System, Dermis, Bone Marrow, Lungs, Lymph Nodes",
+      "morphology": "Thermal Dimorphic Fungus: Fission Yeast with Transverse Septum (NO budding!)",
+      "palpation": "Firm, non-tender umbilicated papules with hard central black necrotic crust",
+      "distribution": "Face, forehead, neck, upper chest, trunk, extremities",
+      "epidemiology": "Northern Thailand (Chiang Mai), Southern China, SE Asia, Bamboo rat (Rhizomys)"
+    },
+    "morphologicalParts": [
+      {
+        "id": "transverse_septum_yeast",
+        "name": "Fission Yeast with Transverse Septum (ยีสต์แบ่งตัวแบบแยกสองมีผนังกั้น)",
+        "thaiName": "เซลล์ยีสต์รูปไส้กรอกแบ่งตัวด้วยการสร้างผนังกั้นตรงกลาง (ไม่มีการแตกหน่อ)",
+        "color": "#14b8a6",
+        "description": "Intracellular and extracellular elliptical to sausage-shaped yeast cells (3-8 μm) that divide by BINARY FISSION with a prominent central transverse septum, NOT by budding."
+      },
+      {
+        "id": "necrotic_umbilicated_papule",
+        "name": "Umbilicated Papule with Necrotic Core (ตุ่มบุ๋มสะเก็ดดำตรงกลาง)",
+        "thaiName": "ตุ่มนูนบุ๋มตรงกลางที่มีสะเก็ดเนื้อตายสีดำคล้ายหลุมอุกกาบาต",
+        "color": "#be123c",
+        "description": "Pathognomonic skin lesions presenting as widespread acneiform or molluscum-like papules with central necrotic crateriform depression and black crusting."
+      },
+      {
+        "id": "red_diffusible_pigment",
+        "name": "Red Diffusible Pigment on Agar (สารสีแดงกระจายในจานเพาะเชื้อ)",
+        "thaiName": "โคโลนีสร้างรงควัตถุสีแดงทับทิมซึมกระจายทั่วอาหารเลี้ยงเชื้อที่ 25°C",
+        "color": "#991b1b",
+        "description": "Rapid production of a water-soluble dark wine-red diffusible pigment that stains the Sabouraud dextrose agar medium bright red at room temperature (25°C)."
+      }
+    ],
+    "clinicalCases": [
+      {
+        "id": "talaromyces-case-1",
+        "title": "Case 1: Red Diffusible Pigment Culture on SDA (โคโลนีสร้างสีแดงซึมบน SDA)",
+        "badge": "เคสที่ 1: เพาะเชื้อสร้างสีแดงซึม",
+        "downloadSource": "Penicillium marneffei colony.jpg",
+        "localFileName": "talaromyces_case1_colony_red_pigment.jpg",
+        "image": "assets/images/clinical/talaromyces_case1_colony_red_pigment.jpg",
+        "source": "Dr. Arthur Morris / CDC / Public Health Image Library (Wikimedia Commons)",
+        "description": "ภาพจานเพาะเชื้อ Sabouraud Dextrose Agar (SDA) บ่มที่อุณหภูมิ 25°C แสดงโคโลนีของ Talaromyces marneffei ที่หลั่งรงควัตถุสีแดงทับทิมเข้ม (Wine-red diffusible pigment) กระจายซึมไปทั่ววุ้นอาหารเลี้ยงเชื้ออย่างเด่นชัด ถือเป็นลักษณะจำเพาะ (Hallmark characteristic) สำคัญที่สุดในการระบุเชื้อราก่อโรคชนิดนี้",
+        "keyFindings": [
+          "Wine-red diffusible pigment: สารสีแดงสดซึมกระจายรอบโคโลนีลงในเนื้อวุ้น",
+          "Thermal dimorphism: 25°C ขึ้นเป็นราสายสร้างสีแดง; 37°C ขึ้นเป็นยีสต์ไม่มีสีแดง",
+          "Mold morphology: โคโลนีมีรอยย่นแผ่กระจายเป็นรัศมี ผิวมีผงสปอร์สีเขียวอมเทา",
+          "Rapid growth: เริ่มเห็นสีแดงซึมในอาหารเลี้ยงเชื้อภายใน 3-5 วัน"
+        ]
+      },
+      {
+        "id": "talaromyces-case-2",
+        "title": "Case 2: Rhizomys Bamboo Rat Reservoir (หนูพุก / หนูหริ่งไม้ไผ่รังโรคธรรมชาติ)",
+        "badge": "เคสที่ 2: รังโรคหนูหวาย / หนูไผ่",
+        "downloadSource": "Rhizomys pruinosus.png",
+        "localFileName": "talaromyces_case2_bamboo_rat_reservoir.png",
+        "image": "assets/images/clinical/talaromyces_case2_bamboo_rat_reservoir.png",
+        "source": "Wikimedia Commons / Zoological Archive (Public Domain)",
+        "description": "ภาพหนูพุกไม้ไผ่ (Hoary Bamboo Rat - Rhizomys pruinosus) ซึ่งเป็นสัตว์รังโรคในธรรมชาติที่สำคัญที่สุดของเชื้อ Talaromyces marneffei ในแถบภาคเหนือของประเทศไทยและเอเชียตะวันออกเฉียงใต้ หนูไผ่เหล่านี้อาศัยอยู่ตามป่าไผ่และโพรงดิน โดยมีอัตราการติดเชื้อในอวัยวะภายในสูงมาก และมูลของหนูจะปนเปื้อนสปอร์ของเชื้อราลงสู่ดิน",
+        "keyFindings": [
+          "Natural reservoir: หนูไผ่ทุกชนิด (Rhizomys pruinosus, R. sumatrensis, Cannomys badius) เป็นรังโรคในธรรมชาติ",
+          "Endemic zone: ภาคเหนือของไทย (เชียงใหม่ ลำพูน เชียงราย), พม่า, เวียดนาม, จีนตอนใต้",
+          "Seasonal peak: มักพบผู้ป่วยเพิ่มสูงขึ้นในช่วงฤดูฝน (การไถพรวนดินและสัมผัสดินเปียก)",
+          "Aerosol inhalation: สูดดมสปอร์จากดินที่ปนเปื้อนเข้าสู่ปอด"
+        ]
+      }
+    ],
+    "tabs": {
+      "morphology": {
+        "depth": "Dermis, Alveoli, Reticuloendothelial Organs, Bone Marrow, Liver, Spleen",
+        "palpation": "Multiple firm facial papules with crusted central necrosis, marked hepatosplenomegaly",
+        "highlights": [
+          "ลักษณะรอยโรคคลาสสิก: ตุ่มนูนที่มีรอยบุ๋มตรงกลางและมีสะเก็ดเนื้อตายสีดำ (Papules with central necrotic umbilication) พบบ่อยที่สุดที่ใบหน้า ลำคอ และหน้าอก",
+          "จุดเน้น NL1: การแบ่งตัวเป็นแบบ 'Binary Fission' คือสร้างผนังกั้นตรงกลาง (Transverse cross-wall / Septum) ไม่มีการแตกหน่อ (NO Budding) ช่วยแยกจาก Cryptococcus และ Histoplasma ได้เด็ดขาด",
+          "เป็นโรคติดเชื้อฉวยโอกาสที่เป็น AIDS-defining illness อันดับต้นๆ ในภาคเหนือของไทย (มักเกิดเมื่อ CD4 < 100 cells/μL)"
+        ]
+      },
+      "pathogenesis": {
+        "virulenceFactors": [
+          {
+            "name": "Thermal Dimorphic Phase Transition",
+            "desc": "เปลี่ยนรูปร่างจาก Conidia/Mold ที่ 25°C เป็น Yeast ที่ 37°C ภายในเซลล์โฮสต์ ซึ่งจำเป็นอย่างยิ่งต่อการก่อโรค"
+          },
+          {
+            "name": "Antioxidant Defenses (Catalase-Peroxidase & Melanin)",
+            "desc": "สร้างเอนไซม์ทำลาย ROS และสร้างเมลานินในผนังเซลล์ ช่วยให้รอดชีวิตและเพิ่มจำนวนภายใน Phagosome ของ Macrophages"
+          },
+          {
+            "name": "Endothelial Adherence & Hematogenous Dissemination",
+            "desc": "แพร่กระจายไปตามระบบ Reticuloendothelial และเกาะติดเยื่อบุผิว ทำให้เกิดตุ่มเนื้อตายกระจายทั่วผิวหนังและอวัยวะภายใน"
+          }
+        ],
+        "immuneEvasion": [
+          "ซ่อนตัวใน Macrophages ทำให้ภูมิคุ้มกันชนิดแอนติบอดีไม่สามารถกำจัดเชื้อได้",
+          "พบการติดเชื้อรุนแรงในผู้ป่วยติดเชื้อ HIV ขั้นก้าวหน้า และผู้ป่วยที่มีแอนติบอดีต้านอินเตอร์เฟอรอนแกมมา (Anti-IFN-gamma autoantibodies / Adult-onset immunodeficiency)"
+        ]
+      },
+      "diagnosis": {
+        "staining": "Touch smear จากแผลผิวหนัง หรือ Bone Marrow Aspirate ย้อม Wright-Giemsa: พบเซลล์ยีสต์รูปไส้กรอกหรือรูปไข่ (3-8 μm) ที่มี 'เส้นกั้นกลางเซลล์ชัดเจน (Transverse Septum)' ภายในและภายนอก Macrophages โดยไม่มีการแตกหน่อ!",
+        "culture": "Sabouraud Dextrose Agar (SDA) ที่ 25°C: โคโลนีเจริญเร็วและหลั่ง 'Red Diffusible Pigment' สีแดงทับทิมซึมทั่วอาหารเลี้ยงเชื้อ; ที่ 37°C ขึ้นเป็นโคโลนียีสต์สีครีม",
+        "biochemical": [
+          "PCR ตรวจหายีนจำเพาะ MP1 gene หรือ ITS rDNA sequence",
+          "CBC: Severe anemia, Leukocytosis with neutrophilia หรือ Leukopenia, Elevated alkaline phosphatase (ALP) สูงมากจากตับโต"
+        ]
+      },
+      "clinical": {
+        "boardBuzzwords": [
+          "Northern Thailand (Chiang Mai / Chiang Rai)",
+          "Bamboo rat (Rhizomys) reservoir",
+          "Red diffusible pigment on SDA at 25°C",
+          "Binary fission with central transverse septum (NO budding!)",
+          "Umbilicated papules with central necrotic crusts on face",
+          "Advanced HIV (CD4 < 100) or Anti-IFN-gamma autoantibodies"
+        ],
+        "classicVignette": "ชายอายุ 31 ปี จากจังหวัดเชียงใหม่ ติดเชื้อ HIV (CD4 24 cells/μL) มีไข้สูง ผอมแห้ง ไอแห้งๆ อ่อนเพลีย ตับม้ามโต และมีตุ่มแดงขึ้นตามใบหน้าและลำคอจำนวนมาก ลักษณะเป็นตุ่มนูนที่มีรอยบุ๋มตรงกลางพร้อมสะเก็ดสีดำคล้ายหลุมอุกกาบาต ขูดรอยโรคไปย้อม Wright stain พบเซลล์ยีสต์รูปไข่อยู่ในมาโครฟาจที่มีเส้นขวางกั้นกลางแบ่งเซลล์อย่างชัดเจน เพาะเชื้อบน SDA ที่ 25°C สังเกตเห็นสารสีแดงสดซึมกระจายทั่วจานเพาะเชื้อ",
+        "riskGroups": [
+          "ผู้ป่วยติดเชื้อ HIV/AIDS ที่มีระดับ CD4 < 100 cells/μL ในแถบเอเชียตะวันออกเฉียงใต้",
+          "ผู้ป่วยกลุ่ม Asian Adult-Onset Immunodeficiency (Anti-IFN-gamma autoantibodies)",
+          "เกษตรกรหรือผู้ขุดหาหนูพุกไม้ไผ่ในป่าทางภาคเหนือของไทย"
+        ]
+      },
+      "treatment": {
+        "firstLine": "Induction Phase (2 สัปดาห์): IV Liposomal Amphotericin B (3-5 mg/kg/day) หรือ IV Amphotericin B deoxycholate (0.7-1.0 mg/kg/day) จนไข้ลดลงและรอยโรคผิวหนังเริ่มยุบ",
+        "alternative": "Consolidation Phase: Oral Itraconazole 200 mg วันละ 2 ครั้ง นาน 10 สัปดาห์ ตามด้วย Maintenance Phase (Secondary Prophylaxis): Oral Itraconazole 200 mg วันละครั้ง จนกว่า CD4 > 100 ติดต่อกันเกิน 6 เดือนหลังเริ่มยา ART",
+        "resistance": "ข้อควรระวัง: เชื้อตอบสนองต่อ Itraconazole ดีกว่า Fluconazole อย่างมีนัยสำคัญ ห้ามใช้ Fluconazole เป็นยารักษาหลักเด็ดขาด"
+      }
+    }
+  },
+  {
+    "id": "aspergillus-fumigatus",
+    "name": "Aspergillus fumigatus (Invasive Aspergillosis & Aspergilloma)",
+    "thaiName": "แอสเปอร์จิลลัส ฟูมิกาทัส (โรคราแอสเปอร์จิลโลซิส / ราก้อนในปอด)",
+    "scientificName": "Aspergillus fumigatus (Monomorphic filamentous mold, acute-angle branching)",
+    "category": "fungi",
+    "categoryLabel": "เชื้อรา (Fungi)",
+    "cardTitle": "45-DEGREE ACUTE BRANCHING & CT HALO!",
+    "cardSubtitle": "neutropenic leukemia patients. pre-existing tb cavity fungus ball. voriconazole is DOC.",
+    "cardBadge": "FUNGI",
+    "lesionTitle": "Angioinvasive Pulmonary Cavitation & Mycetoma (Fungus Ball)",
+    "lesionThai": "ก้อนเชื้อราในโพรงปอดเดิม (Fungus ball) และการรุกรานทะลุหลอดเลือดทำให้ไอเป็นเลือด",
+    "badgeColor": "#059669",
+    "quickStats": {
+      "depth": "Bronchial Tree, Pulmonary Vasculature, Pre-existing Cavities, Paranasal Sinuses",
+      "morphology": "Uniform Narrow Septate Hyphae (3-5 μm) with 45° Acute-Angle Dichotomous Branching",
+      "palpation": "Decreased breath sounds, localized crackles, pleuritic friction rub",
+      "distribution": "Upper lung lobes, pre-existing TB cavities, paranasal sinuses, systemic emboli",
+      "epidemiology": "Airborne conidia in compost, soil, construction dust; profound prolonged neutropenia"
+    },
+    "morphologicalParts": [
+      {
+        "id": "acute_angle_hyphae",
+        "name": "45° Acute-Angle Septate Hyphae (สายรามีผนังกั้นแตกแขนงมุมแหลม)",
+        "thaiName": "สายราขนาดสม่ำเสมอ มีผนังกั้น แตกแขนงเป็นมุมแหลม 45 องศาคล้ายกิ่งไม้",
+        "color": "#15803d",
+        "description": "Slender, uniform septate hyphae (3-5 μm wide) exhibiting characteristic dichotomous branching at acute angles (approximately 45°)."
+      },
+      {
+        "id": "conidiophore_head",
+        "name": "Conidiophore & Phialides (โครงสร้างสร้างสปอร์คล้ายฝักบัว)",
+        "thaiName": "ก้านชูสปอร์ปลายพองกลม มีก้านฟิอาไลด์เรียงแถวเดียวสร้างสายสปอร์สีเขียวควันบุหรี่",
+        "color": "#047857",
+        "description": "Specialized conidiophore bearing a dome-shaped vesicle with uniseriate phialides producing continuous chains of smoky-green echinulate conidia."
+      },
+      {
+        "id": "aspergilloma_fungus_ball",
+        "name": "Aspergilloma / Mycetoma (ก้อนเชื้อราในโพรงปอด)",
+        "thaiName": "ก้อนกระจุกสายรา เม็ดเลือดขาว และเศษเนื้อตายที่กลิ้งไปมาในโพรงปอดเดิม",
+        "color": "#a16207",
+        "description": "Conglomerate mass of tangled fungal hyphae, fibrin, mucus, and cellular debris floating freely within a pre-existing tuberculous or bronchiectatic cavity (Monod sign)."
+      }
+    ],
+    "clinicalCases": [
+      {
+        "id": "aspergillus-case-1",
+        "title": "Case 1: Pulmonary Aspergilloma on Chest CT (ก้อนราในโพรงปอดเดิม)",
+        "badge": "เคสที่ 1: ก้อนรา Aspergilloma ในปอด",
+        "downloadSource": "Aspergilloma CT scan (5390986264).jpg",
+        "localFileName": "aspergillus_case1_ct_aspergilloma.jpg",
+        "image": "assets/images/clinical/aspergillus_case1_ct_aspergilloma.jpg",
+        "source": "Dr. Yale Rosen / Flickr / Wikimedia Commons (CC BY-SA 2.0)",
+        "description": "ภาพเอกซเรย์คอมพิวเตอร์ปอด (Chest CT) แสดงก้อนกลมของเชื้อรา (Aspergilloma หรือ Fungus ball) กลิ้งอยู่ภายในโพรงปอดเดิมที่เคยเป็นวัณโรค (Pre-existing tuberculous cavity) โดยมีแถบอากาศรูปพระจันทร์เสี้ยวล้อมรอบก้อน (Air-crescent sign หรือ Monod sign) ก้อนเชื้อรานี้สามารถขูดทำลายผนังโพรงและเส้นเลือด ทำให้ผู้ป่วยเกิดอาการไอเป็นเลือดสดอย่างรุนแรง (Massive hemoptysis)",
+        "keyFindings": [
+          "Gravity-dependent mass: ก้อนเนื้อรากลิ้งเปลี่ยนตำแหน่งตามท่านอนของผู้ป่วย",
+          "Air-crescent sign: แถบอากาศโค้งรูปเคียวล้อมรอบก้อนราในโพรงปอด",
+          "Pre-existing cavity: มักเกิดในโพรงแผลเป็นเดิมของวัณโรค (Old TB cavity) หรือ Sarcoidosis",
+          "Massive hemoptysis: อาการไอเป็นเลือดสดปริมาณมาก เป็นข้อบ่งชี้สำคัญในการผ่าตัด"
+        ]
+      },
+      {
+        "id": "aspergillus-case-2",
+        "title": "Case 2: Aspergillus fumigatus Conidiophore (โครงสร้าง Conidiophore สปอร์)",
+        "badge": "เคสที่ 2: โครงสร้างสร้างสปอร์",
+        "downloadSource": "Aspergillus fumigatus 01.jpg",
+        "localFileName": "aspergillus_case2_conidiophore.jpg",
+        "image": "assets/images/clinical/aspergillus_case2_conidiophore.jpg",
+        "source": "CDC / Dr. Libero Ajello / Wikimedia Commons",
+        "description": "ภาพกล้องจุลทรรศน์แสดง Conidiophore ของ Aspergillus fumigatus ซึ่งมีก้านชูสปอร์ผิวเรียบ ปลายพองออกเป็นกระเปาะรูปโดม (Vesicle) และมีเซลล์สร้างสปอร์ Phialides เรียงตัวเป็นแถวเดี่ยว (Uniseriate) ปกคลุมบริเวณสองในสามส่วนบนของกระเปาะ สร้างสปอร์ Conidia สีเขียวอมเทาเรียงต่อกันเป็นสายยาว",
+        "keyFindings": [
+          "Smoky green-gray colony: โคโลนีบนจานเพาะเชื้อสีเขียวควันบุหรี่หรือเขียวเข้มคล้ายกำมะหยี่",
+          "Thermotolerant: เจริญได้ดีมากที่อุณหภูมิ 37°C และทนความร้อนได้สูงถึง 50°C",
+          "45° acute branching: ในชิ้นเนื้อเยื่อจะเห็นสายราแตกกิ่งทำมุมแหลม 45 องศาและมีผนังกั้นชัดเจน",
+          "Angioinvasion: สายรามีความสามารถในการเจาะทะลุผนังหลอดเลือด ก่อลิ่มเลือดอุดตันและเนื้อตาย"
+        ]
+      }
+    ],
+    "tabs": {
+      "morphology": {
+        "depth": "Terminal bronchioles, Pulmonary arteries, Pre-existing cavities, Brain parenchyma",
+        "palpation": "Pleuritic chest pain with friction rub, localized wheezing or crackles",
+        "highlights": [
+          "ลักษณะสำคัญใต้กล้องจุลทรรศน์: สายรามีผนังกั้นสม่ำเสมอ (Regular septate hyphae) แตกแขนงเป็นมุมแหลม 45 องศา (45° Acute-angle dichotomous branching)",
+          "Angioinvasion: เชื้อมีคุณสมบัติรุกรานทะลวงผนังหลอดเลือด (Vascular invasion) ทำให้เกิดลิ่มเลือดอุดตัน เนื้อปอดขาดเลือดตาย (Hemorrhagic infarction) และไอเป็นเลือด",
+          "รูปแบบโรคแบ่งเป็น 3 กลุ่มหลัก: 1. ABPA (Allergic), 2. Aspergilloma (Fungus ball ในโพรงเดิม), 3. Invasive Aspergillosis (ในคนเม็ดเลือดขาวต่ำ)"
+        ]
+      },
+      "pathogenesis": {
+        "virulenceFactors": [
+          {
+            "name": "Elastases and Serine Proteases",
+            "desc": "เอนไซม์ย่อยสลายอีลาสตินและโปรตีนโครงสร้างในผนังหลอดเลือด ช่วยให้สายราเจาะทะลวงผ่านหลอดเลือดได้อย่างรวดเร็ว"
+          },
+          {
+            "name": "Gliotoxin & Secondary Metabolites",
+            "desc": "สารพิษยับยั้งการเคลื่อนที่และการทำงานของ Neutrophils และ Macrophages พร้อมทั้งกระตุ้น Apoptosis ของเซลล์ภูมิคุ้มกัน"
+          },
+          {
+            "name": "Thermotolerance (Up to 50°C)",
+            "desc": "ทนความร้อนสูง ทำให้เจริญเติบโตในอุณหภูมิร่างกายมนุษย์ได้อย่างรวดเร็วเมื่อผู้ป่วยมีไข้"
+          }
+        ],
+        "immuneEvasion": [
+          "เมลานินในผนัง Conidia ป้องกันการทำลายจากเอนไซม์ใน Lysosome และอนุมูลอิสระ ROS",
+          "เม็ดเลือดขาว Neutrophil เป็นด่านป้องกันหลักในการฆ่า Hyphae; ผู้ป่วยที่ Neutrophil ต่ำต่อเนื่องเกิน 10-14 วัน จึงมีความเสี่ยงสูงสุดต่อ Invasive disease"
+        ]
+      },
+      "diagnosis": {
+        "staining": "Gomori Methenamine Silver (GMS) หรือ Periodic Acid-Schiff (PAS): ติดสีสายรามีผนังกั้นสม่ำเสมอ แตกแขนงมุมแหลม 45° อย่างชัดเจน กำลังรุกรานหลอดเลือด",
+        "culture": "Sabouraud Dextrose Agar (SDA): โคโลนีเจริญเร็ว ผิวหน้าคล้ายกำมะหยี่สีเขียวอมเทาควันบุหรี่ (Smoky-green) ขอบขาว",
+        "biochemical": [
+          "Serum and BAL Galactomannan (GM) Antigen Assay: ตรวจแอนติเจนกาแลคโตแมนแนนในเลือดหรือน้ำล้างปอด ให้ผลบวกสูงใน Invasive aspergillosis",
+          "(1,3)-Beta-D-Glucan Assay (Fungitell): ให้ผลบวกใน Invasive fungal infections",
+          "Chest CT: 'CT Halo Sign' (ก้อนทึบมีฝ้ากระจกฝ้ามัวล้อมรอบ บ่งชี้เลือดออกรอบก้อนเนื้อตาย) ในระยะแรก และ 'Air-Crescent Sign' เมื่อเม็ดเลือดขาวเริ่มฟื้นตัว"
+        ]
+      },
+      "clinical": {
+        "boardBuzzwords": [
+          "45-degree acute-angle dichotomous branching",
+          "Regular septate hyphae with angioinvasion",
+          "CT Halo sign (early) and Air-crescent sign (late)",
+          "Serum / BAL Galactomannan antigen positive",
+          "Pre-existing TB cavity with mobile fungus ball (Aspergilloma)",
+          "Voriconazole is the first-line drug of choice (DOC)"
+        ],
+        "classicVignette": "ผู้ป่วยหญิงอายุ 52 ปี เป็นมะเร็งเม็ดเลือดขาวเฉียบพลันชนิด AML กำลังได้รับยาเคมีบำบัด มีภาวะเม็ดเลือดขาวนิวโทรฟิลต่ำรุนแรง (ANC 60/μL) มีไข้สูงต่อเนื่องแม้ได้รับยาปฏิชีวนะครอบคลุมหลายขนาน เจ็บหน้าอกแปลบเวลาหายใจเข้า และไอมีเสมหะปนเลือดสด ภาพ Chest CT พบรอยโรคก้อนทึบที่ปอดขวาบนล้อมรอบด้วยฝ้ากระจกมัว (Halo sign) ตรวจระดับ Galactomannan ในน้ำล้างปอดพบผลบวกชัดเจน",
+        "riskGroups": [
+          "ผู้ป่วยมะเร็งเม็ดเลือดขาวที่มีภาวะ Prolonged severe neutropenia (ANC < 500/μL นานเกิน 10-14 วัน)",
+          "ผู้ป่วยปลูกถ่ายไขกระดูกหรือสเต็มเซลล์ (HSCT) หรือปลูกถ่ายอวัยวะ (SOT)",
+          "ผู้ป่วยโรคภูมิคุ้มกันบกพร่องทางพันธุกรรม Chronic Granulomatous Disease (CGD)",
+          "ผู้ป่วยที่มีโพรงโรคเดิมในป่าจากวัณโรคหรือฝีในป่า (สำหรับ Aspergilloma)"
+        ]
+      },
+      "treatment": {
+        "firstLine": "Invasive Aspergillosis DOC: IV หรือ Oral Voriconazole (ขนาด Loading 6 mg/kg ทุก 12 ชม. ในวันแรก ตามด้วย 4 mg/kg ทุก 12 ชม.) ต้องตรวจวัดระดับยาในเลือด (Therapeutic Drug Monitoring: TDM เพื่อให้ได้ Trough level 1.5-5.5 mcg/mL)",
+        "alternative": "Isavuconazole หรือ IV Liposomal Amphotericin B (3-5 mg/kg/day) ในผู้ที่ไม่สามารถทนยา Voriconazole ได้",
+        "resistance": "Aspergilloma (Fungus Ball): การรักษาหลักคือการผ่าตัดตัดปอดส่วนที่มีโพรงออก (Surgical resection) โดยเฉพาะในรายที่มีไอเป็นเลือดรุนแรง เนื่องจากการให้ยาต้านเชื้อราทางหลอดเลือดแทรกซึมเข้าก้อนราในโพรงได้ไม่ดี"
+      }
+    }
+  },
+  {
+    "id": "rhizopus-arrhizus",
+    "name": "Rhizopus arrhizus (Mucormycosis / Zygomycosis)",
+    "thaiName": "ไรโซปัส อาร์ไรซัส (โรคมิวคอร์ไมโคสิส / โรคราดำมรณะ)",
+    "scientificName": "Rhizopus arrhizus (order Mucorales; Non-septate broad ribbon-like mold)",
+    "category": "fungi",
+    "categoryLabel": "เชื้อรา (Fungi)",
+    "cardTitle": "90-DEGREE NON-SEPTATE HYPHAE & PALATAL ESCHAR!",
+    "cardSubtitle": "diabetic ketoacidosis (dka). ketone reductase. rhinocerebral angioinvasion. voriconazole ineffective.",
+    "cardBadge": "FUNGI",
+    "lesionTitle": "Black Necrotic Palatal / Nasal Eschar & Rhinocerebral Mucormycosis",
+    "lesionThai": "เนื้อตายสีดำที่เพดานปากและโพรงจมูก รุกรานเข้ากระบอกตาและสมองอย่างรวดเร็ว",
+    "badgeColor": "#059669",
+    "quickStats": {
+      "depth": "Nasal Turbinates, Paranasal Sinuses, Hard Palate, Orbit, Cribriform Plate, Cavernous Sinus",
+      "morphology": "Wide Ribbon-Like Non-Septate (Coenocytic) Hyphae (6-25 μm) with 90° Branching",
+      "palpation": "Anesthetic, woody-hard black necrotic eschar with complete loss of sensation",
+      "distribution": "Hard palate, nasal septum, facial tissues, orbital apex, cavernous sinus",
+      "epidemiology": "Diabetic Ketoacidosis (DKA), Deferoxamine chelation, neutropenia, transplant"
+    },
+    "morphologicalParts": [
+      {
+        "id": "wide_ribbon_hyphae",
+        "name": "Wide Non-Septate Ribbon Hyphae (สายราแถบกว้างไร้ผนังกั้น)",
+        "thaiName": "สายราขนาดใหญ่คล้ายริบบิ้นบิดเกลียว ไม่มีผนังกั้น แตกแขนงทำมุมฉาก 90 องศา",
+        "color": "#475569",
+        "description": "Broad, thin-walled, sparsely or NON-SEPTATE (coenocytic) ribbon-like hyphae (6-25 μm wide) branching at wide right angles (approximately 90°)."
+      },
+      {
+        "id": "black_palatal_eschar",
+        "name": "Black Necrotic Palatal Eschar (เนื้อตายสีดำที่เพดานปาก)",
+        "thaiName": "แผ่นเนื้อตายสีดำสนิทที่เพดานปากหรือโพรงจมูก เกิดจากการขาดเลือดเฉียบพลัน",
+        "color": "#0f172a",
+        "description": "Devascularized, gangrenous black necrotic tissue on the hard palate or nasal mucosa caused by extensive angioinvasive thrombosis."
+      },
+      {
+        "id": "nodal_rhizoids",
+        "name": "Nodal Rhizoids & Sporangiophores (โครงสร้างรากยึด Rhizoids)",
+        "thaiName": "รากยึดคล้ายรากต้นไม้อยู่ตรงข้ามก้านชูถุงสปอร์ เป็นลักษณะจำเพาะของ Rhizopus",
+        "color": "#78350f",
+        "description": "Root-like nodal rhizoids positioned directly opposite the unbranched sporangiophores bearing globose, dark brown multi-spored sporangia."
+      }
+    ],
+    "clinicalCases": [
+      {
+        "id": "rhizopus-case-1",
+        "title": "Case 1: Periorbital Necrotic Mucormycosis (เนื้อตายสีดำรอบเบ้าตาและใบหน้า)",
+        "badge": "เคสที่ 1: แผลเนื้อตายมิวคอร์ไมโคสิส",
+        "downloadSource": "Periorbital fungal infection known as mucormycosis, or phycomycosis PHIL 2831 lores.jpg",
+        "localFileName": "rhizopus_case1_facial_necrosis.jpg",
+        "image": "assets/images/clinical/rhizopus_case1_facial_necrosis.jpg",
+        "source": "CDC / Dr. Thomas F. Sellers / PHIL 2831 (Public Domain)",
+        "description": "ภาพเคสจริงแสดงรอยโรคเนื้อตายสีดำ (Black necrotic eschar) บริเวณรอบกระบอกตาและใบหน้าจากโรค Rhinocerebral Mucormycosis เชื้อราในกลุ่ม Mucorales เจาะรุกรานทะลุหลอดเลือดทำให้เกิดลิ่มเลือดอุดตัน ส่งผลให้เนื้อเยื่อบริเวณใบหน้า โพรงจมูก เพดานปาก และกระบอกตาขาดเลือดและเน่าตายอย่างรวดเร็ว (Fulminant ischemic necrosis) ผู้ป่วยมักมีอาการตาโปน กล้ามเนื้อกลอกตาเป็นอัมพาต และเสี่ยงต่อการลุกลามเข้าสมอง",
+        "keyFindings": [
+          "Black necrotic eschar: แผ่นเนื้อตายสีดำสนิทที่เพดานปาก ขื่อจมูก หรือรอบเบ้าตา",
+          "Facial numbness & pain: ชาหรือปวดรุนแรงบริเวณใบหน้าเนื่องจากเส้นประสาทสมองถูกทำลาย",
+          "Proptosis and ophthalmoplegia: ตาโปนยื่น หนังตาตก กลอกตาไม่ได้จากการลุกลามเข้า Orbital apex",
+          "DKA correlation: สัมพันธ์อย่างยิ่งกับผู้ป่วยเบาหวานที่มีภาวะเลือดเป็นกรดคีโตน (Diabetic Ketoacidosis)"
+        ]
+      },
+      {
+        "id": "rhizopus-case-2",
+        "title": "Case 2: Histopathology of Pulmonary Mucormycosis (พยาธิสภาพสายราไร้ผนังกั้น)",
+        "badge": "เคสที่ 2: พยาธิสภาพสายรา 90 องศา",
+        "downloadSource": "Histopathology of pulmonary mucormycosis.jpg",
+        "localFileName": "rhizopus_case2_hyphae_histology.jpg",
+        "image": "assets/images/clinical/rhizopus_case2_hyphae_histology.jpg",
+        "source": "CDC / Public Health Image Library / Wikimedia Commons",
+        "description": "ภาพตรวจชิ้นเนื้อพยาธิวิทยาแสดงสายราขนาดใหญ่ของ Mucorales ที่มีลักษณะเป็นแถบกว้างคล้ายริบบิ้น (Ribbon-like) ผนังบาง ไม่มีผนังกั้น (Non-septate / Coenocytic hyphae) และแตกแขนงทำมุมฉากกว้างประมาณ 90 องศา สายราเหล่านี้กำลังชอนไชเข้าสู่ผนังหลอดเลือดและก่อให้เกิดเนื้อเยื่อตายรอบข้างอย่างกว้างขวาง",
+        "keyFindings": [
+          "Broad ribbon-like hyphae: สายรากว้าง 6-25 ไมโครเมตร บิดพับไปมาคล้ายริบบิ้น",
+          "Non-septate (pauciseptate): แทบไม่พบผนังกั้นเซลล์ ต่างจาก Aspergillus ที่มีผนังกั้นชัดเจน",
+          "Right-angle branching: แตกแขนงทำมุมฉากกว้าง 90 องศา",
+          "Extensive angioinvasion: พบสายราแทงทะลุผ่านเซลล์เยื่อบุหลอดเลือดและมีลิ่มเลือดอุดตัน"
+        ]
+      }
+    ],
+    "tabs": {
+      "morphology": {
+        "depth": "Nasal mucosa, Paranasal sinuses, Palate, Orbit, Cavernous sinus, Frontal lobe",
+        "palpation": "Hard, anesthetic necrotic black eschar on the palate; orbital proptosis",
+        "highlights": [
+          "ลักษณะจำเพาะสูงสุด: สายรากว้างคล้ายริบบิ้น (Ribbon-like), 'ไม่มีผนังกั้น (Non-septate / Coenocytic)', และ 'แตกแขนงทำมุมฉาก 90 องศา (Right-angle branching)'",
+          "เปรียบเทียบกับ Aspergillus: Aspergillus = 45 องศามุมแหลม + มีผนังกั้น; Mucorales = 90 องศามุมฉาก + ไม่มีผนังกั้น!",
+          "รอยโรคคลาสสิก: แผ่นเนื้อตายสีดำ (Black necrotic eschar) ที่เพดานปากหรือโพรงจมูกในผู้ป่วยเบาหวาน DKA"
+        ]
+      },
+      "pathogenesis": {
+        "virulenceFactors": [
+          {
+            "name": "Ketone Reductase & Acidophilic Proliferation",
+            "desc": "เอนไซม์คีโทนรีดักเทสช่วยให้เชื้อนำสารคีโตนในเลือดผู้ป่วย DKA ไปใช้เป็นสารอาหารได้อย่างมีประสิทธิภาพ และเจริญได้ดีมากในสภาวะเลือดเป็นกรด"
+          },
+          {
+            "name": "High Affinity Iron Uptake (CotH & GRP78 Interaction)",
+            "desc": "ภาวะกรดทำให้ธาตุเหล็กหลุดออกจาก Transferrin เชื้อราจับกับเหล็กอิสระได้ดีเยี่ยม และโปรตีน CotH บนผิวสปอร์จับกับรีเซพเตอร์ GRP78 บนเซลล์เยื่อบุหลอดเลือด นำไปสู่การทะลวงเข้าหลอดเลือดอย่างดุเดือด"
+          },
+          {
+            "name": "Fulminant Thrombosis and Trans-cribriform Invasion",
+            "desc": "ก่อลิ่มเลือดอุดตันเส้นเลือดแดงใหญ่ ทำให้เนื้อเยื่อขาดเลือดตายทันที และเชื้อสามารถกัดกินกระดูกทะลุผ่าน Cribriform plate เข้าสู่สมองได้ภายในไม่กี่ชั่วโมง"
+          }
+        ],
+        "immuneEvasion": [
+          "ในคนปกติ Macrophages กินสปอร์ และ Neutrophils ปล่อยอนุมูลอิสระฆ่า Hyphae แต่ในผู้ป่วย DKA กลไกเคโมแท็กซิสและฟาโกไซโทซิสของเม็ดเลือดขาวจะพิการอย่างสิ้นเชิง",
+          "ผู้ป่วยที่ได้รับยา Deferoxamine (ยาขับเหล็ก) เชื้อราจะแย่งจับ Deferoxamine มาเป็น Siderophore ส่งเสริมการเจริญเติบโตของเชื้อราอย่างรวดเร็ว (ห้ามใช้ใน Mucor!)"
+        ]
+      },
+      "diagnosis": {
+        "staining": "Biopsy / Frozen Section with KOH Mount หรือ H&E / GMS / PAS: พบ Broad, ribbon-like, non-septate hyphae branching at 90° angles with extensive tissue necrosis and vascular thrombosis",
+        "culture": "Sabouraud Dextrose Agar: เจริญเติบโตเร็วมากจนดันฝาจานเพาะเชื้อหลุด ('Lid-lifter fungus') เส้นใยฟูหนาแน่นสีขาวอมเทาคล้ายปุยฝ้าย peppered ด้วย sporangia สีดำ",
+        "biochemical": [
+          "CRITICAL LAB PEARL: ทั้งการตรวจ (1,3)-Beta-D-Glucan และ Galactomannan ให้ผลเป็น 'NEGATIVE (-)' ทั้งหมด! (ไม่สามารถใช้ตรวจคัดกรอง Mucor ได้)",
+          "CT / MRI Craniofacial: พบการทำลายกระดูกโพรงไซนัส, ซีสต์อักเสบในกระบอกตา, และ Cavernous sinus thrombosis"
+        ]
+      },
+      "clinical": {
+        "boardBuzzwords": [
+          "Diabetic Ketoacidosis (DKA) / Deferoxamine therapy",
+          "Broad ribbon-like non-septate (coenocytic) hyphae",
+          "90-degree wide right-angle branching",
+          "Black necrotic eschar on hard palate or nasal turbinate",
+          "Rapid invasion of orbit and cribriform plate into brain",
+          "Voriconazole has ZERO activity (natural resistance)",
+          "Beta-D-glucan and Galactomannan tests are NEGATIVE"
+        ],
+        "classicVignette": "ชายอายุ 58 ปี มีประวัติโรคเบาหวานควบคุมไม่ดี ถูกนำส่งห้องฉุกเฉินด้วยภาวะซึม หายใจหอบลึกแบบ Kussmaul ตรวจเลือดพบน้ำตาล 540 mg/dL, pH 7.12, Serum ketone positive ญาติสังเกตว่ามีอาการปวดตาข้างซ้าย ตาซ้ายโปนยื่น หนังตาตก และกลอกตาไม่ได้ ตรวจในช่องปากพบแผ่นเนื้อตายสีดำสนิทขนาด 2x3 ซม. บริเวณเพดานแข็งด้านซ้ายที่กดแล้วผู้ป่วยไม่รู้สึกเจ็บ การตรวจชิ้นเนื้อแบบเร่งด่วนพบสายราแถบกว้างไม่มีผนังกั้นแตกแขนง 90 องศา",
+        "riskGroups": [
+          "ผู้ป่วยเบาหวานที่มีภาวะกรดคีโตนคั่ง (Diabetic Ketoacidosis - DKA)",
+          "ผู้ป่วยโรคเลือดที่ได้รับยาขับธาตุเหล็ก Deferoxamine",
+          "ผู้ป่วยมะเร็งเม็ดเลือดขาวที่มีภาวะเม็ดเลือดขาวต่ำเป็นเวลานาน",
+          "ผู้ป่วยปลูกถ่ายอวัยวะและไขกระดูกที่ได้รับยากดภูมิคุ้มกันขนาดสูง"
+        ]
+      },
+      "treatment": {
+        "firstLine": "SURGICAL EMERGENCY: ต้องผ่าตัดตัดเนื้อตายออกอย่างเร่งด่วนและกว้างขวาง (Immediate aggressive surgical debridement) จนกระทั่งถึงขอบเนื้อเยื่อที่มีเลือดมาเลี้ยงร่วมกับให้ยา High-dose IV Liposomal Amphotericin B (5-10 mg/kg/day)",
+        "alternative": "Step-down / Maintenance Therapy: Oral Posaconazole หรือ Isavuconazole ร่วมกับการแก้ไขภาวะกรดคีโตนในเลือด (DKA) และคุมระดับน้ำตาลอย่างเข้มงวด",
+        "resistance": "CRITICAL LIFE-SAVING PEARL: ยา Voriconazole ไม่มีฤทธิ์ต้านเชื้อรากลุ่ม Mucorales เลยอย่างสิ้นเชิง (Zero activity)! การให้ Voriconazole อาจกระตุ้นให้เกิด Breakthrough Mucormycosis ถึงแก่ชีวิต!"
+      }
+    }
+  },
+  {
+    "id": "pseudomonas-aeruginosa",
+    "name": "Pseudomonas aeruginosa (Ecthyma Gangrenosum & Nosocomial Sepsis)",
+    "thaiName": "สูโดโมแนส แอรูจิโนซา (แผลเนื้อตายเอ็กไทมา แกงกรีโนซัม และการติดเชื้อในกระแสเลือด)",
+    "scientificName": "Pseudomonas aeruginosa (Strictly aerobic, oxidase-positive, motile Gram-negative rod)",
+    "category": "bacteria",
+    "categoryLabel": "แบคทีเรีย (Bacteria)",
+    "cardTitle": "ECTHYMA GANGRENOSUM & PYOCYANIN!",
+    "cardSubtitle": "neutropenic sepsis. perivascular adventitial invasion. grape-like odor. exotoxin a inhibits ef-2.",
+    "cardBadge": "BACTERIA",
+    "lesionTitle": "Ecthyma Gangrenosum (Painless Necrotic Ulcer with Black Eschar)",
+    "lesionThai": "แผลเนื้อตายก้นดำขอบแดงนูนกดไม่เจ็บ (Ecthyma gangrenosum) มักพบในผู้ป่วยเม็ดเลือดขาวต่ำ",
+    "badgeColor": "#7c3aed",
+    "quickStats": {
+      "depth": "Dermal & Subcutaneous Blood Vessels (Perivascular adventitial invasion), Skin",
+      "morphology": "Rapidly Progressing Painless Necrotic Ulcer with Black Central Gangrenous Eschar",
+      "palpation": "Painless, non-tender indurated ulcer with erythematous raised violaceous rim",
+      "distribution": "Anogenital, perineal, axillary, buttocks, lower extremities",
+      "epidemiology": "Profound neutropenia, extensive thermal burns, ICU mechanical ventilation, hospital-acquired"
+    },
+    "morphologicalParts": [
+      {
+        "id": "ecthyma_ulcer",
+        "name": "Ecthyma Gangrenosum (แผลเอ็กไทมา แกงกรีโนซัม)",
+        "thaiName": "แผลหลุมเนื้อตายก้นดำสนิท ขอบนูนแดงม่วง เกิดจากการกระจายตามกระแสเลือด",
+        "color": "#18181b",
+        "description": "Pathognomonic skin lesion starting as an erythematous painless macule/vesicle that rapidly breaks down into an ulcer with a gangrenous black central eschar."
+      },
+      {
+        "id": "perivascular_cuffing",
+        "name": "Perivascular Adventitial Invasion (การล้อมรอบผนังหลอดเลือด)",
+        "thaiName": "เชื้อแบคทีเรียเข้าเกาะและแทรกซึมรอบผนังหลอดเลือดชั้นนอกโดยไม่เกิดก้อนลิ่มเลือด",
+        "color": "#dc2626",
+        "description": "Direct bacterial invasion of the adventitia and media of dermal blood vessels with ischemic tissue necrosis and absence of neutrophils due to severe neutropenia."
+      },
+      {
+        "id": "blue_green_pyocyanin",
+        "name": "Pyocyanin & Pyoverdine Pigments (รงควัตถุสีน้ำเงินเขียวและกลิ่นหอมองุ่น)",
+        "thaiName": "สารสีเขียวอมน้ำเงินที่สร้างอนุมูลอิสระทำลายเนื้อเยื่อ พร้อมกลิ่นหอมคล้ายผลไม้องุ่น",
+        "color": "#0891b2",
+        "description": "Production of pyocyanin (blue phenazine pigment generating reactive oxygen species) and pyoverdine (green-yellow fluorescent siderophore) with sweet grape-like odor."
+      }
+    ],
+    "clinicalCases": [
+      {
+        "id": "pseudomonas-case-1",
+        "title": "Case 1: Clinical Ecthyma Gangrenosum Lesion (แผลเอ็กไทมา แกงกรีโนซัม)",
+        "badge": "เคสที่ 1: แผลเอ็กไทมาในผู้ป่วยเม็ดเลือดขาวต่ำ",
+        "downloadSource": "An introduction to dermatology (1905) ecthyma.jpg",
+        "localFileName": "pseudomonas_case1_ecthyma_gangrenosum.jpg",
+        "image": "assets/images/clinical/pseudomonas_case1_ecthyma_gangrenosum.jpg",
+        "source": "Norman Walker / Historical Dermatology Archive (Wikimedia Commons)",
+        "description": "ภาพเคสจริงแสดงรอยโรคเอ็กไทมา แกงกรีโนซัม (Ecthyma Gangrenosum) รอยโรคเริ่มต้นจากตุ่มแดงหรือตุ่มน้ำปนเลือดที่ไม่เจ็บ ก่อนจะแตกออกกลายเป็นแผลหลุมลึกตรงกลางเป็นสะเก็ดเนื้อตายสีดำ (Central black necrotic eschar) ล้อมรอบด้วยขอบยกนูนสีม่วงแดง เกิดจากการที่เชื้อ Pseudomonas aeruginosa หลุดตามกระแสเลือดไปเกาะแทรกซึมที่ผนังหลอดเลือดชั้นนอกของผิวหนัง (Perivascular invasion)",
+        "keyFindings": [
+          "Painless necrotic ulcer: แผลหลุมเนื้อตายก้นดำ กดไม่เจ็บ ขนาด 1-5 ซม.",
+          "Rapid progression: พัฒนาการจากตุ่มแดงเป็นตุ่มน้ำและแผลเนื้อตายภายใน 12-24 ชั่วโมง",
+          "Neutropenic hallmark: มักพบในผู้ป่วยโรคมะเร็งเม็ดเลือดขาวหรือผู้ป่วยที่มีเม็ดเลือดขาวนิวโทรฟิลต่ำมาก",
+          "Predilection sites: พบบ่อยบริเวณรอบรูทวาร ขาหนีบ รักแร้ และแขนขา"
+        ]
+      },
+      {
+        "id": "pseudomonas-case-2",
+        "title": "Case 2: Pyocyanin Blue-Green Pigment Production (รงควัตถุสีเขียวไพโอไซยานิน)",
+        "badge": "เคสที่ 2: โคโลนีสร้างสีเขียว Pyocyanin",
+        "downloadSource": "Pseudomonas aeruginosa pyocyanin.jpg",
+        "localFileName": "pseudomonas_case2_pyocyanin.jpg",
+        "image": "assets/images/clinical/pseudomonas_case2_pyocyanin.jpg",
+        "source": "CDC / Dr. W.A. Clark / Wikimedia Commons",
+        "description": "ภาพจานเพาะเชื้อแสดงโคโลนีของ Pseudomonas aeruginosa ที่สร้างสารสีเขียวอมฟ้า Pyocyanin และ Pyoverdine ซึมกระจายลงในวุ้นอาหารเลี้ยงเชื้อ พร้อมส่งกลิ่นหอมหวานคล้ายขนมเปียกปูน ข้าวโพด หรือผลไม้องุ่น (Sweet grape-like / fruity odor) สารสี Pyocyanin ทำหน้าที่เป็นสารพิษสร้างอนุมูลอิสระทำลายเซลล์โฮสต์โดยตรง",
+        "keyFindings": [
+          "Blue-green pigmentation: รงควัตถุสีน้ำเงินไพโอไซยานินผสมกับสีเหลืองไพโอเวอร์ดีน",
+          "Sweet grape-like odor: กลิ่นหอมหวานคล้ายองุ่นหรือแป้งข้าวโพด (Aminoacetophenone)",
+          "Non-lactose fermenter: โคโลนีใสบนอาหาร MacConkey agar",
+          "Oxidase positive: เอนไซม์ออกซิเดสเป็นบวก ให้สีม่วงเข้มทันทีภายใน 10 วินาที"
+        ]
+      }
+    ],
+    "tabs": {
+      "morphology": {
+        "depth": "Perivascular adventitia of dermal arterioles and venules, Subcutaneous tissue",
+        "palpation": "Painless indurated ulcer with surrounding soft tissue edema; no tenderness",
+        "highlights": [
+          "ลักษณะจำเพาะ: แผลหลุมลึกก้นเนื้อตายสีดำขอบยกนูนแดงอมม่วง 'ที่กดไม่เจ็บ (Painless)'",
+          "กลไกเกิดแผล: ไม่ได้เกิดจากแผลภายนอกติดเชื้อ แต่เกิดจากเชื้อในกระแสเลือด (Bacteremia) หลุดมาก่อตัวที่ผนังหลอดเลือดชั้นนอกของผิวหนัง (Hematogenous seeding)",
+          "พบเกือบทั้งหมดในผู้ป่วยที่มี Neutropenia รุนแรง (เช่น ผู้ป่วยมะเร็งเม็ดเลือดขาวหลังได้เคมีบำบัด) หรือผู้ป่วยแผลไฟไหม้รุนแรง (Severe burns)"
+        ]
+      },
+      "pathogenesis": {
+        "virulenceFactors": [
+          {
+            "name": "Exotoxin A (Inhibition of EF-2)",
+            "desc": "กลไกเหมือนคอตีบ (Diphtheria toxin): ทำปฏิกิริยา ADP-ribosylation ต่อ Elongation Factor-2 (EF-2) ยับยั้งการสังเคราะห์โปรตีนของเซลล์โฮสต์โดยสิ้นเชิง"
+          },
+          {
+            "name": "Elastase (LasA and LasB)",
+            "desc": "ย่อยสลายเส้นใยอีลาสตินในผนังหลอดเลือด ทำให้ผนังหลอดเลือดเปราะ แตก เลือดออก และเนื้อเยื่อขาดเลือดตาย"
+          },
+          {
+            "name": "Pyocyanin & Type III Secretion Exotoxins (ExoS, ExoT, ExoU)",
+            "desc": "Pyocyanin สร้างอนุมูลอิสระ ROS ทำลายเยื่อบุผิวทางเดินหายใจ; ExoU เป็น Phospholipase รุนแรงที่เจาะทะลุเยื่อหุ้มเซลล์ทำให้เซลล์สลายตัวทันที"
+          }
+        ],
+        "immuneEvasion": [
+          "สร้าง Alginate slime capsule (Mucoid phenotype) ก่อไบโอฟิล์มหนาแน่นในปอดผู้ป่วย Cystic Fibrosis และท่อช่วยหายใจ",
+          "มีกลไกขับยาปฏิชีวนะออกนอกเซลล์ (Efflux pumps MexAB-OprM) และการกลายพันธุ์ปิดรูพรุน OprD ทำให้ดื้อยาได้รอบด้าน"
+        ]
+      },
+      "diagnosis": {
+        "staining": "Gram-negative slender rod (0.5-0.8 x 1.5-3.0 μm) มีขั้วเดียว แฟลกเจลลัมเดี่ยวเคลื่อนที่เร็ว",
+        "culture": "Blood Agar: โคโลนีแบน ขอบหยัก มีประกายเหลือบเงิน (Metallic sheen), Beta-hemolysis, กลิ่นหอมหวานองุ่น; MacConkey Agar: Non-lactose fermenter (โคโลนีใสไม่มีสี)",
+        "biochemical": [
+          "Oxidase Positive (+) ภายใน 10 วินาที (แยกจาก Enterobacteriaceae ซึ่งเป็น Oxidase negative)",
+          "Catalase Positive (+), เจริญเติบโตได้ที่อุณหภูมิ 42°C (ใช้แยกจาก Pseudomonas สปีชีส์อื่น)",
+          "Biopsy: ย้อม Gram stain ของขอบแผลพบเชื้อแกรมลบรอบผนังหลอดเลือด โดยแทบไม่มีเม็ดเลือดขาวนิวโทรฟิลเนื่องจากภาวะ Neutropenia"
+        ]
+      },
+      "clinical": {
+        "boardBuzzwords": [
+          "Ecthyma gangrenosum in neutropenic / burn patient",
+          "Exotoxin A inhibits EF-2 by ADP-ribosylation (like Diphtheria)",
+          "Blue-green pyocyanin and pyoverdine pigments",
+          "Sweet grape-like / fruity odor",
+          "Oxidase positive, non-lactose fermenter, grows at 42°C",
+          "Hot tub folliculitis, malignant otitis externa in diabetics, puncture wound through sneakers"
+        ],
+        "classicVignette": "ผู้ป่วยชายอายุ 64 ปี โรคมะเร็งเม็ดเลือดขาวเฉียบพลัน ได้รับยาเคมีบำบัด มีไข้สูง หนาวสั่น เม็ดเลือดขาว Neutrophil ต่ำมาก (ANC 80/μL) ภายใน 24 ชั่วโมงต่อมา บริเวณขาหนีบและแก้มก้นมีตุ่มน้ำสีคล้ำเกิดขึ้นก่อนจะแตกเป็นแผลหลุมลึกก้นเนื้อตายสีดำสนิทขนาด 3 ซม. ขอบนูนสีแดงอมม่วงที่กดแล้วไม่เจ็บ ตรวจเลือดพบเชื้อแบคทีเรียแท่งแกรมลบ เพาะเชื้อบน Blood agar มีสีเขียวและกลิ่นหอมคล้ายองุ่น ผล Oxidase เป็นบวก",
+        "riskGroups": [
+          "ผู้ป่วยมะเร็งเม็ดเลือดขาวที่มีภาวะ Febrile Neutropenia",
+          "ผู้ป่วยแผลไฟไหม้ น้ำร้อนลวกบริเวณกว้าง (Severe burn patients)",
+          "ผู้ป่วยไอซียูที่ใส่ท่อช่วยหายใจ (Ventilator-Associated Pneumonia - VAP) หรือคาสายสวนปัสสาวะ",
+          "ผู้ป่วยเบาหวานสูงอายุ (Malignant otitis externa) และผู้ป่วยโรคถุงลมโป่งพอง Cystic Fibrosis"
+        ]
+      },
+      "treatment": {
+        "firstLine": "Combination Antipseudomonal Therapy ทันที: Antipseudomonal Beta-lactam (IV Cefepime 2 g q 8h, Piperacillin-tazobactam 4.5 g q 6h, หรือ Meropenem 1 g q 8h) ร่วมกับ Aminoglycoside (IV Amikacin 15-20 mg/kg/day) หรือ Antipseudomonal Fluoroquinolone (IV Ciprofloxacin 400 mg q 8h)",
+        "alternative": "Ceftolozane-tazobactam หรือ Ceftazidime-avibactam ในรายที่สงสัยเชื้อดื้อยาหลายขนาน (MDR P. aeruginosa)",
+        "resistance": "ดื้อยาหลายขนาน (MDR / XDR) ผ่านการสร้างเอนไซม์ AmpC beta-lactamase, Carbapenemases, และ Efflux pumps; ในสายพันธุ์ดื้อยาสูงสุดอาจต้องใช้ Colistin (Polymyxin E)"
+      }
+    }
+  },
+  {
+    "id": "vibrio-vulnificus",
+    "name": "Vibrio vulnificus (Marine Sepsis & Hemorrhagic Bullae)",
+    "thaiName": "วิบริโอ วัลนิฟิคัส (โรคติดเชื้อแบคทีเรียกินเนื้อจากน้ำเค็ม / ภาวะพิษในกระแสเลือด)",
+    "scientificName": "Vibrio vulnificus (Halophilic, curved, motile Gram-negative bacillus)",
+    "category": "bacteria",
+    "categoryLabel": "แบคทีเรีย (Bacteria)",
+    "cardTitle": "HEMORRHAGIC BULLAE & SEAWATER SEPSIS!",
+    "cardSubtitle": "raw oysters or marine wound puncture. liver cirrhosis / iron overload. >50% mortality.",
+    "cardBadge": "BACTERIA",
+    "lesionTitle": "Hemorrhagic Bullae & Necrotizing Fasciitis",
+    "lesionThai": "ตุ่มน้ำพองปนเลือด (Hemorrhagic bullae) ลุกลามเป็นเนื้อตายเน่าหลังสัมผัสน้ำทะเลหรือกินหอยนางรมดิบ",
+    "badgeColor": "#ea580c",
+    "quickStats": {
+      "depth": "Dermis, Subcutaneous Fat, Deep Fascia, Bloodstream (Primary Sepsis)",
+      "morphology": "Violaceous Tense Hemorrhagic Bullae with Rapidly Spreading Necrotizing Fasciitis",
+      "palpation": "Exquisite severe pain out of proportion, tense swelling, cutaneous crepitus",
+      "distribution": "Lower extremities, hands, forearms, sites of marine puncture wounds",
+      "epidemiology": "Raw oyster ingestion, warm seawater/marine wound, Liver cirrhosis, Hemochromatosis"
+    },
+    "morphologicalParts": [
+      {
+        "id": "hemorrhagic_bullae",
+        "name": "Hemorrhagic Bullae (ตุ่มน้ำพองปนเลือด)",
+        "thaiName": "ตุ่มน้ำขนาดใหญ่บรรจุเลือดสีม่วงคล้ำ ผิวเต่งตึงและแตกออกเป็นเนื้อเน่าตาย",
+        "color": "#9f1239",
+        "description": "Large, tense, violaceous fluid-filled bullae containing serosanguinous to frank bloody fluid that rupture into extensive necrotizing ulcers."
+      },
+      {
+        "id": "curved_flagellated_rod",
+        "name": "Curved Rod with Polar Flagellum (แบคทีเรียแท่งโค้งว่ายน้ำเร็ว)",
+        "thaiName": "แบคทีเรียแท่งโค้งแกรมลบ มีหางแฟลกเจลลัมเดี่ยวที่ขั้ว ช่วยให้เคลื่อนที่ทะลวงเนื้อเยื่อ",
+        "color": "#0284c7",
+        "description": "Curved comma-shaped Gram-negative rod (0.5 x 1.4-2.6 μm) equipped with a single polar sheathed flagellum conferring rapid darting motility."
+      },
+      {
+        "id": "necrotizing_fasciitis",
+        "name": "Necrotizing Soft Tissue Infarction (พังผืดและกล้ามเนื้อเน่าตาย)",
+        "thaiName": "การทำลายพังผืดชั้นลึกและกล้ามเนื้ออย่างรวดเร็ว ก่อภาวะช็อกจากการติดเชื้อ",
+        "color": "#7f1d1d",
+        "description": "Fulminant microvascular necrosis, thrombosis, and rapid destruction of subcutaneous fascia and muscle driven by metalloproteases and RTX cytotoxins."
+      }
+    ],
+    "clinicalCases": [
+      {
+        "id": "vibrio-case-1",
+        "title": "Case 1: Vibrio vulnificus Morphology (สัณฐานวิทยาแบคทีเรียแท่งโค้งแกรมลบ)",
+        "badge": "เคสที่ 1: ลักษณะแบคทีเรียแท่งโค้ง",
+        "downloadSource": "Vibrio vulnificus 01.png",
+        "localFileName": "vibrio_vulnificus_case1_morphology.png",
+        "image": "assets/images/clinical/vibrio_vulnificus_case1_morphology.png",
+        "source": "CDC / Janice Haney Carr (Wikimedia Commons / Public Domain)",
+        "description": "ภาพกล้องจุลทรรศน์อิเล็กตรอนแสดงแบคทีเรียแท่งโค้งแกรมลบ Vibrio vulnificus มีรูปร่างคล้ายเครื่องหมายจุลภาค (Comma-shaped) มีแฟลกเจลลัมเดี่ยวอยู่ที่ขั้ว (Single polar flagellum) เชื้อชนิดนี้ชอบความเค็ม (Halophilic) อาศัยอยู่ในน้ำทะเลและสัตว์น้ำเปลือกแข็ง เมื่อเข้าสู่ร่างกายในคนที่มีเหล็กในเลือดสูงจะเพิ่มจำนวนอย่างมหาศาลและหลั่งสารพิษทำลายเซลล์เยื่อบุหลอดเลือด",
+        "keyFindings": [
+          "Curved Gram-negative rod: รูปร่างแท่งโค้งติดสีแกรมลบชัดเจน",
+          "Polar flagellum: มีหางเดี่ยวที่ขั้วช่วยในการเคลื่อนที่อย่างว่องไว (Darting motility)",
+          "Halophilic requirement: ต้องการเกลือโซเดียมคลอไรด์ (NaCl 1-2%) ในการเจริญเติบโต",
+          "High virulence in iron overload: ธาตุเหล็กอิสระในเลือดกระตุ้นการแบ่งตัวของเชื้อเพิ่มขึ้นกว่า 200 เท่า"
+        ]
+      },
+      {
+        "id": "vibrio-case-2",
+        "title": "Case 2: TCBS Agar Selective Medium (การเพาะเชื้อบนอาหารคัดเลือก TCBS)",
+        "badge": "เคสที่ 2: การเพาะแยกเชื้อบน TCBS Agar",
+        "downloadSource": "TCBS agar plate of Vibrio Cholerae and vibrio parahaemolyticus.jpg",
+        "localFileName": "vibrio_case2_tcbs_culture.jpg",
+        "image": "assets/images/clinical/vibrio_case2_tcbs_culture.jpg",
+        "source": "Wikimedia Commons / Clinical Microbiology Archive",
+        "description": "ภาพจานเพาะเชื้อ Thiosulfate-Citrate-Bile Salts-Sucrose (TCBS) agar ซึ่งเป็นอาหารเลี้ยงเชื้อคัดเลือกเฉพาะสำหรับเชื้อในตระกูล Vibrio เชื้อ Vibrio vulnificus ส่วนใหญ่ (ประมาณ 85%) ไม่หมักน้ำตาลซูโครส (Sucrose-negative) จึงให้โคโลนีสีเขียวอมฟ้าบนวุ้นสีเขียว แตกต่างจาก Vibrio cholerae ที่หมักซูโครสได้โคโลนีสีเหลืองสด",
+        "keyFindings": [
+          "Selective TCBS medium: มีเกลือน้ำดีสูงและ pH 8.6 ยับยั้งแบคทีเรียแกรมบวกและเอนเทอริกทั่วไป",
+          "Sucrose fermentation: 85% ของ V. vulnificus เป็นสีเขียว (Sucrose negative); 15% เป็นสีเหลือง",
+          "Oxidase positive: เอนไซม์ออกซิเดสให้ผลบวกเช่นเดียวกับเชื้อตระกูล Vibrio ทุกชนิด",
+          "Blood culture positivity: ในผู้ป่วยติดเชื้อในกระแสเลือด ผลเพาะเชื้อจากเลือดให้ผลบวกสูงถึง 100%"
+        ]
+      }
+    ],
+    "tabs": {
+      "morphology": {
+        "depth": "Subcutaneous tissue, Deep fascia, Microvasculature, Sepsis",
+        "palpation": "Extremely tender, indurated, warm erythematous skin with tense fluid bullae",
+        "highlights": [
+          "อาการแสดงสำคัญทางคลินิก: ตุ่มน้ำพองปนเลือด (Hemorrhagic bullae) สีม่วงคล้ำ ผิวตึง เกิดขึ้นอย่างรวดเร็วหลังสัมผัสน้ำทะเลหรือกินหอยนางรมดิบ",
+          "การดำเนินโรครวดเร็วรุนแรงที่สุดในบรรดาแบคทีเรีย: ภายใน 24-48 ชั่วโมง ผู้ป่วยสามารถเกิด Septic shock, แผลเน่าตายลุกลาม (Necrotizing fasciitis) และเสียชีวิตได้",
+          "อัตราการเสียชีวิตสูงเกิน 50% ในผู้ป่วยที่มีการติดเชื้อในกระแสเลือดขั้นปฐมภูมิ (Primary septicemia)"
+        ]
+      },
+      "pathogenesis": {
+        "virulenceFactors": [
+          {
+            "name": "Polysaccharide Capsule (CPS)",
+            "desc": "แคปซูลป้องกันการทำลายจากซีรัม (Serum bactericidal activity) และยับยั้งการจับกินของ Phagocytes"
+          },
+          {
+            "name": "RTX Cytotoxin (VvhA / Martx)",
+            "desc": "สารพิษเจาะรูพรุนบนเยื่อหุ้มเซลล์ (Pore-forming toxin) ทำลายเซลล์เยื่อบุหลอดเลือด ก่อให้เกิดการรั่วไหลของเลือดและน้ำเหลืองจนกลายเป็น Hemorrhagic bullae"
+          },
+          {
+            "name": "Metalloprotease (VvpE)",
+            "desc": "ย่อยสลายคอลลาเจนและเนื้อเยื่อพังผืด ก่อให้เกิดการตายเน่าของกล้ามเนื้อและการหลุดลอกของผิวหนังอย่างรวดเร็ว"
+          }
+        ],
+        "immuneEvasion": [
+          "ธาตุเหล็กเป็นกุญแจสำคัญ: ผู้ป่วยโรคตับแข็ง (Liver cirrhosis) หรือ Hemochromatosis ที่มีระดับ Transferrin saturation สูงและมีธาตุเหล็กอิสระในเลือด เชื้อจะเจริญเติบโตอย่างรวดเร็วผิดปกติ",
+          "หลบหลีกการฆ่าของ Complement ในกระแสเลือดได้อย่างมีประสิทธิภาพ"
+        ]
+      },
+      "diagnosis": {
+        "staining": "Gram-negative curved / comma-shaped rod ย้อมจากน้ำเจาะตุ่มน้ำหรือจากหนองแผล",
+        "culture": "TCBS Agar: 85% เป็นโคโลนีสีเขียว (Sucrose negative); Blood Agar: เจริญได้ดีเมื่อมีเกลือ NaCl 1-2%",
+        "biochemical": [
+          "Oxidase Positive (+), Catalase Positive (+)",
+          "Halophilic: ต้องการเกลือโซเดียมในการเจริญเติบโต (แยกจาก Vibrio cholerae ซึ่งเจริญได้ในอาหารที่ไม่มีเกลือ)",
+          "CBC & Coagulation: เม็ดเลือดขาวสูงพร้อม Left shift, เกล็ดเลือดต่ำรุนแรง, PT/INR ยาวนาน (DIC)"
+        ]
+      },
+      "clinical": {
+        "boardBuzzwords": [
+          "Raw oysters ingestion or seawater wound exposure",
+          "Underlying liver cirrhosis / hemochromatosis / iron overload",
+          "Violaceous hemorrhagic bullae progressing to necrotizing fasciitis",
+          "Curved Gram-negative halophilic rod",
+          "Fulminant septic shock with >50% mortality",
+          "Immediate surgical debridement + Ceftriaxone + Doxycycline"
+        ],
+        "classicVignette": "ชายอายุ 56 ปี มีประวัติโรคตับแข็งจากแอลกอฮอล์ ไปรับประทานอาหารทะเลและกินหอยนางรมดิบที่ร้านริมชายหาด 24 ชั่วโมงต่อมา มีไข้สูง หนาวสั่น เพ้อ ความดันโลหิตตก 75/40 mmHg ขาทั้งสองข้างบวมแดง ปวดรุนแรงมาก และมีตุ่มน้ำพองขนาดใหญ่บรรจุเลือดสีม่วงคล้ำผุดขึ้นทั่วหน้าแข้งอย่างรวดเร็ว เจาะน้ำตุ่มน้ำไปย้อม Gram stain พบแบคทีเรียรูปแท่งโค้งแกรมลบจำนวนมาก",
+        "riskGroups": [
+          "ผู้ป่วยโรคตับเรื้อรัง (ตับแข็ง, ไวรัสตับอักเสบ B/C, ตับแข็งจากสุรา) เสี่ยงเสียชีวิตสูงกว่าคนปกติ 80 เท่า!",
+          "ผู้ป่วยที่มีภาวะธาตุเหล็กคั่งในร่างกาย (Hemochromatosis, Thalassemia ที่ได้รับเลือดบ่อย)",
+          "ชาวประมง, พ่อค้าขายหอย, นักท่องเที่ยวชายทะเลที่มีบาดแผลเปิดสัมผัสน้ำเค็ม"
+        ]
+      },
+      "treatment": {
+        "firstLine": "SURGICAL & MEDICAL EMERGENCY: รีบปรึกษาศัลยแพทย์เพื่อทำ Emergency Fasciotomy และผ่าตัดเลาะเนื้อตายทันที ร่วมกับให้ยาปฏิชีวนะ IV Ceftriaxone (2 g ทุก 24 ชม.) PLUS IV Doxycycline (100 mg ทุก 12 ชม.)",
+        "alternative": "IV Ciprofloxacin (400 mg ทุก 12 ชม.) หรือ Levofloxacin ร่วมกับ Ceftriaxone พร้อมทั้งการให้สารน้ำกู้ชีพในหอผู้ป่วยวิกฤต (ICU)",
+        "resistance": "ข้อควรระวัง: อย่ารอผลเพาะเชื้อก่อนเริ่มยา หากมีประวัติกินหอยนางรมดิบหรือลุยน้ำทะเลร่วมกับตุ่มน้ำพองปนเลือดในผู้ป่วยตับแข็ง ต้องให้ Ceftriaxone + Doxycycline ทันทีในชั่วโมงแรก!"
+      }
+    }
+  },
+  {
+    "id": "neisseria-meningitidis",
+    "name": "Neisseria meningitidis (Meningococcemia & Purpura Fulminans)",
+    "thaiName": "ไนซีเรีย เมนิงไจติดิส (ไข้กาฬหลังแอ่น / ภาวะติดเชื้อในกระแสเลือดและเนื้อตายเพอร์พุรา ฟูลมินานส์)",
+    "scientificName": "Neisseria meningitidis (Gram-negative kidney bean-shaped diplococcus)",
+    "category": "bacteria",
+    "categoryLabel": "แบคทีเรีย (Bacteria)",
+    "cardTitle": "PURPURA FULMINANS & WATERHOUSE-FRIDERICHSEN!",
+    "cardSubtitle": "los endotoxin shedding. c5-c9 deficiency. bilateral adrenal hemorrhage. rifampin prophylaxis.",
+    "cardBadge": "BACTERIA",
+    "lesionTitle": "Purpura Fulminans & Petechial Stellate Rash (Waterhouse-Friderichsen Syndrome)",
+    "lesionThai": "ผื่นเลือดออกจุดแดงกลายเป็นรอยม่วงคล้ำลุกลามเป็นเนื้อตายเน่า (Purpura fulminans) และต่อมหมวกไตวายเฉียบพลัน",
+    "badgeColor": "#7c3aed",
+    "quickStats": {
+      "depth": "Nasopharynx, Microvasculature, Meninges, Adrenal Glands, Dermis",
+      "morphology": "Kidney Bean-Shaped Gram-Negative Diplococci inside PMNs; Coalescing Stellate Purpura",
+      "palpation": "Non-blanching petechiae progressing to tender, indurated, cold ischemic purpuric plaques",
+      "distribution": "Trunk, lower extremities, mucous membranes, fingers and toes (peripheral gangrene)",
+      "epidemiology": "College dormitories, military barracks, close crowded contacts, C5-C9 complement deficiency"
+    },
+    "morphologicalParts": [
+      {
+        "id": "purpura_fulminans",
+        "name": "Purpura Fulminans (ผื่นเนื้อตายสีม่วงคล้ำลุกลาม)",
+        "thaiName": "ผื่นจุดเลือดออกที่รวมตัวเป็นปื้นสีม่วงคล้ำขอบหยักคล้ายดาวและเน่าตาย",
+        "color": "#4c0519",
+        "description": "Catastrophic dermal microvascular thrombosis and hemorrhagic infarction presenting as rapidly expanding stellate purpura, bullae, and peripheral dry gangrene."
+      },
+      {
+        "id": "intracellular_diplococci",
+        "name": "Intracellular Diplococci in PMNs (ค็อกไคคู่ในเม็ดเลือดขาว)",
+        "thaiName": "แบคทีเรียรูปเมล็ดถั่วประกบคู่ ติดสีแกรมลบ อยู่ในไซโตพลาสซึมของนิวโทรฟิล",
+        "color": "#9333ea",
+        "description": "Gram-negative kidney-bean or coffee-bean shaped diplococci with adjacent flattened surfaces found both inside and outside polymorphonuclear leukocytes."
+      },
+      {
+        "id": "adrenal_hemorrhage",
+        "name": "Waterhouse-Friderichsen Syndrome (เลือดออกทำลายต่อมหมวกไตสองข้าง)",
+        "thaiName": "ต่อมหมวกไตตกเลือดและเกิดเนื้อตายอย่างรวดเร็ว ก่อภาวะช็อกรุนแรงเสียชีวิต",
+        "color": "#991b1b",
+        "description": "Bilateral massive hemorrhagic necrosis of the adrenal glands triggered by severe endotoxic shock and DIC, causing acute refractory cardiovascular collapse."
+      }
+    ],
+    "clinicalCases": [
+      {
+        "id": "neisseria-case-1",
+        "title": "Case 1: Gram Stain of CSF Showing Intracellular Diplococci (ย้อมสีแกรม CSF)",
+        "badge": "เคสที่ 1: การย้อมสีแกรมในน้ำไขสันหลัง",
+        "downloadSource": "Neisseria meningitidis CSF Gram 1000.jpg",
+        "localFileName": "neisseria_meningitidis_case1_csf_gram.jpg",
+        "image": "assets/images/clinical/neisseria_meningitidis_case1_csf_gram.jpg",
+        "source": "CDC / Dr. Brodsky / Public Health Image Library (Wikimedia Commons)",
+        "description": "ภาพกล้องจุลทรรศน์จากการตรวจย้อมสีแกรมน้ำไขสันหลัง (CSF Gram stain) แสดงแบคทีเรีย Neisseria meningitidis รูปเมล็ดถั่วประกบคู่ติดสีแกรมลบสีชมพูแดง (Gram-negative kidney bean-shaped diplococci) กระจายตัวอยู่ทั้งภายในและภายนอกเซลล์เม็ดเลือดขาวนิวโทรฟิล (Polymorphonuclear cells) ซึ่งเป็นการตรวจยืนยันที่รวดเร็วและมีความสำคัญสูงสุดต่อการเริ่มยาปฏิชีวนะทันที",
+        "keyFindings": [
+          "Kidney-bean diplococci: รูปร่างกลมรีประกบคู่โดยมีด้านแบนแนบชิดกันคล้ายเมล็ดกาแฟ",
+          "Intracellular in PMNs: เชื้อถูกจับกินและอยู่ภายในไซโตพลาสซึมของนิวโทรฟิล",
+          "Gram-negative staining: ติดสีชมพูหรือแดงของ Safranin ชัดเจน",
+          "Urgent medical emergency: การพบภาพนี้ต้องรีบให้ยาปฏิชีวนะฆ่าเชื้อทันทีโดยไม่รีรอ"
+        ]
+      },
+      {
+        "id": "neisseria-case-2",
+        "title": "Case 2: Infantile Purpura Fulminans & Gangrene (ผื่นม่วงคล้ำเนื้อตายในเด็ก)",
+        "badge": "เคสที่ 2: ภาวะ Purpura Fulminans",
+        "downloadSource": "Charlotte Cleverley-Bisman Meningicoccal Disease.jpg",
+        "localFileName": "neisseria_meningitidis_case2_purpura.jpg",
+        "image": "assets/images/clinical/neisseria_meningitidis_case2_purpura.jpg",
+        "source": "Meningococcal Disease Awareness Archive (Wikimedia Commons / Public Domain)",
+        "description": "ภาพเคสจริงของผู้ป่วยเด็กที่รอดชีวิตจากโรคไข้กาฬหลังแอ่นขั้นวิกฤต (Severe Meningococcal Sepsis with Purpura Fulminans) แสดงรอยโรคเนื้อตายสีม่วงคล้ำจากการขาดเลือดของเส้นเลือดส่วนปลาย (Peripheral ischemic gangrene) ซึ่งเกิดจากการที่เอนโดท็อกซิน LOS หลุดลอยในกระแสเลือดกระตุ้นให้เกิดภาวะลิ่มเลือดกระจายทั่วตัว (DIC) จนต้องตัดแขนขาส่วนปลายเพื่อรักษาชีวิต",
+        "keyFindings": [
+          "Purpura fulminans: ผื่นจุดเลือดออกขยายตัวรวมเป็นปื้นสีม่วงคล้ำและเนื้อตายเน่า",
+          "Microvascular thrombosis: ลิ่มเลือดอุดตันหลอดเลือดฝอยทั่วตัว ส่งผลให้อวัยวะส่วนปลายขาดเลือด",
+          "Peripheral limb gangrene: ปลายนิ้วมือ นิ้วเท้า แขน ขา เกิดเนื้อตายแห้งสีดำ",
+          "Waterhouse-Friderichsen risk: เสี่ยงต่อภาวะต่อมหมวกไตวายเฉียบพลันจากเลือดออกในต่อมหมวกไต"
+        ]
+      }
+    ],
+    "tabs": {
+      "morphology": {
+        "depth": "Nasopharynx, Microvasculature, Meninges, Adrenal Cortices, Skin and Extremities",
+        "palpation": "Non-blanching petechiae progressing to cold, ischemic, tender purpuric plaques",
+        "highlights": [
+          "ลักษณะเด่นของการย้อมเชื้อ: แบคทีเรียรูปเมล็ดถั่วหรือเมล็ดกาแฟติดสีแกรมลบประกบคู่กัน (Kidney bean-shaped Gram-negative diplococci) ทั้งในและนอกเซลล์ PMNs",
+          "ผื่นจำเพาะ: เริ่มต้นจากผื่นจุดเลือดออกขนาดเล็ก (Petechiae) ที่กดแล้วไม่จาง ก่อนจะรวมตัวกันเป็นผื่นม่วงคล้ำรูปดาวกระจาย (Stellate purpura fulminans) และกลายเป็นเนื้อตายเน่า",
+          "Waterhouse-Friderichsen Syndrome: ภาวะเลือดออกทำลายต่อมหมวกไตสองข้าง ทำให้เกิดภาวะช็อกรุนแรง ความดันโลหิตตกอย่างเฉียบพลันและเสียชีวิตในเวลาไม่กี่ชั่วโมง"
+        ]
+      },
+      "pathogenesis": {
+        "virulenceFactors": [
+          {
+            "name": "Lipooligosaccharide (LOS) Endotoxin Shedding",
+            "desc": "ปลดปล่อยสารพิษเอนโดท็อกซิน LOS ปริมาณมหาศาลเข้าสู่กระแสเลือด กระตุ้น TLR4 บน Macrophages ทำให้เกิด Cytokine storm (TNF-alpha, IL-1, IL-6) ก่อให้เกิด DIC รุนแรงและช็อก"
+          },
+          {
+            "name": "Polysaccharide Capsule (Serogroups A, B, C, W-135, Y)",
+            "desc": "แคปซูลป้องกันการจับกินของ Phagocytes และยับยั้ง Complement-mediated bactericidal activity (วัคซีนสร้างจากแคปซูลเหล่านี้)"
+          },
+          {
+            "name": "IgA1 Protease & Type IV Pili",
+            "desc": "Pili ยึดเกาะกับเยื่อบุ Nasopharynx อย่างเหนียวแน่น; เอนไซม์ IgA1 Protease ตัดทำลายแอนติบอดี IgA บนผิวเยื่อบุ ทำให้เชื้อบุกรุกเข้าสู่กระแสเลือดได้ง่าย"
+          }
+        ],
+        "immuneEvasion": [
+          "ผู้ป่วยที่มีภาวะขาดโปรตีนคอมพลีเมนต์ส่วนปลาย (Terminal Complement Deficiency: C5-C9) หรือผู้ที่ได้รับยา Eculizumab เสี่ยงต่อการติดเชื้อ Neisseria สูงกว่าคนทั่วไปถึง 1,000-10,000 เท่า!",
+          "การเปลี่ยนแปลงแอนติเจนบน Pili (Antigenic variation) ทำให้ระบบภูมิคุ้มกันจดจำเชื้อได้ยาก"
+        ]
+      },
+      "diagnosis": {
+        "staining": "Gram-negative kidney bean-shaped diplococci inside and outside polymorphonuclear leukocytes จากการย้อม CSF, เลือด, หรือหนองจากแผลผื่นเลือดออก",
+        "culture": "Thayer-Martin Medium (VPN: Vancomycin, Polymyxin/Colistin, Nystatin + Trimethoprim) หรือ Chocolate Agar บ่มในตู้ 5% CO2 ที่อุณหภูมิ 37°C",
+        "biochemical": [
+          "Carbohydrate Utilization: หมักน้ำตาลกลูโคส (Glucose) และมอลโทส (Maltose) ได้กรด ('Maltose and Glucose = Meningitidis'; ส่วน Gonorrhoeae หมัก Glucose อย่างเดียว)",
+          "Oxidase Positive (+) และ Catalase Positive (+)",
+          "Serogrouping: Latex Agglutination หรือ PCR ตรวจแยก Serogroups A, B, C, W, Y"
+        ]
+      },
+      "clinical": {
+        "boardBuzzwords": [
+          "Kidney bean-shaped Gram-negative diplococci inside PMNs",
+          "Ferments Maltose AND Glucose (Gonorrhea ferments Glucose only)",
+          "LOS endotoxin shedding causing severe DIC and shock",
+          "Purpura fulminans / stellate petechial rash",
+          "Waterhouse-Friderichsen syndrome (bilateral adrenal hemorrhage)",
+          "Terminal complement deficiency (C5-C9) high risk",
+          "Military recruits / college dormitories close contact",
+          "Close contact chemoprophylaxis with Rifampin, Ciprofloxacin, or Ceftriaxone"
+        ],
+        "classicVignette": "นักศึกษาชายอายุ 19 ปี พักในหอพักมหาวิทยาลัย ถูกเพื่อนนำส่งโรงพยาบาลด้วยอาการไข้สูง ปวดศีรษะรุนแรง คลื่นไส้อาเจียน และคอแข็งมา 12 ชั่วโมง ตรวจร่างกายพบ T 39.5 C, BP 75/45 mmHg คลำชีพจรเบาเร็ว มีผื่นจุดเลือดออกสีแดงคล้ำกระจายทั่วลำตัวและต้นขา บางตำแหน่งรวมตัวกันเป็นปื้นสีม่วงคล้ำขอบหยัก เจาะตรวจ CSF พบความดันเปิด 340 mmH2O ย้อมสีแกรมพบแบคทีเรียรูปเมล็ดถั่วติดสีแกรมลบอยู่ภายในเซลล์เม็ดเลือดขาวนิวโทรฟิลจำนวนมาก",
+        "riskGroups": [
+          "นักศึกษาที่อาศัยในหอพักรวม หรือทหารเกณฑ์ในค่ายฝึกทหาร",
+          "ผู้ป่วยที่มีภาวะขาด Complement ส่วนปลาย (Terminal complement component deficiency C5-C9)",
+          "ผู้ป่วยที่ใช้ยาชีววัตถุ Eculizumab หรือ Ravulizumab",
+          "ผู้ป่วยที่ตัดม้าม (Asplenia) และผู้ที่เดินทางไปแถบ African Meningitis Belt"
+        ]
+      },
+      "treatment": {
+        "firstLine": "MEDICAL EMERGENCY: IV Ceftriaxone 2 g ทุก 12 ชม. หรือ IV Cefotaxime 2 g ทุก 4 ชม. ร่วมกับให้ IV Dexamethasone (0.15 mg/kg ทุก 6 ชม. ก่อนหรือพร้อมกับยาปฏิชีวนะเข็มแรก เพื่อลดภาวะหูดับแทรกซ้อน)",
+        "alternative": "High-dose IV Penicillin G (หากผลทดสอบความไวของเชื้อยืนยันว่าไวต่อยา)",
+        "resistance": "CHEMOPROPHYLAXIS: ผู้สัมผัสใกล้ชิด (Close contacts / Dormitory roommates / บุคลากรทางการแพทย์ที่ทำหัตถการเปิดทางเดินหายใจ) ต้องได้รับยาป้องกันทันที: Oral Rifampin (600 mg ทุก 12 ชม. นาน 2 วัน), Oral Ciprofloxacin (500 mg ครั้งเดียว), หรือ IM Ceftriaxone (250 mg ครั้งเดียว)"
+      }
+    }
+  }
+]
