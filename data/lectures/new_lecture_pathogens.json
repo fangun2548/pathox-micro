@@ -1,0 +1,715 @@
+[
+  {
+    "id": "streptococcus-pneumoniae",
+    "name": "Streptococcus pneumoniae (Pneumococcus)",
+    "thaiName": "สเตรปโตคอคคัส นิวโมเนียอี (นิวโมค็อกคัส / เชื้อปอดบวมและเยื่อหุ้มสมองอักเสบ)",
+    "scientificName": "Streptococcus pneumoniae",
+    "category": "bacteria",
+    "categoryLabel": "แบคทีเรียแกรมบวก (Gram-Positive Diplococci)",
+    "cardTitle": "Streptococcus pneumoniae",
+    "cardSubtitle": "เชื้อก่อโรคปอดอักเสบติดเชื้อในชุมชน (CAP) และเยื่อหุ้มสมองอักเสบอันดับ 1 ในผู้ใหญ่",
+    "cardBadge": "Community-Acquired Pneumonia & Meningitis",
+    "lesionTitle": "Lobar Consolidation & Purulent Meningitis",
+    "lesionThai": "ปอดอักเสบแบบกลีบ (Lobar Pneumonia) และเยื่อหุ้มสมองอักเสบเป็นหนอง",
+    "badgeColor": "#0284c7",
+    "quickStats": {
+      "depth": "Lungs (Alveoli), Meninges, Middle Ear, Sinuses (ปอด เยื่อหุ้มสมอง หูชั้นกลาง โพรงไซนัส)",
+      "morphology": "Gram-positive lancet-shaped diplococci arranged in pairs / chains",
+      "palpation": "Dullness to percussion, increased tactile fremitus, neck stiffness",
+      "distribution": "Lobar distribution in lungs, subarachnoid space over cerebral convexities",
+      "epidemiology": "Leading cause of vaccine-preventable bacterial disease & mortality worldwide"
+    },
+    "morphologicalParts": [
+      {
+        "id": "lobar_consolidation",
+        "name": "Lobar Consolidation (การแข็งตัวของเนื้อปอด)",
+        "thaiName": "เนื้อปอดทึบแน่นคล้ายเนื้อตับจากถุงลมเต็มไปด้วยหนองและเม็ดเลือดแดง",
+        "color": "#0284c7",
+        "description": "Dense homogeneous lobar opacity on CXR with air bronchograms, passing through classic stages of congestion, red hepatization, grey hepatization, and resolution."
+      },
+      {
+        "id": "purulent_meningitis",
+        "name": "Purulent Leptomeningitis (เยื่อหุ้มสมองอักเสบเป็นหนอง)",
+        "thaiName": "หนองข้นสีเทาอมเขียวคลุมร่องสมองและหลอดเลือดดำใต้ชั้นเยื่อหุ้มสมอง",
+        "color": "#059669",
+        "description": "Thick purulent exudate predominantly over the cerebral convexity with flattening of gyri, cloudiness of meninges, and intense neutrophilic infiltration in CSF."
+      },
+      {
+        "id": "lancet_diplococci",
+        "name": "Lancet-Shaped Diplococci (รูปทรงปลายหอกติดสีแกรมบวก)",
+        "thaiName": "แบคทีเรียกลมรูปปลายหอกเรียงเป็นคู่มีแคปซูลใสล้อมรอบ",
+        "color": "#6366f1",
+        "description": "Classic Gram-positive lancet-shaped pairs showing positive Quellung capsular swelling reaction with specific antipolysaccharide antisera."
+      }
+    ],
+    "clinicalCases": [
+      {
+        "id": "spn-case-1",
+        "title": "Case 1: Lobar Pneumonia — Red to Grey Hepatization (ปอดบวมติดเชื้อในชุมชน CAP)",
+        "badge": "เคสที่ 1: ปอดอักเสบกลีบ",
+        "downloadSource": "Lobar pneumonia.jpg",
+        "localFileName": "spn_case1_lobar_pneumonia.jpg",
+        "image": "assets/images/clinical/spn_case1_lobar_pneumonia.jpg",
+        "source": "CDC Public Health Image Library / Wikimedia Commons Archive",
+        "description": "ภาพเคสจริงแสดงพยาธิสภาพของเนื้อปอดกลีบล่างขวาที่เกิดการแข็งตัวทึบ (Lobar consolidation) ในระยะ Grey hepatization เนื้อปอดแน่นคล้ายเนื้อตับ ถุงลมปอดเต็มไปด้วย Fibrin, เม็ดเลือดขาว Neutrophil ที่สลายตัว และเชื้อแบคทีเรีย ผู้ป่วยมักมีอาการไข้สูง หนาวสั่นแบบ shaking chills, ไอมีเสมหะสีสนิมเหล็ก (Rusty sputum), เจ็บหน้าอกตามจังหวะหายใจ (Pleuritic chest pain) และฟังปอดได้ยินเสียง Bronchial breath sounds ร่วมกับ Crackles",
+        "keyFindings": [
+          "Lobar Consolidation: ปอดทึบแน่นทั้งกลีบ มักพบ Air bronchogram บนภาพถ่ายรังสีปอด (CXR)",
+          "Rusty Sputum: เสมหะสีสนิมเหล็กอันเป็นเอกลักษณ์ เกิดจากการแตกสลายของเม็ดเลือดแดงในระยะ Red hepatization",
+          "Alpha-hemolysis: เพาะเชื้อบน Blood agar พบคราบสลายเม็ดเลือดแดงไม่สมบูรณ์สีเขียวรอบโคโลนี (Green discoloration)"
+        ]
+      },
+      {
+        "id": "spn-case-2",
+        "title": "Case 2: Acute Pneumococcal Meningitis (เยื่อหุ้มสมองอักเสบเป็นหนองเฉียบพลัน)",
+        "badge": "เคสที่ 2: เยื่อหุ้มสมองอักเสบ",
+        "downloadSource": "Streptococcus pneumoniae meningitis, gross pathology 33 lores.jpg",
+        "localFileName": "spn_case2_purulent_meningitis.jpg",
+        "image": "assets/images/clinical/spn_case2_purulent_meningitis.jpg",
+        "source": "CDC Public Health Image Library (PHIL #33)",
+        "description": "ภาพเคสจริงจาก CDC แสดงสมองของผู้เสียชีวิตจากโรคเยื่อหุ้มสมองอักเสบจากเชื้อ Pneumococcus พบหนองข้นสีเทาอมเหลืองปกคลุมหนาแน่นบริเวณร่องสมอง (Sulci) และผิวสมองส่วน Convexity เชื้อแพร่กระจายผ่านกระแสเลือดหรือลุกลามโดยตรงจากการติดเชื้อในหูชั้นกลาง (Otitis media) หรือโพรงไซนัสอักเสบ ผู้ป่วยมีอาการไข้สูง ปวดศีรษะรุนแรง คอแข็ง (Stiff neck), Kernig's และ Brudzinski's sign เป็นบวก",
+        "keyFindings": [
+          "CSF Turbidity: น้ำไขสันหลังขุ่นเป็นหนอง ความดันเปิดสูง เม็ดเลือดขาว PMNs เด่น (>1,000/uL)",
+          "Low CSF Glucose: ระดับน้ำตาลในน้ำไขสันหลังลดลงมาก (<40 mg/dL หรือ <0.4 ของระดับในเลือด) จากการบริโภคของเชื้อและเซลล์อักเสบ",
+          "Elevated CSF Protein: ระดับโปรตีนในน้ำไขสันหลังสูงมาก (>100-500 mg/dL) จากการทำลาย Blood-Brain Barrier"
+        ]
+      }
+    ],
+    "tabs": {
+      "morphology": {
+        "depth": "Alveolar spaces, Interstitium, Meninges, Subarachnoid space",
+        "palpation": "Dullness to percussion, increased tactile vocal fremitus, marked nuchal rigidity",
+        "highlights": [
+          "สาเหตุอันดับ 1 ของ Community-Acquired Pneumonia (CAP), Bacterial Meningitis ในผู้ใหญ่, และ Otitis Media ในเด็ก",
+          "ตามสถิติกระทรวงสาธารณสุขไทยปี 2023 โรคติดเชื้อทางเดินหายใจเป็นสาเหตุการเสียชีวิตสูงถึง 8.3% (49,300 รายต่อปี)",
+          "ในน้ำไขสันหลัง การย้อม Gram stain พบ Lancet-shaped Gram-positive diplococci มีความไวในการชี้ขาดสูงถึง 60-90%"
+        ]
+      },
+      "pathogenesis": {
+        "virulenceFactors": [
+          {
+            "name": "Polysaccharide Capsule",
+            "desc": "ปัจจัยก่อโรครุนแรงที่สุด (#1 Virulence factor) มีมากกว่า 100 Serotypes ยับยั้งการจับกินของ Phagocytes และเป็นเป้าหมายของวัคซีน PCV"
+          },
+          {
+            "name": "Pneumolysin (Ply)",
+            "desc": "สารพิษเจาะเยื่อหุ้มเซลล์ (Pore-forming cytotoxin) ทำลายเซลล์เยื่อบุทางเดินหายใจ Cilia และยับยั้งการทำงานของเม็ดเลือดขาว"
+          },
+          {
+            "name": "Secretory IgA Protease",
+            "desc": "เอนไซม์ย่อยสลายแอนติบอดีชนิด IgA บนผิวเยื่อบุ ทำให้เชื้อสามารถยึดเกาะและทะลวงผ่าน Nasopharyngeal mucosa ได้สะดวก"
+          },
+          {
+            "name": "Autolysin (LytA)",
+            "desc": "เอนไซม์ย่อยสลายผนังเซลล์ของเชื้อเองเมื่อเข้าสู่ระยะคงที่ ปลดปล่อย Pneumolysin และชิ้นส่วนผนังเซลล์กระตุ้นการอักเสบอย่างรุนแรง"
+          }
+        ],
+        "immuneEvasion": [
+          "แคปซูลหนาทำให้ไม่ถูก Complement Opsonization ยกเว้นในคนที่มีแอนติบอดีจำเพาะ",
+          "ผู้ป่วยที่ตัดม้าม (Asplenia) หรือมีภาวะ Functional asplenia (เช่น Sickle-cell anemia) เสี่ยงต่อการเกิด Overwhelming Post-Splenectomy Infection (OPSI) เสียชีวิตในไม่กี่ชั่วโมง"
+        ]
+      },
+      "diagnosis": {
+        "staining": "Gram-positive lancet-shaped diplococci arranged in pairs (รูปปลายหอกประกบคู่กัน) พร้อม Quellung reaction positive",
+        "culture": "Sheep Blood Agar: Alpha-hemolytic colonies (สลายเม็ดเลือดแดงไม่สมบูรณ์ โคโลนีมีรอยบุ๋มตรงกลางคล้ายเหรียญกษาปณ์ Draughtsman colonies)",
+        "biochemical": [
+          "Optochin Sensitive: ยับยั้งการเจริญเติบโตด้วยแผ่นยา Optochin (Zone of inhibition >= 14 mm) ใช้แยกจาก Viridans streptococci",
+          "Bile Soluble: ละลายในน้ำดี (Deoxycholate test positive) สารแขวนลอยใสขึ้นหลังเติมเกลือน้ำดี",
+          "Catalase Negative: ไม่สร้างเอนไซม์คะตาเลส (แยกจาก Staphylococci)"
+        ]
+      },
+      "clinical": {
+        "boardBuzzwords": [
+          "Lancet-shaped Gram-positive diplococci",
+          "Rusty brown sputum",
+          "Lobar consolidation with air bronchograms",
+          "Optochin sensitive and bile soluble",
+          "Alpha-hemolytic draughtsman colonies",
+          "Overwhelming post-splenectomy infection (OPSI)",
+          "Quellung reaction positive"
+        ],
+        "classicVignette": "ชายไทยอายุ 68 ปี สูบบุหรี่จัด มีไข้สูง หนาวสั่นแบบสั่นสะท้าน (Rigors) เจ็บแปลบที่หน้าอกข้างขวาเวลาหายใจเข้าลึกๆ ร่วมกับไอมีเสมหะสีสนิมเหล็ก (Rusty sputum) มา 2 วัน ตรวจร่างกายพบ T 39.2 C, หายใจเร็ว 28 ครั้ง/นาที, เคาะปอดขวาทึบและฟังได้เสียง Crepitation, ภาพ CXR พบ Dense lobar consolidation ที่ Right middle lobe",
+        "riskGroups": [
+          "ผู้สูงอายุ (> 65 ปี) และเด็กเล็ก (< 2 ปี)",
+          "ผู้ป่วยที่ไม่มีม้าม (Asplenia, Post-splenectomy, Sickle-cell disease)",
+          "ผู้ป่วยโรคปอดอุดกั้นเรื้อรัง (COPD) และผู้สูบบุหรี่",
+          "ผู้ติดสุราเรื้อรังและผู้ป่วยภูมิคุ้มกันบกพร่อง (HIV/AIDS)"
+        ]
+      },
+      "treatment": {
+        "firstLine": "Community-Acquired Pneumonia (Outpatient): High-dose Amoxicillin หรือ Amoxicillin-Clavulanate ร่วมกับ Macrolide (Azithromycin) หรือ Doxycycline; Inpatient: IV Ceftriaxone หรือ Cefotaxime ร่วมกับ Macrolide; Meningitis: IV Ceftriaxone 2 g q 12h + Vancomycin 15-20 mg/kg q 8-12h + Dexamethasone",
+        "alternative": "Respiratory Fluoroquinolones (Levofloxacin 750 mg daily หรือ Moxifloxacin 400 mg daily) ในผู้ที่แพ้กลุ่ม Beta-lactam รุนแรง",
+        "resistance": "Penicillin-Resistant S. pneumoniae (PRSP): กลไกเกิดจากการเปลี่ยนแปลงโครงสร้าง Penicillin-Binding Proteins (PBPs) ผ่านการแลกเปลี่ยนสารพันธุกรรม (Transformation) ไม่ได้เกิดจากการสร้าง Beta-lactamase จึงต้องใช้ Vancomycin หรือ Ceftriaxone ขนาดยาสูง"
+      }
+    }
+  },
+  {
+    "id": "escherichia-coli",
+    "name": "Escherichia coli (UPEC - Uropathogenic E. coli)",
+    "thaiName": "เอสเชอริเชีย โคไล (เชื้อก่อโรคกรวยไตอักเสบเฉียบพลันและทางเดินปัสสาวะ)",
+    "scientificName": "Escherichia coli",
+    "category": "bacteria",
+    "categoryLabel": "แบคทีเรียแกรมลบ (Gram-Negative Rod - Coliform)",
+    "cardTitle": "Uropathogenic E. coli (UPEC)",
+    "cardSubtitle": "สาเหตุอันดับ 1 ของการติดเชื้อทางเดินปัสสาวะ (UTI) และกรวยไตอักเสบเฉียบพลัน (>80%)",
+    "cardBadge": "Acute Pyelonephritis & UTI",
+    "lesionTitle": "Acute Suppurative Pyelonephritis & Microabscesses",
+    "lesionThai": "กรวยไตอักเสบเฉียบพลันและฝีหนองขนาดเล็กบนผิวไต (CVA Tenderness)",
+    "badgeColor": "#b91c1c",
+    "quickStats": {
+      "depth": "Bladder (Mucosa), Ureters, Renal Pelvis, Renal Parenchyma (เยื่อบุกระเพาะปัสสาวะและเนื้อไต)",
+      "morphology": "Gram-negative straight bacilli, motile with peritrichous flagella",
+      "palpation": "Severe Costovertebral Angle (CVA) tenderness, suprapubic tenderness",
+      "distribution": "Ascending infection from perineum/colon to urethra, bladder, and kidneys",
+      "epidemiology": "#1 cause of community-acquired & catheter-associated urinary tract infections"
+    },
+    "morphologicalParts": [
+      {
+        "id": "pyelonephritis_abscess",
+        "name": "Suppurative Cortical Microabscesses (ฝีหนองกระจายบนผิวไต)",
+        "thaiName": "จุดฝีหนองสีขาวอมเหลืองขนาดเล็กกระจายเต็มผิวเนื้อไตจากกรวยไตอักเสบ",
+        "color": "#b91c1c",
+        "description": "Focal suppurative inflammation with multiple yellowish cortical microabscesses, tubular necrosis, and neutrophilic exudation extending into the collecting system."
+      },
+      {
+        "id": "wbc_casts",
+        "name": "White Blood Cell Casts (ทรงกระบอกเม็ดเลือดขาวในปัสสาวะ)",
+        "thaiName": "เม็ดเลือดขาวรวมตัวเป็นแท่งทรงกระบอกในหลอดไต เป็นสัญญาณชี้ขาดของ Pyelonephritis",
+        "color": "#eab308",
+        "description": "Pathognomonic microscopic finding on urinalysis distinguishing upper UTI (Acute Pyelonephritis) from lower UTI (Cystitis)."
+      },
+      {
+        "id": "macconkey_colony",
+        "name": "Lactose Fermenting Pink Colonies (โคโลนีหมักน้ำตาลแล็กโทสบน MacConkey)",
+        "thaiName": "โคโลนีสีชมพูสดบนจานอาหาร MacConkey จากการสร้างกรดสะท้อนความเป็น Coliform",
+        "color": "#ec4899",
+        "description": "Rapid lactose fermentation producing pink-red colonies surrounded by precipitated bile salts on MacConkey agar and characteristic green metallic sheen on EMB agar."
+      }
+    ],
+    "clinicalCases": [
+      {
+        "id": "eco-case-1",
+        "title": "Case 1: Acute Suppurative Pyelonephritis — Cortical Microabscesses (กรวยไตและเนื้อไตอักเสบเป็นหนองเฉียบพลัน)",
+        "badge": "เคสที่ 1: กรวยไตอักเสบเฉียบพลัน",
+        "downloadSource": "Acute pyelonephritis - high mag.jpg",
+        "localFileName": "eco_case1_pyelonephritis_gross.jpg",
+        "image": "assets/images/clinical/eco_case1_pyelonephritis_gross.jpg",
+        "source": "Nephropathology Case Archive (Wikimedia Commons)",
+        "description": "ภาพเคสจริงแสดงพยาธิสภาพของเนื้อไตในผู้ป่วย Acute Pyelonephritis รุนแรง พบกลุ่มเซลล์อักเสบเม็ดเลือดขาว Neutrophil รวมตัวกันทำลายหลอดไตและเนื้อเยื่อคั่นระหว่างเซลล์กลายเป็นฝีหนองขนาดเล็ก (Suppurative microabscesses) กระจายตัวหนาแน่นบน Renal cortex ผู้ป่วยมีอาการไข้สูง หนาวสั่น ปวดเอวด้านหลัง (Flank pain) เคาะเจ็บบริเวณบั้นเอวชัดเจน (CVA tenderness) ร่วมกับมีปัสสาวะแสบขัด ขุ่น และมีกลิ่นฉุน",
+        "keyFindings": [
+          "Costovertebral Angle (CVA) Tenderness: เคาะเจ็บอย่างรุนแรงบริเวณมุมระหว่างซี่โครงที่ 12 กับแนวกระดูกสันหลัง",
+          "WBC Casts in Urinalysis: ตรวจพบทรงกระบอกเม็ดเลือดขาวในปัสสาวะ ชี้ชัดว่าเกิดการอักเสบที่เนื้อไตส่วนบน (Upper UTI)",
+          "Pyuria & Bacteriuria: ตรวจพบเม็ดเลือดขาวจำนวนมากและแบคทีเรียแท่งแกรมลบในปัสสาวะสด"
+        ]
+      },
+      {
+        "id": "eco-case-2",
+        "title": "Case 2: Lactose Fermentation on MacConkey Agar (การเพาะเลี้ยงเชื้อบนอาหารคัดเลือก)",
+        "badge": "เคสที่ 2: โคโลนีหมักแล็กโทส",
+        "downloadSource": "E. coli lactose fermenter (LF) colonies on MacConkey agar.jpg",
+        "localFileName": "eco_case2_macconkey_colony.jpg",
+        "image": "assets/images/clinical/eco_case2_macconkey_colony.jpg",
+        "source": "Clinical Diagnostic Laboratory Archive (Wikimedia Commons)",
+        "description": "ภาพแสดงโคโลนีของ Escherichia coli บนอาหารเลี้ยงเชื้อ MacConkey Agar แสดงคุณสมบัติการหมักน้ำตาลแล็กโทสอย่างรวดเร็ว (Lactose fermenter) ทำให้เกิดกรดเปลี่ยนสีอินดิเคเตอร์ Neutral red กลายเป็นสีชมพูสด (Pink colonies) แตกต่างจากเชื้อกลุ่มบิดหรือไทฟอยด์ที่ไม่หมักแล็กโทส (Colorless) และเมื่อเพาะบนอาหาร EMB Agar จะให้โคโลนีสะท้อนแสงสีเขียวเหลือบวาว (Green metallic sheen) อันเป็นเอกลักษณ์",
+        "keyFindings": [
+          "Pink Colonies on MacConkey: หมักแล็กโทสได้กรด ยืนยันกลุ่ม Coliform bacteria",
+          "Green Metallic Sheen on EMB: การสะท้อนแสงสีเขียวประกายวาวบน Eosin Methylene Blue agar",
+          "Indole Positive: มีเอนไซม์ Tryptophanase เปลี่ยน Tryptophan เป็น Indole ให้สีแดงเมื่อหยด Kovac's reagent"
+        ]
+      }
+    ],
+    "tabs": {
+      "morphology": {
+        "depth": "Urinary mucosa, Renal tubules, Interstitial tissue, Renal cortex",
+        "palpation": "Severe CVA tenderness, suprapubic discomfort",
+        "highlights": [
+          "เป็นเชื้อก่อโรคติดเชื้อทางเดินปัสสาวะที่พบบ่อยที่สุด (> 80% ของผู้ป่วยนอก และ > 50% ของผู้ป่วยในโรงพยาบาล)",
+          "การมี WBC Casts ในปัสสาวะเป็นเกณฑ์วินิจฉัยทองคำในการแยกโรค Pyelonephritis ออกจาก Cystitis",
+          "Urine culture >= 10^5 CFU/mL จากปัสสาวะที่เก็บช่วงกลาง (Clean-catch midstream urine) บ่งชี้ Significant bacteriuria"
+        ]
+      },
+      "pathogenesis": {
+        "virulenceFactors": [
+          {
+            "name": "P Fimbriae (Pyelonephritis-associated Pili)",
+            "desc": "ขาเกาะจำเพาะจับกับ Gal-alpha(1-4)-Gal beta receptors บนผิวเยื่อบุเซลล์ไต ทำให้เชื้อไต่ทวนน้ำปัสสาวะขึ้นสู่กรวยไตได้"
+          },
+          {
+            "name": "Type 1 Fimbriae (Mannose-sensitive Pili)",
+            "desc": "ใช้ยึดเกาะกับ Uroplakin receptors บนผิวเยื่อบุกระเพาะปัสสาวะ สำคัญในการก่อโรคกระเพาะปัสสาวะอักเสบ (Cystitis)"
+          },
+          {
+            "name": "Lipopolysaccharide (LPS) Endotoxin",
+            "desc": "ส่วนประกอบ Lipid A ในผนังเซลล์กระตุ้นการหลั่ง IL-1, IL-6, TNF-alpha ผ่าน TLR-4 ก่อให้เกิดไข้สูง หนาวสั่น และภาวะ Urosepsis"
+          },
+          {
+            "name": "Hemolysin & Siderophores (Aerobactin)",
+            "desc": "หลั่งสารเจาะทำลายเซลล์เยื่อบุไตและดึงธาตุเหล็กจากโฮสต์เพื่อใช้ในการเจริญเติบโตในสภาพแวดล้อมปัสสาวะ"
+          }
+        ],
+        "immuneEvasion": [
+          "สร้าง K antigen (Capsular polysaccharide) ป้องกันการถูก Complement lysis และ Phagocytosis",
+          "ความสามารถในการหลบซ่อนตัวใน Urothelial umbrella cells เกิดเป็น Intracellular Bacterial Communities (IBCs) ทำให้เกิดการติดเชื้อซ้ำซาก"
+        ]
+      },
+      "diagnosis": {
+        "staining": "Gram-negative straight bacillus (แท่งแกรมลบ ย้อมติดสีแดง-ชมพู)",
+        "culture": "MacConkey Agar: โคโลนีสีชมพูเข้ม (Lactose fermenter); EMB Agar: โคโลนีสะท้อนแสงสีเขียวเหลือบวาว (Green metallic sheen); Blood Agar: บางสายพันธุ์ให้ Beta-hemolysis",
+        "biochemical": [
+          "IMViC test: ++-- (Indole +, Methyl Red +, Voges-Proskauer -, Citrate -)",
+          "Urine Dipstick: Leukocyte esterase positive (บ่งบอก Pyuria) และ Nitrite test positive (แบคทีเรียเปลี่ยน Nitrate เป็น Nitrite)",
+          "Catalase positive, Oxidase negative (แยกจาก Pseudomonas aeruginosa)"
+        ]
+      },
+      "clinical": {
+        "boardBuzzwords": [
+          "Costovertebral angle (CVA) tenderness",
+          "White blood cell (WBC) casts in urine",
+          "P fimbriae (pyelonephritis-associated pili)",
+          "Lactose fermenter pink colonies on MacConkey",
+          "Green metallic sheen on EMB agar",
+          "Indole positive (IMViC ++--)"
+        ],
+        "classicVignette": "หญิงอายุ 26 ปี มีอาการปัสสาวะแสบขัด กะปริดกะปรอยมา 3 วัน ต่อมามีไข้สูง หนาวสั่น คลื่นไส้ และปวดหลังบั้นเอวด้านขวาอย่างรุนแรง ตรวจร่างกายพบ T 38.9 C, BP 110/70 mmHg, เคาะเจ็บอย่างชัดเจนที่ Right costovertebral angle (CVA tenderness), ผลตรวจปัสสาวะพบ WBC > 50 cells/HPF, RBC 5-10 cells/HPF, Leukocyte esterase และ Nitrite เป็นบวก พร้อมพบ WBC casts",
+        "riskGroups": [
+          "สตรีวัยเจริญพันธุ์ (เนื่องจากท่อปัสสาวะสั้นและอยู่ใกล้ทวารหนัก)",
+          "หญิงตั้งครรภ์ (มดลูกขยายกดเบียดท่อไตและการบีบตัวของกล้ามเนื้อทางเดินปัสสาวะลดลง)",
+          "ผู้ป่วยโรคเบาหวาน (Diabetic neuropathy ทำให้ปัสสาวะคั่งค้าง)",
+          "ผู้ป่วยใส่สายสวนปัสสาวะ (Catheter-associated UTI - CAUTI)"
+        ]
+      },
+      "treatment": {
+        "firstLine": "Acute Uncomplicated Pyelonephritis: IV Ceftriaxone 1-2 g q 24h หรือ Oral Fluoroquinolones (Ciprofloxacin 500 mg BID หรือ Levofloxacin 750 mg daily) นาน 7-14 วัน ในพื้นที่ที่มีอัตราการดื้อยาน้อยกว่า 10%",
+        "alternative": "Piperacillin-Tazobactam หรือ Carbapenems (Ertapenem, Meropenem) กรณีสงสัยเชื้อดื้อยา Extended-Spectrum Beta-Lactamase (ESBL)",
+        "resistance": "ESBL-producing E. coli: ดื้อต่อ Penicillins, Cephalosporins ทุกรุ่น และ Aztreonam ต้องใช้ยากลุ่ม Carbapenems เป็นหลัก และระวังการดื้อยา Fluoroquinolones ที่เพิ่มขึ้นในประเทศไทย"
+      }
+    }
+  },
+  {
+    "id": "shigella-dysenteriae",
+    "name": "Shigella spp. (Bacillary Dysentery)",
+    "thaiName": "ชิเกลลา (เชื้อบิดไม่มีตัว / โรคบิดมูกเลือดรุนแรง)",
+    "scientificName": "Shigella dysenteriae / flexneri / sonnei",
+    "category": "bacteria",
+    "categoryLabel": "แบคทีเรียแกรมลบในทางเดินอาหาร (Enterobacteriaceae)",
+    "cardTitle": "Shigella dysenteriae",
+    "cardSubtitle": "เชื้อบิดมูกเลือด ปวดเบ่งรุนแรง (Tenesmus) และปริมาณเชื้อก่อโรคต่ำมาก (<100 ตัว)",
+    "cardBadge": "Infectious Dysentery & Tenesmus",
+    "lesionTitle": "Colonic Mucosal Ulceration & Pseudomembrane",
+    "lesionThai": "แผลเปื่อยและเนื้อเยื่อหลอกบนเยื่อบุลำไส้ใหญ่ร่วมกับถ่ายมูกเลือด",
+    "badgeColor": "#dc2626",
+    "quickStats": {
+      "depth": "Colonic Mucosa, Peyer's Patches, Lamina Propria (เยื่อบุผิวลำไส้ใหญ่)",
+      "morphology": "Gram-negative non-motile bacilli, non-spore forming, non-capsulated",
+      "palpation": "Lower abdominal tenderness, severe painful tenesmus",
+      "distribution": "Colon (predominantly distal colon and rectum)",
+      "epidemiology": "Fecal-oral transmission (Four Fs: Fingers, Flies, Food, Feces), human-to-human"
+    },
+    "morphologicalParts": [
+      {
+        "id": "colonic_ulceration",
+        "name": "Hemorrhagic Colonic Ulcers (แผลเปื่อยเลือดออกในลำไส้ใหญ่)",
+        "thaiName": "เยื่อบุลำไส้ใหญ่บวมแดง เลือดออก และมีแผลเปื่อยตื้นๆ กระจายทั่วไป",
+        "color": "#dc2626",
+        "description": "Extensive inflammation of the rectosigmoid mucosa with punctate hemorrhages, shallow ulcerations, and overlying fibrinopurulent pseudomembrane."
+      },
+      {
+        "id": "fecal_sheets_pmns",
+        "name": "Sheets of Fecal Leukocytes (เม็ดเลือดขาวหนาแน่นในอุจจาระ)",
+        "thaiName": "ตรวจอุจจาระพบเม็ดเลือดขาว Neutrophil และเม็ดเลือดแดงจำนวนมหาศาล",
+        "color": "#f97316",
+        "description": "Microscopic stool examination showing abundant sheets of polymorphonuclear leukocytes and RBCs, confirming invasive inflammatory diarrhea."
+      },
+      {
+        "id": "actin_rocket",
+        "name": "Actin Comet Tails (หางหินขี้นกแอคตินขับเคลื่อนภายในเซลล์)",
+        "thaiName": "การใช้โครงสร้าง Actin ของเซลล์โฮสต์ดันตัวเองข้ามสู่เซลล์ข้างเคียง",
+        "color": "#9333ea",
+        "description": "Intracellular actin polymerization enabling propulsion and cell-to-cell spread without entering the extracellular environment, evading humoral antibodies."
+      }
+    ],
+    "clinicalCases": [
+      {
+        "id": "shg-case-1",
+        "title": "Case 1: Inflammatory Dysentery — Fecal Leukocytes & Mucus (โรคบิดมูกเลือดถ่ายอุจจาระมีมูกเลือด)",
+        "badge": "เคสที่ 1: อุจจาระมูกเลือดชิเกลโลซิส",
+        "downloadSource": "Shigella stool.jpg",
+        "localFileName": "shg_case1_colonic_ulcers.jpg",
+        "image": "assets/images/clinical/shg_case1_colonic_ulcers.jpg",
+        "source": "Clinical Microbiology Case Archive (Wikimedia Commons)",
+        "description": "ภาพเคสจริงแสดงลักษณะอุจจาระของผู้ป่วยโรคบิดชิเกลลา (Shigellosis) ที่มีมูกเลือดและหนองปนอย่างชัดเจน เยื่อบุผิวลำไส้ใหญ่บวม แดงก่ำ มีเลือดออกใต้เยื่อบุและแผลเปื่อยตื้นๆ เชื้อบุกรุกเข้าทำลายเซลล์เยื่อบุผิวผ่าน M cells ของ Peyer patches ทำให้เกิดการตายของเซลล์ (Necrosis) ผู้ป่วยจะมีไข้ ปวดเกร็งท้องรุนแรง ถ่ายเป็นมูกเลือด (Bloody mucoid stool) และปวดเบ่งก้นกะปริดกะปรอยตลอดเวลา (Tenesmus)",
+        "keyFindings": [
+          "Bloody Mucoid Diarrhea: อุจจาระมีมูกเลือดปน ปริมาณอุจจาระต่อครั้งไม่มากแต่ถ่ายบ่อย",
+          "Tenesmus: อาการปวดเบ่ง ถ่ายไม่สุด ทรมานบริเวณทวารหนัก เกิดจากการอักเสบรุนแรงที่ผนัง Rectum",
+          "Low Infectious Dose: ใช้เชื้อเพียง 10-100 ตัว ก็สามารถก่อโรคได้ เพราะทนทานต่อกรดในกระเพาะอาหารสูง"
+        ]
+      },
+      {
+        "id": "shg-case-2",
+        "title": "Case 2: Gram-Negative Rods & Morphology of Shigella (การย้อมสีแกรมและลักษณะเชื้อ)",
+        "badge": "เคสที่ 2: สัณฐานวิทยาการย้อมสีแกรม",
+        "downloadSource": "Gram-negative rods (GNRs) of Shigella sonnei.jpg",
+        "localFileName": "shg_case2_microscopy.jpg",
+        "image": "assets/images/clinical/shg_case2_microscopy.jpg",
+        "source": "CDC Public Health Image Library / Wikimedia Commons Archive",
+        "description": "ภาพกล้องจุลทรรศน์แสดงแบคทีเรีย Shigella sonnei ย้อมสีแกรมติดสีแดงรูปแท่ง (Gram-negative rods) เมื่อนำอุจจาระสดของผู้ป่วยมาตรวจทางกล้องจุลทรรศน์ จะพบเม็ดเลือดขาว Neutrophil รวมกลุ่มเป็นแพหนาแน่น (Sheets of fecal leukocytes) ร่วมกับเม็ดเลือดแดงจำนวนมาก เพาะบน MacConkey agar ได้โคโลนีใสไร้สี (Non-lactose fermenter) และบน TSI ไม่สร้างก๊าซไฮโดรเจนซัลไฟด์ (H2S negative)",
+        "keyFindings": [
+          "Non-motile: เชื้อไม่มีแฟลกเจลลา จึงไม่เคลื่อนที่ในหลอดทดสอบ (ต่างจาก Salmonella ที่เคลื่อนที่ได้)",
+          "H2S Negative: ไม่สร้างก๊าซไข่เน่าบน TSI หรือ SS Agar (โคโลนีไม่มีจุดดำตรงกลาง ต่างจาก Salmonella)",
+          "Non-lactose fermenter: โคโลนีใสไร้สีบน MacConkey agar (ไม่หมักน้ำตาลแล็กโทส)"
+        ]
+      }
+    ],
+    "tabs": {
+      "morphology": {
+        "depth": "Mucosa and Submucosa of Colon (ลำไส้ใหญ่ส่วนปลายและทวารหนัก มักไม่ทะลุ Lamina propria)",
+        "palpation": "Severe lower abdominal guarding and rebound tenderness, rectal tenderness",
+        "highlights": [
+          "ปริมาณเชื้อที่ก่อโรคต่ำมาก (Low infectious dose: < 100 bacilli) ทำให้ติดต่อจากคนสู่คนได้ง่ายมากผ่านมือ อาหาร และแมลงวัน",
+          "ต่างจาก Entamoeba histolytica (บิดมีตัว): Shigella มักมีไข้สูงเฉียบพลัน ปวดเกร็งท้องรุนแรง เม็ดเลือดขาวในอุจจาระเป็น PMNs เด่น",
+          "Shiga toxin จาก S. dysenteriae serotype 1 สามารถทำให้เกิดกลุ่มอาการเม็ดเลือดแดงแตกไตวาย (Hemolytic Uremic Syndrome - HUS)"
+        ]
+      },
+      "pathogenesis": {
+        "virulenceFactors": [
+          {
+            "name": "M Cell Invasion (Type III Secretion System)",
+            "desc": "ฉีดโปรตีน Ipa เข้าสู่ M cells ของ Peyer patches กระตุ้นให้เกิด Macropinocytosis เพื่อเข้าสู่ชั้น Submucosa"
+          },
+          {
+            "name": "Actin-Based Rocket Propulsion (IcsA / VirG)",
+            "desc": "เหนี่ยวนำให้เกิดการต่อสาย Polymerization ของ Host actin filaments ก่อตัวเป็น 'Actin comet tail' ดันเชื้อทะลุเยื่อหุ้มเซลล์ไปยังเซลล์เยื่อบุข้างเคียง"
+          },
+          {
+            "name": "Shiga Toxin (AB5 Toxin)",
+            "desc": "หน่วยย่อย A ยับยั้งการทำงานของ 60S ribosomal subunit โดยตัดอะดีนีนบน 28S rRNA หยุดยั้งการสร้างโปรตีนของเซลล์ ทำให้เซลล์เยื่อบุและหลอดเลือดฝอยในไตตาย"
+          },
+          {
+            "name": "Induction of Macrophage Apoptosis",
+            "desc": "กระตุ้น Caspase-1 ใน Macrophages ทำให้เซลล์แตกทำลายและหลั่ง IL-1beta กับ IL-18 ก่อให้เกิดการอักเสบอย่างรุนแรง"
+          }
+        ],
+        "immuneEvasion": [
+          "เคลื่อนที่ภายใน Cytoplasm ของเซลล์โดยตรง จึงหลบเลี่ยงแอนติบอดีในกระแสเลือดและระบบ Complement ได้อย่างสมบูรณ์",
+          "ทนทานต่อสภาวะความเป็นกรดสูงในกระเพาะอาหาร (Acid-resistant) ผ่านระบบ Glutamate decarboxylase"
+        ]
+      },
+      "diagnosis": {
+        "staining": "Gram-negative bacillus (แท่งแกรมลบ ย้อมติดสีแดง ไม่เคลื่อนที่)",
+        "culture": "MacConkey Agar: โคโลนีใสไร้สี (Colorless, Non-lactose fermenter); Salmonella-Shigella (SS) Agar: โคโลนีใสไร้สี ไม่มีจุดดำตรงกลาง (H2S negative); XLD Agar: โคโลนีสีแดงใส",
+        "biochemical": [
+          "Triple Sugar Iron (TSI): K/A, Gas negative, H2S negative (ด่างบน/กรดล่าง ไม่สร้างก๊าซและไม่สร้างก๊าซไข่เน่า)",
+          "Motility test: Negative (ไม่เคลื่อนที่ แยกจาก Salmonella, E. coli, Proteus)",
+          "Urease negative, Citrate negative"
+        ]
+      },
+      "clinical": {
+        "boardBuzzwords": [
+          "Bloody mucoid diarrhea (dysentery)",
+          "Painful tenesmus (straining at stool)",
+          "Extremely low infectious dose (< 100 organisms)",
+          "Shiga toxin (60S ribosomal inactivation)",
+          "Actin rocket motility (cell-to-cell spread)",
+          "Hemolytic Uremic Syndrome (HUS) triad: anemia, thrombocytopenia, acute renal failure",
+          "Non-motile and H2S negative"
+        ],
+        "classicVignette": "เด็กชายอายุ 4 ขวบ ในศูนย์รับเลี้ยงเด็ก มีไข้สูง 39.5 C ปวดเกร็งท้อง ถ่ายเหลวเป็นน้ำในวันแรก ต่อมาถ่ายบ่อยครั้งขึ้นแต่ปริมาณน้อยลง อุจจาระมีมูกเลือดปนชัดเจน และร้องไห้ปวดเบ่งทรมานทุกครั้งที่ถ่าย (Tenesmus) ตรวจอุจจาระพบ Fecal leukocytes เป็นแพหนาแน่นและ RBCs เพาะเชื้อบน MacConkey พบโคโลนีใส และไม่สร้าง H2S",
+        "riskGroups": [
+          "เด็กเล็กในสถานรับเลี้ยงเด็กและโรงเรียนอนุบาล",
+          "ประชากรในพื้นที่แออัด สุขอนามัยไม่ดี หรือขาดแคลนน้ำสะอาด",
+          "กลุ่มชายรักชาย (Men who have sex with men - MSM)",
+          "ผู้เดินทางไปยังประเทศกำลังพัฒนา"
+        ]
+      },
+      "treatment": {
+        "firstLine": "การให้น้ำและเกลือแร่ทดแทน (Oral Rehydration Therapy) สำคัญที่สุด; ยาปฏิชีวนะในรายที่รุนแรง: Oral Azithromycin (เด็ก) หรือ Ciprofloxacin 500 mg BID x 3 วัน (ผู้ใหญ่) หรือ IV Ceftriaxone",
+        "alternative": "Trimethoprim-Sulfamethoxazole (TMP-SMX) หรือ Ampicillin (เฉพาะสายพันธุ์ที่ทดสอบแล้วว่าไวต่อยา)",
+        "resistance": "ห้ามใช้ยากลุ่มหยุดถ่ายหรือกดการบีบตัวของลำไส้ (Antimotility agents เช่น Loperamide, Diphenoxylate) อย่างเด็ดขาด เพราะจะทำให้เชื้อและสารพิษคั่งค้างในลำไส้ เสี่ยงต่อ Toxic megacolon และ HUS"
+      }
+    }
+  },
+  {
+    "id": "chlamydia-trachomatis",
+    "name": "Chlamydia trachomatis (Serovars D-K / L1-L3)",
+    "thaiName": "คลาไมเดีย ทราโคมาติส (โรคติดเชื้อทางเพศสัมพันธ์ / ปีกมดลูกอักเสบ PID)",
+    "scientificName": "Chlamydia trachomatis",
+    "category": "bacteria",
+    "categoryLabel": "แบคทีเรียภายในเซลล์ (Obligate Intracellular Bacteria)",
+    "cardTitle": "Chlamydia trachomatis",
+    "cardSubtitle": "สาเหตุอันดับ 1 ของภาวะอุ้งเชิงกรานอักเสบ (PID) ภาวะมีบุตรยาก และตั้งครรภ์นอกมดลูก",
+    "cardBadge": "Pelvic Inflammatory Disease & Cervicitis",
+    "lesionTitle": "Mucopurulent Cervicitis & Fitz-Hugh-Curtis Adhesions",
+    "lesionThai": "ปากมดลูกอักเสบเป็นหนองและพังผืดสายพิณรอบตับ (Violin-string Adhesions)",
+    "badgeColor": "#9333ea",
+    "quickStats": {
+      "depth": "Columnar & Transitional Epithelium (เยื่อบุท่อปัสสาวะ ปากมดลูก ท่อนำไข่ และเยื่อบุตา)",
+      "morphology": "Obligate intracellular, dimorphic lifecycle (Elementary & Reticulate bodies)",
+      "palpation": "Cervical Motion Tenderness (Chandelier sign), adnexal tenderness",
+      "distribution": "Genital tract, pelvic peritoneal cavity, liver capsule (Fitz-Hugh-Curtis)",
+      "epidemiology": "#1 most common bacterial sexually transmitted infection (STI) globally"
+    },
+    "morphologicalParts": [
+      {
+        "id": "cervical_motion_tenderness",
+        "name": "Cervical Motion Tenderness (เจ็บเสียวเมื่อโยกปากมดลูก / Chandelier Sign)",
+        "thaiName": "อาการเจ็บปวดอย่างรุนแรงเมื่อขยับปากมดลูกจากการอักเสบลุกลามถึงปีกมดลูก",
+        "color": "#9333ea",
+        "description": "Exquisite pelvic pain elicited upon bimanual digital movement of the cervix indicating active peritoneal and adnexal inflammation in Pelvic Inflammatory Disease."
+      },
+      {
+        "id": "violin_string_adhesions",
+        "name": "Violin-String Perihepatic Adhesions (พังผืดสายพิณรอบตับ)",
+        "thaiName": "พังผืดบางๆ คล้ายสายพิณเชื่อมระหว่างผิวตับกับผนังหน้าท้อง (Fitz-Hugh-Curtis)",
+        "color": "#d946ef",
+        "description": "Pathognomonic thin fibrinous 'violin-string' adhesions between the anterior liver capsule and abdominal wall seen during laparoscopy in Fitz-Hugh-Curtis syndrome."
+      },
+      {
+        "id": "elementary_reticulate_cycle",
+        "name": "Biphasic Developmental Cycle (วงจรชีวิตสองระยะในเซลล์)",
+        "thaiName": "ระยะ Elementary Body (แพร่เชื้อนอกเซลล์) และ Reticulate Body (แบ่งตัวในเซลล์)",
+        "color": "#6366f1",
+        "description": "Infectious extracellular Elementary Body (EB) enters host epithelial cells, transforms into metabolically active Reticulate Body (RB) inside inclusions, multiplies by binary fission, and condenses back to EB."
+      }
+    ],
+    "clinicalCases": [
+      {
+        "id": "ctr-case-1",
+        "title": "Case 1: Mucopurulent Cervicitis in Pelvic Inflammatory Disease (ปากมดลูกอักเสบมีหนองไหลและเจ็บเมื่อโยกปากมดลูก)",
+        "badge": "เคสที่ 1: ปากมดลูกอักเสบเป็นหนอง",
+        "downloadSource": "Mucopurelent discharge.png",
+        "localFileName": "ctr_case1_fitzhugh_adhesions.png",
+        "image": "assets/images/clinical/ctr_case1_fitzhugh_adhesions.png",
+        "source": "Clinical Gynecology Case Archive (Wikimedia Commons)",
+        "description": "ภาพตรวจภายในปากมดลูก (Speculum examination) แสดงภาวะ Mucopurulent cervicitis ในหญิงสาวที่เป็นโรคอุ้งเชิงกรานอักเสบ (PID) พบหนองข้นสีเหลืองไหลจากปากมดลูก (Endocervical canal) ปากมดลูกบวมแดงและมีเลือดออกง่ายเมื่อสัมผัส (Friable cervix) เชื้อ Chlamydia trachomatis ลุกลามผ่านช่องทางเดินระบบสืบพันธุ์ส่วนบนสู่ปีกมดลูกและช่องท้อง เกิดพังผืดรอบตับ (Fitz-Hugh-Curtis syndrome) ผู้ป่วยมีอาการปวดท้องน้อย มีไข้ และเจ็บเสียวอย่างรุนแรงเมื่อตรวจโยกปากมดลูก (Chandelier sign)",
+        "keyFindings": [
+          "Mucopurulent Endocervical Discharge: หนองสีเหลืองข้นไหลจากรูเปิดปากมดลูก ตรวจพบเม็ดเลือดขาว > 30 cells/HPF",
+          "Cervical Motion Tenderness: อาการเจ็บปวดอย่างรุนแรงเมื่อโยกปากมดลูก (Chandelier sign) เป็นเกณฑ์ชี้ขาดของ PID",
+          "Infertility & Ectopic Pregnancy: ภาวะแทรกซ้อนระยะยาวจากการเกิดพังผืดอุดตันท่อนำไข่ (Tubal scarring)"
+        ]
+      },
+      {
+        "id": "ctr-case-2",
+        "title": "Case 2: Basophilic Intracytoplasmic Inclusion Bodies (เม็ดสารคัดหลั่งภายในไซโทพลาซึม)",
+        "badge": "เคสที่ 2: เม็ดสารคัดหลั่งในเซลล์",
+        "downloadSource": "ChlamydiaTrachomatisEinschlusskörperchen.jpg",
+        "localFileName": "ctr_case2_inclusion_bodies.jpg",
+        "image": "assets/images/clinical/ctr_case2_inclusion_bodies.jpg",
+        "source": "Diagnostic Cytology Archive (Wikimedia Commons)",
+        "description": "ภาพเซลล์เยื่อบุผิวย้อมสี Giemsa แสดงเม็ดสารคัดหลั่งขนาดใหญ่ในไซโทพลาซึม (Intracytoplasmic inclusion bodies) ติดสีม่วงเข้มข้างนิวเคลียส ภายในเม็ดประกอบด้วยเชื้อ Chlamydia trachomatis นับร้อยตัวในระยะ Reticulate bodies ที่กำลังแบ่งตัว เชื้อไม่สามารถสังเคราะห์ ATP เองได้ จึงต้องอาศัยพลังงานจากเซลล์เจ้าบ้านอย่างสมบูรณ์ (Energy parasite)",
+        "keyFindings": [
+          "Intracytoplasmic Inclusions: เม็ดกลมติดสีในเซลล์เยื่อบุผิวข้างนิวเคลียส ตรวจพบด้วย Giemsa หรือ Iodine stain",
+          "NAAT Gold Standard: การตรวจหาสารพันธุกรรมด้วย Nucleic Acid Amplification Test เป็นวิธีที่แม่นยำที่สุด",
+          "Lack of Peptidoglycan: ผนังเซลล์ไม่มี Muramic acid ทำให้ยาปฏิชีวนะกลุ่ม Penicillin ธรรมดาใช้ไม่ได้ผล"
+        ]
+      }
+    ],
+    "tabs": {
+      "morphology": {
+        "depth": "Cervical os, Endometrium, Fallopian tubes, Pelvic peritoneum, Liver capsule",
+        "palpation": "Exquisite cervical motion tenderness (Chandelier sign), adnexal fullness",
+        "highlights": [
+          "โรคติดเชื้อแบคทีเรียทางเพศสัมพันธ์ที่พบบ่อยที่สุดในโลก มักไม่แสดงอาการในระยะแรก (Silent infection > 70% ในสตรี)",
+          "Case 7 จากการบรรยาย: หญิง 22 ปี ปวดท้องน้อย ตกขาวเป็นหนอง เจ็บเวลามีเพศสัมพันธ์ ตรวจพบ Cervical motion tenderness และต้องตรวจ Pregnancy test (UPT) เสมอเพื่อตัดภาวะท้องนอกมดลูก",
+          "การติดเชื้อซ้ำซากนำไปสู่ภาวะพังผืดในท่อนำไข่ ทำให้เกิดมีบุตรยาก (Tubal infertility) และตั้งครรภ์นอกมดลูก (Ectopic pregnancy)"
+        ]
+      },
+      "pathogenesis": {
+        "virulenceFactors": [
+          {
+            "name": "Biphasic Lifecycle (EB vs RB)",
+            "desc": "Elementary Body (EB) ขนาดเล็ก หนา ทนทาน ทำหน้าที่ติดเชื้อเข้าสู่เซลล์; Reticulate Body (RB) ขนาดใหญ่ ทำหน้าที่แบ่งตัวสังเคราะห์สารพันธุกรรมภายใน Phagosome"
+          },
+          {
+            "name": "Type III Secretion System & Inc Proteins",
+            "desc": "ฉีดโปรตีนดัดแปลงเยื่อหุ้ม Inclusion membrane เพื่อยับยั้งการรวมตัวของ Phagosome กับ Lysosome ทำให้เชื้อไม่ถูกย่อยทำลาย"
+          },
+          {
+            "name": "Chlamydial Protease-like Activity Factor (CPAF)",
+            "desc": "เอนไซม์ย่อยสลาย Transcription factors ของโฮสต์ ยับยั้งการนำเสนอแอนติเจนผ่าน MHC class I และ II ขัดขวางระบบภูมิคุ้มกัน"
+          },
+          {
+            "name": "Major Outer Membrane Protein (MOMP)",
+            "desc": "โปรตีนแอนติเจนหลักบนผิวนอก แบ่งสายพันธุ์เป็น Serovars A-C (ริดสีดวงตา Trachoma), D-K (STI, PID, Neonatal conjunctivitis/pneumonia), และ L1-L3 (Lymphogranuloma venereum - LGV)"
+          }
+        ],
+        "immuneEvasion": [
+          "อาศัยและแบ่งตัวอยู่ภายในเยื่อหุ้ม Inclusion membrane หลบเลี่ยงระบบ Humoral immunity ได้อย่างสมบูรณ์",
+          "ไม่สร้างสารกระตุ้นการอักเสบที่รุนแรงในระยะแรก ทำให้การติดเชื้อดำเนินไปอย่างเงียบๆ เป็นเวลานานจนเกิดพังผืดถาวร"
+        ]
+      },
+      "diagnosis": {
+        "staining": "Giemsa stain แสดง Basophilic intracytoplasmic inclusion bodies หรือ Direct Fluorescent Antibody (DFA)",
+        "culture": "เพาะในเซลล์มีชีวิตเท่านั้น (McCoy cell culture หรือ HeLa cells) ไม่สามารถเพาะบนอาหารเลี้ยงเชื้อแบคทีเรียธรรมดาได้",
+        "biochemical": [
+          "Nucleic Acid Amplification Test (NAAT): วิธีมาตรฐานหลัก (Gold Standard) ตรวจจาก First-catch urine หรือ Vaginal/Endocervical swab มีความไวและความจำเพาะ > 98%",
+          "Urine Pregnancy Test (UPT): ต้องส่งตรวจในสตรีวัยเจริญพันธุ์ที่สงสัย PID ทุกราย เพื่อตัดภาวะ Ectopic pregnancy",
+          "Serology (Micro-IF): ใช้ในการวินิจฉัย Lymphogranuloma venereum (LGV) หรือ Neonatal pneumonitis"
+        ]
+      },
+      "clinical": {
+        "boardBuzzwords": [
+          "Cervical motion tenderness (Chandelier sign)",
+          "Fitz-Hugh-Curtis syndrome (violin-string perihepatic adhesions)",
+          "Biphasic lifecycle: Elementary body (infectious) & Reticulate body (replicating)",
+          "Nucleic Acid Amplification Test (NAAT) as gold standard",
+          "Obligate intracellular energy parasite (lacks ATP synthesis)",
+          "Coinfection with Neisseria gonorrhoeae"
+        ],
+        "classicVignette": "หญิงอายุ 22 ปี มีเพศสัมพันธ์โดยไม่ได้ใช้ถุงยางอนามัย มีอาการปวดท้องน้อยด้านล่างทั้งสองข้าง ตกขาวผิดปกติสีเหลืองขุ่น และเจ็บลึกๆ ขณะมีเพศสัมพันธ์ (Deep dyspareunia) มา 4 วัน ตรวจร่างกายพบ T 38.2 C, กดเจ็บบริเวณท้องน้อยและปีกมดลูกทั้งสองข้าง, ตรวจภายในพบ Mucopurulent discharge ไหลจากปากมดลูก และมีอาการเจ็บเสียวอย่างรุนแรงเมื่อใช้นิ้วขยับโยกปากมดลูก (Positive cervical motion tenderness)",
+        "riskGroups": [
+          "วัยรุ่นและสตรีวัยเจริญพันธุ์ที่มีคู่นอนหลายคน",
+          "ผู้ที่ไม่ใช้ถุงยางอนามัยอย่างสม่ำเสมอ",
+          "ผู้ที่มีประวัติโรคติดต่อทางเพศสัมพันธ์ (STIs) มาก่อน",
+          "ทารกแรกเกิดที่คลอดผ่านช่องคลอดของมารดาที่ติดเชื้อ (เสี่ยงเกิด Inclusion conjunctivitis และ Staccato cough pneumonia)"
+        ]
+      },
+      "treatment": {
+        "firstLine": "Uncomplicated Genital Chlamydia: Oral Doxycycline 100 mg BID x 7 วัน (หรือ Azithromycin 1 g oral single dose ในหญิงตั้งครรภ์); Pelvic Inflammatory Disease (PID): IV Ceftriaxone 1 g q 24h + Oral Doxycycline 100 mg BID + Oral Metronidazole 500 mg BID นาน 14 วัน (ต้องครอบคลุมทั้ง Chlamydia, Gonorrhea, และ Anaerobes)",
+        "alternative": "Oral Levofloxacin 500 mg daily x 7 วัน หรือ Erythromycin base 500 mg QID x 7 วัน",
+        "resistance": "ต้องรักษาคู่นอน (Partner treatment) ทุกคนในช่วง 60 วันที่ผ่านมาเสมอ และงดมีเพศสัมพันธ์จนกว่าจะรักษาครบ 7 วันเพื่อป้องกัน Ping-pong reinfection"
+      }
+    }
+  },
+  {
+    "id": "leptospira-interrogans",
+    "name": "Leptospira interrogans (Leptospirosis / Weil's Disease)",
+    "thaiName": "เลปโตสไปรา อินเทอร์โรแกนส์ (โรคฉี่หนู / ไข้เลือดออกไตวายเฉียบพลัน ไวล์ส)",
+    "scientificName": "Leptospira interrogans",
+    "category": "bacteria",
+    "categoryLabel": "สไปโรขีต (Motile Spirochetes with Hooked Ends)",
+    "cardTitle": "Leptospira interrogans",
+    "cardSubtitle": "โรคประจำถิ่นในไทย ปวดกล้ามเนื้อน่องรุนแรง ตาแดงไร้หนอง และดีซ่านไตวาย",
+    "cardBadge": "Conjunctival Suffusion & Weil Disease",
+    "lesionTitle": "Bilateral Conjunctival Suffusion & Calf Myalgia",
+    "lesionThai": "ตาแดงก่ำไร้ขี้ตา (Suffusion) ร่วมกับกดเจ็บน่องรุนแรงและตัวเหลืองตาเหลือง",
+    "badgeColor": "#ea580c",
+    "quickStats": {
+      "depth": "Capillary Endothelium, Kidneys (Proximal Tubules), Liver, Skeletal Muscle",
+      "morphology": "Tightly coiled, thin, spiral spirochetes with hooked ends ('question mark' or 'ice tong')",
+      "palpation": "Severe gastrocnemius (calf) tenderness, hepatomegaly",
+      "distribution": "Systemic vasculitis, renal tubular lumen, hepatic sinusoids",
+      "epidemiology": "Zoonosis transmitted via water/soil contaminated with rodent urine (floods in Thailand)"
+    },
+    "morphologicalParts": [
+      {
+        "id": "conjunctival_suffusion",
+        "name": "Bilateral Conjunctival Suffusion (ตาแดงก่ำแบบไร้หนอง)",
+        "thaiName": "เยื่อบุตาขาวแดงก่ำทั่วทั้งสองข้างโดยไม่มีขี้ตาหรือหนองไหล สัญญาณเฉพาะโรคฉี่หนู",
+        "color": "#dc2626",
+        "description": "Marked bilateral injection and erythema of bulbar conjunctiva without purulent or mucopurulent exudate, appearing within the first 3-5 days of fever."
+      },
+      {
+        "id": "hooked_spirochete",
+        "name": "Hooked-End Spiral Morphology (สไปโรขีตปลายงอรูปตะขอ)",
+        "thaiName": "เกลียวละเอียดแน่นปลายโค้งงอคล้ายเครื่องหมายคำถาม หมุนควงสว่านได้อย่างรวดเร็ว",
+        "color": "#ea580c",
+        "description": "Thin flexible spirochete (0.1 x 6-20 um) with tightly wound coils and characteristic hooked ends resembling question marks or ice tongs, motile via periplasmic endoflagella."
+      },
+      {
+        "id": "weils_triad",
+        "name": "Weil's Disease Triad (ไตรภาคีไวล์ส: ดีซ่าน ไตวาย เลือดออก)",
+        "thaiName": "กลุ่มอาการรุนแรง ตัวเหลืองตาเหลืองรุนแรง ไตวายเฉียบพลัน และภาวะเลือดออกในปอด",
+        "color": "#ca8a04",
+        "description": "Severe icteric leptospirosis manifesting as profound jaundice without significant hepatic necrosis, acute oliguric renal failure, thrombocytopenia, and diffuse alveolar hemorrhage."
+      }
+    ],
+    "clinicalCases": [
+      {
+        "id": "lep-case-1",
+        "title": "Case 1: Pathognomonic Conjunctival Suffusion & Scleral Icterus (ตาแดงก่ำไร้หนองและดีซ่าน)",
+        "badge": "เคสที่ 1: ตาแดงก่ำไร้ขี้ตาและตัวเหลือง",
+        "downloadSource": "Conjunctival suffusion of the eyes due to leptospirosis.jpg",
+        "localFileName": "lep_case1_conjunctival_suffusion.jpg",
+        "image": "assets/images/clinical/lep_case1_conjunctival_suffusion.jpg",
+        "source": "Tropical Medicine & Infectious Disease Case Registry (Wikimedia Commons)",
+        "description": "ภาพเคสจริงแสดงอาการแสดงเฉพาะโรค (Pathognomonic sign) ของโรคเลปโตสไปโรซิส คือ ตาแดงก่ำทั้งสองข้าง (Bilateral conjunctival suffusion) โดยไม่มีขี้ตาหรือหนองไหล ร่วมกับมีตาเหลืองดีซ่าน (Scleral icterus) ในผู้ป่วยที่เป็นโรคไวล์ส (Weil's disease) ผู้ป่วยมักมีประวัติเดินลุยน้ำท่วมขังหรือทำนาโดยไม่สวมรองเท้าบูท มีไข้สูงเฉียบพลัน ปวดศีรษะรุนแรงด้านหลังกระบอกตา และมีอาการปวดกล้ามเนื้อน่องอย่างรุนแรงจนเดินแทบไม่ได้ (Severe calf tenderness)",
+        "keyFindings": [
+          "Conjunctival Suffusion: ตาแดงก่ำชัดเจนโดยไม่มีขี้ตา ช่วยแยกจากโรคตาแดงติดเชื้อแบคทีเรียหรือไวรัส",
+          "Severe Calf Pain: กดเจ็บอย่างรุนแรงที่กล้ามเนื้อน่อง (Gastrocnemius tenderness) และกล้ามเนื้อหลังส่วนล่าง",
+          "Water/Mud Exposure: ประวัติสัมผัสน้ำท่วมขัง ย่ำโคลน หรือน้ำปนเปื้อนปัสสาวะหนูในฤดูฝนของประเทศไทย"
+        ]
+      },
+      {
+        "id": "lep-case-2",
+        "title": "Case 2: Darkfield Microscopy & Hooked-End Spirochetes (กล้องสนามมืดและสัณฐานปลายตะขอ)",
+        "badge": "เคสที่ 2: สไปโรขีตปลายตะขอในสนามมืด",
+        "downloadSource": "Leptospira interrogans strain RGA 01.png",
+        "localFileName": "lep_case2_darkfield_spirochete.png",
+        "image": "assets/images/clinical/lep_case2_darkfield_spirochete.png",
+        "source": "CDC Public Health Image Library (PHIL #134)",
+        "description": "ภาพจากกล้องจุลทรรศน์สนามมืด (Darkfield microscopy) แสดงสไปโรขีตสายพันธุ์ Leptospira interrogans ขนาดลำตัวยาวเพรียว มีเกลียวละเอียดขดแน่นมาก ปลายข้างหนึ่งหรือทั้งสองข้างโค้งงอคล้ายตะขอหรือเครื่องหมายคำถาม (Hooked ends) เชื้อเคลื่อนที่ด้วยการหมุนควงสว่านและงอตัวไปมาอย่างรวดเร็วผ่าน Periplasmic flagella สามารถไชทะลุผ่านผิวหนังที่มีรอยถลอกหรือเยื่อบุตาเข้าสู่กระแสเลือดได้โดยตรง",
+        "keyFindings": [
+          "Hooked Ends: ปลายงอเป็นรูปตะขอหรือตัว C/S อันเป็นเอกลักษณ์เฉพาะสกุล Leptospira",
+          "Darkfield / Silver Stain: ตัวเชื้อบางมาก (< 0.2 um) ไม่สามารถมองเห็นด้วยกล้องจุลทรรศน์แสงธรรมดา ต้องใช้ Darkfield หรือย้อมสีเงิน (Steiner/Warthin-Starry)",
+          "Microscopic Agglutination Test (MAT): การทดสอบทางซีโรโลยีมาตรฐานหลัก (Gold Standard) โดยดูการจับกลุ่มของเชื้อมีชีวิต"
+        ]
+      }
+    ],
+    "tabs": {
+      "morphology": {
+        "depth": "Bloodstream, Renal proximal tubules, Interstitium, Liver sinusoids, Pulmonary alveoli",
+        "palpation": "Extreme tenderness on palpation of calf muscles (Gastrocnemius), hepatomegaly",
+        "highlights": [
+          "หนึ่งในสาเหตุสำคัญของภาวะไข้เฉียบพลันในประเทศไทย (Systemic Febrile Illness) พบบ่อยช่วงฤดูฝนและน้ำท่วม",
+          "อาการแสดงทางคลินิกแบ่งเป็น 2 ระยะ: Anicteric leptospirosis (90% - หายได้เอง) และ Icteric leptospirosis / Weil's disease (10% - รุนแรง อัตราเสียชีวิตสูง 10-15%)",
+          "อาการปวดกล้ามเนื้อน่องร่วมกับตาแดงไร้หนองในผู้ป่วยมีประวัติลุยน้ำท่วม เป็น 'Clinical triad' ที่ต้องนึกถึงโรคฉี่หนูทันที"
+        ]
+      },
+      "pathogenesis": {
+        "virulenceFactors": [
+          {
+            "name": "Periplasmic Endoflagella",
+            "desc": "แฟลกเจลลาคู่ภายในช่องว่าง Periplasmic space ทำให้เคลื่อนที่หมุนควงสว่านและแทรกผ่านเนื้อเยื่อและเยื่อเมือกได้อย่างรวดเร็ว"
+          },
+          {
+            "name": "Widespread Endothelial Damage (Vasculitis)",
+            "desc": "บุกรุกเข้าสู่เซลล์เยื่อบุผิวหลอดเลือด ทำให้เกิด Microvascular leakage, หลอดเลือดอักเสบทั่วร่างกาย และภาวะเลือดออกตามอวัยวะ (Hemorrhagic diathesis)"
+          },
+          {
+            "name": "Sphingomyelinases & Hemolysins",
+            "desc": "สารพิษทำลายเยื่อหุ้มเซลล์เม็ดเลือดแดงและเซลล์โฮสต์ ก่อให้เกิดการแตกของเม็ดเลือดและการอักเสบในเนื้อเยื่อ"
+          },
+          {
+            "name": "Lipopolysaccharide (Leptospiral LPS)",
+            "desc": "LPS ชนิดพิเศษที่มีโครงสร้างเป็นเอกลักษณ์ มีฤทธิ์กระตุ้นระบบภูมิคุ้มกันผ่าน TLR-2 แทนที่จะเป็น TLR-4"
+          }
+        ],
+        "immuneEvasion": [
+          "หลบหนีออกจากกระแสเลือดไปเกาะอาศัยอยู่ใน Renal proximal tubular lumen ทำให้แอนติบอดีและระบบ Complement เข้าไปทำลายได้ยาก",
+          "ขับถ่ายออกมากับปัสสาวะของสัตว์รังโรค (หนู โค กระบือ สุนัข) ปนเปื้อนในดินและน้ำขังได้นานหลายสัปดาห์ถึงหลายเดือน"
+        ]
+      },
+      "diagnosis": {
+        "staining": "Silver impregnation stain (Warthin-Starry หรือ Steiner stain) หรือการส่องด้วย Darkfield microscopy ในระยะแรกที่มีเชื้อในกระแสเลือด",
+        "culture": "อาหารจำเพาะ EMJH (Ellinghausen-McCullough-Johnson-Harris) หรือ Fletcher's medium ใช้เวลาเพาะนาน 2-4 สัปดาห์",
+        "biochemical": [
+          "Microscopic Agglutination Test (MAT): มาตรฐานหลัก (Gold Standard) โดยการเพิ่มขึ้นของระดับ Titers 4 เท่าระหว่างระยะเฉียบพลันและระยะฟื้นตัว หรือ Single titer >= 1:400 ในพื้นที่ระบาด",
+          "Leptospira IgM Rapid Test / ELISA: ไวและตรวจได้เร็วในสัปดาห์แรกของการติดเชื้อ",
+          "Real-time PCR: ตรวจหาสารพันธุกรรมของเชื้อในเลือดหรือปัสสาวะในระยะแรกที่มีไข้ (Leptospiremic phase)"
+        ]
+      },
+      "clinical": {
+        "boardBuzzwords": [
+          "Bilateral conjunctival suffusion without discharge",
+          "Severe gastrocnemius (calf) muscle tenderness",
+          "Weil's disease triad: jaundice, renal failure, bleeding",
+          "Water/mud exposure during flooding or farming in Thailand",
+          "Hooked-end spiral spirochete ('question mark' shape)",
+          "Microscopic Agglutination Test (MAT) gold standard",
+          "Darkfield microscopy and silver impregnation"
+        ],
+        "classicVignette": "เกษตรกรชายอายุ 42 ปี ในจังหวัดพระนครศรีอยุธยา มีไข้สูง หนาวสั่น ปวดศีรษะรุนแรงด้านหลังกระบอกตา และปวดเมื่อยกล้ามเนื้อน่องมากจนเดินไม่ไหว หลังเดินลุยน้ำท่วมเก็บเกี่ยวผลผลิต 5 วัน ตรวจร่างกายพบ T 39.4 C, ตาแดงก่ำทั้งสองข้างโดยไม่มีขี้ตา (Conjunctival suffusion), คลำพบตับโตและกดเจ็บอย่างมากที่กล้ามเนื้อน่อง ต่อมาในวันที่ 7 ผู้ป่วยเริ่มมีตัวเหลืองตาเหลือง ปัสสาวะออกน้อยลง (Oliguria) และค่า Cr ขึ้นสูงเป็น 4.8 mg/dL",
+        "riskGroups": [
+          "เกษตรกรชาวนาชาวไร่ที่เดินลุยโคลนและน้ำขังโดยไม่สวมรองเท้าบูท",
+          "ผู้ประสบภัยน้ำท่วมหรือผู้ทำความสะอาดบ้านเรือนหลังน้ำลดในประเทศไทย",
+          "คนงานขุดลอกท่อระบายน้ำและผู้สัมผัสสัตว์เลี้ยง/สัตว์ฟันแทะ",
+          "นักท่องเที่ยวที่เล่นกิจกรรมทางน้ำในธรรมชาติ (Rafting, Kayaking)"
+        ]
+      },
+      "treatment": {
+        "firstLine": "Severe Leptospirosis / Weil's Disease: IV Penicillin G 1.5 ล้านยูนิต q 6h หรือ IV Ceftriaxone 1 g q 24h นาน 7 วัน; Mild / Outpatient: Oral Doxycycline 100 mg BID นาน 7 วัน (หรือ Oral Azithromycin 500 mg daily)",
+        "alternative": "IV Ampicillin 1 g q 6h สำหรับผู้ป่วยที่มีข้อห้ามใช้ Ceftriaxone",
+        "resistance": "เฝ้าระวังภาวะ Jarisch-Herxheimer Reaction (ไข้สูง ความดันโลหิตลดลง หนาวสั่น) ภายใน 2-24 ชั่วโมงแรกหลังเริ่มยาปฏิชีวนะ จากการปลดปล่อยสารพิษเมื่อเชื้อสไปโรขีตถูกทำลายจำนวนมาก"
+      }
+    }
+  }
+]

@@ -16,16 +16,49 @@
  *   node scripts/ingest_lecture.mjs --validate
  */
 
-import fs from 'fs';
-import path from 'path';
+import fs from 'node:fs';
+import path from 'node:path';
+import https from 'node:https';
 
 const DB_PATH = path.join(process.cwd(), 'data', 'microbes.json');
 const BACKUP_PATH = path.join(process.cwd(), 'data', 'microbes.json.bak');
 const IMAGES_DIR = path.join(process.cwd(), 'assets', 'images', 'clinical');
+const USER_AGENT = 'PathoxMicroApp/1.0 (https://github.com/fangun2548/pathox-micro; fangun2548@gmail.com)';
 
 // Ensure image directory exists
 if (!fs.existsSync(IMAGES_DIR)) {
   fs.mkdirSync(IMAGES_DIR, { recursive: true });
+}
+
+async function fetchBuffer(targetUrl) {
+  return new Promise((resolve, reject) => {
+    https.get(targetUrl, { headers: { 'User-Agent': USER_AGENT } }, (res) => {
+      if (res.statusCode === 301 || res.statusCode === 302) {
+        return resolve(fetchBuffer(res.headers.location));
+      }
+      if (res.statusCode !== 200) {
+        return reject(new Error(`HTTP ${res.statusCode} on ${targetUrl}`));
+      }
+      const chunks = [];
+      res.on('data', c => chunks.push(c));
+      res.on('end', () => resolve(Buffer.concat(chunks)));
+    }).on('error', reject);
+  });
+}
+
+async function resolveDirectWikimediaUrl(filename) {
+  if (filename.startsWith('http')) return filename;
+  const cleanTitle = filename.replace(/^File:/i, '');
+  const apiUrl = `https://commons.wikimedia.org/w/api.php?action=query&titles=File:${encodeURIComponent(cleanTitle)}&prop=imageinfo&iiprop=url&format=json`;
+  const buf = await fetchBuffer(apiUrl);
+  const data = JSON.parse(buf.toString('utf8'));
+  const pages = data.query.pages;
+  const page = Object.values(pages)[0];
+  if (page && page.imageinfo && page.imageinfo[0]) {
+    const rawUrl = page.imageinfo[0].url;
+    return rawUrl.split('?')[0];
+  }
+  return null;
 }
 
 // ----------------------------------------------------------------------------
@@ -40,20 +73,14 @@ export async function downloadClinicalImage(wikimediaFileOrUrl, saveFileName) {
     return `assets/images/clinical/${saveFileName}`;
   }
 
-  let fetchUrl = wikimediaFileOrUrl;
-  if (!wikimediaFileOrUrl.startsWith('http')) {
-    // Treat as Wikimedia Commons filename
-    fetchUrl = `https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(wikimediaFileOrUrl)}?width=1000`;
-  }
-
-  console.log(`  [DOWNLOADING] ${saveFileName} from ${fetchUrl}`);
   try {
-    const res = await fetch(fetchUrl, {
-      headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) PathoxMicroIngest/1.0' },
-      redirect: 'follow'
-    });
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    const buffer = Buffer.from(await res.arrayBuffer());
+    const directUrl = await resolveDirectWikimediaUrl(wikimediaFileOrUrl);
+    if (!directUrl) {
+      console.warn(`  [WARN] Failed to resolve URL for ${wikimediaFileOrUrl}`);
+      return null;
+    }
+    console.log(`  [DOWNLOADING] ${saveFileName} from ${directUrl}`);
+    const buffer = await fetchBuffer(directUrl);
     fs.writeFileSync(destPath, buffer);
     console.log(`  [OK] Saved ${saveFileName} (${buffer.length} bytes)`);
     return `assets/images/clinical/${saveFileName}`;
@@ -88,6 +115,10 @@ export function validatePathogenRecord(p) {
   p.clinicalCases.forEach((c, idx) => {
     if (!c.title || !c.image || !c.source) {
       throw new Error(`Pathogen ${p.id} clinical case #${idx + 1} missing title, image, or source`);
+    }
+    const resolvedPath = path.join(process.cwd(), c.image);
+    if (!fs.existsSync(resolvedPath)) {
+      console.warn(`  [CAUTION] Image file does not exist locally: ${c.image}`);
     }
   });
 

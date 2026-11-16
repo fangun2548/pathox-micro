@@ -1,0 +1,478 @@
+{
+  "title": "Common_Human_Infections_and_Causative_Agents_261110_013509",
+  "source_pdf": "Common_Human_Infections_and_Causative_Agents_261110_013509.pdf",
+  "model_name": "gemini-3.6-flash",
+  "summary": {
+    "title": "Common Human Infections and Causative Agents (Source: Common_Human_Infections_and_Causative_Agents_261110_013509.pdf, 44 หน้า)",
+    "core_concept": "การเข้าถึงและวินิจฉัยโรคติดเชื้อตามระบบอวัยวะ (Organ-based approach) ร่วมกับประวัติการสัมผัส ปัจจัยโฮสต์ และการส่งตรวจทางห้องปฏิบัติการอย่างสมเหตุสมผลเพื่อการวินิจฉัยและรักษาอย่างแม่นยำ",
+    "sections": [
+      {
+        "heading": "1. Document Structure Map (แผนผังเอกสารและช่วงหน้า)",
+        "priority_note": "ภาพรวมโครงสร้างเนื้อหาและเคสศึกษาทั้งหมด 44 หน้า",
+        "bullets": [
+          {
+            "keyword": "Foundations & Pathogenesis",
+            "detail": "หน้า 1-5 (วัตถุประสงค์การเรียนรู้, ระบบนิเวศมนุษย์, Localized vs Systemic infection, Infectious Disease Triad)",
+            "is_must_know": false,
+            "must_know_reason": ""
+          },
+          {
+            "keyword": "Skin & Soft Tissue Infections",
+            "detail": "หน้า 6-14 (การแบ่งชั้นความล��ก, เชื้อก่อโรค, รอยโรคไวรัส/รา/พยาธิ, แผลจากการสัมผัส, Case 1: Necrotizing Fasciitis)",
+            "is_must_know": false,
+            "must_know_reason": ""
+          },
+          {
+            "keyword": "Bone & Joint Infections",
+            "detail": "หน้า 15-17, 33 (Osteomyelitis, Septic Arthritis, เชื้อก่อโรคจำเพาะกลุ่มผู้ป่วย, Case 2: Septic Arthritis)",
+            "is_must_know": false,
+            "must_know_reason": ""
+          },
+          {
+            "keyword": "Central Nervous System Infections",
+            "detail": "หน้า 18, 34 (Meningitis, Encephalitis, Brain Abscess, Neurocysticercosis, การตรวจ CSF, Case 3: Bacterial Meningitis)",
+            "is_must_know": false,
+            "must_know_reason": ""
+          },
+          {
+            "keyword": "Respiratory Tract Infections",
+            "detail": "หน้า 19, 35 (URTI vs LRTI, CAP, TB, Viral pneumonia, Case 4: Community-Acquired Pneumonia)",
+            "is_must_know": false,
+            "must_know_reason": ""
+          },
+          {
+            "keyword": "Gastrointestinal & Hepatobiliary Infections",
+            "detail": "หน้า 20-24, 36 (Watery diarrhea, Dysentery, Foodborne, C. difficile, Hepatitis, Liver abscess, Cholangitis, Case 5: Dysentery)",
+            "is_must_know": false,
+            "must_know_reason": ""
+          },
+          {
+            "keyword": "Urinary Tract Infections",
+            "detail": "หน้า 25-27, 37 (Cystitis, Pyelonephritis, HA-UTI, การแปลผล UA/Urine culture, Case 6: Acute Pyelonephritis)",
+            "is_must_know": false,
+            "must_know_reason": ""
+          },
+          {
+            "keyword": "Reproductive Tract Infections & STIs",
+            "detail": "หน้า 25, 28-29, 38 (Urethritis/Cervicitis, PID, GUD/Syphilis, Vaginitis, Case 7: Pelvic Inflammatory Disease)",
+            "is_must_know": false,
+            "must_know_reason": ""
+          },
+          {
+            "keyword": "Bloodstream Infections & Systemic Febrile Illness",
+            "detail": "หน้า 30-32, 39 (Sepsis, Dengue, Leptospirosis, Melioidosis, Malaria, Case 8: Melioidosis/Sepsis)",
+            "is_must_know": false,
+            "must_know_reason": ""
+          },
+          {
+            "keyword": "Epidemiology & Take-Home Messages",
+            "detail": "หน้า 40-44 (สถิติการเสียชีวิตปี 2023 ของประเทศไทย และสรุปประเด็นสำคัญ)",
+            "is_must_know": false,
+            "must_know_reason": ""
+          }
+        ]
+      },
+      {
+        "heading": "2. Foundations of Infectious Diseases (หน้า 1-5)",
+        "priority_note": "หลักการพื้นฐานของการตอบสนองทางภูมิคุ้มกันและกรอบแนวคิดการวินิจฉัยโรคติดเชื้อ",
+        "bullets": [
+          {
+            "keyword": "Localized Response (Containment)",
+            "detail": "เยื่อบุผิวและ mucosal IgA สมบูรณ์ -> เม็ดเลือดขาว Neutrophil เข้ามากำจัดเชื้อ -> มีการหลั่ง Cytokine เฉพาะที่ -> โรคจำกัดบริเวณ เช่น uncomplicated abscess, cystitis",
+            "is_must_know": false,
+            "must_know_reason": ""
+          },
+          {
+            "keyword": "Systemic Response (Dissemination)",
+            "detail": "เชื้อทะลวงชั้น basement membrane -> เข้าสู่ 혈관/ท่อน้ำเหลือง เกิด Bacteremia/Viremia -> เกิด systemic cytokine surge -> ลุกลามเป็น Sepsis, Septic shock, MODS",
+            "is_must_know": true,
+            "must_know_reason": "ความล้มเหลวในการจำกัดเชื้อเฉพาะที่จะนำไปสู่ภาวะ Sepsis และความดันโลหิตตกอย่างรวดเร็วซึ่งอันตรายถึงชีวิต"
+          },
+          {
+            "keyword": "Infectious Disease Triad",
+            "detail": "Step 1: Syndromic Presentation -> Step 2: Microbiological Identification -> Step 3: Targeted Therapeutics (ปรับจาก Empiric เป็น Narrow-spectrum)",
+            "is_must_know": false,
+            "must_know_reason": ""
+          }
+        ]
+      },
+      {
+        "heading": "3. Skin and Soft Tissue Infections (หน้า 6-14)",
+        "priority_note": "การระบุระดับความล���กของชั้นผิวหนังช่วยแคบวงเชื้อก่อโรคและการเลือกส่งตรวจ",
+        "bullets": [
+          {
+            "keyword": "Superficial Epidermis",
+            "detail": "Impetigo (Nonpurulent/Bullous) -> S. aureus, S. pyogenes (Group A Strep) มีลักษณะ honey-colored crust",
+            "is_must_know": false,
+            "must_know_reason": ""
+          },
+          {
+            "keyword": "Upper Dermis & Lymphatics",
+            "detail": "Erysipelas -> S. pyogenes รอยโรคยกนูน ขอบเขตชัดเจน (sharply defined border) พร้อมไข้สูง",
+            "is_must_know": false,
+            "must_know_reason": ""
+          },
+          {
+            "keyword": "Deep Dermis & Subcutaneous Fat",
+            "detail": "Cellulitis -> S. pyogenes (พบบ่อยสุด), MSSA รอยโรคแดงกระจาย ขอบเขตไม่ชัดเจน ไม่นูน",
+            "is_must_know": false,
+            "must_know_reason": ""
+          },
+          {
+            "keyword": "Purulent Hair Follicles & Dermis",
+            "detail": "Folliculitis, Furuncles, Carbuncles, Cutaneous Abscess -> S. aureus (รวมถึง CA-MRSA) แนะนำให้ระบายหนอง (drainage) และส่ง Gram stain/Culture",
+            "is_must_know": false,
+            "must_know_reason": ""
+          },
+          {
+            "keyword": "Fascia & Subcutaneous (Emergency)",
+            "detail": "Necrotizing Fasciitis -> Type I: Polymicrobial (Anaerobes + Enterobacteriaceae + Strep), Type II: Monomicrobial (S. pyogenes +/- S. aureus)",
+            "is_must_know": true,
+            "must_know_reason": "ปวดรุนแรงเกินกว่าบาดแผลที่เห็น (pain disproportionate) มี bullae, crepitus ต้องปรึกษาศัลยกรรมผ่าตัดด่วนที่สุด"
+          },
+          {
+            "keyword": "Wound Exposure Clues",
+            "detail": "Dog/Cat bite -> Pasteurella multocida; Human bite -> Eikenella corrodens; Saltwater -> Vibrio vulnificus; Freshwater -> Aeromonas spp.; Puncture through shoe -> Pseudomonas aeruginosa",
+            "is_must_know": true,
+            "must_know_reason": "ประวัติการสัมผัสเฉพาะช่วยชี้ขาดการเลือกใช้ยาปฏิชีวนะให้ครอบคลุมเชื้อก่อโรคพิเศษ"
+          },
+          {
+            "keyword": "Case 1: Necrotizing Fasciitis (หน้า 13)",
+            "detail": "ชาย 56 ปี เบาหวาน ปวดขาขวาอย่างรุนแรงหลังมีรอยถลอก 18 ชม. ไข้ 39.2 C, HR 122/min, BP 94/58 mmHg, ผิวหนังเขียวคล้ำมี hemorrhagic bullae -> วินิจฉัย Necrotizing fasciitis (S. pyogenes / mixed) ส���งตรวจ Tissue biopsy/culture และนำเข้าผ่าตัดด่วน",
+            "is_must_know": false,
+            "must_know_reason": ""
+          }
+        ]
+      },
+      {
+        "heading": "4. Bone and Joint Infections (หน้า 15-17, 33)",
+        "priority_note": "การแยกแยะระหว่าง Osteomyelitis และ Septic Arthritis รวมถึงกลุ่มผู้ป่วยเสี่ยงพิเศษ",
+        "bullets": [
+          {
+            "keyword": "Osteomyelitis",
+            "detail": "ปวดกระดูกเฉพาะที่ ไข้ บวม กดเจ็บ -> S. aureus (พบบ่อยสุด); ส่งตรวจ MRI (มีความไวสูงสุด) ร่วมกับ Bone sampling",
+            "is_must_know": false,
+            "must_know_reason": ""
+          },
+          {
+            "keyword": "Septic Arthritis",
+            "detail": "ปวดข้อเฉียบพลัน ข้อบวม ร้อน ขยับไม่ได้ -> S. aureus (พบบ่อยสุด); เจาะข้อด่วน (Urgent Arthrocentesis) เพื่อดู cell count, Gram stain, Culture",
+            "is_must_know": false,
+            "must_know_reason": ""
+          },
+          {
+            "keyword": "Special Patient Population",
+            "detail": "Sickle-cell disease -> Salmonella spp. ร่วมกับ S. aureus; Sexually active adults -> Neisseria gonorrhoeae (Disseminated gonococcal infection); Prosthetic joint -> Coagulase-negative Staphylococci (CoNS) และ S. aureus",
+            "is_must_know": true,
+            "must_know_reason": "ผู้ป่วย Sickle cell เสี่ยงต่อ Salmonella osteomyelitis สูงเนื่องจากภาวะ hyposplenism และกระดูกขาดเลือด"
+          },
+          {
+            "keyword": "Case 2: Septic Arthritis (หน้า 33)",
+            "detail": "หญิง 68 ปี Rheumatoid arthritis ปวดเข่าขวาตึง บวม ร้อน ลงน้ำหนักไม่ได้ 1 วัน ไข้ 38.7 C -> วินิจฉัย Septic arthritis (S. aureus) เจาะตรวจน้ำในข้อ (Arthrocentesis) ด่วนเพื่อส่งตรวจทางห้องปฏิบัติการ",
+            "is_must_know": false,
+            "must_know_reason": ""
+          }
+        ]
+      },
+      {
+        "heading": "5. Central Nervous System Infections (หน้า 18, 34)",
+        "priority_note": "การเจาะหลัง (Lumbar Puncture) เป็นการตรวจชี้ขาดเพื่อแยกแยะชนิดของโรคติดเชื้อระบบประสาทส่วนกลาง",
+        "bullets": [
+          {
+            "keyword": "Bacterial Meningitis",
+            "detail": "ไข้สูง คอแข็ง (Neck stiffness) ซึม/สับสน petechial rash (N. meningitidis) -> S. pneumoniae, N. meningitidis, H. influenzae type b; ตรวจ CSF พบ opening pressure สูง, WBC สูง (PMN เด่น), Protein สูง, Glucose ต่ำ",
+            "is_must_know": false,
+            "must_know_reason": ""
+          },
+          {
+            "keyword": "Viral Meningitis / Encephalitis",
+            "detail": "ไข้ ปวดศีรษะ สับสน ชัก ชักกระตุก Focal deficit -> HSV-1 (พบบ่อยบริเวณ temporal lobe), Japanese encephalitis virus (JEV); ตรวจ CSF พบ Lymphocyte เด่น, Glucose ปกติ",
+            "is_must_know": false,
+            "must_know_reason": ""
+          },
+          {
+            "keyword": "Brain Abscess & Parasitic Infection",
+            "detail": "Brain abscess -> Streptococcus spp., S. aureus, Anaerobes (หรือ Toxoplasma gondii ใน HIV); Neurocysticercosis -> Taenia solium (cystic lesions with scolex)",
+            "is_must_know": false,
+            "must_know_reason": ""
+          },
+          {
+            "keyword": "Case 3: Bacterial Meningitis (หน้า 34)",
+            "detail": "นักศึกษา 21 ปี ไข้สูง ปวดศีรษะ รุนแรง อาเจียน สับสน 12 ชม. ไข้ 39.5 C, คอแข็ง, มีผื่น petechiae ที่ขา -> วินิจฉัย Bacterial Meningitis (Neisseria meningitidis) เจาะหลังส่งตรวจ CSF analysis, Gram stain, Culture แ��ะ PCR",
+            "is_must_know": false,
+            "must_know_reason": ""
+          }
+        ]
+      },
+      {
+        "heading": "6. Respiratory Tract Infections (หน้า 19, 35)",
+        "priority_note": "การแยกโรคระบบทางเดินหายใจส่วนบนและส่วนล่าง รวมถึงการตรวจทางห้องปฏิบัติการที่เหมาะสม",
+        "bullets": [
+          {
+            "keyword": "Upper Respiratory Tract Infections (URTI)",
+            "detail": "Common cold -> Rhinovirus; Pharyngitis -> S. pyogenes (GAS) มีอาการเจ็บคอ ไข้ ตรวจเจอน้ำเหลืองโต exudate ที่ทอนซิล ส่งตรวจ RADT หรือ Throat culture",
+            "is_must_know": false,
+            "must_know_reason": ""
+          },
+          {
+            "keyword": "Lower Respiratory Tract Infections (LRTI)",
+            "detail": "Community-Acquired Pneumonia (CAP) -> S. pneumoniae (พบบ่อยสุด), H. influenzae, Mycoplasma pneumoniae; Tuberculosis -> Mycobacterium tuberculosis (ไอเรื้อรัง > 2-3 สัปดาห์ น้ำหนักลด ไอเป็นเลือด); Influenza / COVID-19",
+            "is_must_know": false,
+            "must_know_reason": ""
+          },
+          {
+            "keyword": "Case 4: Community-Acquired Pneumonia (หน้า 35)",
+            "detail": "ชาย 54 ปี ไข้ ไอมีเสม���ะ เจ็บหน้าอกเวลาหายใจ (pleuritic chest pain) 3 วัน, T 38.9 C, SpO2 91% on room air, ฟังปอดเจอ crackles และ bronchial breath sounds -> วินิจฉัย CAP (S. pneumoniae) ส่ง CXR พบ lobar consolidation, Sputum Gram stain/culture และ Blood culture",
+            "is_must_know": false,
+            "must_know_reason": ""
+          }
+        ]
+      },
+      {
+        "heading": "7. Gastrointestinal and Hepatobiliary Infections (หน้า 20-24, 36)",
+        "priority_note": "การแยกประเภทอุจจาระร่วงตามลักษณะทางคลินิกและสาเหตุของการติดเชื้อระบบตับและทางเดินน้ำดี",
+        "bullets": [
+          {
+            "keyword": "Acute Watery Diarrhea",
+            "detail": "Norovirus (ระบาดในกลุ่มคน), Rotavirus (ท้องเสียในเด็ก มีวัคซีน), Vibrio cholerae (ถ่ายเป็นน้ำปลาล้างเนื้อ), ETEC (Traveler's diarrhea), Giardia duodenalis (อุจจาระเป็นมัน ถ่ายเรื้อรัง)",
+            "is_must_know": false,
+            "must_know_reason": ""
+          },
+          {
+            "keyword": "Inflammatory Diarrhea & Dysentery",
+            "detail": "Shigella spp. (บิดมูกเลือด ติดต่อจ���กคนสู่คน), Campylobacter jejuni, Nontyphoidal Salmonella, STEC (ถ่ายเป็นเลือด เสี่ยงเกิด HUS), Entamoeba histolytica (Amoebic colitis)",
+            "is_must_know": true,
+            "must_know_reason": "STEC ติดเชื้อปนเปื้อนอาจนำไปสู่ภาวะ Hemolytic Uremic Syndrome (HUS) ซึ่งก่อให้เกิดไตวายเฉียบพลัน"
+          },
+          {
+            "keyword": "Foodborne & Antibiotic-Associated",
+            "detail": "อาเจียนรวดเร็วหลังทานอาหาร -> Preformed S. aureus หรือ Bacillus cereus toxin; ท้องเสียหลังทานเนื้อเรื้อนำมาอุ่น -> C. perfringens; ท้องเสียหลังใช้ยาปฏิชีวนะ -> Clostridioides difficile",
+            "is_must_know": false,
+            "must_know_reason": ""
+          },
+          {
+            "keyword": "Hepatobiliary Infections",
+            "detail": "Acute viral hepatitis -> HAV, HEV, HBV; Chronic hepatitis -> HBV, HCV; Pyogenic liver abscess -> K. pneumoniae, E. coli; Amoebic liver abscess -> E. histolytica; Cholangitis -> Gram-negative rods, Enterococci",
+            "is_must_know": false,
+            "must_know_reason": ""
+          },
+          {
+            "keyword": "Case 5: Dysentery (หน้า 36)",
+            "detail": "นักศึกษา 24 ปี ไข้ ปวดเกร็งท้อง ถ่ายมูกเลือดปริมาณน้อยแต่บ่อยครั้งหลังทานอาหารร่วมกัน, T 38.5 C, มี tenesmus -> วินิจฉัย Infectious diarrhea / Dysentery (Shigella spp. หรือ C. jejuni) ส่งตรวจ Stool microscopy (พบ WBC/RBC) และ Stool culture / Multiplex PCR",
+            "is_must_know": false,
+            "must_know_reason": ""
+          }
+        ]
+      },
+      {
+        "heading": "8. Urinary Tract Infections (หน้า 25-27, 37)",
+        "priority_note": "การแยกแยะระหว่าง Cystitis (ติดเชื้อส่วนล่าง) และ Pyelonephritis (ติดเชื้อส่วนบน)",
+        "bullets": [
+          {
+            "keyword": "Uncomplicated Cystitis",
+            "detail": "แสบขัด (Dysuria) ปัสสาวะบ่อย กะปริดกะปรอย -> Uropathogenic E. coli (พบบ่อยที่สุด), K. pneumoniae, P. mirabilis, S. saprophyticus",
+            "is_must_know": false,
+            "must_know_reason": ""
+          },
+          {
+            "keyword": "Acute Pyelonephritis",
+            "detail": "ไข้สูง หนาวสั่น ปวดเอว (Flank pain) เคาะเจ็บ CVA tenderness -> E. coli; ต้องส่ง Urine culture ทุกราย",
+            "is_must_know": true,
+            "must_know_reason": "ต้องแยก Pyelonephritis ออกจาก Cystitis เพราะต้องใช้ระยะเวลาและการรักษายาปฏิชีวนะที่ออกฤทธิ์แทรกซึมเนื้อไต"
+          },
+          {
+            "keyword": "Healthcare-Associated UTI & Asymptomatic Bacteriuria",
+            "detail": "HA-UTI -> เชื้อดื้อยา Gram-negative รวม Pseudomonas aeruginosa; Asymptomatic bacteriuria -> ไม่ต้องรักษาในคนทั่วไป ยกเว้นหญิงตั้งครรภ์ หรือผู้จะเข้ารับการผ่าตัดทางเดินปัสสาวะ",
+            "is_must_know": false,
+            "must_know_reason": ""
+          },
+          {
+            "keyword": "Case 6: Acute Pyelonephritis (หน้า 37)",
+            "detail": "หญิง 29 ปี แสบขัดบ่อย 2 วัน ต่อมามีไข้สูง หนาวสั่น ปวดเอวขวา, T 39.0 C, CVA tenderness ขวา -> วินิจฉัย Acute Pyelonephritis (E. coli) ส่ง Urinalysis (Pyuria, Nitrite) และ Urine culture",
+            "is_must_know": false,
+            "must_know_reason": ""
+          }
+        ]
+      },
+      {
+        "heading": "9. Reproductive Tract Infections & STIs (หน้า 25, 28-29, 38)",
+        "priority_note": "การส่งตรวจ Molecular test (NAAT) เป็นมาตรฐานหลักในการวินิจฉัยโรคติดเชื้อทางระบบสืบพันธุ์",
+        "bullets": [
+          {
+            "keyword": "Urethritis & Cervicitis",
+            "detail": "N. gonorrhoeae (หนองข้น purulent), Chlamydia trachomatis (หนองใส mucoid), Mycoplasma genitalium (เรื้อรัง/เป็นซ้ำ)",
+            "is_must_know": false,
+            "must_know_reason": ""
+          },
+          {
+            "keyword": "Pelvic Inflammatory Disease (PID)",
+            "detail": "ปวดท้องน้อย หนองไหลจากปากมดลูก เจ็บเมื่อขยับปากมดลูก (Cervical motion tenderness) -> N. gonorrhoeae, C. trachomatis, mixed anaerobes; เสี่ยงเกิด Infertility และ Ectopic pregnancy",
+            "is_must_know": true,
+            "must_know_reason": "PID ที่ไม่ได้รับการรักษาทันท่วงทีทำให้เกิดพังผืดในท่อนำไข่ ส่งผลให้หมันหรือตั้งครรภ์นอกมดลูก"
+          },
+          {
+            "keyword": "Genital Ulcer Disease (GUD)",
+            "detail": "แผลเจ็บ -> HSV-1/2 (Grouped vesicles), Haemophilus ducreyi (Chancroid); แผลไม่เจ็บ ขอบแข็ง -> Treponema pallidum (Syphilis) ส่งตรวจ Syphilis serology (RPR/VDRL, TPHA)",
+            "is_must_know": false,
+            "must_know_reason": ""
+          },
+          {
+            "keyword": "Vaginitis",
+            "detail": "Vulvovaginal candidiasis -> Candida albicans (ตกขาวเป็นก้อนแป้ง คัน); Trichomoniasis -> Trichomonas vaginalis (ตกขาวเป็นฟอง มีกลิ่น)",
+            "is_must_know": false,
+            "must_know_reason": ""
+          },
+          {
+            "keyword": "Case 7: Pelvic Inflammatory Disease (หน้า 38)",
+            "detail": "หญิง 22 ปี ปวดท้องน้อย ตกขาวผิดปกติ เจ็บเวลามีเพศสัมพันธ์ 4 วัน, T 38.1 C, กดเจ็บท้องน้อย, Mucopurulent discharge และ Cervical motion tenderness -> วินิจฉัย PID (C. trachomatis / N. gonorrhoeae) ส่ง NAAT, Cervical culture และตรวจ UPT เสมอ",
+            "is_must_know": false,
+            "must_know_reason": ""
+          }
+        ]
+      },
+      {
+        "heading": "10. Bloodstream Infections & Systemic Febrile Illness (หน้า 30-32, 39)",
+        "priority_note": "ภาวะไข้และติดเชื้อในกระ���สเลือดในประเทศไทยต้องคำนึงถึงโรคประจำถิ่นร่วมด้วย",
+        "bullets": [
+          {
+            "keyword": "Bloodstream Infection & Sepsis",
+            "detail": "Community-acquired -> E. coli, S. aureus, S. pneumoniae; Healthcare-associated -> Catheter-related Staphylococci, Gram-negative ดื้อยา; ต้องส่ง Blood cultures ทันที",
+            "is_must_know": false,
+            "must_know_reason": ""
+          },
+          {
+            "keyword": "Systemic Febrile Illness in Thailand",
+            "detail": "Dengue -> Dengue virus (ยุงลายกัด ไข้สูง เกล็ดเลือดต่ำ มี warning signs); Leptospirosis -> Leptospira spp. (ลุยน้ำท่วม ปวดกล้ามเนื้อน่อง ตาแดง); Melioidosis -> Burkholderia pseudomallei (ลุยดิน/น้ำแฉะ ปอดอักเสบ หรือ Sepsis); Malaria -> พลาสมอเดียม",
+            "is_must_know": false,
+            "must_know_reason": ""
+          },
+          {
+            "keyword": "Case 8: Melioidosis / Severe Sepsis (หน้า 39)",
+            "detail": "เกษตรกรชาย 32 ปี ไข้สูง ปวดศีรษะ ปวดเมื่อย หอบเหนื่อยมากขึ้นในฤดูฝน 6 วัน, T 39.3 C, BP 88/54 mmHg (Shock), ฟังปอดเจอ crackles, ประวัติสัมผัสดินแฉะ -> วินิจฉัย Melioidosis with Severe Sepsis / Septic shock (Burkholderia pseudomallei) ส่ง Blood culture, Hemoculture และ CXR",
+            "is_must_know": false,
+            "must_know_reason": ""
+          }
+        ]
+      },
+      {
+        "heading": "11. Mortality Statistics & Key Take-Homes (หน้า 40-44)",
+        "priority_note": "สถิติการสาธารณสุขและสรุปประเด็นปฏิบัติทางคลินิก",
+        "bullets": [
+          {
+            "keyword": "Thailand 2023 Mortality Data",
+            "detail": "เสียชีวิตทั้งหมด 592,000 คน โดย 14% เกิดจากโรคติดเชื้อ (Infectious diseases) ซึ่ง Respiratory infections เป็นสาเหตุหลัก (8.3%, 49,300 คน/ปี); เด็กอายุ < 5 ปี เสียชีวิตจากโรคติดเชื้อสูงถึง 27%",
+            "is_must_know": false,
+            "must_know_reason": ""
+          },
+          {
+            "keyword": "Core Clinical Practice Pearls",
+            "detail": "ระบุตำแหน่งติดเชื้อหลักตามอาการ -> นึกถึงเชื้อก่อโรคประจำอวัยวะ -> เลือกสิ่งส่งตรว���เหมาะสม (Culture, PCR, Serology) -> แยกโรคติดเชื้อเฉพาะที่ออกจาก Systemic infection -> ให้การรักษาอย่างรวดเร็วเพื่อลดอัตราเสียชีวิต",
+            "is_must_know": false,
+            "must_know_reason": ""
+          }
+        ]
+      }
+    ],
+    "comparison_headers": [
+      "กลุ่มโรคติดเชื้อ",
+      "ลักษณะทางคลินิกชี้ขาด",
+      "เชื้อก่อโรคหลัก (Common Pathogens)",
+      "สิ่งส่งตรวจวินิจฉัยทางห้องปฏิบัติการ"
+    ],
+    "comparison_rows": [
+      {
+        "cells": [
+          "Necrotizing Fasciitis",
+          "ปวดรุนแรงเกินแผล รอยโรคขยายเร็ว มี bullae, shock",
+          "S. pyogenes, Mixed aerobes/anaerobes",
+          "Tissue biopsy/culture, Urgent surgical evaluation"
+        ]
+      },
+      {
+        "cells": [
+          "Septic Arthritis",
+          "ปวดข้อเฉียบพลัน ข้อบวม ร้อน ขยับไม่ได้ ลงน้ำหนักไม่ได้",
+          "Staphylococcus aureus, N. gonorrhoeae",
+          "Joint fluid Arthrocentesis (Cell count, Gram stain, Culture)"
+        ]
+      },
+      {
+        "cells": [
+          "Bacterial Meningitis",
+          "ไข้สูง ปวดศีรษะ คอแข็ง สับสน มีผื���น petechiae",
+          "S. pneumoniae, Neisseria meningitidis",
+          "Lumbar puncture (CSF analysis, Gram stain, PCR, Culture)"
+        ]
+      },
+      {
+        "cells": [
+          "Community-Acquired Pneumonia",
+          "ไข้ ไอมีเสมหะ เจ็บหน้าอกเวลาหายใจ ฟังพบ crackles",
+          "Streptococcus pneumoniae, H. influenzae",
+          "Chest X-ray (Consolidation), Sputum Gram stain/Culture"
+        ]
+      },
+      {
+        "cells": [
+          "Infectious Dysentery",
+          "ไข้ ปวดเกร็งท้อง ถ่ายมูกเลือด มีอาการ tenesmus",
+          "Shigella spp., Campylobacter jejuni, E. histolytica",
+          "Stool microscopy (WBC/RBC), Stool culture / PCR"
+        ]
+      },
+      {
+        "cells": [
+          "Acute Pyelonephritis",
+          "ไข้สูง หนาวสั่น ปวดเอว CVA tenderness",
+          "Escherichia coli, Klebsiella pneumoniae",
+          "Urinalysis (Pyuria, Nitrite), Clean-catch Urine culture"
+        ]
+      },
+      {
+        "cells": [
+          "Pelvic Inflammatory Disease",
+          "ปวดท้องน้อย ตกขาวเป็นหนอง Cervical motion tenderness",
+          "Chlamydia trachomatis, Neisseria gonorrhoeae",
+          "Cervical/Swab NAAT, Culture, UPT (Pregnancy test)"
+        ]
+      },
+      {
+        "cells": [
+          "Melioidosis / Severe Sepsis",
+          "ไข้สูง สัมผัส ดิน/น้ำแฉะ มีอาการหอบ shock ปอดอักเสบ",
+          "Burkholderia pseudomallei",
+          "Blood cultures, Hemoculture, CXR, Sputum culture"
+        ]
+      }
+    ],
+    "high_yield_points": [
+      {
+        "point": "Necrotizing fasciitis มีอาการปวดรุนแรงเกินกว่ารอยโรคที่เห็น (Pain disproportionate to physical findings) ต้องส่งผ่าตัดด่วน",
+        "reason": "เป็นภาวะฉุกเฉินทางศัลยกรรมที่มีอัตราการเสียชีวิตสูงมาก การตัดเนื้อเน่า (Debridement) ทันทีช่วยลดการเสียชีวิตได้มากกว่าการให้ยาปฏิชีวนะเพียงอย่างเดียว"
+      },
+      {
+        "point": "ผู้ป่วย Sickle-cell disease ที่เกิด Osteomyelitis ต้องนึกถึงเชื้อ Salmonella spp. ร่วมกับ S. aureus เสมอ",
+        "reason": "ภาวะ infarction ของกระดูกและการทำงานของม้ามลดลงในผู้ป่วย Sickle cell ทำให้มีความเสี่ยงจำเพาะต่อการติดเชื้อ Salmonella"
+      },
+      {
+        "point": "สงสัย Bacterial meningitis ต้องรีบเจาะหลัง (Lumbar Puncture) ตรวจ CSF ยกเว้นมีข้อห้าม",
+        "reason": "ลักษณะ CSF จะช่วยแยกแยะระหว่างเชื้อแบคทีเรีย ไวรัส หรือเชื้อราได้อย่างรวดเร็ว เพื่อปรับยาปฏิชีวนะได้ถูกต้อง"
+      },
+      {
+        "point": "การตรวจวินิจฉัย Chlamydia trachomatis และ Neisseria gonorrhoeae แนะนำใช้ Nucleic Acid Amplification Test (NAAT)",
+        "reason": "NAAT เป็นวิธีที่มีความไวและความจำเพาะสูงที่สุดในการตรวจหาเชื้อ STIs ในปัจจุบัน"
+      },
+      {
+        "point": "ผู้ป่วยหญิงวัยเจริญพันธุ์ที่มาด้วยอาการ Pelvic Inflammatory Disease (PID) ต้องตรวจ Pregnancy Test (UPT) ทุกราย",
+        "reason": "เพื่อตัดภาวะตั้งครรภ์นอกมดลูก (Ectopic pregnancy) และหลีกเลี่ยงการใช้ยาปฏิชีวนะที่เป็นอันตรายต่อทารกในครรภ์"
+      },
+      {
+        "point": "เกษตรกรหรือผู้มีประวัติสัมผัสผิวด��น/น้ำแฉะในไทยที่มีไข้สูง ปอดบวม หรือ Sepsis ต้องนึกถึง Melioidosis (Burkholderia pseudomallei)",
+        "reason": "Melioidosis เป็นโรคประจำถิ่นที่พบบ่อยในภาคอีสานและภาคใต้ของไทย ต้องการยาปฏิชีวนะเฉพาะกลุ่ม เช่น Ceftazidime หรือ Carbapenem"
+      }
+    ]
+  },
+  "kind": "summary",
+  "item_id": "pMNIOXiExxo",
+  "created_at": "2026-11-16T13:41:00"
+}
