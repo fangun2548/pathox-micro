@@ -104,10 +104,32 @@ function isAdmin(req) {
 
 function isGuestAuthorized(req, urlObj) {
   if (isAdmin(req)) return true; // Host machine or authenticated Admin session is always authorized
-  if (!publicAccessEnabled) return false;
+  if (!publicAccessEnabled || !currentShareToken) return false;
 
-  // When public access is enabled, permit direct access so Cloud Run, direct links, and Discord bot links work seamlessly
-  return true;
+  // 1. Check query parameter ?token=...
+  const queryToken = urlObj.searchParams.get('token');
+  if (queryToken && queryToken === currentShareToken) {
+    return true;
+  }
+
+  // 2. Check Cookie
+  const cookieToken = getCookie(req, 'pathox_guest_token');
+  if (cookieToken && cookieToken === currentShareToken) {
+    return true;
+  }
+
+  // 3. Check Referer header (for subresources like css, js, json, images)
+  const referer = req.headers.referer;
+  if (referer) {
+    try {
+      const refUrl = new URL(referer);
+      if (refUrl.searchParams.get('token') === currentShareToken) {
+        return true;
+      }
+    } catch {}
+  }
+
+  return false;
 }
 
 const server = http.createServer(async (req, res) => {
@@ -129,7 +151,7 @@ const server = http.createServer(async (req, res) => {
       }
       if (pass === ADMIN_PASSWORD) {
         res.writeHead(302, {
-          'Set-Cookie': 'pathox_admin_session=auth_granted_2549; Path=/; HttpOnly; SameSite=Lax; Secure',
+          'Set-Cookie': 'pathox_admin_session=auth_granted_2549; Path=/; Max-Age=2592000; HttpOnly; SameSite=Lax; Secure',
           'Location': '/'
         });
         res.end();
@@ -316,36 +338,37 @@ const server = http.createServer(async (req, res) => {
         <head>
           <meta charset="UTF-8">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <title>ต้องเปิดผ่าน QR Code หรือลิงก์ที่แชร์เท่านั้น · Pathox-Micro</title>
+          <title>เข้าสู่ระบบ · Pathox-Micro</title>
           <style>
             body { background: #080c16; color: #f8fafc; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0; padding: 20px; box-sizing: border-box; text-align: center; }
-            .card { background: #0f172a; padding: 40px 30px; border-radius: 24px; border: 1px solid rgba(56, 189, 248, 0.35); max-width: 480px; box-shadow: 0 25px 60px rgba(0,0,0,0.9); }
-            .icon { font-size: 3.5rem; margin-bottom: 16px; }
-            h2 { margin: 0 0 12px; color: #38bdf8; font-size: 1.4rem; font-weight: 800; }
-            p { color: #cbd5e1; font-size: 0.92rem; line-height: 1.6; margin: 0 0 18px; }
-            .badge { display: inline-block; background: rgba(56, 189, 248, 0.12); border: 1px solid rgba(56, 189, 248, 0.35); color: #38bdf8; padding: 6px 14px; border-radius: 20px; font-size: 0.78rem; font-weight: 700; margin-bottom: 14px; }
-            .note { font-size: 0.8rem; color: #fbbf24; background: rgba(245, 158, 11, 0.1); border: 1px solid rgba(245, 158, 11, 0.25); padding: 12px 14px; border-radius: 12px; line-height: 1.5; }
+            .card { background: #0f172a; padding: 42px 34px; border-radius: 24px; border: 1px solid rgba(56, 189, 248, 0.35); max-width: 440px; width: 100%; box-shadow: 0 25px 60px rgba(0,0,0,0.95); animation: fadeIn 0.3s ease; }
+            @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+            .icon { font-size: 3.2rem; margin-bottom: 12px; }
+            h2 { margin: 0 0 8px; color: #38bdf8; font-size: 1.4rem; font-weight: 800; }
+            p { color: #94a3b8; font-size: 0.88rem; line-height: 1.5; margin: 0 0 24px; }
+            .badge { display: inline-block; background: rgba(56, 189, 248, 0.12); border: 1px solid rgba(56, 189, 248, 0.35); color: #38bdf8; padding: 5px 14px; border-radius: 20px; font-size: 0.75rem; font-weight: 700; margin-bottom: 14px; }
+            .login-box { display: flex; gap: 8px; justify-content: center; align-items: center; }
+            input[type="password"] { flex: 1; padding: 12px 14px; border-radius: 12px; border: 1px solid #334155; background: #080c16; color: #fff; font-size: 0.95rem; outline: none; transition: border-color 0.2s, box-shadow 0.2s; }
+            input[type="password"]:focus { border-color: #38bdf8; box-shadow: 0 0 12px rgba(56, 189, 248, 0.25); }
+            button[type="submit"] { padding: 12px 22px; border-radius: 12px; border: none; background: #38bdf8; color: #080c16; font-weight: 800; font-size: 0.92rem; cursor: pointer; transition: transform 0.15s, background 0.15s; white-space: nowrap; }
+            button[type="submit"]:hover { background: #7dd3fc; transform: translateY(-1px); }
+            .note { margin-top: 22px; font-size: 0.78rem; color: #64748b; line-height: 1.5; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 16px; }
           </style>
         </head>
         <body>
           <div class="card">
-            <div class="icon">🚫</div>
-            <div class="badge">AUTHORIZED QR / LINK ONLY</div>
-            <h2>ไม่สามารถเข้าใช้งานผ่านลิงก์ทั่วไปได้</h2>
-            <p>ระบบอนุญาตให้เข้าชมได้เฉพาะผู้ที่ <strong>สแกน QR Code</strong> หรือเปิดผ่าน <strong>ลิงก์ที่แชร์จากเจ้าของระบบ (Host)</strong> เท่านั้น</p>
-            <div class="note">
-              ⚠️ หากคุณเคยมีลิงก์เดิม เจ้าของระบบได้ทำการ <strong>ตัดสัญญาณ (Kill Switch)</strong> หรือรีเซ็ตรหัสผ่านใหม่แล้ว ทำให้ลิงก์เดิมไม่สามารถเข้าได้อีก กรุณาสแกน QR Code ใหม่จากหน้าจอเจ้าของระบบครับ
-            </div>
-            <div style="margin-top: 24px; padding-top: 16px; border-top: 1px solid rgba(255,255,255,0.08);">
-              <button type="button" onclick="document.getElementById('host-login-box').style.display='block'; this.style.display='none';" style="background: transparent; border: none; color: #64748b; font-size: 0.8rem; cursor: pointer; text-decoration: underline;">
-                🔑 สำหรับเจ้าของระบบ (Host Login)
-              </button>
-              <div id="host-login-box" style="display: none; margin-top: 10px;">
-                <form action="/api/admin-login" method="POST" style="display: flex; gap: 8px; justify-content: center; align-items: center;">
-                  <input type="password" name="password" placeholder="รหัสผ่านผู้ดูแล..." required style="padding: 8px 12px; border-radius: 8px; border: 1px solid #334155; background: #080c16; color: #fff; font-size: 0.82rem; width: 170px;">
-                  <button type="submit" style="padding: 8px 14px; border-radius: 8px; border: none; background: #38bdf8; color: #080c16; font-weight: 700; font-size: 0.82rem; cursor: pointer;">ปลดล็อก</button>
-                </form>
+            <div class="icon">🔐</div>
+            <div class="badge">PATHOX-MICRO ACCESS GATE</div>
+            <h2>เข้าสู่ระบบเพื่อใช้งาน</h2>
+            <p>กรุณากรอกรหัสผ่านเพื่อเข้าใช้งาน หรือเปิดผ่าน QR Code ที่ได้รับอนุญาตจากเจ้าของระบบ</p>
+            <form action="/api/admin-login" method="POST">
+              <div class="login-box">
+                <input type="password" name="password" placeholder="กรอกรหัสผ่าน (Password)..." autofocus required>
+                <button type="submit">ปลดล็อก</button>
               </div>
+            </form>
+            <div class="note">
+              🛡️ ระบบล็อกความปลอดภัยมาตรฐาน • สงวนสิทธิ์สำหรับนักศึกษาแพทย์ (NL1 / USMLE)
             </div>
           </div>
         </body>
