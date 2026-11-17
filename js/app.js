@@ -25,7 +25,14 @@ class PathoxApp {
     this.btnFloatingDrawer = document.getElementById('btn-floating-drawer');
     this.btnOpenDrawer = document.getElementById('btn-open-drawer');
     this.btnCloseDrawer = document.getElementById('btn-close-drawer');
-    this.btnDrawRandom = document.getElementById('btn-draw-random');
+    this.btnOpenFlashcard = document.getElementById('btn-open-flashcard');
+
+    // Flashcard State (Dynamic NL1 / USMLE Study Decks)
+    this.fcCurrentMode = 'symptoms-pathogen';
+    this.fcCurrentCategory = 'all';
+    this.fcDeck = [];
+    this.fcCurrentIndex = 0;
+    this.fcIsFlipped = false;
 
     // Autocomplete State
     this.suggestedMatches = [];
@@ -167,14 +174,31 @@ class PathoxApp {
       this.btnNextCard.addEventListener('click', () => this.nextCard());
     }
 
-    // Random Card Draw
-    if (this.btnDrawRandom) {
-      this.btnDrawRandom.addEventListener('click', () => this.drawRandomCard());
-    }
+    // Setup Interactive Flashcard System
+    this.setupFlashcardSystem();
 
-    // Keyboard navigation (Left / Right arrow to flip cards)
+    // Keyboard navigation (Supports both 2D Plates and Flashcard modal)
     window.addEventListener('keydown', (e) => {
-      if (e.target === this.searchInput) return;
+      if (e.target === this.searchInput || e.target.tagName === 'INPUT') return;
+
+      const fcModal = document.getElementById('flashcard-modal');
+      if (fcModal && fcModal.style.display !== 'none') {
+        if (e.key === 'ArrowLeft') {
+          e.preventDefault();
+          this.prevFlashcard();
+        } else if (e.key === 'ArrowRight') {
+          e.preventDefault();
+          this.nextFlashcard();
+        } else if (e.key === ' ' || e.key === 'Enter') {
+          e.preventDefault();
+          this.flipFlashcard();
+        } else if (e.key === 'Escape') {
+          e.preventDefault();
+          this.closeFlashcardModal();
+        }
+        return;
+      }
+
       if (e.key === 'ArrowLeft') {
         this.prevCard();
       } else if (e.key === 'ArrowRight') {
@@ -521,6 +545,499 @@ class PathoxApp {
         }
       });
     });
+  }
+
+  // ==========================================================================
+  // Flashcard System (Medical Micro Flashcards for NL1 / USMLE)
+  // ==========================================================================
+  setupFlashcardSystem() {
+    this.fcModal = document.getElementById('flashcard-modal');
+    this.fcOverlay = document.getElementById('flashcard-modal-overlay');
+    this.fcCloseBtn = document.getElementById('btn-close-flashcard');
+    this.fcFlipper = document.getElementById('flashcard-flipper');
+    this.fcFront = document.getElementById('flashcard-front');
+    this.fcBack = document.getElementById('flashcard-back');
+    this.fcCounter = document.getElementById('fc-counter');
+    this.fcFlipLabel = document.getElementById('fc-flip-label');
+    this.btnFcFlip = document.getElementById('btn-fc-flip');
+    this.btnFcPrev = document.getElementById('btn-fc-prev');
+    this.btnFcNext = document.getElementById('btn-fc-next');
+    this.btnFcShuffle = document.getElementById('btn-fc-shuffle');
+    this.btnFcGotoPathogen = document.getElementById('btn-fc-goto-pathogen');
+
+    if (this.btnOpenFlashcard) {
+      this.btnOpenFlashcard.addEventListener('click', () => this.openFlashcardModal());
+    }
+    if (this.fcCloseBtn) {
+      this.fcCloseBtn.addEventListener('click', () => this.closeFlashcardModal());
+    }
+    if (this.fcOverlay) {
+      this.fcOverlay.addEventListener('click', () => this.closeFlashcardModal());
+    }
+
+    // Mode Selector Buttons (1. Symptoms -> Pathogen, 2. Pathogen -> Treatment, 3. Comprehensive)
+    const modeButtons = document.querySelectorAll('.fc-mode-btn');
+    modeButtons.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        modeButtons.forEach((b) => b.classList.remove('active'));
+        btn.classList.add('active');
+        this.fcCurrentMode = btn.dataset.mode;
+        this.generateFlashcardDeck();
+        this.fcCurrentIndex = 0;
+        this.fcIsFlipped = false;
+        if (this.fcFlipper) this.fcFlipper.classList.remove('flipped');
+        if (this.fcFlipLabel) this.fcFlipLabel.textContent = 'แตะเพื่อดูเฉลย';
+        this.renderCurrentFlashcard();
+      });
+    });
+
+    // Category Filter Pills (All, Bacteria, Fungi, Viruses, Parasites)
+    const catPills = document.querySelectorAll('.fc-cat-pill');
+    catPills.forEach((pill) => {
+      pill.addEventListener('click', () => {
+        catPills.forEach((p) => p.classList.remove('active'));
+        pill.classList.add('active');
+        this.fcCurrentCategory = pill.dataset.category;
+        this.generateFlashcardDeck();
+        this.fcCurrentIndex = 0;
+        this.fcIsFlipped = false;
+        if (this.fcFlipper) this.fcFlipper.classList.remove('flipped');
+        if (this.fcFlipLabel) this.fcFlipLabel.textContent = 'แตะเพื่อดูเฉลย';
+        this.renderCurrentFlashcard();
+      });
+    });
+
+    // Flip card button & card surface click
+    if (this.btnFcFlip) {
+      this.btnFcFlip.addEventListener('click', (e) => {
+        e.stopPropagation();
+        this.flipFlashcard();
+      });
+    }
+    if (this.fcFlipper) {
+      this.fcFlipper.addEventListener('click', (e) => {
+        if (e.target.closest('button') || e.target.closest('a') || e.target.closest('.fc-action-btn')) return;
+        this.flipFlashcard();
+      });
+    }
+
+    // Prev / Next / Shuffle
+    if (this.btnFcPrev) {
+      this.btnFcPrev.addEventListener('click', () => this.prevFlashcard());
+    }
+    if (this.btnFcNext) {
+      this.btnFcNext.addEventListener('click', () => this.nextFlashcard());
+    }
+    if (this.btnFcShuffle) {
+      this.btnFcShuffle.addEventListener('click', () => this.shuffleFlashcards());
+    }
+    if (this.btnFcGotoPathogen) {
+      this.btnFcGotoPathogen.addEventListener('click', () => this.goToDrawerFromFlashcard());
+    }
+  }
+
+  openFlashcardModal() {
+    if (!this.fcModal) return;
+    this.fcModal.style.display = 'flex';
+    this.updateFlashcardCategoryCounts();
+    this.generateFlashcardDeck();
+    this.fcCurrentIndex = 0;
+    this.fcIsFlipped = false;
+    if (this.fcFlipper) this.fcFlipper.classList.remove('flipped');
+    if (this.fcFlipLabel) this.fcFlipLabel.textContent = 'แตะเพื่อดูเฉลย';
+    this.renderCurrentFlashcard();
+  }
+
+  closeFlashcardModal() {
+    if (!this.fcModal) return;
+    this.fcModal.style.display = 'none';
+    this.fcIsFlipped = false;
+    if (this.fcFlipper) this.fcFlipper.classList.remove('flipped');
+  }
+
+  updateFlashcardCategoryCounts() {
+    const allEl = document.getElementById('fc-count-all');
+    const bacEl = document.getElementById('fc-count-bacteria');
+    const funEl = document.getElementById('fc-count-fungi');
+    const virEl = document.getElementById('fc-count-virus');
+    const parEl = document.getElementById('fc-count-parasite');
+
+    const total = this.microbes.length;
+    const bac = this.microbes.filter(m => m.category === 'bacteria').length;
+    const fun = this.microbes.filter(m => m.category === 'fungi').length;
+    const vir = this.microbes.filter(m => m.category === 'virus').length;
+    const par = this.microbes.filter(m => m.category === 'parasite').length;
+
+    if (allEl) allEl.textContent = total;
+    if (bacEl) bacEl.textContent = bac;
+    if (funEl) funEl.textContent = fun;
+    if (virEl) virEl.textContent = vir;
+    if (parEl) parEl.textContent = par;
+  }
+
+  generateFlashcardDeck() {
+    let list = this.microbes || [];
+    if (this.fcCurrentCategory && this.fcCurrentCategory !== 'all') {
+      list = list.filter(m => m.category === this.fcCurrentCategory);
+    }
+    this.fcDeck = [...list];
+    if (this.fcCurrentIndex >= this.fcDeck.length) {
+      this.fcCurrentIndex = 0;
+    }
+  }
+
+  flipFlashcard() {
+    if (this.fcDeck.length === 0) return;
+    this.fcIsFlipped = !this.fcIsFlipped;
+    if (this.fcFlipper) {
+      this.fcFlipper.classList.toggle('flipped', this.fcIsFlipped);
+    }
+    if (this.fcFlipLabel) {
+      this.fcFlipLabel.textContent = this.fcIsFlipped ? 'แตะเพื่อกลับไปโจทย์' : 'แตะเพื่อดูเฉลย';
+    }
+  }
+
+  prevFlashcard() {
+    if (this.fcDeck.length === 0) return;
+    this.fcCurrentIndex = (this.fcCurrentIndex - 1 + this.fcDeck.length) % this.fcDeck.length;
+    this.fcIsFlipped = false;
+    if (this.fcFlipper) this.fcFlipper.classList.remove('flipped');
+    if (this.fcFlipLabel) this.fcFlipLabel.textContent = 'แตะเพื่อดูเฉลย';
+    this.renderCurrentFlashcard();
+  }
+
+  nextFlashcard() {
+    if (this.fcDeck.length === 0) return;
+    this.fcCurrentIndex = (this.fcCurrentIndex + 1) % this.fcDeck.length;
+    this.fcIsFlipped = false;
+    if (this.fcFlipper) this.fcFlipper.classList.remove('flipped');
+    if (this.fcFlipLabel) this.fcFlipLabel.textContent = 'แตะเพื่อดูเฉลย';
+    this.renderCurrentFlashcard();
+  }
+
+  shuffleFlashcards() {
+    if (this.fcDeck.length <= 1) return;
+    for (let i = this.fcDeck.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [this.fcDeck[i], this.fcDeck[j]] = [this.fcDeck[j], this.fcDeck[i]];
+    }
+    this.fcCurrentIndex = 0;
+    this.fcIsFlipped = false;
+    if (this.fcFlipper) this.fcFlipper.classList.remove('flipped');
+    if (this.fcFlipLabel) this.fcFlipLabel.textContent = 'แตะเพื่อดูเฉลย';
+    this.renderCurrentFlashcard();
+  }
+
+  goToDrawerFromFlashcard() {
+    if (this.fcDeck.length === 0) return;
+    const microbe = this.fcDeck[this.fcCurrentIndex];
+    if (microbe) {
+      this.closeFlashcardModal();
+      this.selectMicrobe(microbe.id);
+      this.toggleDrawer(true);
+      if (this.fcCurrentMode === 'pathogen-treatment') {
+        this.activateTab('tab-treatment');
+      } else {
+        this.activateTab('tab-pathogenesis');
+      }
+    }
+  }
+
+  renderCurrentFlashcard() {
+    if (!this.fcFront || !this.fcBack) return;
+
+    if (this.fcDeck.length === 0) {
+      this.fcFront.innerHTML = `
+        <div style="margin: auto; text-align: center; color: #94a3b8; padding: 40px 20px;">
+          <i class="fa-solid fa-folder-open" style="font-size: 2.5rem; color: #64748b; margin-bottom: 12px;"></i>
+          <h4 style="color: #fff; margin-bottom: 8px;">ไม่มีการ์ดในหมวดหมู่นี้</h4>
+          <p style="font-size: 0.82rem;">กรุณาเลือกหมวดหมู่อื่นจากแถบด้านบน</p>
+        </div>
+      `;
+      this.fcBack.innerHTML = this.fcFront.innerHTML;
+      if (this.fcCounter) this.fcCounter.textContent = 'การ์ดที่ 0 / 0';
+      return;
+    }
+
+    const microbe = this.fcDeck[this.fcCurrentIndex];
+    if (this.fcCounter) {
+      this.fcCounter.textContent = `การ์ดที่ ${this.fcCurrentIndex + 1} / ${this.fcDeck.length}`;
+    }
+
+    const catLabels = {
+      bacteria: 'แบคทีเรีย (Bacteria)',
+      fungi: 'เชื้อรา (Fungi)',
+      virus: 'ไวรัส (Virus)',
+      parasite: 'ปรสิต (Parasites)'
+    };
+    const categoryThai = catLabels[microbe.category] || microbe.category || 'เชื้อจุลชีพ';
+
+    const imgUrl = (microbe.clinicalCases && microbe.clinicalCases[0] && microbe.clinicalCases[0].image)
+      ? microbe.clinicalCases[0].image
+      : (microbe.image || '');
+    const imgCaption = (microbe.clinicalCases && microbe.clinicalCases[0] && microbe.clinicalCases[0].caption)
+      ? microbe.clinicalCases[0].caption
+      : (microbe.lesionThai || 'ภาพรอยโรคทางคลินิก (CDC/WHO)');
+
+    const mildText = microbe.quickStats?.morphology || microbe.lesionThai || 'ผื่นเริ่มแรก ตุ่มนูน แผลเฉพาะที่ ระยะเฉียบพลันแรกรับ';
+    const severeText = (microbe.quickStats?.depth ? `${microbe.quickStats.depth}${microbe.quickStats.palpation ? ` (${microbe.quickStats.palpation})` : ''}` : '')
+      || (microbe.tabs?.pathogenesis?.virulenceFactors?.[0]?.description)
+      || 'การลุกลามเข้าสู่เนื้อเยื่อส่วนลึก หรือการกระจายไปตามกระแสเลือด';
+
+    let clues = [];
+    if (microbe.tabs?.pathogenesis?.transmission) {
+      clues.push(`การติดต่อ: ${microbe.tabs.pathogenesis.transmission}`);
+    }
+    if (microbe.clinicalCases?.[0]?.keyFindings && Array.isArray(microbe.clinicalCases[0].keyFindings)) {
+      clues.push(...microbe.clinicalCases[0].keyFindings);
+    }
+    const cluesHtml = clues.length ? `
+      <div style="font-size: 0.76rem; color: #94a3b8; margin-bottom: 10px; line-height: 1.45;">
+        <strong style="color: #cbd5e1;"><i class="fa-solid fa-magnifying-glass"></i> ข้อมูลช่วยวินิจฉัย (Clues):</strong> ${clues.slice(0, 3).join(' • ')}
+      </div>
+    ` : '';
+
+    const firstLineRx = microbe.tabs?.treatment?.firstLine || 'First-line antimicrobial regimen ตามมาตรฐาน IDSA / Thai CPG';
+    const altRx = microbe.tabs?.treatment?.alternative || microbe.tabs?.treatment?.woundCare || microbe.tabs?.treatment?.systemic || 'ยาทางเลือกตามความไวและผลการเพาะเชื้อ';
+    const pregRx = microbe.tabs?.treatment?.childrenPregnant || (microbe.category === 'bacteria' ? 'หลีกเลี่ยง Tetracyclines / Fluoroquinolones ในสตรีมีครรภ์' : 'ปรึกษาแพทย์เฉพาะทางก่อนให้ยาในสตรีมีครรภ์');
+    const resRx = microbe.tabs?.treatment?.resistance || microbe.tabs?.treatment?.reaction || 'ติดตามผล Antibiogram และการตอบสนองทางคลินิก';
+
+    // ------------------------------------------------------------------------
+    // Mode 1: อาการเบา/หนัก (พร้อมรูปรอยโรค) ➜ เชื้อที่ก่อโรค
+    // ------------------------------------------------------------------------
+    if (this.fcCurrentMode === 'symptoms-pathogen') {
+      // Front: Symptoms & Lesion Photo
+      this.fcFront.innerHTML = `
+        <span class="fc-card-tag question">
+          <i class="fa-solid fa-stethoscope"></i> โจทย์อาการและรอยโรค ➜ ทายชื่อเชื้อ
+        </span>
+
+        ${imgUrl ? `
+        <div class="fc-photo-box">
+          <img src="${imgUrl}" alt="${microbe.name}" onerror="this.parentElement.style.display='none';">
+          <span class="fc-photo-badge"><i class="fa-solid fa-camera"></i> ${imgCaption}</span>
+        </div>` : ''}
+
+        <div class="fc-symptom-grid">
+          <div class="fc-symptom-box mild">
+            <div class="fc-box-label"><i class="fa-solid fa-circle-check"></i> อาการเบา / ระยะแรก (Mild / Early)</div>
+            <div class="fc-box-text">${mildText}</div>
+          </div>
+          <div class="fc-symptom-box severe">
+            <div class="fc-box-label"><i class="fa-solid fa-triangle-exclamation"></i> อาการหนัก / ลุกลาม (Severe / Invasive)</div>
+            <div class="fc-box-text">${severeText}</div>
+          </div>
+        </div>
+
+        ${cluesHtml}
+
+        <div class="fc-question-prompt">
+          <i class="fa-regular fa-lightbulb"></i>
+          <span>เชื้อก่อโรคชนิดนี้คืออะไร? (คลิกการ์ดหรือเคาะ Spacebar เพื่อดูเฉลย)</span>
+        </div>
+      `;
+
+      // Back: Pathogen Name & Pathogenesis
+      const vfList = (microbe.tabs?.pathogenesis?.virulenceFactors || []).slice(0, 2);
+      const vfText = vfList.length 
+        ? vfList.map(v => `<strong>${v.name}:</strong> ${v.mechanism || v.desc || v.description}`).join('<br>')
+        : (microbe.tabs?.pathogenesis?.transmission || 'กลไกการก่อโรคและสารพิษเฉพาะตัว');
+
+      const diagText = microbe.tabs?.diagnosis?.gramStain 
+        || (Array.isArray(microbe.tabs?.diagnosis?.culture) ? microbe.tabs.diagnosis.culture[0] : microbe.tabs?.diagnosis?.culture)
+        || 'ลักษณะการตรวจย้อมทางห้องปฏิบัติการ';
+
+      this.fcBack.innerHTML = `
+        <span class="fc-card-tag answer">
+          <i class="fa-solid fa-circle-check"></i> เฉลยชื่อเชื้อก่อโรค (Pathogen Identification)
+        </span>
+
+        <h4 class="fc-answer-title">${microbe.name}</h4>
+        <div class="fc-answer-sub">${microbe.thaiName || microbe.nameThai || ''} · กลุ่ม: <span class="category-badge ${microbe.category}">${categoryThai}</span></div>
+
+        <div class="fc-rx-card firstline">
+          <div class="fc-rx-title"><i class="fa-solid fa-burst"></i> กลไกการเกิดโรค &amp; สารพิษความรุนแรง</div>
+          <div class="fc-rx-desc">${vfText}</div>
+        </div>
+
+        <div class="fc-rx-card alternative">
+          <div class="fc-rx-title"><i class="fa-solid fa-microscope"></i> จุดเด่นการตรวจวินิจฉัย (Diagnosis Pearls)</div>
+          <div class="fc-rx-desc"><strong>Gram/Morphology:</strong> ${diagText}</div>
+        </div>
+
+        <div style="margin-top: auto; display: flex; justify-content: flex-end; padding-top: 8px;">
+          <button type="button" class="fc-action-btn accent" id="btn-fc-back-goto-drawer" style="font-size: 0.78rem;">
+            <i class="fa-solid fa-book-medical"></i> <span>เปิดอ่านข้อมูลเต็มใน Medical Drawer</span>
+          </button>
+        </div>
+      `;
+
+      const backBtn = this.fcBack.querySelector('#btn-fc-back-goto-drawer');
+      if (backBtn) {
+        backBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          this.goToDrawerFromFlashcard();
+        });
+      }
+    }
+
+    // ------------------------------------------------------------------------
+    // Mode 2: เชื้อก่อโรค ➜ ยารักษา / ยาในบางกรณีเช่นคนท้อง หรือแพ้
+    // ------------------------------------------------------------------------
+    else if (this.fcCurrentMode === 'pathogen-treatment') {
+      // Front: Pathogen + Treatment Challenge
+      this.fcFront.innerHTML = `
+        <span class="fc-card-tag question">
+          <i class="fa-solid fa-pills"></i> โจทย์การรักษา ➜ ทายยาหลัก / คนท้อง / แพ้ยา
+        </span>
+
+        <h4 class="fc-answer-title" style="margin-bottom: 4px;">${microbe.name}</h4>
+        <div class="fc-answer-sub">${microbe.thaiName || microbe.nameThai || ''} · กลุ่ม: <span class="category-badge ${microbe.category}">${categoryThai}</span></div>
+
+        ${imgUrl ? `
+        <div class="fc-photo-box" style="height: 125px; margin-bottom: 12px;">
+          <img src="${imgUrl}" alt="${microbe.name}" style="height: 125px;" onerror="this.parentElement.style.display='none';">
+          <span class="fc-photo-badge"><i class="fa-solid fa-stethoscope"></i> ${microbe.lesionThai || 'รอยโรคจำเพาะ'}</span>
+        </div>` : ''}
+
+        <div style="background: rgba(0,0,0,0.25); border-radius: 12px; padding: 12px; border: 1px solid rgba(255,255,255,0.08); margin-bottom: 12px;">
+          <div style="font-size: 0.8rem; color: #38bdf8; font-weight: 700; margin-bottom: 6px;"><i class="fa-solid fa-circle-question"></i> คำถามทางคลินิก (Clinical Challenge):</div>
+          <div style="font-size: 0.78rem; color: #e2e8f0; line-height: 1.6;">
+            1. <strong>First-line DOC:</strong> ยาขนานแรกที่แนะนำตามไกด์ไลน์คือยาใด?<br>
+            2. <strong>กรณีพิเศษ:</strong> หากผู้ป่วยเป็นสตรีมีครรภ์ (Pregnancy) หรือแพ้ยาหลัก (Allergy) จะปรับใช้ยาใด?<br>
+            3. <strong>ข้อควรระวัง:</strong> มีข้อควรระวังหรือกลไกการดื้อยาสำคัญอย่างไร?
+          </div>
+        </div>
+
+        <div class="fc-question-prompt">
+          <i class="fa-solid fa-rotate"></i>
+          <span>แตะการ์ดหรือเคาะ Spacebar เพื่อดูเฉลยสูตรยาและการรักษา</span>
+        </div>
+      `;
+
+      // Back: First-line, Pregnancy, Allergy, Resistance
+      this.fcBack.innerHTML = `
+        <span class="fc-card-tag answer">
+          <i class="fa-solid fa-clipboard-check"></i> เฉลยแนวทางการรักษา (Antimicrobial Therapy)
+        </span>
+
+        <h4 class="fc-answer-title">${microbe.name}</h4>
+        <div class="fc-answer-sub">${microbe.thaiName || microbe.nameThai || ''}</div>
+
+        <div class="fc-rx-card firstline">
+          <div class="fc-rx-title"><i class="fa-solid fa-trophy"></i> First-line Drug of Choice (ยาหลักขนานแรก)</div>
+          <div class="fc-rx-desc"><strong>${firstLineRx}</strong></div>
+        </div>
+
+        <div class="fc-rx-card alternative">
+          <div class="fc-rx-title"><i class="fa-solid fa-person-pregnant"></i> สตรีมีครรภ์ &amp; ผู้ป่วยแพ้ยา (Pregnancy &amp; Allergy)</div>
+          <div class="fc-rx-desc">
+            <strong>🤰 ในหญิงตั้งครรภ์:</strong> ${pregRx}<br>
+            <strong>⚠️ กรณีแพ้ยา / ยาทางเลือก:</strong> ${altRx}
+          </div>
+        </div>
+
+        <div class="fc-rx-card resistance">
+          <div class="fc-rx-title"><i class="fa-solid fa-shield-virus"></i> ข้อควรระวัง &amp; กลไกการดื้อยา (Resistance)</div>
+          <div class="fc-rx-desc">${resRx}</div>
+        </div>
+
+        <div style="margin-top: auto; display: flex; justify-content: flex-end; padding-top: 8px;">
+          <button type="button" class="fc-action-btn accent" id="btn-fc-back-goto-treatment" style="font-size: 0.78rem;">
+            <i class="fa-solid fa-pills"></i> <span>ดูหัวข้อการรักษาใน Drawer</span>
+          </button>
+        </div>
+      `;
+
+      const backBtn = this.fcBack.querySelector('#btn-fc-back-goto-treatment');
+      if (backBtn) {
+        backBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          this.goToDrawerFromFlashcard();
+        });
+      }
+    }
+
+    // ------------------------------------------------------------------------
+    // Mode 3: แฟลชการ์ดแบบรวม (All-in-One Comprehensive Mode)
+    // ------------------------------------------------------------------------
+    else {
+      // Front: Full Vignette
+      this.fcFront.innerHTML = `
+        <span class="fc-card-tag question" style="background: rgba(249, 115, 22, 0.18); border-color: rgba(249, 115, 22, 0.4); color: #fb923c;">
+          <i class="fa-solid fa-fire"></i> แฟลชการ์ดรวม (All-in-One Board Vignette)
+        </span>
+
+        ${imgUrl ? `
+        <div class="fc-photo-box" style="height: 140px; margin-bottom: 12px;">
+          <img src="${imgUrl}" alt="${microbe.name}" style="height: 140px;" onerror="this.parentElement.style.display='none';">
+          <span class="fc-photo-badge"><i class="fa-solid fa-camera"></i> ${imgCaption}</span>
+        </div>` : ''}
+
+        <div class="fc-symptom-grid">
+          <div class="fc-symptom-box mild">
+            <div class="fc-box-label"><i class="fa-solid fa-circle-check"></i> อาการเบา / ระยะแรก (Mild / Early)</div>
+            <div class="fc-box-text">${mildText}</div>
+          </div>
+          <div class="fc-symptom-box severe">
+            <div class="fc-box-label"><i class="fa-solid fa-triangle-exclamation"></i> อาการหนัก / ลุกลาม (Severe / Invasive)</div>
+            <div class="fc-box-text">${severeText}</div>
+          </div>
+        </div>
+
+        ${cluesHtml}
+
+        <div class="fc-question-prompt" style="color: #fb923c; border-color: rgba(249, 115, 22, 0.4); background: rgba(249, 115, 22, 0.08);">
+          <i class="fa-solid fa-brain"></i>
+          <span>จงวินิจฉัยเชื้อก่อโรค และระบุยา First-line DOC พร้อมการดูแลในคนท้อง/แพ้ยา</span>
+        </div>
+      `;
+
+      // Back: Comprehensive Summary
+      this.fcBack.innerHTML = `
+        <span class="fc-card-tag answer" style="background: rgba(249, 115, 22, 0.18); border-color: rgba(249, 115, 22, 0.4); color: #fb923c;">
+          <i class="fa-solid fa-star"></i> เฉลยสรุปครบวงจร (Full Comprehensive Solution)
+        </span>
+
+        <h4 class="fc-answer-title">${microbe.name} <span style="font-size: 0.9rem; font-weight: normal; color: #94a3b8;">(${microbe.thaiName || microbe.nameThai || ''})</span></h4>
+        <div class="fc-answer-sub">หมวดหมู่: <span class="category-badge ${microbe.category}">${categoryThai}</span></div>
+
+        <div class="fc-rx-card firstline">
+          <div class="fc-rx-title"><i class="fa-solid fa-trophy"></i> 1. ยาหลักขนานแรก (First-line DOC)</div>
+          <div class="fc-rx-desc"><strong>${firstLineRx}</strong></div>
+        </div>
+
+        <div class="fc-rx-card alternative">
+          <div class="fc-rx-title"><i class="fa-solid fa-person-pregnant"></i> 2. สตรีมีครรภ์ &amp; กรณีแพ้ยา (Pregnancy &amp; Allergy)</div>
+          <div class="fc-rx-desc">
+            <strong>🤰 สตรีมีครรภ์:</strong> ${pregRx}<br>
+            <strong>⚠️ กรณีแพ้ยา:</strong> ${altRx}
+          </div>
+        </div>
+
+        <div class="fc-rx-card resistance">
+          <div class="fc-rx-title"><i class="fa-solid fa-shield-virus"></i> 3. กลไกก่อโรค &amp; การดื้อยาสำคัญ (Pearls)</div>
+          <div class="fc-rx-desc">
+            ${microbe.tabs?.pathogenesis?.transmission ? `<strong>การติดต่อ:</strong> ${microbe.tabs.pathogenesis.transmission}<br>` : ''}
+            <strong>ข้อควรระวัง:</strong> ${resRx}
+          </div>
+        </div>
+
+        <div style="margin-top: auto; display: flex; justify-content: flex-end; padding-top: 8px;">
+          <button type="button" class="fc-action-btn accent" id="btn-fc-back-goto-comprehensive" style="font-size: 0.78rem;">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> <span>เปิดศึกษาต่อใน Drawer</span>
+          </button>
+        </div>
+      `;
+
+      const backBtn = this.fcBack.querySelector('#btn-fc-back-goto-comprehensive');
+      if (backBtn) {
+        backBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          this.goToDrawerFromFlashcard();
+        });
+      }
+    }
   }
 
   filterDeck() {

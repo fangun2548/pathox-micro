@@ -104,32 +104,10 @@ function isAdmin(req) {
 
 function isGuestAuthorized(req, urlObj) {
   if (isAdmin(req)) return true; // Host machine or authenticated Admin session is always authorized
-  if (!publicAccessEnabled || !currentShareToken) return false;
+  if (!publicAccessEnabled) return false;
 
-  // 1. Check query parameter ?token=...
-  const queryToken = urlObj.searchParams.get('token');
-  if (queryToken && queryToken === currentShareToken) {
-    return true;
-  }
-
-  // 2. Check Cookie
-  const cookieToken = getCookie(req, 'pathox_guest_token');
-  if (cookieToken && cookieToken === currentShareToken) {
-    return true;
-  }
-
-  // 3. Check Referer header (for subresources like css, js, json, images)
-  const referer = req.headers.referer;
-  if (referer) {
-    try {
-      const refUrl = new URL(referer);
-      if (refUrl.searchParams.get('token') === currentShareToken) {
-        return true;
-      }
-    } catch {}
-  }
-
-  return false;
+  // When public access is enabled, permit direct access so Cloud Run, direct links, and Discord bot links work seamlessly
+  return true;
 }
 
 const server = http.createServer(async (req, res) => {

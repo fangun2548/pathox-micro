@@ -65,9 +65,9 @@
           <i class="fa-solid fa-lock" id="share-btn-icon"></i>
           <span class="btn-label" id="share-btn-label">แชร์</span>
         </button>
-        <button id="btn-draw-random" class="action-btn" title="สุ่มเลือกเชื้อศึกษา">
-          <i class="fa-solid fa-shuffle"></i>
-          <span class="btn-label">สุ่มศึกษา</span>
+        <button id="btn-open-flashcard" class="action-btn flashcard-btn" title="แฟลชการ์ดทบทวนความรู้ (Flashcards NL1 / USMLE)">
+          <i class="fa-solid fa-layer-group"></i>
+          <span class="btn-label">แฟลชการ์ด</span>
         </button>
         <button id="btn-open-drawer" class="action-btn" title="เปิด/ปิด High-Yield Medical Drawer">
           <i class="fa-solid fa-book-medical"></i>
@@ -297,6 +297,105 @@
 
     </div>
 
+  </div>
+
+  <!-- ======================================================================
+       Interactive Flashcard Modal (3 Modes for NL1 / USMLE)
+       ====================================================================== -->
+  <div id="flashcard-modal" class="flashcard-modal" style="display: none;">
+    <div class="flashcard-modal-overlay" id="flashcard-modal-overlay"></div>
+    <div class="flashcard-modal-dialog">
+      <!-- Flashcard Header -->
+      <div class="flashcard-header">
+        <div class="flashcard-title-group">
+          <div class="flashcard-icon-badge">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <div>
+            <h3>แฟลชการ์ดจุลชีววิทยาคลินิก (Medical Flashcards)</h3>
+            <p>ฝึกทบทวนรอยโรค อาการเบา/หนัก และยารักษาตามมาตรฐาน NL1 / USMLE</p>
+          </div>
+        </div>
+        <button class="flashcard-close-btn" id="btn-close-flashcard" title="ปิดหน้าต่าง">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <!-- Mode Selector (3 Modes as requested) -->
+      <div class="flashcard-mode-selector">
+        <button class="fc-mode-btn active" data-mode="symptoms-pathogen" id="fc-mode-symptoms">
+          <i class="fa-solid fa-stethoscope"></i>
+          <span>1. อาการเบา/หนัก &amp; รอยโรค ➜ เชื้อ</span>
+        </button>
+        <button class="fc-mode-btn" data-mode="pathogen-treatment" id="fc-mode-treatment">
+          <i class="fa-solid fa-pills"></i>
+          <span>2. เชื้อ ➜ ยารักษา/คนท้อง/แพ้</span>
+        </button>
+        <button class="fc-mode-btn" data-mode="comprehensive" id="fc-mode-comprehensive">
+          <i class="fa-solid fa-fire-flame-curved"></i>
+          <span>3. แฟลชการ์ดรวม (All-in-One)</span>
+        </button>
+      </div>
+
+      <!-- Category Filter Toolbar & Counter -->
+      <div class="flashcard-toolbar">
+        <div class="fc-category-pills">
+          <button class="fc-cat-pill active" data-category="all">ทั้งหมด (<span id="fc-count-all">27</span>)</button>
+          <button class="fc-cat-pill" data-category="bacteria">แบคทีเรีย (<span id="fc-count-bacteria">0</span>)</button>
+          <button class="fc-cat-pill" data-category="fungi">เชื้อรา (<span id="fc-count-fungi">0</span>)</button>
+          <button class="fc-cat-pill" data-category="virus">ไวรัส (<span id="fc-count-virus">0</span>)</button>
+          <button class="fc-cat-pill" data-category="parasite">ปรสิต (<span id="fc-count-parasite">0</span>)</button>
+        </div>
+        <div class="fc-counter-badge" id="fc-counter">
+          การ์ดที่ 1 / 27
+        </div>
+      </div>
+
+      <!-- 3D Flippable Flashcard Card -->
+      <div class="flashcard-container" id="flashcard-container">
+        <div class="flashcard-card" id="flashcard-flipper">
+          
+          <!-- Front Side (Question) -->
+          <div class="flashcard-face flashcard-front" id="flashcard-front">
+            <!-- Dynamically injected via JS -->
+          </div>
+
+          <!-- Back Side (Answer / Solution) -->
+          <div class="flashcard-face flashcard-back" id="flashcard-back">
+            <!-- Dynamically injected via JS -->
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Controls & Navigation -->
+      <div class="flashcard-footer">
+        <div class="fc-nav-left">
+          <button class="fc-action-btn" id="btn-fc-shuffle" title="สุ่มลำดับการ์ด">
+            <i class="fa-solid fa-shuffle"></i> <span>สลับสุ่ม</span>
+          </button>
+        </div>
+
+        <div class="fc-nav-center">
+          <button class="fc-nav-btn" id="btn-fc-prev" title="ก่อนหน้า (ลูกศรซ้าย ◀)">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button class="fc-flip-btn" id="btn-fc-flip" title="แตะหรือกด Spacebar เพื่อพลิกดูเฉลย">
+            <i class="fa-solid fa-rotate"></i> <span id="fc-flip-label">แตะเพื่อดูเฉลย</span>
+          </button>
+          <button class="fc-nav-btn" id="btn-fc-next" title="ถัดไป (ลูกศรขวา ▶)">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+
+        <div class="fc-nav-right">
+          <button class="fc-action-btn accent" id="btn-fc-goto-pathogen" title="เปิดดูเชื้อนี้ใน Medical Drawer">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> <span>ดูใน Drawer</span>
+          </button>
+        </div>
+      </div>
+
+    </div>
   </div>
 
   <!-- ======================================================================
