@@ -757,12 +757,12 @@ body {
   color: var(--text-main);
 }
 
-/* 5 Dimension Tabs Navigation - 5-Column Grid */
+/* 3 High-Yield Dimension Tabs Navigation - 3-Column Grid */
 .drawer-tabs {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 3px;
-  padding: 6px 6px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+  padding: 8px 8px;
   background: rgba(11, 17, 32, 0.85);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   width: 100%;

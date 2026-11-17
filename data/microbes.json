@@ -57,30 +57,43 @@
         "virulenceFactors": [
           {
             "name": "Viral Capillary Endothelial Infection",
-            "mechanism": "เชื้อไวรัส Variola แพร่ผ่านกระแสเลือดเข้าสู่ Capillary endothelial cells ของชั้น Dermis ทำให้หลอดเลือดอักเสบ บวมน้ำ และเม็ดเลือดขาวแทรกซึม"
-          },
-          {
-            "name": "Reticular Colliquation & Ballooning",
-            "mechanism": "Keratinocytes ในชั้น Epidermis เกิดการบวมพองและแตกสลาย กลายเป็นโพรงตุ่มน้ำหลายห้อง (Multilocular) ที่มี Neutrophils หลั่งเข้ามากลายเป็น Pustule"
+            "mechanism": "เชื้อไวรัส Variola แพร่ผ่านกระแสเลือด (Secondary viremia) เข้าสู่ Capillary endothelial cells ของชั้น Dermis ทำให้หลอดเลือดฝอยอักเสบ บวมน้ำ และเม็ดเลือดขาวแทรกซึม ก่อรอยโรคที่ผิวหนังแบบระยะเดียวกันทั้งหมด (Synchronous rash)",
+            "desc": "เชื้อไวรัส Variola แพร่ผ่านกระแสเลือด (Secondary viremia) เข้าสู่ Capillary endothelial cells ของชั้น Dermis ทำให้หลอดเลือดฝอยอักเสบ บวมน้ำ และเม็ดเลือดขาวแทรกซึม ก่อรอยโรคที่ผิวหนังแบบระยะเดียวกันทั้งหมด (Synchronous rash)"
           },
           {
             "name": "SPICE (Smallpox Inhibitor of Complement Enzymes)",
-            "mechanism": "ยับยั้ง Complement cascade ป้องกันการเกิด Membrane Attack Complex (MAC) ช่วยให้ไวรัสเพิ่มจำนวนในเนื้อเยื่อผิวหนังได้อย่างรวดเร็ว"
+            "mechanism": "โปรตีนยับยั้ง Complement cascade โดยจับกับ C3b และ C4b ขัดขวางการเกิด Opsonization และ Membrane Attack Complex (MAC) ช่วยให้ไวรัสเพิ่มจำนวนในเนื้อเยื่อได้อย่างรวดเร็ว",
+            "desc": "โปรตีนยับยั้ง Complement cascade โดยจับกับ C3b และ C4b ขัดขวางการเกิด Opsonization และ Membrane Attack Complex (MAC) ช่วยให้ไวรัสเพิ่มจำนวนในเนื้อเยื่อได้อย่างรวดเร็ว"
+          },
+          {
+            "name": "Reticular Colliquation & Ballooning Degeneration",
+            "mechanism": "Keratinocytes ในชั้น Stratum spinosum บวมพองและแตกสลาย กลายเป็นโพรงตุ่มน้ำหลายห้อง (Multilocular vesicle) ที่มีรอยบุ๋มตรงกลาง (Umbilication) ก่อนที่ Neutrophils จะหลั่งเข้ามากลายเป็น Pustule",
+            "desc": "Keratinocytes ในชั้น Stratum spinosum บวมพองและแตกสลาย กลายเป็นโพรงตุ่มน้ำหลายห้อง (Multilocular vesicle) ที่มีรอยบุ๋มตรงกลาง (Umbilication) ก่อนที่ Neutrophils จะหลั่งเข้ามากลายเป็น Pustule"
           }
         ],
-        "transmission": "ละอองฝอยทางเดินหายใจ (Respiratory droplets) และสัมผัสสารคัดหลั่งจากแผลหรือเสื้อผ้าผู้ป่วย"
+        "transmission": "ละอองฝอยทางเดินหายใจ (Respiratory droplets) จากการสัมผัสใกล้ชิดหน้าต่อหน้า และการสัมผัสสะเก็ดแผลหรือเสื้อผ้า/ผ้าปูที่นอนที่ปนเปื้อนเชื้อ",
+        "immuneEvasion": [
+          "สร้าง Chemokine-binding proteins และ Soluble cytokine receptor homologs (เช่น vCCI, vCKBP) ดักจับ IFN-gamma, TNF-alpha และ IL-1beta ขัดขวางการส่งสัญญาณเตือนภูมิคุ้มกัน",
+          "ยับยั้ง Apoptosis ของเซลล์โฮสต์ ทำให้ไวรัสสามารถใช้โรงงานภายในเซลล์สร้างอนุภาคไวรัสใหม่ได้ต่อเนื่อง"
+        ]
       },
       "diagnosis": {
-        "title": "การตรวจรอยโรคและ Lab (Lesion Exam & Lab)",
+        "title": "การตรวจวินิจฉัยและห้องปฏิบัติการ (Diagnosis & Laboratory)",
         "stains": [
           "Tzanck Smear / ชิ้นเนื้อ: พบ Guarnieri inclusion bodies (ก้อน Eosinophilic inclusions ขนาดใหญ่ใน Cytoplasm)",
           "Electron Microscopy จากของเหลวในตุ่ม: พบอนุภาคไวรัสรูปทรงอิฐ (Brick-shaped virions) ขนาดใหญ่ ~300 nm"
         ],
         "culture": [
-          "Egg CAM (Chorioallantoic membrane): เพาะเชื้อเกิด Pocks นูน ขาว ขุ่น",
-          "Real-time PCR: Orthopoxvirus species-specific PCR (Gold standard ในปัจจุบัน)"
+          "Real-time PCR (Orthopoxvirus species-specific PCR): Gold standard มีความไวและความจำเพาะสูงสุดในการยืนยันสายพันธุ์",
+          "Chorioallantoic Membrane (CAM) ของไข่ไก่ฟัก: เกิดรอยโรค Pocks สีขาวนวล นูน ทึบแสง ขนาดสม่ำเสมอกันที่ 35-37°C",
+          "ระดับความปลอดภัยทางชีวภาพ: BSL-4 (Category A Bioterrorism Agent) ห้ามเพาะเลี้ยงในห้องแล็บทั่วไป"
         ],
-        "biosafety": "BSL-4 Level Pathogen (Category A Bioterrorism agent)"
+        "biosafety": "BSL-4 Level Pathogen (Category A Bioterrorism agent)",
+        "staining": "Tzanck Smear หรือ Giemsa stain จากก้นตุ่มแผล: พบ Guarnieri inclusion bodies (ก้อน Eosinophilic/B-type inclusions ขนาดใหญ่ในไซโตพลาสซึม); Electron Microscopy พบอนุภาคไวรัสรูปทรงอิฐ (Brick-shaped virions ขนาด ~300x200x100 nm)",
+        "biochemical": [
+          "CBC: Leukopenia ร่วมกับ Relative lymphocytosis ในระยะแรก ก่อนเปลี่ยนเป็น Leukocytosis ในระยะ Pustular",
+          "Serology: IgM Capture ELISA หรือ Neutralization test สำหรับการตรวจยืนยันทางระบาดวิทยา"
+        ]
       },
       "clinical": {
         "title": "Clinical Vignettes & NL1 Pearls",
@@ -95,10 +108,12 @@
         "highYieldNote": "ตารางเปรียบเทียบออกสอบ NL1: Variola (ฝีดาษ) = Centrifugal, Same stage, Deep-seated, ฝ่ามือฝ่าเท้าพบตุ่ม | Varicella (อีสุกอีใส) = Centripetal (เน้นลำตัว), Different stages ('Dew drops on a rose petal'), ตุ่มผิวเผิน ไม่ค่อยพบฝ่ามือฝ่าเท้า!"
       },
       "treatment": {
-        "title": "การดูแลแผลและการรักษา (Wound Care & Rx)",
-        "firstLine": "Tecovirimat (TPOXX) - ยับยั้งโปรตีน VP37 ป้องกันการหลุดออกของไวรัสจากเซลล์",
+        "title": "แนวทางการรักษาตามไกด์ไลน์ (Treatment & Guidelines)",
+        "firstLine": "Tecovirimat (TPOXX): ยาต้านไวรัสอันดับหนึ่งที่ผ่านการรับรองจาก FDA ยับยั้งโปรตีน VP37 envelope protein ขัดขวางการหลุดออกจากเซลล์ (Egress) ขนาดยาในผู้ใหญ่ 600 mg รับประทานวันละ 2 ครั้ง หลังอาหารที่มีไขมัน นาน 14 วัน (หรือ IV 200 mg q12h)",
         "woundCare": "รักษาความสะอาดตุ่มแผล ไม่เจาะตุ่มหนอง ป้องกัน Secondary bacterial infection (มักเกิดจาก S. aureus หรือ S. pyogenes)",
-        "prevention": "วัคซีน Vaccinia (ACAM2000 / JYNNEOS) ฉีดป้องกันหรือให้ภายใน 4 วันหลังสัมผัสเชื้อ"
+        "prevention": "วัคซีน Vaccinia (ACAM2000 / JYNNEOS) ฉีดป้องกันหรือให้ภายใน 4 วันหลังสัมผัสเชื้อ",
+        "alternative": "Brincidofovir (TEMBEXA - Oral lipid-conjugate prodrug ของ Cidofovir ขนาดยา 200 mg สัปดาห์ละครั้ง รวม 2 สัปดาห์ ปลอดภัยต่อไตมากกว่า Cidofovir) หรือ IV Cidofovir (ร่วมกับ Oral Probenecid และสารน้ำ IV เพื่อลดพิษต่อไต)",
+        "resistance": "การป้องกันและการควบคุมการระบาด: ฉีดวัคซีนป้องกัน Smallpox (JYNNEOS / ACAM2000) ภายใน 4 วันหลังสัมผัสเชื้อสามารถป้องกันการเกิดโรคหรือลดความรุนแรงได้อย่างมีนัยสำคัญ; ระวังการติดเชื้อแบคทีเรียซ้ำซ้อนที่ผิวหนัง (Secondary bacterial infection จาก S. aureus และ S. pyogenes)"
       }
     },
     "viewType": "humanoid",
@@ -189,33 +204,51 @@
         "title": "กลไกก่อโรค (Pathogenesis)",
         "virulenceFactors": [
           {
+            "name": "Protein A (SpA)",
+            "mechanism": "จับกับส่วน Fc ของ IgG ในทิศทางกลับหัว ขัดขวางไม่ให้ Fab จับกับเชื้อ ทำให้ระบบ Complement และ Macrophages ไม่สามารถทำ Opsonization หรือ Phagocytosis ได้",
+            "desc": "จับกับส่วน Fc ของ IgG ในทิศทางกลับหัว ขัดขวางไม่ให้ Fab จับกับเชื้อ ทำให้ระบบ Complement และ Macrophages ไม่สามารถทำ Opsonization หรือ Phagocytosis ได้"
+          },
+          {
             "name": "Exfoliative Toxins A & B",
-            "mechanism": "เอนไซม์ Serine protease ย่อยสลาย Desmoglein-1 ในชั้น Stratum granulosum ทำให้เซลล์ผิวหนังกำพร้าแยกตัว เกิด Bullous impetigo และ SSSS"
+            "mechanism": "เอนไซม์ Serine protease จำเพาะที่ย่อยสลาย Desmoglein-1 ในชั้น Stratum granulosum ของผิวหนังกำพร้า ทำให้เกิดการแยกชั้นของเซลล์ผิวหนัง ก่อให้เกิด Bullous impetigo และ Staphylococcal Scalded Skin Syndrome (SSSS โดยที่ Nikolsky sign positive)",
+            "desc": "เอนไซม์ Serine protease จำเพาะที่ย่อยสลาย Desmoglein-1 ในชั้น Stratum granulosum ของผิวหนังกำพร้า ทำให้เกิดการแยกชั้นของเซลล์ผิวหนัง ก่อให้เกิด Bullous impetigo และ Staphylococcal Scalded Skin Syndrome (SSSS โดยที่ Nikolsky sign positive)"
           },
           {
-            "name": "Coagulase Enzyme",
-            "mechanism": "เปลี่ยน Fibrinogen เป็นก้อน Fibrin mesh ล้อมรอบตัวเชื้อ สร้างเป็นกำแพงฝี (Abscess wall) ขัดขวางการเข้าถึงของเม็ดเลือดขาว"
+            "name": "Panton-Valentine Leukocidin (PVL) & Alpha-toxin",
+            "mechanism": "PVL เป็น Cytotoxin เจาะรูทำลายเซลล์เม็ดเลือดขาว Neutrophils ทำให้เกิดฝีหนองลึกและเนื้อตายรุนแรง (Necrotizing fasciitis/pneumonia มักพบใน CA-MRSA); Alpha-toxin เจาะรูบนเยื่อหุ้มเซลล์ทำให้เกิด Tissue necrosis",
+            "desc": "PVL เป็น Cytotoxin เจาะรูทำลายเซลล์เม็ดเลือดขาว Neutrophils ทำให้เกิดฝีหนองลึกและเนื้อตายรุนแรง (Necrotizing fasciitis/pneumonia มักพบใน CA-MRSA); Alpha-toxin เจาะรูบนเยื่อหุ้มเซลล์ทำให้เกิด Tissue necrosis"
           },
           {
-            "name": "Panton-Valentine Leukocidin (PVL)",
-            "mechanism": "เจาะรูผนังเซลล์ Neutrophils ทำให้เซลล์แตกตาย ปล่อยเอนไซม์ย่อยเนื้อเยื่อ ก่อโพรงหนองเหลวขนาดใหญ่และเนื้อตายรุนแรง (Necrotizing lesion)"
+            "name": "Coagulase & Clumping Factor",
+            "mechanism": "เปลี่ยน Fibrinogen ในพลาสมาให้กลายเป็น Fibrin mesh ล้อมรอบตัวเชื้อ สร้างเป็นกำแพงฝีหนอง (Abscess wall) ขัดขวางยาปฏิชีวนะและเซลล์ภูมิคุ้มกัน",
+            "desc": "เปลี่ยน Fibrinogen ในพลาสมาให้กลายเป็น Fibrin mesh ล้อมรอบตัวเชื้อ สร้างเป็นกำแพงฝีหนอง (Abscess wall) ขัดขวางยาปฏิชีวนะและเซลล์ภูมิคุ้มกัน"
           }
         ],
-        "transmission": "สัมผัสโดยตรงกับแผลหรือสะเก็ด, แผลถลอก/แมลงกัดที่เป็นทางเปิดให้เชื้อประจำถิ่นบุกรุก"
+        "transmission": "การสัมผัสโดยตรง (Direct contact) กับแผลหรือสะเก็ด, แผลถลอก/แมลงกัดที่เป็นทางเปิดให้เชื้อประจำถิ่นบุกรุก, และการแพร่กระจายผ่านมือบุคลากรทางการแพทย์ในโรงพยาบาล",
+        "immuneEvasion": [
+          "สร้างเอนไซม์ Catalase สลาย Hydrogen peroxide (H2O2) จากการทำปฏิกิริยา Respiratory burst ของ Neutrophils",
+          "สร้าง Golden carotenoid pigment (Staphyloxanthin) ทำหน้าที่เป็นสารต้านอนุมูลอิสระดูดซับ Reactive Oxygen Species (ROS)",
+          "สร้าง Biofilm บนพื้นผิววัสดุแปลกปลอม (Prosthetic joints, Central lines, Pacemakers)"
+        ]
       },
       "diagnosis": {
-        "title": "การตรวจรอยโรคและ Lab (Lesion Exam & Lab)",
+        "title": "การตรวจวินิจฉัยและห้องปฏิบัติการ (Diagnosis & Laboratory)",
         "stains": [
-          "Gram Stain จากหนองใต้สะเก็ด: พบ Gram-positive cocci in clusters (พวงองุ่นสีม่วงเข้ม) ปะปนกับ Neutrophils จำนวนมาก"
+          "Gram Stain: Gram-positive spherical cocci in grape-like clusters (พวงองุ่นสีม่วงเข้ม)",
+          "หนองใต้สะเก็ดแผลพบ Neutrophils และเซลล์แบคทีเรียถูกจับกินภายในเซลล์"
         ],
         "culture": [
-          "Blood Agar: Golden-yellow colonies พร้อม Beta-hemolysis วงใสชัดเจน",
-          "Mannitol Salt Agar (MSA): ทนเกลือ 7.5% NaCl และ Ferment mannitol เปลี่ยนสีอาหารจากแดงเป็นเหลืองสด"
+          "Sheep Blood Agar: โคโลนีกลม นูน ผิวเรียบ สีเหลืองทอง (Golden-yellow colonies) ล้อมรอบด้วย Beta-hemolysis วงใสชัดเจน",
+          "Mannitol Salt Agar (MSA): อาหารคัดเลือกทนเกลือ 7.5% NaCl และ Ferment mannitol เปลี่ยนอาหารจากสีแดงเป็นสีเหลืองสด",
+          "CHROMagar MRSA: โคโลนีเปลี่ยนเป็นสีม่วงชมพู (Mauve) ภายใน 24 ชม. สำหรับคัดกรอง MRSA"
         ],
         "biochemical": [
-          "Catalase: POSITIVE (+) ฟองฟู่ O2 (แยกจาก Streptococcus)",
-          "Coagulase: POSITIVE (+) จับก้อนลิ่มพลาสมา (แยกจาก S. epidermidis)"
-        ]
+          "Catalase Test: Positive (+) เกิดฟองก๊าซออกซิเจนทันทีเมื่อหยด H2O2 (แยกจาก Streptococcus ซึ่งเป็น Negative)",
+          "Coagulase Test (Tube & Slide): Positive (+) ตกตะกอน Fibrin clot ภายใน 4 ชม. (Gold standard แยกจาก CoNS เช่น S. epidermidis)",
+          "DNAse Test: Positive (+) ย่อยสลาย DNA ในอาหารเลี้ยงเชื้อ",
+          "Novobiocin Susceptibility: Sensitive (แยกจาก S. saprophyticus ซึ่งดื้อต่อ Novobiocin)"
+        ],
+        "staining": "Gram Stain จากหนองหรือเนื้อเยื่อ: พบ Gram-positive cocci in clusters (รูปกลมติดสีม่วงเข้มเรียงตัวเป็นพวงคล้ายพวงองุ่น) ปะปนกับเซลล์เม็ดเลือดขาว Neutrophils จำนวนมาก"
       },
       "clinical": {
         "title": "Clinical Vignettes & NL1 Pearls",
@@ -230,10 +263,12 @@
         "highYieldNote": "ข้อสอบมักถามการแยก Impetigo: สาเหตุส่วนใหญ่คือ S. aureus (พบมากที่สุด) และรองลงมาคือ S. pyogenes (Group A Strep) | ถ้าเป็นฝีหนอง (Abscess) หลักการรักษาสำคัญที่สุดคือ Incision & Drainage (I&D) เพราะยาปฏิชีวนะซึมผ่านผนังไฟบรินเข้าไปได้ไม่ดี!"
       },
       "treatment": {
-        "title": "การดูแลแผลและการรักษา (Wound Care & Rx)",
-        "firstLine": "Impetigo แผลน้อย: Topical Mupirocin 2% ointment หรือ Fusidic acid ทาวันละ 2-3 ครั้ง",
+        "title": "แนวทางการรักษาตามไกด์ไลน์ (Treatment & Guidelines)",
+        "firstLine": "MSSA (Methicillin-Susceptible): IV Cefazolin 2 g q8h หรือ IV Cloxacillin / Nafcillin 2 g q4h; อาการไม่รุนแรง (Outpatient): Oral Dicloxacillin 500 mg qid หรือ Cephalexin 500 mg qid นาน 7-10 วัน; MRSA (Methicillin-Resistant): IV Vancomycin (15-20 mg/kg q8-12h ปรับตาม eGFR และ TDM AUC/MIC 400-600) หรือ IV Daptomycin (6-10 mg/kg q24h *ห้ามใช้ในปอดอักเสบเด็ดขาด*)",
         "systemic": "Impetigo แผลกว้าง / มีไข้: Oral Cloxacillin, Cephalexin หรือ Amoxicillin-clavulanate (Augmentin)",
-        "abscessManagement": "Abscess / Furuncle: Incision & Drainage (I&D) ผ่าระบายหนองออกให้หมด พร้อมล้างแผลด้วย Normal saline"
+        "abscessManagement": "Abscess / Furuncle: Incision & Drainage (I&D) ผ่าระบายหนองออกให้หมด พร้อมล้างแผลด้วย Normal saline",
+        "alternative": "Oral MRSA Outpatient (แผลผิวหนังและเนื้อเยื่ออ่อน): Oral Trimethoprim-Sulfamethoxazole (TMP-SMX 1-2 DS tabs bid) หรือ Oral Doxycycline (100 mg bid) หรือ Oral Clindamycin (300-450 mg tid เฉพาะกรณี D-test negative); Severe MRSA Inpatient: Ceftaroline (5th gen cephalosporin 600 mg q12h) หรือ Linezolid (600 mg q12h)",
+        "resistance": "กลไกการดื้อยาสำคัญ: MRSA เกิดจากการมียีน mecA บน Staphylococcal Cassette Chromosome (SCCmec) ซึ่งถอดรหัสเป็น Penicillin-Binding Protein 2a (PBP2a) ที่มีแรงจับกับยากลุ่ม Beta-lactams เกือบทุกชนิดต่ำมาก; ห้ามใช้ Cephalosporins รุ่น 1-4 หรือ Carbapenems กับ MRSA เด็ดขาด! และหากพบฝีหนอง (Abscess) การระบายหนอง (Incision & Drainage: I&D) คือหัวใจสำคัญอันดับหนึ่งของการรักษา"
       }
     },
     "viewType": "humanoid",
@@ -324,28 +359,48 @@
         "title": "กลไกก่อโรค (Pathogenesis)",
         "virulenceFactors": [
           {
-            "name": "Lethal Factor (LF) + PA",
-            "mechanism": "LF เป็น Zinc metalloprotease ตัดย่อย MAPKK ทำให้ Macrophages และ Endothelial cells ตายเฉียบพลัน นำไปสู่การเกิดเนื้อตายสีดำ (Black Eschar)"
+            "name": "Poly-D-Glutamic Acid Capsule",
+            "mechanism": "แคปซูลกรดอะมิโนโพลี-ดี-กลูตามิก (ถอดรหัสบนพลาสมิด pXO2) ไม่กระตุ้นการสร้างแอนติบอดีและป้องกันการจับกินของ Phagocytes ได้อย่างสมบูรณ์",
+            "desc": "แคปซูลกรดอะมิโนโพลี-ดี-กลูตามิก (ถอดรหัสบนพลาสมิด pXO2) ไม่กระตุ้นการสร้างแอนติบอดีและป้องกันการจับกินของ Phagocytes ได้อย่างสมบูรณ์"
           },
           {
-            "name": "Edema Factor (EF) + PA",
-            "mechanism": "EF ทำงานเป็น Calmodulin-dependent adenylate cyclase เพิ่มปริมาณ intracellular cAMP อย่างมหาศาล ก่อภาวะบวมน้ำเยลลี่รุนแรง (Gelatinous Edema)"
+            "name": "Protective Antigen (PA - 83 kDa)",
+            "mechanism": "โปรตีนแกนหลัก (ถอดรหัสบนพลาสมิด pXO1) จับกับ Anthrax Toxin Receptors (CMG2/TEM8) บนผิวเซลล์โฮสต์ ถูก Furin ตัดเหลือ PA63 รวมตัวเป็น Heptamer prepore เพื่อนำพา Edema Factor และ Lethal Factor เข้าสู่เซลล์",
+            "desc": "โปรตีนแกนหลัก (ถอดรหัสบนพลาสมิด pXO1) จับกับ Anthrax Toxin Receptors (CMG2/TEM8) บนผิวเซลล์โฮสต์ ถูก Furin ตัดเหลือ PA63 รวมตัวเป็น Heptamer prepore เพื่อนำพา Edema Factor และ Lethal Factor เข้าสู่เซลล์"
           },
           {
-            "name": "Poly-D-glutamic Acid Capsule",
-            "mechanism": "แคปซูลโปรตีนชนิดพิเศษ (Polypeptide ไม่ใช่น้ำตาล) ต้านทานการกลืนกินของเม็ดเลือดขาว (Anti-phagocytic)"
+            "name": "Edema Factor (EF - 89 kDa)",
+            "mechanism": "เอนไซม์ Calmodulin-dependent Adenylate Cyclase เปลี่ยน ATP เป็น cAMP ในปริมาณมหาศาล ทำให้ไอออนและน้ำรั่วออกจากเซลล์ ก่อให้เกิดอาการบวมน้ำรุนแรงแบบกดไม่บุ๋ม (Extensive gelatinous non-pitting edema) รอบแผล",
+            "desc": "เอนไซม์ Calmodulin-dependent Adenylate Cyclase เปลี่ยน ATP เป็น cAMP ในปริมาณมหาศาล ทำให้ไอออนและน้ำรั่วออกจากเซลล์ ก่อให้เกิดอาการบวมน้ำรุนแรงแบบกดไม่บุ๋ม (Extensive gelatinous non-pitting edema) รอบแผล"
+          },
+          {
+            "name": "Lethal Factor (LF - 90 kDa)",
+            "mechanism": "เอนไซม์ Zinc metalloprotease ตัดทำลาย Mitogen-Activated Protein Kinase Kinases (MAPKK / MEK 1-7) ยับยั้งการส่งสัญญาณภายในเซลล์ กระตุ้น Macrophage lysis และหลั่งสารอักเสบทำให้เกิดเนื้อตายดำ (Black necrotic eschar)",
+            "desc": "เอนไซม์ Zinc metalloprotease ตัดทำลาย Mitogen-Activated Protein Kinase Kinases (MAPKK / MEK 1-7) ยับยั้งการส่งสัญญาณภายในเซลล์ กระตุ้น Macrophage lysis และหลั่งสารอักเสบทำให้เกิดเนื้อตายดำ (Black necrotic eschar)"
           }
         ],
-        "transmission": "สปอร์เชื้อเข้าทางบาดแผลถลอกที่ผิวหนัง จากการสัมผัสหนังสัตว์ ขนสัตว์ หรือดินปนเปื้อน (Woolsorter's disease)"
+        "transmission": "การสัมผัสโดยตรงของสปอร์กับผิวหนังที่มีรอยถลอก (Cutaneous anthrax 95% ของเคส), การสูดดมสปอร์จากขนสัตว์/หนังสัตว์ (Inhalational / Woolsorter's disease), หรือการบริโภคเนื้อสัตว์ป่วย (Gastrointestinal anthrax)",
+        "immuneEvasion": [
+          "สปอร์ทนทานต่อความร้อน ความแห้งแล้ง และสารเคมี สามารถตกค้างในดินและขนสัตว์ได้นานหลายสิบปี",
+          "EF และ LF ยับยั้ง Chemotaxis และ Phagocytosis ของ Neutrophils อย่างสิ้นเชิง"
+        ]
       },
       "diagnosis": {
-        "title": "การตรวจรอยโรคและ Lab (Lesion Exam & Lab)",
+        "title": "การตรวจวินิจฉัยและห้องปฏิบัติการ (Diagnosis & Laboratory)",
         "stains": [
-          "Gram Stain จากสารคัดหลั่งใต้สะเก็ด: พบ Gram-positive bacilli ขนาดใหญ่มาก เรียงตัวเป็นสายยาวคล้าย 'ตู้รถไฟ' (Boxcar rods in chains)",
-          "M'Fadyean capsule stain: เห็น Pink/Purple capsule ล้อมรอบตัวเชื้อสีน้ำเงิน"
+          "Gram Stain: Large Gram-positive rods with blunt ends in chains ('Boxcar' appearance)",
+          "McFadyean capsule stain: ย้อมด้วย Polychrome methylene blue พบ Pink/purple capsule ล้อมรอบตัวแบคทีเรียสีน้ำเงิน"
         ],
         "culture": [
-          "Blood Agar: โคโลนีสีเทาด้าน ขอบหยักไม่สม่ำเสมอ คล้าย 'หัวเมดูซา' (Medusa head colonies) และ Non-hemolytic (แกมม่า-ฮีโมไลซิส)"
+          "Sheep Blood Agar: โคโลนีสีเทาขาว ผิวด้านคล้ายกระจกฝ้า ขอบหยักไม่สม่ำเสมอยื่นคล้ายเส้นผมหรือหัวนางเมดูซา (Medusa-head colonies) และที่สำคัญคือ 'Non-hemolytic (Gamma-hemolytic)' ช่วยแยกจาก B. cereus",
+          "Gelatin Stab: เกิดการย่อยสลายเจลาตินเป็นรูปต้นสนกลับหัว (Inverted fir-tree pattern)",
+          "String of Pearls Test: เมื่อเลี้ยงบนอาหารผสม Penicillin 0.05-0.5 U/mL เซลล์จะบวมกลมเรียงต่อกันคล้ายสายสร้อยไข่มุก"
+        ],
+        "staining": "Gram Stain จากของเหลวใต้ขอบแผลหรือเลือด: พบ Large Gram-positive bacilli with square ends arranged in long chains (แท่งเหลี่ยมหัวท้ายตัดคล้ายตู้รถไฟ boxcar ต่อกันเป็นสายยาว) ย้อมสปอร์ด้วยวิธี Schaeffer-Fulton พบ Oval central/subterminal spores (ไม่พองขยายตัวเซลล์)",
+        "biochemical": [
+          "Motility Test: NON-MOTILE (ไม่เคลื่อนที่ ซึ่งเป็นจุดสำคัญมากในการแยกจาก B. cereus ที่เคลื่อนที่ได้)",
+          "Catalase Test: Positive (+)",
+          "PCR: ตรวจหายีนจำเพาะบนพลาสมิด pXO1 (pagA) และ pXO2 (capC)"
         ]
       },
       "clinical": {
@@ -361,10 +416,12 @@
         "highYieldNote": "สูตรจำข้อสอบ NL1/USMLE: 'Anthrax = Anthracite (ถ่านหินสีดำ) = Black Eschar' | จุดแยกโรค: แผลแอนแทรกซ์ 'ไม่เจ็บ (Painless)' บวมน้ำมหาศาล (Edema factor) และโคลอนีเป็น 'Medusa head' ไม่แตกเม็ดเลือดแดง (Non-hemolytic)!"
       },
       "treatment": {
-        "title": "การดูแลแผลและการรักษา (Wound Care & Rx)",
-        "firstLine": "Ciprofloxacin หรือ Doxycycline รับประทานต่อเนื่อง 60 วัน",
+        "title": "แนวทางการรักษาตามไกด์ไลน์ (Treatment & Guidelines)",
+        "firstLine": "Cutaneous Anthrax (ไม่รุนแรง / ไม่มีบวมที่ศีรษะและคอ): Oral Ciprofloxacin 500 mg q12h หรือ Oral Doxycycline 100 mg q12h นาน 7-10 วัน (แต่หากเกิดจากการก่อการร้ายทางชีวภาพต้องให้นาน 60 วัน); Systemic / Inhalational / Meningeal / Severe Cutaneous with Edema: IV Ciprofloxacin (400 mg q8h) PLUS Protein Synthesis Inhibitor (IV Clindamycin 900 mg q8h หรือ Linezolid 600 mg q12h เพื่อหยุดการสร้างสารพิษ) PLUS ยาตัวที่สาม (เช่น Meropenem 2 g q8h หรือ Ampicillin) นานอย่างน้อย 14 วัน แล้วเปลี่ยนเป็นยากินจนครบ 60 วัน",
         "woundCare": "ห้ามขูด ขูดลอก หรือผ่าตัดสะเก็ดดำเด็ดขาด (ห้าม I&D หรือ Debridement) เพราะจะกระตุ้นให้เชื้อและสารพิษแพร่กระจายเข้ากระแสเลือดจนเกิด Systemic Anthrax!",
-        "antitoxin": "Raxibacumab หรือ Obiltoxaximab (Monoclonal antibodies ต่อ Protective Antigen)"
+        "antitoxin": "Raxibacumab หรือ Obiltoxaximab (Monoclonal antibodies ต่อ Protective Antigen)",
+        "alternative": "Levofloxacin 750 mg IV/PO q24h หรือ Moxifloxacin 400 mg IV/PO q24h; สตรีมีครรภ์: Ciprofloxacin ถือเป็นยาแนะนำอันดับหนึ่งเนื่องจากประโยชน์เหนือกว่าความเสี่ยง",
+        "resistance": "แอนติท็อกซินเสริมการรักษา (Adjunctive Antitoxins): ในผู้ป่วย Systemic anthrax แนะนำให้แอนติบอดีลบล้างพิษร่วมด้วย เช่น Anthrax Immune Globulin Intravenous (AIGIV) หรือ Raxibacumab / Obiltoxaximab (Monoclonal antibodies ต่อ Protective Antigen); ห้ามกรีดหรือผ่าตัดแผล Eschar เด็ดขาด (Contraindicated surgical debridement) เพราะจะทำให้เชื้อและสารพิษแพร่กระจายเข้าสู่กระแสเลือดรวดเร็วขึ้น!"
       }
     },
     "viewType": "humanoid",
@@ -455,29 +512,47 @@
         "title": "กลไกก่อโรค (Pathogenesis)",
         "virulenceFactors": [
           {
-            "name": "Endarteritis Obliterans",
-            "mechanism": "Treponemes บุกรุกผนังหลอดเลือดขนาดเล็ก กระตุ้นให้ Endothelial cells หนาตัวจนรูหลอดเลือดตีบตัน นำไปสู่การขาดเลือดเฉพาะจุดและเกิดแผลหลุมแข็ง"
+            "name": "Periplasmic Endoflagella & Corkscrew Motility",
+            "mechanism": "แฟลกเจลลาซ่อนตัวอยู่ภายใน Periplasmic space ระหว่างชั้นเยื่อหุ้มเซลล์ด้านในและนอก หมุนตัวทำให้สไปโรขีตเคลื่อนที่แบบควงสว่าน (Corkscrew motility) ทะลวงผ่านรอยต่อเซลล์เยื่อบุผิวและเจาะแทรกซึมเข้าสู่เนื้อเยื่อชั้นลึกได้อย่างรวดเร็ว",
+            "desc": "แฟลกเจลลาซ่อนตัวอยู่ภายใน Periplasmic space ระหว่างชั้นเยื่อหุ้มเซลล์ด้านในและนอก หมุนตัวทำให้สไปโรขีตเคลื่อนที่แบบควงสว่าน (Corkscrew motility) ทะลวงผ่านรอยต่อเซลล์เยื่อบุผิวและเจาะแทรกซึมเข้าสู่เนื้อเยื่อชั้นลึกได้อย่างรวดเร็ว"
           },
           {
-            "name": "Hyaluronidase & Mucopolysaccharidase",
-            "mechanism": "ย่อยสลายสารเคลือบเนื้อเยื่อเกี่ยวพัน ทำให้เชื้อเกลียวสว่านสามารถเจาะทะลุผิวหนังและแทรกซึมเข้าหลอดเลือดได้อย่างรวดเร็ว"
+            "name": "Endothelial Adherence & Obliterative Endarteritis",
+            "mechanism": "โปรตีน Tp0155 และ Tp0483 ยึดเกาะกับ Fibronectin และ Laminin บนผิวเซลล์เยื่อบุหลอดเลือด เหนี่ยวนำให้เกิดการอักเสบของผนังหลอดเลือดแดงขนาดเล็ก (Endarteritis obliterans) ร่วมกับ Perivascular plasma cell infiltration ทำให้หลอดเลือดตีบตัน เนื้อเยื่อขาดเลือดตายกลายเป็นแผลริมแข็ง (Hard chancre) และกัมมา (Gumma)",
+            "desc": "โปรตีน Tp0155 และ Tp0483 ยึดเกาะกับ Fibronectin และ Laminin บนผิวเซลล์เยื่อบุหลอดเลือด เหนี่ยวนำให้เกิดการอักเสบของผนังหลอดเลือดแดงขนาดเล็ก (Endarteritis obliterans) ร่วมกับ Perivascular plasma cell infiltration ทำให้หลอดเลือดตีบตัน เนื้อเยื่อขาดเลือดตายกลายเป็นแผลริมแข็ง (Hard chancre) และกัมมา (Gumma)"
           },
           {
-            "name": "Dense Plasma Cell Infiltration",
-            "mechanism": "การตอบสนองทางภูมิคุ้มกันเรื้อรังทำให้เกิดการสะสมของ Plasma cells หนาแน่นรอบหลอดเลือดในชั้นหนังแท้"
+            "name": "Hyaluronidase Production",
+            "mechanism": "ย่อยสลาย Hyaluronic acid ใน Extracellular matrix ของโฮสต์ ช่วยให้เชื้อแทรกซึมผ่านเนื้อเยื่อเกี่ยวพันเข้าสู่หลอดเลือดและระบบน้ำเหลืองกระจายไปทั่วร่างกายตั้งแต่ระยะแรก",
+            "desc": "ย่อยสลาย Hyaluronic acid ใน Extracellular matrix ของโฮสต์ ช่วยให้เชื้อแทรกซึมผ่านเนื้อเยื่อเกี่ยวพันเข้าสู่หลอดเลือดและระบบน้ำเหลืองกระจายไปทั่วร่างกายตั้งแต่ระยะแรก"
           }
         ],
-        "transmission": "การสัมผัสทางเพศสัมพันธ์โดยตรงกับรอยโรคที่มีเชื้อ (Sexual contact) หรือการถ่ายทอดจากแม่สู่ทารก"
+        "transmission": "การมีเพศสัมพันธ์โดยตรง (Sexual contact) สัมผัสกับแผล Chancre, Condyloma lata หรือผื่นผิวหนัง, การส่งผ่านจากมารดาสู่ทารกในครรภ์ผ่านรก (Congenital syphilis), และการรับเลือดที่ปนเปื้อน",
+        "immuneEvasion": [
+          "มี Outer Membrane Proteins บนผิวน้อยมากผิดปกติ (เปรียบเสมือน 'Stealth Pathogen') ทำให้แอนติบอดีตรวจจับแทบไม่ได้",
+          "ห่อหุ้มเซลล์ด้วยสารเคลือบ Fibronectin ของโฮสต์เพื่อพรางตัวจากระบบภูมิคุ้มกัน"
+        ]
       },
       "diagnosis": {
-        "title": "การตรวจรอยโรคและ Lab (Lesion Exam & Lab)",
+        "title": "การตรวจวินิจฉัยและห้องปฏิบัติการ (Diagnosis & Laboratory)",
         "stains": [
-          "Darkfield Microscopy จากน้ำเหลืองที่ก้นแผล: เห็น Spirochetes รูปร่างเกลียวสว่านบาง เคลื่อนที่หมุนควงสว่าน (Corkscrew motility) ทันที",
-          "Direct Fluorescent Antibody (DFA-TP): ตรวจหาแอนติเจนของ T. pallidum ด้วยแอนติบอดีเรืองแสง"
+          "Darkfield Microscopy: Corkscrew motility of delicate slender spirochetes",
+          "DFA-TP (Direct Fluorescent Antibody for T. pallidum): จำเพาะสูงมากจาก exudate",
+          "Warthin-Starry Silver Stain: ตรวจพบสไปโรขีตสีดำขดเป็นเกลียวในเนื้อเยื่อ"
         ],
         "serology": [
           "Nontreponemal tests (VDRL / RPR): ตรวจคัดกรอง (แต่อาจให้ผลลบปลอมได้ในระยะแผลแรกเริ่ม 1-2 สัปดาห์แรก!)",
           "Treponemal tests (FTA-ABS / TP-PA): ตรวจยืนยันความจำเพาะสูง ติดบวกตลอดชีวิต"
+        ],
+        "staining": "Darkfield Microscopy จากสารคัดหลั่งแผลริมแข็ง Chancre: พบเกลียวสไปโรขีตเรียวยาว (6-15 เกลียว) ขยับเคลื่อนที่หมุนตัวแบบควงสว่านอย่างว่องไว; Direct Fluorescent Antibody (DFA-TP): ตรวจพบเชื้อติดแอนติบอดีเรืองแสง; Silver Impregnation Stain (Warthin-Starry หรือ Steiner): ย้อมชิ้นเนื้อติดสีดำ",
+        "culture": [
+          "ไม่สามารถเพาะเลี้ยงบนอาหารเลี้ยงเชื้อสังเคราะห์ทั่วไปได้ (Cannot be cultured in vitro) ต้องเลี้ยงในลูกอัณฑะกระต่าย (Rabbit infectivity test: RIT) เพื่อการวิจัยเท่านั้น",
+          "การวินิจฉัยหลักในเวชปฏิบัติจึงใช้ Serology (การตรวจเลือดทางน้ำเหลือง)"
+        ],
+        "biochemical": [
+          "Non-Treponemal Tests (คัดกรองและติดตามผลการรักษา): VDRL และ RPR วัดแอนติบอดีต่อ Cardiolipin-lecithin-cholesterol antigen (ผลบวกบ่งชี้ active disease; การรักษาได้ผลเมื่อ Titer ลดลง >= 4 เท่า หรือ 2 dilutions ภายใน 6-12 เดือน)",
+          "Treponemal Tests (ยืนยันการติดเชื้อ): FTA-ABS, TP-PA, EIA/CIA, TPHA (ผลบวกตลอดชีวิต แม้รักษาหายแล้ว)",
+          "ตรวจ CSF ในรายที่สงสัย Neurosyphilis: VDRL ใน CSF (จำเพาะสูงมาก), เม็ดเลือดขาวใน CSF > 5 cells/uL, โปรตีนสูง"
         ]
       },
       "clinical": {
@@ -493,10 +568,12 @@
         "highYieldNote": "ข้อสอบ NL1/USMLE ชอบเปรียบเทียบแผลที่อวัยวะเพศ: Syphilis (แผลริมแข็ง) = PAINLESS, Clean base, Hard induration | Chancroid (แผลริมอ่อน จาก H. ducreyi) = PAINFUL ('You cry with ducreyi'), Dirty necrotic base, Soft margin!"
       },
       "treatment": {
-        "title": "การดูแลแผลและการรักษา (Wound Care & Rx)",
-        "firstLine": "Benzathine Penicillin G 2.4 million units IM ฉีดเข็มเดียวครั้งเดียว (Single dose)",
+        "title": "แนวทางการรักษาตามไกด์ไลน์ (Treatment & Guidelines)",
+        "firstLine": "Primary, Secondary, Early Latent (< 1 ปี): Benzathine Penicillin G 2.4 ล้านยูนิต ฉีดเข้ากล้ามเนื้อ (IM) ครั้งเดียว (Single dose); Late Latent (> 1 ปี หรือไม่ทราบระยะ), Tertiary Syphilis (Cardiovascular / Gumma): Benzathine Penicillin G 2.4 ล้านยูนิต IM สัปดาห์ละครั้ง ติดต่อกัน 3 สัปดาห์ (รวม 7.2 ล้านยูนิต); Neurosyphilis / Ocular / Otic Syphilis: Aqueous Crystalline Penicillin G 18-24 ล้านยูนิตต่อวัน ทางหลอดเลือดดำ (IV) โดยให้ 3-4 ล้านยูนิต ทุก 4 ชม. หรือหยดต่อเนื่อง นาน 10-14 วัน",
         "allergy": "หากแพ้ Penicillin: Doxycycline 100 mg รับประทานวันละ 2 ครั้ง นาน 14 วัน (หญิงตั้งครรภ์ต้องทำ Penicillin Desensitization!)",
-        "reaction": "เฝ้าระวัง Jarisch-Herxheimer reaction (ไข้ หนาวสั่น ปวดกล้ามเนื้อ หลังฉีดยา 2-24 ชม. จากการแตกสลายของ Spirochetes)"
+        "reaction": "เฝ้าระวัง Jarisch-Herxheimer reaction (ไข้ หนาวสั่น ปวดกล้ามเนื้อ หลังฉีดยา 2-24 ชม. จากการแตกสลายของ Spirochetes)",
+        "alternative": "ผู้ป่วยแพ้ Penicillin (และไม่ได้ตั้งครรภ์): Oral Doxycycline 100 mg วันละ 2 ครั้ง นาน 14 วัน (สำหรับระยะแรก) หรือนาน 28 วัน (สำหรับระยะ Late latent) หรือ Oral Tetracycline 500 mg วันละ 4 ครั้ง หรือ Ceftriaxone 1-2 g IV/IM ต่อวัน นาน 10-14 วัน; *ข้อบังคับในสตรีมีครรภ์*: หากแพ้ Penicillin ต้องทำ Penicillin Desensitization แล้วรักษาด้วย Benzathine Penicillin G เท่านั้น! ห้ามใช้ Doxycycline หรือยาอื่นแทนเด็ดขาด",
+        "resistance": "ข้อควรระวังสำคัญ (Jarisch-Herxheimer Reaction): ผู้ป่วยอาจมีไข้สูง หนาวสั่น ปวดกล้ามเนื้อ ปวดศีรษะ และความดันตกชั่วคราว เกิดขึ้นภายใน 2-24 ชั่วโมงหลังได้รับ Penicillin เข็มแรก เกิดจากการที่สไปโรขีตถูกทำลายพร้อมกันจำนวนมากและปลดปล่อย Lipoproteins กระตุ้น Cytokine release ให้การรักษาตามอาการด้วยยาลดไข้พาราเซตามอล ไม่ใช่การแพ้ยาและไม่ต้องหยุดยาปฏิชีวนะ"
       }
     },
     "viewType": "humanoid",
@@ -587,29 +664,42 @@
         "title": "กลไกก่อโรค (Pathogenesis)",
         "virulenceFactors": [
           {
-            "name": "Retrograde Axonal Transport & Reactivation",
-            "mechanism": "เชื้อไวรัสแฝงตัวใน Dorsal Root Ganglion เมื่อร่างกายอ่อนแอ ไวรัสจะเดินทางย้อนกลับตาม Sensory axon สู่ผิวหนัง ก่ออาการปวดแสบร้อนและตุ่มน้ำ"
+            "name": "Viral Glycoproteins (gB, gC, gE, gH, gI)",
+            "mechanism": "ไกลโคโปรตีนบนผิวไวรัส (โดยเฉพาะ gE/gI complex) จับกับ Cellular receptors (Insulin-Degrading Enzyme และ Mannose-6-phosphate receptor) ช่วยให้ไวรัสหลอมรวมเยื่อหุ้มและแทรกซึมเข้าสู่เซลล์เยื่อบุผิวและเซลล์ประสาท",
+            "desc": "ไกลโคโปรตีนบนผิวไวรัส (โดยเฉพาะ gE/gI complex) จับกับ Cellular receptors (Insulin-Degrading Enzyme และ Mannose-6-phosphate receptor) ช่วยให้ไวรัสหลอมรวมเยื่อหุ้มและแทรกซึมเข้าสู่เซลล์เยื่อบุผิวและเซลล์ประสาท"
           },
           {
-            "name": "Intraepidermal Acantholysis",
-            "mechanism": "การเพิ่มจำนวนของไวรัสใน Keratinocytes ทำให้เกิด Ballooning degeneration และเซลล์หลุดลอยจากกัน กลายเป็นตุ่มน้ำใสชั้นตื้น"
+            "name": "Neuronal Latency & Retrograde Axonal Transport",
+            "mechanism": "หลังการติดเชื้ออีสุกอีใสระยะแรก ไวรัสเคลื่อนที่ย้อนกลับทางเส้นใยประสาทรับความรู้สึก (Retrograde axonal transport) ไปฝังตัวแฝงแบบ Latency ตลอดชีวิตใน Dorsal Root Ganglia (DRG) หรือ Trigeminal/Cranial nerve ganglia เมื่อภูมิคุ้มกัน CMI ลดลง จะแบ่งตัวย้อนกลับมาก่อโรคงูสวัดตามแนว Dermatome",
+            "desc": "หลังการติดเชื้ออีสุกอีใสระยะแรก ไวรัสเคลื่อนที่ย้อนกลับทางเส้นใยประสาทรับความรู้สึก (Retrograde axonal transport) ไปฝังตัวแฝงแบบ Latency ตลอดชีวิตใน Dorsal Root Ganglia (DRG) หรือ Trigeminal/Cranial nerve ganglia เมื่อภูมิคุ้มกัน CMI ลดลง จะแบ่งตัวย้อนกลับมาก่อโรคงูสวัดตามแนว Dermatome"
           },
           {
-            "name": "Cell-Cell Fusion (Syncytia Formation)",
-            "mechanism": "Viral glycoprotein spikes บนผิวเซลล์กระตุ้นให้เซลล์ข้างเคียงหลอมรวมกัน กลายเป็น Multinucleated Giant Cells"
+            "name": "Syncytia & Multinucleated Giant Cell Formation",
+            "mechanism": "ทำให้เซลล์ Keratinocytes หลอมรวมกันกลายเป็น Multinucleated giant cells และเกิด Ballooning degeneration จนเกิดตุ่มน้ำใสบนฐานผื่นแดงคล้ายหยดน้ำค้างบนกลีบกุหลาบ ('Dewdrops on a rose petal')",
+            "desc": "ทำให้เซลล์ Keratinocytes หลอมรวมกันกลายเป็น Multinucleated giant cells และเกิด Ballooning degeneration จนเกิดตุ่มน้ำใสบนฐานผื่นแดงคล้ายหยดน้ำค้างบนกลีบกุหลาบ ('Dewdrops on a rose petal')"
           }
         ],
-        "transmission": "ละอองฝอยทางเดินหายใจ (VZV) หรือการสัมผัสตุ่มน้ำและสารคัดหลั่งโดยตรง (HSV/VZV)"
+        "transmission": "ละอองฝอยทางเดินหายใจ (Airborne droplets) และการสัมผัสโดยตรงกับน้ำเหลืองจากตุ่มน้ำใสที่มีอนุภาคไวรัสความเข้มข้นสูง",
+        "immuneEvasion": [
+          "ยับยั้งการแสดงออกของ MHC Class I บนผิวเซลล์ที่ติดเชื้อ ทำให้ Cytotoxic T cells (CD8+) ตรวจจับไม่พบ",
+          "ขัดขวางวิถีสัญญาณของ Interferon-alpha และ Interferon-gamma ชะลอการตอบสนองของภูมิคุ้มกันโดยกำเนิด"
+        ]
       },
       "diagnosis": {
-        "title": "การตรวจรอยโรคและ Lab (Lesion Exam & Lab)",
+        "title": "การตรวจวินิจฉัยและห้องปฏิบัติการ (Diagnosis & Laboratory)",
         "stains": [
-          "Tzanck Smear: ขูดก้นตุ่มน้ำใส ป้ายสไลด์ ย้อม Wright-Giemsa stain พบ Multinucleated Giant Cells ชัดเจน (แยกไวรัสกลุ่ม Herpes ออกจากสาเหตุอื่น)",
-          "Biopsy: พบ Cowdry A inclusions (ก้อน Eosinophilic inclusions ภายใน Nucleus พร้อมมี Halos ล้อมรอบ)"
+          "Tzanck Smear: Multinucleated giant cells with molding of nuclei (Cowdry A inclusions)",
+          "Direct Fluorescent Antibody (DFA): ตรวจจับ VZV-specific glycoproteins เร็วและแม่นยำ"
         ],
         "culture": [
-          "PCR: VZV/HSV DNA detection (วิธีตรวจที่มีความไวและแม่นยำสูงสุด)",
-          "Direct Fluorescent Antibody (DFA): แยกสายพันธุ์ระหว่าง HSV-1, HSV-2 และ VZV"
+          "VZV Real-time PCR จากน้ำในตุ่มน้ำใสหรือสะเก็ด: เป็นวิธีที่ไวที่สุด (Sensitivity > 95%) และเป็น Gold standard ในการตรวจยืนยัน",
+          "Viral Culture: เพาะบน Human embryonic lung fibroblasts (เจริญช้า 1-2 สัปดาห์ ไว้น้อยกว่า HSV)",
+          "CSF Analysis ในผู้ป่วยสงสัย VZV Encephalitis/Meningitis: ตรวจพบ VZV DNA ด้วย PCR และระดับแอนติบอดีจำเพาะ"
+        ],
+        "staining": "Tzanck Smear จากก้นตุ่มน้ำใสที่เพิ่งผุด (ขูดเซลล์จากก้นแผลย้อม Wright หรือ Giemsa stain): พบ Multinucleated Giant Cells และเซลล์เยื่อบุผิวบวมพอง (Ballooning degeneration) ร่วมกับ Cowdry A intranuclear inclusion bodies (แยกกลุ่ม Herpesviridae ออกจากไวรัสอื่น)",
+        "biochemical": [
+          "Serology: VZV IgG (ตรวจภูมิคุ้มกันเดิมหรือก่อนให้วัคซีน) และ IgM (บ่งชี้การติดเชื้อเฉียบพลัน)",
+          "VZV Ophthalmicus: ต้องย้อม Fluorescein ตรวจตาด้วย Slit lamp เสมอเพื่อดู Pseudodendritic keratitis"
         ]
       },
       "clinical": {
@@ -626,10 +716,12 @@
         "highYieldNote": "ข้อสอบ NL1/USMLE: Tzanck smear บอกได้ว่าเป็นกลุ่ม Herpesviridae (HSV หรือ VZV) แต่แยกชนิดระหว่าง HSV กับ VZV ไม่ได้! หากต้องการแยกชนิดต้องใช้ PCR หรือ DFA | และจำ 'Cowdry A = Intranuclear (Herpes)' ต่างจาก 'Guarnieri = Intracytoplasmic (Poxvirus)'!"
       },
       "treatment": {
-        "title": "การดูแลแผลและการรักษา (Wound Care & Rx)",
-        "firstLine": "Acyclovir, Valacyclovir หรือ Famciclovir เริ่มยาให้เร็วที่สุดภายใน 72 ชม.",
+        "title": "แนวทางการรักษาตามไกด์ไลน์ (Treatment & Guidelines)",
+        "firstLine": "Herpes Zoster (งูสวัดในผู้ใหญ่): Oral Valacyclovir 1,000 mg วันละ 3 ครั้ง (TID) นาน 7 วัน (เป็นยาอันดับหนึ่งเนื่องจาก Bioavailability สูงกว่า Acyclovir 3-5 เท่า) หรือ Oral Famciclovir 500 mg TID นาน 7 วัน หรือ Oral Acyclovir 800 mg วันละ 5 ครั้ง นาน 7 วัน (ควรเริ่มยาภายใน 72 ชม. หลังผื่นขึ้น); Varicella (อีสุกอีใสในวัยรุ่น/ผู้ใหญ่/คนท้องไตรมาส 2-3): Oral Valacyclovir 1,000 mg TID นาน 5-7 วัน; Severe / Disseminated / Immunocompromised / VZV Encephalitis / Ramsay Hunt Syndrome: IV Acyclovir 10 mg/kg ทุก 8 ชม. นาน 10-14 วัน",
         "woundCare": "ประคบเย็นด้วยน้ำเกลือสะอาด (Normal saline compresses) ไม่แกะเกา ป้องกันการติดเชื้อแบคทีเรียแทรกซ้อน (Impetiginization)",
-        "prevention": "วัคซีนป้องกันอีสุกอีใส (Varicella vaccine) และวัคซีนป้องกันงูสวัด (Shingrix - Recombinant zoster vaccine)"
+        "prevention": "วัคซีนป้องกันอีสุกอีใส (Varicella vaccine) และวัคซีนป้องกันงูสวัด (Shingrix - Recombinant zoster vaccine)",
+        "alternative": "ผู้ป่วยที่ดื้อต่อ Acyclovir (Acyclovir-resistant จากยีน Thymidine Kinase กลายพันธุ์ พบบ่อยในผู้ป่วยเอดส์): IV Foscarnet 40 mg/kg ทุก 8 ชม. หรือ IV Cidofovir; การจัดการอาการปวดประสาทหลังเป็นงูสวัด (Post-Herpetic Neuralgia: PHN): Gabapentin, Pregabalin, หรือ Tricyclic Antidepressants (Amitriptyline)",
+        "resistance": "การป้องกันด้วยวัคซีน (Prevention & Prophylaxis): วัคซีนงูสวัดชนิด Recombinant (Shingrix - 2 เข็ม ห่างกัน 2-6 เดือน) แนะนำสำหรับผู้ใหญ่อายุ >= 50 ปี และผู้มีภูมิคุ้มกันบกพร่องอายุ >= 19 ปี มีประสิทธิภาพป้องกันสูงถึง 97%; การให้ VariZIG (Varicella-Zoster Immune Globulin) ภายใน 10 วันหลังสัมผัสเชื้อในผู้สัมผัสที่มีความเสี่ยงสูง (คนท้องที่ไม่มีภูมิ, ทารกแรกเกิด, ผู้ป่วยมะเร็ง)"
       }
     },
     "viewType": "humanoid",
@@ -720,24 +812,44 @@
         "title": "กลไกก่อโรค (Pathogenesis)",
         "virulenceFactors": [
           {
-            "name": "Centrifugal Spirochetal Migration",
-            "mechanism": "เชื้อเกลียวสว่าน Borrelia เคลื่อนที่หมุนควงสว่านผ่านชั้นเนื้อเยื่อเกี่ยวพันและคอลลาเจน ขยายวงออกจากจุดกัดไปสู่รอบนอกอย่างต่อเนื่อง"
+            "name": "OspA to OspC Differential Expression",
+            "mechanism": "การปรับเปลี่ยนแอนติเจนบนผิว: ในทางเดินอาหารของเห็บจะแสดง Outer Surface Protein A (OspA) ยึดเกาะกับเซลล์เห็บ แต่เมื่อเห็บดูดเลือดอุ่นของคน จะสลับมาแสดง OspC เข้าสู่ต่อมน้ำลายของเห็บและหลั่งเข้าสู่ผิวหนังคน ช่วยให้เชื้อรอดพ้นจากการทำลายของระบบภูมิคุ้มกันในกระแสเลือด",
+            "desc": "การปรับเปลี่ยนแอนติเจนบนผิว: ในทางเดินอาหารของเห็บจะแสดง Outer Surface Protein A (OspA) ยึดเกาะกับเซลล์เห็บ แต่เมื่อเห็บดูดเลือดอุ่นของคน จะสลับมาแสดง OspC เข้าสู่ต่อมน้ำลายของเห็บและหลั่งเข้าสู่ผิวหนังคน ช่วยให้เชื้อรอดพ้นจากการทำลายของระบบภูมิคุ้มกันในกระแสเลือด"
           },
           {
-            "name": "OspC & VlsE Antigenic Variation",
-            "mechanism": "สับเปลี่ยนแอนติเจนบนผิวเซลล์อย่างรวดเร็วเพื่อหลบหลีกแอนติบอดีของร่างกาย ทำให้การติดเชื้อลุกลามเรื้อรัง"
+            "name": "VlsE Antigenic Variation",
+            "mechanism": "ระบบ VlsE (Variable major protein-like sequence, expressed) มีการสับเปลี่ยนชิ้นส่วนยีน (Gene cassette recombination) ตลอดเวลา ทำให้แอนติบอดีของโฮสต์ไม่สามารถกำจัดเชื้อได้ นำไปสู่การติดเชื้อเรื้อรัง (Chronic Lyme arthritis)",
+            "desc": "ระบบ VlsE (Variable major protein-like sequence, expressed) มีการสับเปลี่ยนชิ้นส่วนยีน (Gene cassette recombination) ตลอดเวลา ทำให้แอนติบอดีของโฮสต์ไม่สามารถกำจัดเชื้อได้ นำไปสู่การติดเชื้อเรื้อรัง (Chronic Lyme arthritis)"
+          },
+          {
+            "name": "Endoflagellar Motility & Tissue Infiltration",
+            "mechanism": "แฟลกเจลลาใน Periplasmic space ช่วยให้สไปโรขีตเคลื่อนที่ผ่าน Collagenous tissue และ Extracellular matrix เกิดการขยายวงของผื่น Erythema migrans แผ่ออกเป็นวงแหวนรูปเป้าตาวัว (Bull's-eye target lesion)",
+            "desc": "แฟลกเจลลาใน Periplasmic space ช่วยให้สไปโรขีตเคลื่อนที่ผ่าน Collagenous tissue และ Extracellular matrix เกิดการขยายวงของผื่น Erythema migrans แผ่ออกเป็นวงแหวนรูปเป้าตาวัว (Bull's-eye target lesion)"
           }
         ],
-        "transmission": "เห็บกวาง Ixodes scapularis / Ixodes ricinus กัดดูดเลือดอย่างน้อย 36-48 ชั่วโมง"
+        "transmission": "การกัดของเห็บแข็งกวางสกุล Ixodes (Ixodes scapularis ทางตะวันออกของสหรัฐฯ, Ixodes pacificus ทางตะวันตก, Ixodes ricinus ในยุโรป) โดยเห็บต้องเกาะดูดเลือดนานอย่างน้อย 36-48 ชั่วโมงจึงจะแพร่เชื้อได้",
+        "immuneEvasion": [
+          "ไม่มีสารพิษแบบ LPS หรือ Exotoxin แบบดั้งเดิม ความเสียหายของเนื้อเยื่อเกิดจากการตอบสนองทางอิมมูนของโฮสต์ (Immunopathology)",
+          "จับกับ Complement Regulator-Acquiring Surface Proteins (CRASPs) เพื่อยับยั้ง Complement-mediated lysis"
+        ]
       },
       "diagnosis": {
-        "title": "การตรวจรอยโรคและ Lab (Lesion Exam & Lab)",
+        "title": "การตรวจวินิจฉัยและห้องปฏิบัติการ (Diagnosis & Laboratory)",
         "stains": [
-          "Clinical Diagnosis: หากพบผื่น Erythema Migrans ชัดเจนในพื้นที่ระบาด สามารถวินิจฉัยและเริ่มรักษาได้ทันทีโดยไม่ต้องรอผลเลือด!",
-          "Warthin-Starry silver stain: ย้อมชิ้นเนื้อขอบผื่นเพื่อดูตัวเชื้อเกลียวสว่าน Borrelia"
+          "Warthin-Starry Silver Stain: ตรวจพบ Loose irregular coils ของ Borrelia ในขอบผื่น",
+          "Giemsa / Wright stain: ย้อมสไปโรขีตติดสีน้ำเงินอมม่วง"
         ],
         "serology": [
           "Two-tier testing: ELISA คัดกรอง ตามด้วย Western Blot ยืนยัน (IgM / IgG)"
+        ],
+        "staining": "การตรวจชิ้นเนื้อผิวหนังย้อมพิเศษ: Silver stain (Warthin-Starry หรือ Steiner) หรือ Giemsa stain พบสไปโรขีตเกลียวคลื่นหลวมๆ (Loose wavy spirochetes ขนาด 10-30 x 0.2-0.5 um) ในชั้น Dermis (แต่ตรวจพบได้ยากมาก ไม่แนะนำให้ใช้เป็นเกณฑ์หลักในการตรวจผู้ป่วยทั่วไป)",
+        "culture": [
+          "Barbour-Stoenner-Kelly (BSK-II) Medium: อาหารเหลวจำเพาะเพาะเชื้อสไปโรขีตที่ 33°C (ใช้เวลาเพาะ 2-4 สัปดาห์ ใช้ในงานวิจัยเท่านั้น ไม่ใช้ในงานรูทีน)",
+          "เกณฑ์การวินิจฉัย Early Localized Lyme: หากตรวจพบผื่น Erythema migrans ร่วมกับประวัติเสี่ยง ถือว่าวินิจฉัยได้ทันทีโดย 'ไม่ต้องรอผลเลือด Serology' เพราะแอนติบอดีในระยะแรกยังไม่ขึ้น (Window period)"
+        ],
+        "biochemical": [
+          "Two-Tiered Serology Testing (CDC Standard Protocol): ชั้นที่ 1 ตรวจ EIA หรือ IFA (Enzyme Immunoassay) หากผลเป็นลบ ไม่ต้องตรวจต่อ; หากผลบวกหรือก้ำกึ่ง ให้ตรวจชั้นที่ 2 ด้วย Western Blot (ตรวจ IgM ภายใน 4 สัปดาห์แรก และ IgG หลัง 4 สัปดาห์) หรือตรวจด้วย Second EIA (Modified Two-Tiered Testing)",
+          "Synovial Fluid PCR: มีความไวสูงมาก (> 80%) ในการวินิจฉัย Lyme Arthritis"
         ]
       },
       "clinical": {
@@ -753,10 +865,12 @@
         "highYieldNote": "สูตรจำข้อสอบ NL1/USMLE: Lyme disease stage 1 = Erythema Migrans | stage 2 = Bilateral Bell's palsy + AV block | stage 3 = Chronic knee arthritis | ยาอันดับหนึ่งคือ Doxycycline (เด็กเล็กหรือหญิงตั้งครรภ์ให้ Amoxicillin)!"
       },
       "treatment": {
-        "title": "การดูแลแผลและการรักษา (Wound Care & Rx)",
-        "firstLine": "Doxycycline 100 mg รับประทานวันละ 2 ครั้ง นาน 14-21 วัน",
+        "title": "แนวทางการรักษาตามไกด์ไลน์ (Treatment & Guidelines)",
+        "firstLine": "Early Localized (ผื่น Erythema migrans เดี่ยวๆ) / Early Disseminated ไม่รุนแรง (ผื่นหลายวง, อัมพาตใบหน้า Bell's palsy, ปวดข้อ): Oral Doxycycline 100 mg วันละ 2 ครั้ง นาน 10-14 วัน (*คำแนะนำล่าสุดของ CDC และ AAP: ยา Doxycycline สามารถใช้ในเด็กทุกช่วงอายุได้อย่างปลอดภัยหากให้ไม่เกิน 21 วัน โดยไม่ทำให้ฟันเปลี่ยนสี*) หรือ Oral Amoxicillin 500 mg วันละ 3 ครั้ง นาน 14 วัน หรือ Oral Cefuroxime axetil 500 mg วันละ 2 ครั้ง นาน 14 วัน",
         "childrenPregnant": "เด็กอายุน้อยกว่า 8 ปี หรือหญิงตั้งครรภ์: ให้ Amoxicillin หรือ Cefuroxime axetil (หลีกเลี่ยง Doxycycline เพราะผลข้างเคียงต่อฟันและกระดูก)",
-        "neurologic": "Lyme meningitis / Severe carditis: Intravenous Ceftriaxone (IV)"
+        "neurologic": "Lyme meningitis / Severe carditis: Intravenous Ceftriaxone (IV)",
+        "alternative": "Late Lyme / Severe Neurologic (Meningitis, Radiculoneuropathy) / Lyme Carditis รุนแรง (PR interval >= 300 ms, Complete AV block, Myopericarditis): IV Ceftriaxone 2 g วันละครั้ง นาน 14-21 วัน (ทางเลือก: IV Cefotaxime 2 g q8h หรือ IV Penicillin G 18-24 ล้านยูนิตต่อวัน); สตรีมีครรภ์: แนะนำ Oral Amoxicillin 500 mg tid หรือ Cefuroxime axetil 500 mg bid นาน 14 วัน (ห้ามใช้ Doxycycline ในหญิงตั้งครรภ์)",
+        "resistance": "การป้องกันหลังถูกเห็บกัด (Post-Exposure Prophylaxis: PEP): ให้ Oral Doxycycline 200 mg รับประทานครั้งเดียว (Single dose) ภายใน 72 ชั่วโมงหลังดึงเห็บออก เฉพาะในกรณีที่: 1. เห็บที่กัดระบุได้ว่าเป็น Ixodes scapularis, 2. เห็บเกาะดูดเลือดมาแล้ว >= 36 ชั่วโมง (ตัวเห็บเต่งบวม), และ 3. อัตราความชุกของเชื้อในเห็บท้องถิ่น >= 20%"
       }
     },
     "viewType": "humanoid",
@@ -841,24 +955,48 @@
         "virulenceFactors": [
           {
             "name": "Yeast-to-Hyphae Morphological Transition",
-            "mechanism": "การเปลี่ยนรูปจาก Yeast แตกหน่อ เป็น Pseudohyphae และ True hyphae ช่วยให้เชื้อราเจาะแทรกผ่านเซลล์เยื่อบุผิวได้ลึกขึ้น"
+            "mechanism": "การเปลี่ยนรูปสัณฐานจาก Oval budding yeast เป็น Pseudohyphae และ True hyphae เป็นหัวใจสำคัญของการก่อโรค สายราแท้มีแรงดันกลไกเจาะทะลวงผ่านเซลล์เยื่อบุผิวและเนื้อเยื่อเกี่ยวพันเข้าสู่กระแสเลือด",
+            "desc": "การเปลี่ยนรูปสัณฐานจาก Oval budding yeast เป็น Pseudohyphae และ True hyphae เป็นหัวใจสำคัญของการก่อโรค สายราแท้มีแรงดันกลไกเจาะทะลวงผ่านเซลล์เยื่อบุผิวและเนื้อเยื่อเกี่ยวพันเข้าสู่กระแสเลือด"
           },
           {
-            "name": "Secreted Aspartyl Proteases (SAPs)",
-            "mechanism": "เอนไซม์ย่อยสลาย Keratin, Collagen และ Secretory IgA บนผิวเยื่อบุ ก่อให้เกิดการหลุดลอกของเซลล์ผิวและการอักเสบแดง"
+            "name": "Secreted Hydrolases (SAPs & Phospholipases)",
+            "mechanism": "Secreted Aspartyl Proteases (SAPs 1-10) ย่อยสลาย Keratin, Collagen, Mucin และ Secretory IgA; Phospholipase B ย่อยสลายฟอสโฟลิปิดในเยื่อหุ้มเซลล์โฮสต์ ทำให้เซลล์เยื่อบุผิวหลุดลอกเกิดเป็นแผ่นฝ้าขาวที่ขูดออกได้ (Oral thrush)",
+            "desc": "Secreted Aspartyl Proteases (SAPs 1-10) ย่อยสลาย Keratin, Collagen, Mucin และ Secretory IgA; Phospholipase B ย่อยสลายฟอสโฟลิปิดในเยื่อหุ้มเซลล์โฮสต์ ทำให้เซลล์เยื่อบุผิวหลุดลอกเกิดเป็นแผ่นฝ้าขาวที่ขูดออกได้ (Oral thrush)"
+          },
+          {
+            "name": "Candidalysin Toxin",
+            "mechanism": "Cytolytic peptide toxin ที่หลั่งเฉพาะจากระยะ Hyphae เจาะรูเยื่อหุ้มเซลล์เยื่อบุผิว (Pore-forming) กระตุ้นการหลั่งสารอักเสบและอาการแสบร้อนเนื้อเยื่อ",
+            "desc": "Cytolytic peptide toxin ที่หลั่งเฉพาะจากระยะ Hyphae เจาะรูเยื่อหุ้มเซลล์เยื่อบุผิว (Pore-forming) กระตุ้นการหลั่งสารอักเสบและอาการแสบร้อนเนื้อเยื่อ"
+          },
+          {
+            "name": "Biofilm Formation on Indwelling Devices",
+            "mechanism": "สร้างไบโอฟิล์มหนาแน่นประกอบด้วย Yeast, Hyphae และ Extracellular matrix เคลือบบนสายสวนหลอดเลือดดำ (Central venous catheters), สายสวนปัสสาวะ, และข้อเทียม ทนทานต่อยาต้านเชื้อรา",
+            "desc": "สร้างไบโอฟิล์มหนาแน่นประกอบด้วย Yeast, Hyphae และ Extracellular matrix เคลือบบนสายสวนหลอดเลือดดำ (Central venous catheters), สายสวนปัสสาวะ, และข้อเทียม ทนทานต่อยาต้านเชื้อรา"
           }
         ],
-        "transmission": "Opportunistic endogenous overgrowth เมื่อแบคทีเรียประจำถิ่นลดลงจากการใช้ยาปฏิชีวนะ, การพ่นยาสเตียรอยด์ไม่บ้วนปาก, หรือภูมิคุ้มกันบกพร่อง"
+        "transmission": "การติดเชื้อจากเชื้อประจำถิ่นในร่างกายตนเอง (Endogenous opportunistic overgrowth) เมื่อสมดุลจุลชีพปกติเสียไป (เช่น หลังยาปฏิชีวนะ broad-spectrum, การพ่นยาสเตียรอยด์ไม่บ้วนปาก, โรคเบาหวาน, หรือภาวะภูมิคุ้มกันบกพร่อง)",
+        "immuneEvasion": [
+          "การเปลี่ยนรูปไปมาเป็น Phenotypic switching ช่วยปรับตัวต่อสภาวะกรดด่างและหลบหลีกภูมิคุ้มกัน",
+          "สายรากำบัง Beta-glucan ด้วย Mannan fibrils ชั้นนอก ทำให้ Dectin-1 receptors บน Macrophages ตรวจจับได้ยากขึ้น"
+        ]
       },
       "diagnosis": {
-        "title": "การตรวจรอยโรคและ Lab (Lesion Exam & Lab)",
+        "title": "การตรวจวินิจฉัยและห้องปฏิบัติการ (Diagnosis & Laboratory)",
         "stains": [
-          "10-20% KOH Preparation: ขูดฝ้าขาวตรวจใต้กล้อง พบ Pseudohyphae ร่วมกับ Oval budding yeast cells",
-          "Gram Stain: ติดสี Gram-positive (สีม่วงเข้ม) ขนาดใหญ่กว่าแบคทีเรียทั่วไป 3-5 เท่า"
+          "10% KOH Prep: Budding yeasts with pseudohyphae and septate branching hyphae",
+          "Gram Stain: Gram-positive large oval yeasts (3-5 um) and pseudohyphae",
+          "Periodic Acid-Schiff (PAS) & GMS: ย้อมชิ้นเนื้อเยื่อติดสีแดงม่วงหรือดำชัดเจน"
         ],
         "culture": [
-          "Sabouraud Dextrose Agar (SDA): โคโลนีสีขาวนวล ผิวเรียบมันคล้ายครีม (Creamy white colonies) มีกลิ่นยีสต์",
-          "Germ Tube Test: POSITIVE (+) งอกท่อ Germ tube ภายใน 3 ชม. เมื่อบ่มในซีรัมที่ 37°C"
+          "Sabouraud Dextrose Agar (SDA): โคโลนีสีขาวนวล ผิวเรียบมันคล้ายครีม (Creamy white colonies) มีกลิ่นยีสต์จำเพาะที่ 30-37°C ภายใน 24-48 ชม.",
+          "Germ Tube Test: POSITIVE (+) งอกท่อ Germ tube (ท่อยื่นขนานไม่มีรอยคอด) ภายใน 2-3 ชม. เมื่อบ่มในซีรัมมนุษย์ที่ 37°C (แยก C. albicans และ C. dubliniensis จาก Candida สปีชีส์อื่น)",
+          "CHROMagar Candida: ขึ้นโคโลนีสีเขียวมรกต (Emerald green colonies) ยืนยัน C. albicans ทันที"
+        ],
+        "staining": "10-20% KOH Preparation หรือ Calcofluor white จากรอยโรคขูดฝ้า: พบ Oval budding yeast cells (3-6 um) ร่วมกับ Pseudohyphae (รอยคอดกิ่วระหว่างเซลล์) และ True hyphae; Gram Stain: ติดสี Gram-positive (สีม่วงเข้ม ขนาดใหญ่กว่าแบคทีเรียทั่วไป 3-5 เท่า)",
+        "biochemical": [
+          "Chlamydospore Formation: สร้างสปอร์ผนังหนาที่ปลายสายรา (Terminal thick-walled chlamydospores) บน Cornmeal agar ผสม Tween 80",
+          "Urease Test: NEGATIVE (-) (ช่วยแยกจาก Cryptococcus neoformans ซึ่งเป็น Urease positive)",
+          "(1,3)-Beta-D-Glucan Assay: ให้ผลบวกสูงใน Candidemia และ Invasive candidiasis"
         ]
       },
       "clinical": {
@@ -874,10 +1012,12 @@
         "highYieldNote": "ข้อสอบ NL1/USMLE ชอบถาม: Oral Thrush ของ Candida เป็นฝ้าขาวที่ 'ขูดออกได้ (Scrapes off)' ต่างจาก Oral Hairy Leukoplakia (จาก EBV ในผู้ป่วย HIV) ที่เป็นรอยขาวด้านข้างลิ้นซึ่ง 'ขูดไม่ออก (Cannot be scraped off)'!"
       },
       "treatment": {
-        "title": "การดูแลแผลและการรักษา (Wound Care & Rx)",
-        "firstLine": "Oral Thrush: Nystatin oral suspension (บ้วนกลั้วปากแล้วกลืน Swish and swallow) หรือ Clotrimazole troches อมวันละ 4-5 ครั้ง",
+        "title": "แนวทางการรักษาตามไกด์ไลน์ (Treatment & Guidelines)",
+        "firstLine": "Oral Thrush (คราบฝ้าขาวในปาก): อาการไม่รุนแรง: Clotrimazole troches 10 mg อมวันละ 5 ครั้ง หรือ Nystatin oral suspension (100,000 U/mL บ้วนกลั้วปากแล้วกลืน 4-6 mL วันละ 4 ครั้ง) นาน 7-14 วัน; อาการปานกลางถึงรุนแรง / Esophageal Candidiasis: Oral Fluconazole 200 mg วันแรก ตามด้วย 100-200 mg วันละครั้ง นาน 14-21 วัน; Candidemia & Invasive Candidiasis (IDSA Guidelines 2016 Update): First-line DOC คือยากลุ่ม Echinocandin (IV Caspofungin 70 mg loading แล้ว 50 mg/day, หรือ Micafungin 100 mg/day, หรือ Anidulafungin 200 mg loading แล้ว 100 mg/day) และต้องถอดสายสวนหลอดเลือดดำ (Catheter removal) ทันที พร้อมตรวจจอประสาทตา (Dilated fundus exam)",
         "prevention": "บ้วนปากด้วยน้ำสะอาดทุกครั้งหลังพ่นยาสเตียรอยด์ (Rinse mouth after steroid inhaler)",
-        "systemic": "Severe / Esophageal Candidiasis: Oral หรือ Intravenous Fluconazole"
+        "systemic": "Severe / Esophageal Candidiasis: Oral หรือ Intravenous Fluconazole",
+        "alternative": "Step-down Therapy ใน Candidemia: เปลี่ยนเป็น Oral Fluconazole (400-800 mg daily) เมื่อผู้ป่วยอาการคงที่ ผล hemoculture ซ้ำเป็นลบ และผลทดสอบความไวพบว่าไวต่อ Fluconazole; Vulvovaginal Candidiasis: Single-dose Oral Fluconazole 150 mg หรือ Topical azoles (Clotrimazole/Miconazole cream); สตรีมีครรภ์: แนะนำ Topical azoles นาน 7 วัน (หลีกเลี่ยง Oral Fluconazole ในไตรมาสแรก)",
+        "resistance": "กลไกการดื้อยา: C. albicans ส่วนใหญ่ยังไวต่อ Fluconazole แต่การใช้ยา azole ต่อเนื่องระยะยาวอาจเกิดการกลายพันธุ์ของยีน ERG11 (เอนไซม์ Lanosterol 14-alpha-demethylase) หรือการแสดงออกของ Efflux pumps (CDR1, CDR2, MDR1); ในขณะที่ Candida สปีชีส์อื่น เช่น C. krusei มีการดื้อต่อ Fluconazole ตามธรรมชาติ (Intrinsic resistance) และ C. glabrata มีอัตราดื้อยา Azoles สูงมาก จึงต้องใช้ Echinocandin เป็นหลัก"
       }
     },
     "viewType": "organ",
@@ -966,37 +1106,48 @@
         ]
       },
       "pathogenesis": {
-        "title": "กลไกก่อโรค (Pathogenesis & Toxins)",
+        "title": "กลไกก่อโรค (Pathogenesis)",
         "virulenceFactors": [
           {
-            "name": "Toxin A (Enterotoxin)",
-            "mechanism": "จับกับ Brush border ของเยื่อบุลำไส้ กระตุ้นการหลั่งของเหลวปริมาณมหาศาล (Massive secretomotor watery diarrhea) และดึงดูด Neutrophils"
+            "name": "Toxin A (TcdA - Enterotoxin)",
+            "mechanism": "เข้าจับกับ Carbohydrate receptors บนผิวด้าน Apical ของ Enterocytes ถูกนำเข้าสู่เซลล์ ทำปฏิกิริยา Glucosylation ต่อโมเลกุล Rho Family GTPases (Rho, Rac, Cdc42) ทำลาย Actin cytoskeleton ทำให้ Tight junctions หลุดแยก ส่งผลให้ของเหลวและน้ำรั่วไหลเข้าสู่ช่องทางเดินอาหาร ก่อให้เกิดอาการท้องร่วงรุนแรง",
+            "desc": "เข้าจับกับ Carbohydrate receptors บนผิวด้าน Apical ของ Enterocytes ถูกนำเข้าสู่เซลล์ ทำปฏิกิริยา Glucosylation ต่อโมเลกุล Rho Family GTPases (Rho, Rac, Cdc42) ทำลาย Actin cytoskeleton ทำให้ Tight junctions หลุดแยก ส่งผลให้ของเหลวและน้ำรั่วไหลเข้าสู่ช่องทางเดินอาหาร ก่อให้เกิดอาการท้องร่วงรุนแรง"
           },
           {
-            "name": "Toxin B (Cytotoxin - สำคัญที่สุด)",
-            "mechanism": "ยับยั้ง Rho GTPases ทำให้เกิด Actin depolymerization ทำลายโครงสร้าง Cytoskeleton ของเซลล์เยื่อบุ เกิดการตายแบบ Apoptosis และทะลุผ่าน Tight junctions"
+            "name": "Toxin B (TcdB - Cytotoxin)",
+            "mechanism": "มีความเป็นพิษต่อเซลล์สูงกว่า Toxin A ถึง 1,000 เท่า เข้าทำลายโครงสร้างเซลล์เยื่อบุผิวลำไส้โดยตรง กระตุ้น Caspases เหนี่ยวนำให้เกิด Apoptosis และกระตุ้นการหลั่งสารอักเสบ (IL-8, TNF-alpha) ดึงดูด Neutrophils หลั่งทะลักออกจากเยื่อบุคล้ายภูเขาไฟปะทุ (Volcano-like eruption) รวมตัวกับ Fibrin และ Mucus ก่อเป็นแผ่นเยื่อหลอกสีเหลืองขาว (Pseudomembranous colitis)",
+            "desc": "มีความเป็นพิษต่อเซลล์สูงกว่า Toxin A ถึง 1,000 เท่า เข้าทำลายโครงสร้างเซลล์เยื่อบุผิวลำไส้โดยตรง กระตุ้น Caspases เหนี่ยวนำให้เกิด Apoptosis และกระตุ้นการหลั่งสารอักเสบ (IL-8, TNF-alpha) ดึงดูด Neutrophils หลั่งทะลักออกจากเยื่อบุคล้ายภูเขาไฟปะทุ (Volcano-like eruption) รวมตัวกับ Fibrin และ Mucus ก่อเป็นแผ่นเยื่อหลอกสีเหลืองขาว (Pseudomembranous colitis)"
           },
           {
-            "name": "Spore Formation & Antibiotic Resistance",
-            "mechanism": "สร้างสปอร์ทนทานสูงต่อความร้อนและแอลกอฮอล์ แพร่กระจายในโรงพยาบาลได้ง่าย รอดชีวิตเมื่อผู้ป่วยได้รับยาปฏิชีวนะกวาด Normal flora"
+            "name": "Binary Toxin (CDT)",
+            "mechanism": "พบในสายพันธุ์ดุร้ายรุนแรง (Hypervirulent strain BI/NAP1/027) ทำปฏิกิริยา ADP-ribosylation ต่อ Actin filaments เสริมสร้างการยึดเกาะของแบคทีเรียและเพิ่มความรุนแรงของโรค",
+            "desc": "พบในสายพันธุ์ดุร้ายรุนแรง (Hypervirulent strain BI/NAP1/027) ทำปฏิกิริยา ADP-ribosylation ต่อ Actin filaments เสริมสร้างการยึดเกาะของแบคทีเรียและเพิ่มความรุนแรงของโรค"
           }
         ],
-        "transmission": "Fecal-oral route (สัมผัสสปอร์จากสิ่งแวดล้อมหรือมือบุคลากร) มักเกิดหลังได้รับยาปฏิชีวนะ เช่น Clindamycin, Cephalosporins, Fluoroquinolones"
+        "transmission": "Fecal-oral route โดยการกลืนสปอร์จากสิ่งแวดล้อมที่ปนเปื้อน หรือการสัมผัสผ่านมือบุคลากรทางการแพทย์ในโรงพยาบาล หลังจากการใช้ยาปฏิชีวนะกวาดล้างเชื้อประจำถิ่นในลำไส้ (เช่น Clindamycin, Fluoroquinolones, 3rd gen Cephalosporins)",
+        "immuneEvasion": [
+          "สปอร์ทนทานสูงต่อแอลกอฮอล์ (Alcohol-based hand rubs ฆ่าสปอร์ไม่ได้ ต้องล้างมือด้วยสบู่และน้ำเท่านั้น) และทนต่อสารฟอกขาวทั่วไป",
+          "สายพันธุ์ NAP1/027 มีการกลายพันธุ์ลบยีน tcdC (Negative regulator) ทำให้ผลิต Toxin A และ B ออกมามากกว่าสายพันธุ์ทั่วไปถึง 16-23 เท่า"
+        ]
       },
       "diagnosis": {
-        "title": "การตรวจรอยโรคและ Lab (Colonoscopy & Stool Tests)",
+        "title": "การตรวจวินิจฉัยและห้องปฏิบัติการ (Diagnosis & Laboratory)",
         "stains": [
-          "Colonoscopy / Sigmoidoscopy: พบแผ่นเยื่อหลอกสีเหลืองขาวนูน (Pathognomonic Pseudomembranes)",
-          "Biopsy: Volcano-like eruptive exudate of neutrophils and fibrin bursting from crypts"
+          "Endoscopy: Adherent yellow-white inflammatory pseudomembranes on colonic mucosa",
+          "Biopsy: 'Volcano' or 'Mushroom-like' eruptive exudate from colonic crypts",
+          "Gram Stain: Gram-positive rods with subterminal spores (Anaerobic)"
         ],
         "culture": [
-          "Stool PCR for C. difficile toxin genes (tcdA, tcdB): ไวที่สุด (High sensitivity)",
-          "Stool EIA for GDH antigen + Toxin A/B: ยืนยันการมี active toxin production"
+          "Stool NAAT / PCR (ตรวจหายีน tcdA, tcdB): ไวที่สุด (Sensitivity > 95%) แต่ไม่สามารถแยก colonized ออกจาก active disease ได้",
+          "CCFA Agar (Cycloserine-Cefoxitin-Fructose Agar): เพาะเชื้อในสภาวะไร้ออกซิเจน เกิดโคโลนีสีเหลือง ผิวขรุขระ มีกลิ่นมูลม้า (Horse-manure odor) และเรืองแสงสีเหลืองเขียวใต้แสง UV",
+          "Two-Step Algorithm (IDSA/SHEA): ตรวจคัดกรองด้วย GDH Antigen + Toxin A/B EIA หากผลไม่ตรงกันให้ยืนยันด้วย NAAT/PCR"
         ],
         "biochemical": [
-          "Leukocytosis รุนแรง (WBC > 15,000 /uL มักเป็นตัวบ่งชี้ความรุนแรง)",
-          "Serum Creatinine เพิ่มขึ้น > 1.5 เท่าจากเดิม"
-        ]
+          "Glutamate Dehydrogenase (GDH) Antigen: สารคัดกรองที่มี Negative Predictive Value สูงมาก",
+          "เกณฑ์ประเมินความรุนแรง (Severe CDI Criteria): WBC >= 15,000 cells/uL หรือ Serum Creatinine > 1.5 mg/dL",
+          "Fulminant CDI: มีภาวะ Hypotension, Shock, Ileus, หรือ Toxic Megacolon (ลำไส้ใหญ่ขยายตัว > 6 ซม. เสี่ยงลำไส้แตก)"
+        ],
+        "staining": "Gram Stain: Gram-positive spore-forming anaerobic bacilli with oval subterminal spores; การตรวจชิ้นเนื้อส่องกล้อง (Sigmoidoscopy / Colonoscopy): พบ Pseudomembranes แผ่นเยื่อหลอกสีเหลืองนวลกระจายบนเยื่อบุลำไส้ใหญ่ที่บวมแดง; Biopsy: ลักษณะเฉพาะคือ Volcano lesion (Exudate ของ Neutrophils, Fibrin และเศษเซลล์ตายพุ่งทะลักออกจาก Crypts)"
       },
       "clinical": {
         "title": "Clinical Vignettes & NL1 Pearls",
@@ -1011,10 +1162,12 @@
         "highYieldNote": "สูตรจำออกสอบ NL1: แอลกอฮอล์เจลฆ่าสปอร์ C. diff ไม่ได้! ต้องล้างมือด้วยน้ำและสบู่ (Soap & Water) เท่านั้น! | ยารักษาอันดับ 1: Oral Vancomycin หรือ Fidaxomicin (ห้ามให้ IV Vancomycin เพราะยาไม่ซึมเข้าลำไส้!)"
       },
       "treatment": {
-        "title": "การรักษาและการป้องกัน (Antimicrobial Rx)",
-        "firstLine": "Oral Vancomycin 125 mg 4 ครั้ง/วัน หรือ Fidaxomicin 200 mg 2 ครั้ง/วัน นาน 10 วัน",
+        "title": "แนวทางการรักษาตามไกด์ไลน์ (Treatment & Guidelines)",
+        "firstLine": "Initial Episode (IDSA / SHEA 2021 Focused Update): 1. Oral Fidaxomicin 200 mg วันละ 2 ครั้ง นาน 10 วัน (เป็นยาที่แนะนำอันดับหนึ่งเนื่องจากยับยั้ง RNA polymerase เฉพาะ C. diff ไม่ทำลายเชื้อประจำถิ่นและลดการกลับเป็นซ้ำได้อย่างเด่นชัด) หรือ 2. Oral Vancomycin 125 mg วันละ 4 ครั้ง (QID) นาน 10 วัน (*หมายเหตุสำคัญ: ห้ามใช้ Metronidazole เป็นยาทางเลือกแรกอีกต่อไป!*)",
         "woundCare": "หยุดยาปฏิชีวนะตัวเดิมที่กระตุ้นให้เร็วที่สุด, หลีกเลี่ยงยาหยุดถ่าย (Anti-motility drugs เช่น Loperamide เพราะเสี่ยงเกิด Toxic megacolon)",
-        "prevention": "สวมถุงมือและเสื้อคลุม (Contact Precautions) และล้างมือด้วยน้ำและสบู่เท่านั้น (Soap and water washes spores mechanically)"
+        "prevention": "สวมถุงมือและเสื้อคลุม (Contact Precautions) และล้างมือด้วยน้ำและสบู่เท่านั้น (Soap and water washes spores mechanically)",
+        "alternative": "Fulminant CDI (ความดันตก, ช็อก, ลำไส้อัมพาต Ileus, Toxic megacolon): High-dose Oral Vancomycin 500 mg วันละ 4 ครั้ง (ให้ทางสาย NG tube ร่วมกับการสวนเหน็บทางทวารหนัก Vancomycin 500 mg ใน NSS 100 mL ทุก 6 ชม. กรณีมี ileus) PLUS IV Metronidazole 500 mg ทุก 8 ชม. พร้อมปรึกษาศัลยแพทย์เพื่อพิจารณาทำ Subtotal Colectomy หรือ Diverting Loop Ileostomy ทันที; First Recurrence: ให้ Fidaxomicin 200 mg bid 10 วัน หรือ Vancomycin แบบ Tapered/Pulsed regimen",
+        "resistance": "การป้องกันการกลับเป็นซ้ำ (Prevention of Recurrence): การให้ Bezlotoxumab (Human monoclonal antibody ต้าน Toxin B ฉีด IV 10 mg/kg ครั้งเดียว) ร่วมกับยาต้านจุลชีพ หรือการปลูกถ่ายจุลชีพในอุจจาระ (Fecal Microbiota Transplantation: FMT) ในผู้ที่กลับเป็นซ้ำตั้งแต่ครั้งที่ 2 ขึ้นไป; *ข้อห้ามเด็ดขาด*: ห้ามให้ยาหยุดถ่ายกลุ่ม Anti-motility agents (เช่น Loperamide, Diphenoxylate) อย่างเด็ดขาดเพราะจะทำให้สารพิษคั่งค้างและกระตุ้นให้เกิด Toxic Megacolon ถึงแก่ชีวิต!"
       }
     },
     "clinicalCases": [
@@ -1100,37 +1253,47 @@
         ]
       },
       "pathogenesis": {
-        "title": "กลไกก่อโรค (Pathogenesis & Invasion)",
+        "title": "กลไกก่อโรค (Pathogenesis)",
         "virulenceFactors": [
           {
-            "name": "Gal/GalNAc Lectin",
-            "mechanism": "ใช้เกาะติดกับสายน้ำตาล Galactose บน Glycocalyx ของเซลล์เยื่อบุผิวลำไส้ใหญ่ ทำให้ไม่สามารถหลุดลอกไปกับอุจจาระ"
+            "name": "Gal/GalNAc Adherence Lectin",
+            "mechanism": "โปรตีนเฮเทอโรไดเมอร์บนผิวโทรโฟซอยต์ ยึดเกาะกับน้ำตาล Galactose และ N-acetylgalactosamine บนชั้นเมือก Mucin และเยื่อหุ้มเซลล์ของ Enterocytes หากปราศจากเลกตินนี้เชื้อจะไม่สามารถเกาะติดและบุกรุกเนื้อเยื่อได้",
+            "desc": "โปรตีนเฮเทอโรไดเมอร์บนผิวโทรโฟซอยต์ ยึดเกาะกับน้ำตาล Galactose และ N-acetylgalactosamine บนชั้นเมือก Mucin และเยื่อหุ้มเซลล์ของ Enterocytes หากปราศจากเลกตินนี้เชื้อจะไม่สามารถเกาะติดและบุกรุกเนื้อเยื่อได้"
           },
           {
-            "name": "Amoebapores",
-            "mechanism": "เปปไทด์เจาะรูเยื่อหุ้มเซลล์ (Pore-forming peptides) ทำให้เซลล์เม็ดเลือดและเซลล์เยื่อบุผิวลำไส้เกิด Osmotic lysis แตกตัว"
+            "name": "Amoebapores (A, B, C Peptides)",
+            "mechanism": "เปปไทด์ขนาดเล็กเจาะรูเยื่อหุ้มเซลล์ (Pore-forming peptides) แทรกตัวเข้าสู่ฟอสโฟลิปิดของเซลล์โฮสต์ ก่อให้เกิดรูพรุนทำลายสมดุลออสโมติก ส่งผลให้เซลล์เม็ดเลือดแดง เซลล์เยื่อบุผิว และเซลล์ภูมิคุ้มกันเกิด Cytolysis แตกสลายอย่างรวดเร็ว",
+            "desc": "เปปไทด์ขนาดเล็กเจาะรูเยื่อหุ้มเซลล์ (Pore-forming peptides) แทรกตัวเข้าสู่ฟอสโฟลิปิดของเซลล์โฮสต์ ก่อให้เกิดรูพรุนทำลายสมดุลออสโมติก ส่งผลให้เซลล์เม็ดเลือดแดง เซลล์เยื่อบุผิว และเซลล์ภูมิคุ้มกันเกิด Cytolysis แตกสลายอย่างรวดเร็ว"
           },
           {
-            "name": "Cysteine Proteases",
-            "mechanism": "ย่อยสลายคอลลาเจนและ Extracellular matrix ในชั้น Submucosa ทำให้เนื้อเยื่อละลายกลายเป็นโพรงแผลกว้าง"
+            "name": "Cysteine Proteases (EhCP1 - EhCP5)",
+            "mechanism": "เอนไซม์ย่อยสลายคอลลาเจน, Extracellular matrix, Secretory IgA, และ Complement (C3a, C5a) ช่วยให้โทรโฟซอยต์เจาะทะลุผ่านชั้น Mucosa เข้าสู่ Submucosa และขยายตัวในแนวนอน ก่อให้เกิด 'แผลรูปขวดชมพู่ (Flask-shaped ulcers)' ในลำไส้ใหญ่",
+            "desc": "เอนไซม์ย่อยสลายคอลลาเจน, Extracellular matrix, Secretory IgA, และ Complement (C3a, C5a) ช่วยให้โทรโฟซอยต์เจาะทะลุผ่านชั้น Mucosa เข้าสู่ Submucosa และขยายตัวในแนวนอน ก่อให้เกิด 'แผลรูปขวดชมพู่ (Flask-shaped ulcers)' ในลำไส้ใหญ่"
           }
         ],
-        "transmission": "Fecal-oral route (ดื่มน้ำหรือรับประทานอาหารที่ปนเปื้อน Cysts ผนังหนา 4 นิวเคลียส ทนกรดกระเพาะอาหาร)"
+        "transmission": "Fecal-oral route โดยการดื่มน้ำหรือรับประทานอาหารที่ปนเปื้อน Mature quadrinucleate cysts ผนังหนา 4 นิวเคลียส ซึ่งทนต่อกรดในกระเพาะอาหารและทนต่อระดับคลอรีนในน้ำประปาทั่วไป",
+        "immuneEvasion": [
+          "ย่อยสลาย Complement C3a และ C5a ลดการเรียก Neutrophils มายังบริเวณที่ติดเชื้อ",
+          "เคลื่อนที่เข้าสู่ระบบหลอดเลือดดำพอร์ทัล (Portal venous system) ไปยังตับ ก่อให้เกิดการตายแบบเหลวกลายเป็นฝีหนองก้อนเดี่ยวในตับกลีบขวา บรรจุของเหลวสีน้ำตาลแดงคล้ายกะปิหรือน้ำปลาซาร์ดีน ('Anchovy paste' liver abscess)"
+        ]
       },
       "diagnosis": {
-        "title": "การตรวจแผลและ Lab (Microscopy & Stool Exam)",
+        "title": "การตรวจวินิจฉัยและห้องปฏิบัติการ (Diagnosis & Laboratory)",
         "stains": [
-          "Stool Direct Exam / Trichrome stain: พบ Trophozoite เคลื่อนที่ด้วย Pseudopodia และมี Erythrophagocytosis (กินเม็ดเลือดแดง)",
-          "Stool Iodine stain: พบ Cysts ทรงกลม ขนาด 10-15 um มี 1-4 นิวเคลียส พร้อม Chromatoid bodies ขอบมนคล้ายซิการ์"
+          "Trichrome Stain: Trophozoites with ingested red blood cells (Erythrophagocytosis - Pathognomonic)",
+          "Stool Iodine: Cysts with 1 to 4 nuclei and rounded cigar-shaped chromatoid bars",
+          "Biopsy: Trophozoites at the advancing margin of flask-shaped ulcers"
         ],
         "culture": [
-          "Stool Antigen Detection / Multiplex PCR: แยก E. histolytica แท้ ออกจาก E. dispar ที่ไม่ก่อโรค",
-          "Ulcer Biopsy: ตรวจพบ Trophozoites ที่ขอบแผลเนื้อตาย"
+          "Stool Antigen Detection (EIA สำหรับ Gal/GalNAc lectin): มีความไวและความจำเพาะสูงมากในการแยกสายพันธุ์แท้",
+          "Stool Multiplex Real-time PCR: Gold standard ในการตรวจหาสารพันธุกรรมจำเพาะ",
+          "Amoebic Serology (IHA / ELISA): ให้ผลบวกสูงถึง 95% ในผู้ป่วยฝีในตับจากเชื้อบิด (Amoebic Liver Abscess: ALA) และให้ผลบวกใน 80% ของผู้ป่วยบิดมีตัวลงแผลลำไส้รุนแรง"
         ],
         "biochemical": [
-          "Serum Amoebic Serology (IHA / ELISA): ไวมากสำหรับ Extra-intestinal amoebiasis (Liver abscess)",
-          "Ultrasound / CT Upper Abdomen: ตรวจพบ Single liver abscess ในตับกลีบขวา"
-        ]
+          "Ultrasound / CT Upper Abdomen: ตรวจพบ Single round/oval hypoechoic abscess cavity มักอยู่ที่ตับกลีบขวา (Right lobe) ติดขอบตับ",
+          "Aspiration of Liver Abscess: ของเหลวข้นหนืดสีน้ำตาลช็อกโกแลตไร้กลิ่น ('Anchovy paste' or chocolate pus) ตรวจมักไม่พบเชื้อในใจกลางหนองเพราะเชื้ออาศัยอยู่ตามผนังโพรงฝี"
+        ],
+        "staining": "Stool Direct Wet Mount (NSS & Iodine) หรือ Permanent Trichrome Stain: พบ Trophozoite (15-20 um) เคลื่อนที่ด้วย Pseudopodia ขั้วเดียวอย่างรวดเร็ว และมีลักษณะจำเพาะชี้ขาดคือ 'Erythrophagocytosis' (กินเม็ดเลือดแดงเข้าไปอยู่ใน Cytoplasm ซึ่งเป็นตัวแยก E. histolytica แท้ ออกจาก E. dispar ที่ไม่กินเม็ดเลือดแดง); ย้อมไอโอดีนพบ Cysts ทรงกลม (10-15 um) มี 1-4 นิวเคลียส พร้อม Chromatoid bodies ขอบมนคล้ายซิการ์ (Cigar-shaped chromatoid bars)"
       },
       "clinical": {
         "title": "Clinical Vignettes & NL1 Pearls",
@@ -1145,10 +1308,12 @@
         "highYieldNote": "สูตรจำออกสอบ NL1: การรักษา Amoebiasis ต้องให้ยาสองขั้นตอนเสมอ! ขั้นที่ 1: ให้ Tissue amoebicide (Metronidazole หรือ Tinidazole) ฆ่าตัวเชื้อที่ฝังในเนื้อเยื่อ + ขั้นที่ 2: ต้องตามด้วย Luminal amoebicide (Paromomycin หรือ Iodoquinol) เพื่อกวาดล้าง Cysts ในโพรงลำไส้ให้หมด ป้องกันการกลับเป็นซ้ำ!"
       },
       "treatment": {
-        "title": "การรักษาและการกำจัดเชื้อ (Stepwise Rx)",
-        "firstLine": "Metronidazole 750 mg 3 ครั้ง/วัน นาน 7-10 วัน (ฆ่าเชื้อในเนื้อเยื่อแผล)",
+        "title": "แนวทางการรักษาตามไกด์ไลน์ (Treatment & Guidelines)",
+        "firstLine": "Two-Step Stepwise Therapy (CDC / WHO Standard Protocol): ขั้นที่ 1 ยาฆ่าเชื้อในเนื้อเยื่อ (Tissue Amebicide): Oral Metronidazole 750 mg วันละ 3 ครั้ง (TID) นาน 7-10 วัน หรือ Oral Tinidazole 2 g วันละครั้ง นาน 3-5 วัน; ตามด้วย ขั้นที่ 2 ยาฆ่าเชื้อในท่อทางเดินอาหาร (Luminal Amebicide - *จำเป็นต้องให้เสมอเพื่อกำจัด Cysts ป้องกันการกลับเป็นซ้ำและการแพร่เชื้อ*): Oral Paromomycin 500 mg วันละ 3 ครั้ง นาน 7 วัน หรือ Oral Diloxanide furoate 500 mg วันละ 3 ครั้ง นาน 10 วัน",
         "woundCare": "ตามด้วย Paromomycin 500 mg 3 ครั้ง/วัน นาน 7 วัน (Luminal agent เพื่อกำจัด Cysts ในทางเดินอาหารให้เกลี้ยง)",
-        "prevention": "ต้มน้ำดื่มให้เดือด (คลอรีนในระบบประปาฆ่า Cysts ไม่ตาย!) ล้างผักสดให้สะอาด ปรับปรุงสุขาภิบาลอาหารและน้ำดื่ม"
+        "prevention": "ต้มน้ำดื่มให้เดือด (คลอรีนในระบบประปาฆ่า Cysts ไม่ตาย!) ล้างผักสดให้สะอาด ปรับปรุงสุขาภิบาลอาหารและน้ำดื่ม",
+        "alternative": "Asymptomatic Cyst Passers (ผู้ตรวจพบ Cysts ในอุจจาระโดยไม่มีอาการ): ให้เฉพาะ Luminal Amebicide ตัวเดียว คือ Oral Paromomycin 500 mg tid นาน 7 วัน; กรณี Amoebic Liver Abscess อาการรุนแรง: IV Metronidazole 500-750 mg ทุก 8 ชม. ร่วมกับเจาะดูดหนองเฉพาะเมื่อ: 1. ก้อนฝีขนาดใหญ่ > 5 ซม. เสี่ยงต่อการแตก, 2. ก้อนฝีอยู่ที่ตับกลีบซ้าย (เสี่ยงแตกเข้าเยื่อหุ้มหัวใจ Pericardium), หรือ 3. ไข้ไม่ลดลงหลังได้ยา 72 ชม.",
+        "resistance": "ข้อควรระวัง: Metronidazole มีปฏิกิริยา Disulfiram-like reaction (ห้ามดื่มแอลกอฮอล์เด็ดขาดระหว่างกินยาและหลังหยุดยา 48 ชม. เพราะจะทำให้คลื่นไส้อาเจียนรุนแรง ปวดศีรษะ แน่นหน้าอก); ในหญิงตั้งครรภ์ Paromomycin ปลอดภัยเพราะแทบไม่ถูกดูดซึมเข้าสู่กระแสเลือด"
       }
     },
     "clinicalCases": [
@@ -1282,33 +1447,43 @@
         "virulenceFactors": [
           {
             "name": "Streptococcal Pyrogenic Exotoxins (SpeA, SpeC)",
-            "desc": "Superantigens กระตุ้น T cells จำนวนมหาศาล ปล่อย Cytokine storm นำไปสู่ภาวะช็อกและอวัยวะล้มเหลว (STSS)"
+            "desc": "Superantigens กระตุ้น T cells จำนวนมหาศาล ปล่อย Cytokine storm นำไปสู่ภาวะช็อกและอวัยวะล้มเหลว (STSS)",
+            "mechanism": "Superantigens กระตุ้น T cells จำนวนมหาศาล ปล่อย Cytokine storm นำไปสู่ภาวะช็อกและอวัยวะล้มเหลว (STSS)"
           },
           {
             "name": "SpeB (Streptococcal Cysteine Protease)",
-            "desc": "เอนไซม์ย่อยสลายโปรตีนเนื้อเยื่อเกี่ยวพัน Fascia และทำลายอิมมูโนโกลบูลินของโฮสต์อย่างรวดเร็ว"
+            "desc": "เอนไซม์ย่อยสลายโปรตีนเนื้อเยื่อเกี่ยวพัน Fascia และทำลายอิมมูโนโกลบูลินของโฮสต์อย่างรวดเร็ว",
+            "mechanism": "เอนไซม์ย่อยสลายโปรตีนเนื้อเยื่อเกี่ยวพัน Fascia และทำลายอิมมูโนโกลบูลินของโฮสต์อย่างรวดเร็ว"
           },
           {
             "name": "M Protein",
-            "desc": "แอนติเจนหลักบนผนังเซลล์ ยับยั้ง Phagocytosis และการจับตัวของ Complement C3b (Antigenic mimicry ก่อโรครูมาติก)"
+            "desc": "แอนติเจนหลักบนผนังเซลล์ ยับยั้ง Phagocytosis และการจับตัวของ Complement C3b (Antigenic mimicry ก่อโรครูมาติก)",
+            "mechanism": "แอนติเจนหลักบนผนังเซลล์ ยับยั้ง Phagocytosis และการจับตัวของ Complement C3b (Antigenic mimicry ก่อโรครูมาติก)"
           },
           {
             "name": "Streptolysin O & S",
-            "desc": "สารพิษเจาะทำลายเยื่อหุ้มเม็ดเลือดแดงและเม็ดเลือดขาว (Beta-hemolysis)"
+            "desc": "สารพิษเจาะทำลายเยื่อหุ้มเม็ดเลือดแดงและเม็ดเลือดขาว (Beta-hemolysis)",
+            "mechanism": "สารพิษเจาะทำลายเยื่อหุ้มเม็ดเลือดแดงและเม็ดเลือดขาว (Beta-hemolysis)"
           }
         ],
         "immuneEvasion": [
           "Hyaluronic acid capsule คล้ายเนื้อเยื่อของมนุษย์ ทำให้ระบบภูมิคุ้มกันตรวจไม่พบ",
           "C5a peptidase ย่อยสลายสารเคมีดึงดูดเม็ดเลือดขาว C5a"
-        ]
+        ],
+        "transmission": "การสัมผัสโดยตรง (Direct contact) ผ่านแผลถลอก แผลผ่าตัด หรือแมลงกัด, ละอองฝอยทางเดินหายใจ (Respiratory droplets), และการสัมผัสสารคัดหลั่งจากลำคอ"
       },
       "diagnosis": {
         "staining": "Gram-positive cocci in chains (แบคทีเรียทรงกลมแกรมบวกเรียงตัวเป็นสายยาว)",
-        "culture": "Sheep Blood Agar: แสดงการย่อยเม็ดเลือดแดงอย่างสมบูรณ์แบบใสกระจ่าง (Beta-hemolysis)",
+        "culture": [
+          "Sheep Blood Agar: แสดงการย่อยเม็ดเลือดแดงอย่างสมบูรณ์แบบใสกระจ่าง (Beta-hemolysis)"
+        ],
         "biochemical": [
           "Catalase negative (แยกจาก Staphylococcus)",
           "Bacitracin (A-disc) Sensitive (ยับยั้งการเจริญเติบโตด้วยยา Bacitracin)",
           "PYR (Pyrrolidonyl arylamidase) Positive"
+        ],
+        "stains": [
+          "Gram-positive cocci in chains (แบคทีเรียทรงกลมแกรมบวกเรียงตัวเป็นสายยาว)"
         ]
       },
       "clinical": {
@@ -1423,33 +1598,43 @@
         "virulenceFactors": [
           {
             "name": "Pili (Fimbriae)",
-            "desc": "ช่วยยึดเกาะเยื่อบุผิว มีคุณสมบัติ Antigenic & Phase Variation ทำให้ภูมิคุ้มกันจดจำไม่ได้และติดเชื้อซ้ำได้เรื่อยๆ"
+            "desc": "ช่วยยึดเกาะเยื่อบุผิว มีคุณสมบัติ Antigenic & Phase Variation ทำให้ภูมิคุ้มกันจดจำไม่ได้และติดเชื้อซ้ำได้เรื่อยๆ",
+            "mechanism": "ช่วยยึดเกาะเยื่อบุผิว มีคุณสมบัติ Antigenic & Phase Variation ทำให้ภูมิคุ้มกันจดจำไม่ได้และติดเชื้อซ้ำได้เรื่อยๆ"
           },
           {
             "name": "Opa (Opacity-associated) Proteins",
-            "desc": "โปรตีนช่วยในการยึดเกาะและรุกรานเข้าสู่เซลล์เยื่อบุผิวโฮสต์"
+            "desc": "โปรตีนช่วยในการยึดเกาะและรุกรานเข้าสู่เซลล์เยื่อบุผิวโฮสต์",
+            "mechanism": "โปรตีนช่วยในการยึดเกาะและรุกรานเข้าสู่เซลล์เยื่อบุผิวโฮสต์"
           },
           {
             "name": "LOS (Lipooligosaccharide)",
-            "desc": "เอนโดทอกซินที่ขาด O-antigen แต่กระตุ้นการอักเสบและหลั่ง TNF-alpha รุนแรง"
+            "desc": "เอนโดทอกซินที่ขาด O-antigen แต่กระตุ้นการอักเสบและหลั่ง TNF-alpha รุนแรง",
+            "mechanism": "เอนโดทอกซินที่ขาด O-antigen แต่กระตุ้นการอักเสบและหลั่ง TNF-alpha รุนแรง"
           },
           {
             "name": "IgA1 Protease",
-            "desc": "เอนไซม์ย่อยสลาย Secretory IgA บนผิวเยื่อบุ ทำให้เชื้อสามารถตั้งรกรากได้"
+            "desc": "เอนไซม์ย่อยสลาย Secretory IgA บนผิวเยื่อบุ ทำให้เชื้อสามารถตั้งรกรากได้",
+            "mechanism": "เอนไซม์ย่อยสลาย Secretory IgA บนผิวเยื่อบุ ทำให้เชื้อสามารถตั้งรกรากได้"
           }
         ],
         "immuneEvasion": [
           "PorB protein ป้องกันการรวมตัวของ Phagolysosome ภายในเม็ดเลือดขาว",
           "Phase variation ของ Pili และ Opa ป้องกันการสร้างภูมิคุ้มกันถาวร"
-        ]
+        ],
+        "transmission": "การมีเพศสัมพันธ์โดยตรง (Sexual intercourse: vaginal, anal, oral) โดยไม่สวมถุงยางอนามัย และการส่งผ่านจากมารดาสู่ทารกขณะคลอดทางช่องคลอด (Ophthalmia neonatorum)"
       },
       "diagnosis": {
         "staining": "Gram-negative diplococci with flattened adjacent sides ('kidney bean' or 'coffee bean' shaped) inside polymorphonuclear leukocytes (PMNs)",
-        "culture": "Thayer-Martin Chocolate Agar (มียาปฏิชีวนะ VCN: Vancomycin ฆ่าแกรมบวก, Colistin ฆ่าแกรมลบอื่น, Nystatin ฆ่าเชื้อรา, Trimethoprim ฆ่า Proteus)",
+        "culture": [
+          "Thayer-Martin Chocolate Agar (มียาปฏิชีวนะ VCN: Vancomycin ฆ่าแกรมบวก, Colistin ฆ่าแกรมลบอื่น, Nystatin ฆ่าเชื้อรา, Trimethoprim ฆ่า Proteus)"
+        ],
         "biochemical": [
           "Oxidase positive (เกิดสีม่วงเข้มอย่างรวดเร็ว)",
           "Glucose fermenter only (หมักได้เฉพาะกลูโคส ไม่หมักมอลโตส ต่างจาก N. meningitidis)",
           "NAAT (Nucleic Acid Amplification Test): Gold standard สำหรับตรวจคัดกรองปัสสาวะและสวอบ"
+        ],
+        "stains": [
+          "Gram-negative diplococci with flattened adjacent sides ('kidney bean' or 'coffee bean' shaped) inside polymorphonuclear leukocytes (PMNs)"
         ]
       },
       "clinical": {
@@ -1563,33 +1748,43 @@
         "virulenceFactors": [
           {
             "name": "Type III & Type VI Secretion Systems",
-            "desc": "ทิ่มแทงเยื่อหุ้มเซลล์ของโฮสต์ หลั่งเอฟเฟกเตอร์โปรตีนเพื่อควบคุมการทำงานของเซลล์และหลบหนีออกจาก Phagosome"
+            "desc": "ทิ่มแทงเยื่อหุ้มเซลล์ของโฮสต์ หลั่งเอฟเฟกเตอร์โปรตีนเพื่อควบคุมการทำงานของเซลล์และหลบหนีออกจาก Phagosome",
+            "mechanism": "ทิ่มแทงเยื่อหุ้มเซลล์ของโฮสต์ หลั่งเอฟเฟกเตอร์โปรตีนเพื่อควบคุมการทำงานของเซลล์และหลบหนีออกจาก Phagosome"
           },
           {
             "name": "Polysaccharide Capsule",
-            "desc": "แคปซูลหนาป้องกันการทำลายจาก Complement และยับยั้งการจับกินของเม็ดเลือดขาว Macrophages"
+            "desc": "แคปซูลหนาป้องกันการทำลายจาก Complement และยับยั้งการจับกินของเม็ดเลือดขาว Macrophages",
+            "mechanism": "แคปซูลหนาป้องกันการทำลายจาก Complement และยับยั้งการจับกินของเม็ดเลือดขาว Macrophages"
           },
           {
             "name": "Burkholderia Lethal Factor 1 (BLF1)",
-            "desc": "สารพิษยับยั้งการสังเคราะห์โปรตีนของเซลล์โฮสต์โดยตรง ทำให้เซลล์เกิดเนื้อตาย"
+            "desc": "สารพิษยับยั้งการสังเคราะห์โปรตีนของเซลล์โฮสต์โดยตรง ทำให้เซลล์เกิดเนื้อตาย",
+            "mechanism": "สารพิษยับยั้งการสังเคราะห์โปรตีนของเซลล์โฮสต์โดยตรง ทำให้เซลล์เกิดเนื้อตาย"
           },
           {
             "name": "Actin-based Motility",
-            "desc": "ใช้ Actin ของเซลล์โฮสต์ในการเคลื่อนที่จากเซลล์หนึ่งไปยังอีกเซลล์หนึ่ง ทำให้เกิด Multinucleated giant cell formation"
+            "desc": "ใช้ Actin ของเซลล์โฮสต์ในการเคลื่อนที่จากเซลล์หนึ่งไปยังอีกเซลล์หนึ่ง ทำให้เกิด Multinucleated giant cell formation",
+            "mechanism": "ใช้ Actin ของเซลล์โฮสต์ในการเคลื่อนที่จากเซลล์หนึ่งไปยังอีกเซลล์หนึ่ง ทำให้เกิด Multinucleated giant cell formation"
           }
         ],
         "immuneEvasion": [
           "Facultative intracellular organism สามารถรอดชีวิตและแบ่งตัวภายใน Macrophages",
           "ดื้อยาปฏิชีวนะตามธรรมชาติหลายกลุ่ม (Intrinsic resistance) รวมถึง Penicillins, 1st/2nd Cephalosporins, Aminoglycosides, และ Macrolides"
-        ]
+        ],
+        "transmission": "การสัมผัสโดยตรงกับดินเปียกหรือน้ำขัง (Percutaneous inoculation) ผ่านรอยแผล โดยเฉพาะเกษตรกรในฤดูฝน (ภาคอีสาน), การสูดดมละอองฝุ่นดินหลังพายุฝน, และการดื่มน้ำไม่ต้มสุก"
       },
       "diagnosis": {
         "staining": "Gram-negative bacillus with bipolar staining ('safety-pin' appearance) on Wayson or Gram stain",
-        "culture": "Ashdown's Agar: โคโลนีสีม่วงเข้ม ย่นเป็นลอน (Wrinkled cornflower colonies) หลังเพาะเชื้อ 48-72 ชม. ส่งกลิ่นหอมคล้ายดินเปียกหรือข้าวโพด",
+        "culture": [
+          "Ashdown's Agar: โคโลนีสีม่วงเข้ม ย่นเป็นลอน (Wrinkled cornflower colonies) หลังเพาะเชื้อ 48-72 ชม. ส่งกลิ่นหอมคล้ายดินเปียกหรือข้าวโพด"
+        ],
         "biochemical": [
           "Oxidase positive (ต่างจาก Enterobacteriaceae ส่วนใหญ่)",
           "Resistant to Colistin & Polymyxin B (ใช้แยกจาก Pseudomonas aeruginosa)",
           "Hemagglutination assay (IHA) หรือ PCR เพื่อยืนยันการวินิจฉัย"
+        ],
+        "stains": [
+          "Gram-negative bacillus with bipolar staining ('safety-pin' appearance) on Wayson or Gram stain"
         ]
       },
       "clinical": {
@@ -1705,33 +1900,43 @@
         "virulenceFactors": [
           {
             "name": "Polysaccharide Capsule",
-            "desc": "ปัจจัยก่อโรครุนแรงที่สุด (#1 Virulence factor) มีมากกว่า 100 Serotypes ยับยั้งการจับกินของ Phagocytes และเป็นเป้าหมายของวัคซีน PCV"
+            "desc": "ปัจจัยก่อโรครุนแรงที่สุด (#1 Virulence factor) มีมากกว่า 100 Serotypes ยับยั้งการจับกินของ Phagocytes และเป็นเป้าหมายของวัคซีน PCV",
+            "mechanism": "ปัจจัยก่อโรครุนแรงที่สุด (#1 Virulence factor) มีมากกว่า 100 Serotypes ยับยั้งการจับกินของ Phagocytes และเป็นเป้าหมายของวัคซีน PCV"
           },
           {
             "name": "Pneumolysin (Ply)",
-            "desc": "สารพิษเจาะเยื่อหุ้มเซลล์ (Pore-forming cytotoxin) ทำลายเซลล์เยื่อบุทางเดินหายใจ Cilia และยับยั้งการทำงานของเม็ดเลือดขาว"
+            "desc": "สารพิษเจาะเยื่อหุ้มเซลล์ (Pore-forming cytotoxin) ทำลายเซลล์เยื่อบุทางเดินหายใจ Cilia และยับยั้งการทำงานของเม็ดเลือดขาว",
+            "mechanism": "สารพิษเจาะเยื่อหุ้มเซลล์ (Pore-forming cytotoxin) ทำลายเซลล์เยื่อบุทางเดินหายใจ Cilia และยับยั้งการทำงานของเม็ดเลือดขาว"
           },
           {
             "name": "Secretory IgA Protease",
-            "desc": "เอนไซม์ย่อยสลายแอนติบอดีชนิด IgA บนผิวเยื่อบุ ทำให้เชื้อสามารถยึดเกาะและทะลวงผ่าน Nasopharyngeal mucosa ได้สะดวก"
+            "desc": "เอนไซม์ย่อยสลายแอนติบอดีชนิด IgA บนผิวเยื่อบุ ทำให้เชื้อสามารถยึดเกาะและทะลวงผ่าน Nasopharyngeal mucosa ได้สะดวก",
+            "mechanism": "เอนไซม์ย่อยสลายแอนติบอดีชนิด IgA บนผิวเยื่อบุ ทำให้เชื้อสามารถยึดเกาะและทะลวงผ่าน Nasopharyngeal mucosa ได้สะดวก"
           },
           {
             "name": "Autolysin (LytA)",
-            "desc": "เอนไซม์ย่อยสลายผนังเซลล์ของเชื้อเองเมื่อเข้าสู่ระยะคงที่ ปลดปล่อย Pneumolysin และชิ้นส่วนผนังเซลล์กระตุ้นการอักเสบอย่างรุนแรง"
+            "desc": "เอนไซม์ย่อยสลายผนังเซลล์ของเชื้อเองเมื่อเข้าสู่ระยะคงที่ ปลดปล่อย Pneumolysin และชิ้นส่วนผนังเซลล์กระตุ้นการอักเสบอย่างรุนแรง",
+            "mechanism": "เอนไซม์ย่อยสลายผนังเซลล์ของเชื้อเองเมื่อเข้าสู่ระยะคงที่ ปลดปล่อย Pneumolysin และชิ้นส่วนผนังเซลล์กระตุ้นการอักเสบอย่างรุนแรง"
           }
         ],
         "immuneEvasion": [
           "แคปซูลหนาทำให้ไม่ถูก Complement Opsonization ยกเว้นในคนที่มีแอนติบอดีจำเพาะ",
           "ผู้ป่วยที่ตัดม้าม (Asplenia) หรือมีภาวะ Functional asplenia (เช่น Sickle-cell anemia) เสี่ยงต่อการเกิด Overwhelming Post-Splenectomy Infection (OPSI) เสียชีวิตในไม่กี่ชั่วโมง"
-        ]
+        ],
+        "transmission": "ละอองฝอยทางเดินหายใจ (Respiratory droplets) จากผู้ป่วยหรือพาหะที่มีเชื้อในโพรงจมูก (Nasopharyngeal carriage) บุกรุกเมื่อภูมิคุ้มกันลดลงหรือหลังเป็นไข้หวัดใหญ่"
       },
       "diagnosis": {
         "staining": "Gram-positive lancet-shaped diplococci arranged in pairs (รูปปลายหอกประกบคู่กัน) พร้อม Quellung reaction positive",
-        "culture": "Sheep Blood Agar: Alpha-hemolytic colonies (สลายเม็ดเลือดแดงไม่สมบูรณ์ โคโลนีมีรอยบุ๋มตรงกลางคล้ายเหรียญกษาปณ์ Draughtsman colonies)",
+        "culture": [
+          "Sheep Blood Agar: Alpha-hemolytic colonies (สลายเม็ดเลือดแดงไม่สมบูรณ์ โคโลนีมีรอยบุ๋มตรงกลางคล้ายเหรียญกษาปณ์ Draughtsman colonies)"
+        ],
         "biochemical": [
           "Optochin Sensitive: ยับยั้งการเจริญเติบโตด้วยแผ่นยา Optochin (Zone of inhibition >= 14 mm) ใช้แยกจาก Viridans streptococci",
           "Bile Soluble: ละลายในน้ำดี (Deoxycholate test positive) สารแขวนลอยใสขึ้นหลังเติมเกลือน้ำดี",
           "Catalase Negative: ไม่สร้างเอนไซม์คะตาเลส (แยกจาก Staphylococci)"
+        ],
+        "stains": [
+          "Gram-positive lancet-shaped diplococci arranged in pairs (รูปปลายหอกประกบคู่กัน) พร้อม Quellung reaction positive"
         ]
       },
       "clinical": {
@@ -1848,33 +2053,43 @@
         "virulenceFactors": [
           {
             "name": "P Fimbriae (Pyelonephritis-associated Pili)",
-            "desc": "ขาเกาะจำเพาะจับกับ Gal-alpha(1-4)-Gal beta receptors บนผิวเยื่อบุเซลล์ไต ทำให้เชื้อไต่ทวนน้ำปัสสาวะขึ้นสู่กรวยไตได้"
+            "desc": "ขาเกาะจำเพาะจับกับ Gal-alpha(1-4)-Gal beta receptors บนผิวเยื่อบุเซลล์ไต ทำให้เชื้อไต่ทวนน้ำปัสสาวะขึ้นสู่กรวยไตได้",
+            "mechanism": "ขาเกาะจำเพาะจับกับ Gal-alpha(1-4)-Gal beta receptors บนผิวเยื่อบุเซลล์ไต ทำให้เชื้อไต่ทวนน้ำปัสสาวะขึ้นสู่กรวยไตได้"
           },
           {
             "name": "Type 1 Fimbriae (Mannose-sensitive Pili)",
-            "desc": "ใช้ยึดเกาะกับ Uroplakin receptors บนผิวเยื่อบุกระเพาะปัสสาวะ สำคัญในการก่อโรคกระเพาะปัสสาวะอักเสบ (Cystitis)"
+            "desc": "ใช้ยึดเกาะกับ Uroplakin receptors บนผิวเยื่อบุกระเพาะปัสสาวะ สำคัญในการก่อโรคกระเพาะปัสสาวะอักเสบ (Cystitis)",
+            "mechanism": "ใช้ยึดเกาะกับ Uroplakin receptors บนผิวเยื่อบุกระเพาะปัสสาวะ สำคัญในการก่อโรคกระเพาะปัสสาวะอักเสบ (Cystitis)"
           },
           {
             "name": "Lipopolysaccharide (LPS) Endotoxin",
-            "desc": "ส่วนประกอบ Lipid A ในผนังเซลล์กระตุ้นการหลั่ง IL-1, IL-6, TNF-alpha ผ่าน TLR-4 ก่อให้เกิดไข้สูง หนาวสั่น และภาวะ Urosepsis"
+            "desc": "ส่วนประกอบ Lipid A ในผนังเซลล์กระตุ้นการหลั่ง IL-1, IL-6, TNF-alpha ผ่าน TLR-4 ก่อให้เกิดไข้สูง หนาวสั่น และภาวะ Urosepsis",
+            "mechanism": "ส่วนประกอบ Lipid A ในผนังเซลล์กระตุ้นการหลั่ง IL-1, IL-6, TNF-alpha ผ่าน TLR-4 ก่อให้เกิดไข้สูง หนาวสั่น และภาวะ Urosepsis"
           },
           {
             "name": "Hemolysin & Siderophores (Aerobactin)",
-            "desc": "หลั่งสารเจาะทำลายเซลล์เยื่อบุไตและดึงธาตุเหล็กจากโฮสต์เพื่อใช้ในการเจริญเติบโตในสภาพแวดล้อมปัสสาวะ"
+            "desc": "หลั่งสารเจาะทำลายเซลล์เยื่อบุไตและดึงธาตุเหล็กจากโฮสต์เพื่อใช้ในการเจริญเติบโตในสภาพแวดล้อมปัสสาวะ",
+            "mechanism": "หลั่งสารเจาะทำลายเซลล์เยื่อบุไตและดึงธาตุเหล็กจากโฮสต์เพื่อใช้ในการเจริญเติบโตในสภาพแวดล้อมปัสสาวะ"
           }
         ],
         "immuneEvasion": [
           "สร้าง K antigen (Capsular polysaccharide) ป้องกันการถูก Complement lysis และ Phagocytosis",
           "ความสามารถในการหลบซ่อนตัวใน Urothelial umbrella cells เกิดเป็น Intracellular Bacterial Communities (IBCs) ทำให้เกิดการติดเชื้อซ้ำซาก"
-        ]
+        ],
+        "transmission": "การลุกลามย้อนศรจากทวารหนักสู่ทางเดินปัสสาวะ (Ascending infection จาก Perineal flora เข้าสู่กระเพาะปัสสาวะและกรวยไต) พบบ่อยในเพศหญิงและผู้คาสายสวนปัสสาวะ"
       },
       "diagnosis": {
         "staining": "Gram-negative straight bacillus (แท่งแกรมลบ ย้อมติดสีแดง-ชมพู)",
-        "culture": "MacConkey Agar: โคโลนีสีชมพูเข้ม (Lactose fermenter); EMB Agar: โคโลนีสะท้อนแสงสีเขียวเหลือบวาว (Green metallic sheen); Blood Agar: บางสายพันธุ์ให้ Beta-hemolysis",
+        "culture": [
+          "MacConkey Agar: โคโลนีสีชมพูเข้ม (Lactose fermenter); EMB Agar: โคโลนีสะท้อนแสงสีเขียวเหลือบวาว (Green metallic sheen); Blood Agar: บางสายพันธุ์ให้ Beta-hemolysis"
+        ],
         "biochemical": [
           "IMViC test: ++-- (Indole +, Methyl Red +, Voges-Proskauer -, Citrate -)",
           "Urine Dipstick: Leukocyte esterase positive (บ่งบอก Pyuria) และ Nitrite test positive (แบคทีเรียเปลี่ยน Nitrate เป็น Nitrite)",
           "Catalase positive, Oxidase negative (แยกจาก Pseudomonas aeruginosa)"
+        ],
+        "stains": [
+          "Gram-negative straight bacillus (แท่งแกรมลบ ย้อมติดสีแดง-ชมพู)"
         ]
       },
       "clinical": {
@@ -1990,33 +2205,43 @@
         "virulenceFactors": [
           {
             "name": "M Cell Invasion (Type III Secretion System)",
-            "desc": "ฉีดโปรตีน Ipa เข้าสู่ M cells ของ Peyer patches กระตุ้นให้เกิด Macropinocytosis เพื่อเข้าสู่ชั้น Submucosa"
+            "desc": "ฉีดโปรตีน Ipa เข้าสู่ M cells ของ Peyer patches กระตุ้นให้เกิด Macropinocytosis เพื่อเข้าสู่ชั้น Submucosa",
+            "mechanism": "ฉีดโปรตีน Ipa เข้าสู่ M cells ของ Peyer patches กระตุ้นให้เกิด Macropinocytosis เพื่อเข้าสู่ชั้น Submucosa"
           },
           {
             "name": "Actin-Based Rocket Propulsion (IcsA / VirG)",
-            "desc": "เหนี่ยวนำให้เกิดการต่อสาย Polymerization ของ Host actin filaments ก่อตัวเป็น 'Actin comet tail' ดันเชื้อทะลุเยื่อหุ้มเซลล์ไปยังเซลล์เยื่อบุข้างเคียง"
+            "desc": "เหนี่ยวนำให้เกิดการต่อสาย Polymerization ของ Host actin filaments ก่อตัวเป็น 'Actin comet tail' ดันเชื้อทะลุเยื่อหุ้มเซลล์ไปยังเซลล์เยื่อบุข้างเคียง",
+            "mechanism": "เหนี่ยวนำให้เกิดการต่อสาย Polymerization ของ Host actin filaments ก่อตัวเป็น 'Actin comet tail' ดันเชื้อทะลุเยื่อหุ้มเซลล์ไปยังเซลล์เยื่อบุข้างเคียง"
           },
           {
             "name": "Shiga Toxin (AB5 Toxin)",
-            "desc": "หน่วยย่อย A ยับยั้งการทำงานของ 60S ribosomal subunit โดยตัดอะดีนีนบน 28S rRNA หยุดยั้งการสร้างโปรตีนของเซลล์ ทำให้เซลล์เยื่อบุและหลอดเลือดฝอยในไตตาย"
+            "desc": "หน่วยย่อย A ยับยั้งการทำงานของ 60S ribosomal subunit โดยตัดอะดีนีนบน 28S rRNA หยุดยั้งการสร้างโปรตีนของเซลล์ ทำให้เซลล์เยื่อบุและหลอดเลือดฝอยในไตตาย",
+            "mechanism": "หน่วยย่อย A ยับยั้งการทำงานของ 60S ribosomal subunit โดยตัดอะดีนีนบน 28S rRNA หยุดยั้งการสร้างโปรตีนของเซลล์ ทำให้เซลล์เยื่อบุและหลอดเลือดฝอยในไตตาย"
           },
           {
             "name": "Induction of Macrophage Apoptosis",
-            "desc": "กระตุ้น Caspase-1 ใน Macrophages ทำให้เซลล์แตกทำลายและหลั่ง IL-1beta กับ IL-18 ก่อให้เกิดการอักเสบอย่างรุนแรง"
+            "desc": "กระตุ้น Caspase-1 ใน Macrophages ทำให้เซลล์แตกทำลายและหลั่ง IL-1beta กับ IL-18 ก่อให้เกิดการอักเสบอย่างรุนแรง",
+            "mechanism": "กระตุ้น Caspase-1 ใน Macrophages ทำให้เซลล์แตกทำลายและหลั่ง IL-1beta กับ IL-18 ก่อให้เกิดการอักเสบอย่างรุนแรง"
           }
         ],
         "immuneEvasion": [
           "เคลื่อนที่ภายใน Cytoplasm ของเซลล์โดยตรง จึงหลบเลี่ยงแอนติบอดีในกระแสเลือดและระบบ Complement ได้อย่างสมบูรณ์",
           "ทนทานต่อสภาวะความเป็นกรดสูงในกระเพาะอาหาร (Acid-resistant) ผ่านระบบ Glutamate decarboxylase"
-        ]
+        ],
+        "transmission": "Fecal-oral route (อุจจาระสู่ปาก) ผ่าน '4 Fs': Fingers, Flies, Food, Fomites ด้วยปริมาณเชื้อก่อโรคต่ำมากเพียง 10-100 ตัวก็ทำให้เกิดบิดมูกเลือดรุนแรง"
       },
       "diagnosis": {
         "staining": "Gram-negative bacillus (แท่งแกรมลบ ย้อมติดสีแดง ไม่เคลื่อนที่)",
-        "culture": "MacConkey Agar: โคโลนีใสไร้สี (Colorless, Non-lactose fermenter); Salmonella-Shigella (SS) Agar: โคโลนีใสไร้สี ไม่มีจุดดำตรงกลาง (H2S negative); XLD Agar: โคโลนีสีแดงใส",
+        "culture": [
+          "MacConkey Agar: โคโลนีใสไร้สี (Colorless, Non-lactose fermenter); Salmonella-Shigella (SS) Agar: โคโลนีใสไร้สี ไม่มีจุดดำตรงกลาง (H2S negative); XLD Agar: โคโลนีสีแดงใส"
+        ],
         "biochemical": [
           "Triple Sugar Iron (TSI): K/A, Gas negative, H2S negative (ด่างบน/กรดล่าง ไม่สร้างก๊าซและไม่สร้างก๊าซไข่เน่า)",
           "Motility test: Negative (ไม่เคลื่อนที่ แยกจาก Salmonella, E. coli, Proteus)",
           "Urease negative, Citrate negative"
+        ],
+        "stains": [
+          "Gram-negative bacillus (แท่งแกรมลบ ย้อมติดสีแดง ไม่เคลื่อนที่)"
         ]
       },
       "clinical": {
@@ -2133,33 +2358,43 @@
         "virulenceFactors": [
           {
             "name": "Biphasic Lifecycle (EB vs RB)",
-            "desc": "Elementary Body (EB) ขนาดเล็ก หนา ทนทาน ทำหน้าที่ติดเชื้อเข้าสู่เซลล์; Reticulate Body (RB) ขนาดใหญ่ ทำหน้าที่แบ่งตัวสังเคราะห์สารพันธุกรรมภายใน Phagosome"
+            "desc": "Elementary Body (EB) ขนาดเล็ก หนา ทนทาน ทำหน้าที่ติดเชื้อเข้าสู่เซลล์; Reticulate Body (RB) ขนาดใหญ่ ทำหน้าที่แบ่งตัวสังเคราะห์สารพันธุกรรมภายใน Phagosome",
+            "mechanism": "Elementary Body (EB) ขนาดเล็ก หนา ทนทาน ทำหน้าที่ติดเชื้อเข้าสู่เซลล์; Reticulate Body (RB) ขนาดใหญ่ ทำหน้าที่แบ่งตัวสังเคราะห์สารพันธุกรรมภายใน Phagosome"
           },
           {
             "name": "Type III Secretion System & Inc Proteins",
-            "desc": "ฉีดโปรตีนดัดแปลงเยื่อหุ้ม Inclusion membrane เพื่อยับยั้งการรวมตัวของ Phagosome กับ Lysosome ทำให้เชื้อไม่ถูกย่อยทำลาย"
+            "desc": "ฉีดโปรตีนดัดแปลงเยื่อหุ้ม Inclusion membrane เพื่อยับยั้งการรวมตัวของ Phagosome กับ Lysosome ทำให้เชื้อไม่ถูกย่อยทำลาย",
+            "mechanism": "ฉีดโปรตีนดัดแปลงเยื่อหุ้ม Inclusion membrane เพื่อยับยั้งการรวมตัวของ Phagosome กับ Lysosome ทำให้เชื้อไม่ถูกย่อยทำลาย"
           },
           {
             "name": "Chlamydial Protease-like Activity Factor (CPAF)",
-            "desc": "เอนไซม์ย่อยสลาย Transcription factors ของโฮสต์ ยับยั้งการนำเสนอแอนติเจนผ่าน MHC class I และ II ขัดขวางระบบภูมิคุ้มกัน"
+            "desc": "เอนไซม์ย่อยสลาย Transcription factors ของโฮสต์ ยับยั้งการนำเสนอแอนติเจนผ่าน MHC class I และ II ขัดขวางระบบภูมิคุ้มกัน",
+            "mechanism": "เอนไซม์ย่อยสลาย Transcription factors ของโฮสต์ ยับยั้งการนำเสนอแอนติเจนผ่าน MHC class I และ II ขัดขวางระบบภูมิคุ้มกัน"
           },
           {
             "name": "Major Outer Membrane Protein (MOMP)",
-            "desc": "โปรตีนแอนติเจนหลักบนผิวนอก แบ่งสายพันธุ์เป็น Serovars A-C (ริดสีดวงตา Trachoma), D-K (STI, PID, Neonatal conjunctivitis/pneumonia), และ L1-L3 (Lymphogranuloma venereum - LGV)"
+            "desc": "โปรตีนแอนติเจนหลักบนผิวนอก แบ่งสายพันธุ์เป็น Serovars A-C (ริดสีดวงตา Trachoma), D-K (STI, PID, Neonatal conjunctivitis/pneumonia), และ L1-L3 (Lymphogranuloma venereum - LGV)",
+            "mechanism": "โปรตีนแอนติเจนหลักบนผิวนอก แบ่งสายพันธุ์เป็น Serovars A-C (ริดสีดวงตา Trachoma), D-K (STI, PID, Neonatal conjunctivitis/pneumonia), และ L1-L3 (Lymphogranuloma venereum - LGV)"
           }
         ],
         "immuneEvasion": [
           "อาศัยและแบ่งตัวอยู่ภายในเยื่อหุ้ม Inclusion membrane หลบเลี่ยงระบบ Humoral immunity ได้อย่างสมบูรณ์",
           "ไม่สร้างสารกระตุ้นการอักเสบที่รุนแรงในระยะแรก ทำให้การติดเชื้อดำเนินไปอย่างเงียบๆ เป็นเวลานานจนเกิดพังผืดถาวร"
-        ]
+        ],
+        "transmission": "การมีเพศสัมพันธ์โดยตรง (Vaginal, anal, or oral sex) กับคู่นอนที่ติดเชื้อ (ส่วนใหญ่มักไม่แสดงอาการ) และการส่งผ่านจากมารดาสู่ทารกขณะคลอด"
       },
       "diagnosis": {
         "staining": "Giemsa stain แสดง Basophilic intracytoplasmic inclusion bodies หรือ Direct Fluorescent Antibody (DFA)",
-        "culture": "เพาะในเซลล์มีชีวิตเท่านั้น (McCoy cell culture หรือ HeLa cells) ไม่สามารถเพาะบนอาหารเลี้ยงเชื้อแบคทีเรียธรรมดาได้",
+        "culture": [
+          "เพาะในเซลล์มีชีวิตเท่านั้น (McCoy cell culture หรือ HeLa cells) ไม่สามารถเพาะบนอาหารเลี้ยงเชื้อแบคทีเรียธรรมดาได้"
+        ],
         "biochemical": [
           "Nucleic Acid Amplification Test (NAAT): วิธีมาตรฐานหลัก (Gold Standard) ตรวจจาก First-catch urine หรือ Vaginal/Endocervical swab มีความไวและความจำเพาะ > 98%",
           "Urine Pregnancy Test (UPT): ต้องส่งตรวจในสตรีวัยเจริญพันธุ์ที่สงสัย PID ทุกราย เพื่อตัดภาวะ Ectopic pregnancy",
           "Serology (Micro-IF): ใช้ในการวินิจฉัย Lymphogranuloma venereum (LGV) หรือ Neonatal pneumonitis"
+        ],
+        "stains": [
+          "Giemsa stain แสดง Basophilic intracytoplasmic inclusion bodies หรือ Direct Fluorescent Antibody (DFA)"
         ]
       },
       "clinical": {
@@ -2275,33 +2510,43 @@
         "virulenceFactors": [
           {
             "name": "Periplasmic Endoflagella",
-            "desc": "แฟลกเจลลาคู่ภายในช่องว่าง Periplasmic space ทำให้เคลื่อนที่หมุนควงสว่านและแทรกผ่านเนื้อเยื่อและเยื่อเมือกได้อย่างรวดเร็ว"
+            "desc": "แฟลกเจลลาคู่ภายในช่องว่าง Periplasmic space ทำให้เคลื่อนที่หมุนควงสว่านและแทรกผ่านเนื้อเยื่อและเยื่อเมือกได้อย่างรวดเร็ว",
+            "mechanism": "แฟลกเจลลาคู่ภายในช่องว่าง Periplasmic space ทำให้เคลื่อนที่หมุนควงสว่านและแทรกผ่านเนื้อเยื่อและเยื่อเมือกได้อย่างรวดเร็ว"
           },
           {
             "name": "Widespread Endothelial Damage (Vasculitis)",
-            "desc": "บุกรุกเข้าสู่เซลล์เยื่อบุผิวหลอดเลือด ทำให้เกิด Microvascular leakage, หลอดเลือดอักเสบทั่วร่างกาย และภาวะเลือดออกตามอวัยวะ (Hemorrhagic diathesis)"
+            "desc": "บุกรุกเข้าสู่เซลล์เยื่อบุผิวหลอดเลือด ทำให้เกิด Microvascular leakage, หลอดเลือดอักเสบทั่วร่างกาย และภาวะเลือดออกตามอวัยวะ (Hemorrhagic diathesis)",
+            "mechanism": "บุกรุกเข้าสู่เซลล์เยื่อบุผิวหลอดเลือด ทำให้เกิด Microvascular leakage, หลอดเลือดอักเสบทั่วร่างกาย และภาวะเลือดออกตามอวัยวะ (Hemorrhagic diathesis)"
           },
           {
             "name": "Sphingomyelinases & Hemolysins",
-            "desc": "สารพิษทำลายเยื่อหุ้มเซลล์เม็ดเลือดแดงและเซลล์โฮสต์ ก่อให้เกิดการแตกของเม็ดเลือดและการอักเสบในเนื้อเยื่อ"
+            "desc": "สารพิษทำลายเยื่อหุ้มเซลล์เม็ดเลือดแดงและเซลล์โฮสต์ ก่อให้เกิดการแตกของเม็ดเลือดและการอักเสบในเนื้อเยื่อ",
+            "mechanism": "สารพิษทำลายเยื่อหุ้มเซลล์เม็ดเลือดแดงและเซลล์โฮสต์ ก่อให้เกิดการแตกของเม็ดเลือดและการอักเสบในเนื้อเยื่อ"
           },
           {
             "name": "Lipopolysaccharide (Leptospiral LPS)",
-            "desc": "LPS ชนิดพิเศษที่มีโครงสร้างเป็นเอกลักษณ์ มีฤทธิ์กระตุ้นระบบภูมิคุ้มกันผ่าน TLR-2 แทนที่จะเป็น TLR-4"
+            "desc": "LPS ชนิดพิเศษที่มีโครงสร้างเป็นเอกลักษณ์ มีฤทธิ์กระตุ้นระบบภูมิคุ้มกันผ่าน TLR-2 แทนที่จะเป็น TLR-4",
+            "mechanism": "LPS ชนิดพิเศษที่มีโครงสร้างเป็นเอกลักษณ์ มีฤทธิ์กระตุ้นระบบภูมิคุ้มกันผ่าน TLR-2 แทนที่จะเป็น TLR-4"
           }
         ],
         "immuneEvasion": [
           "หลบหนีออกจากกระแสเลือดไปเกาะอาศัยอยู่ใน Renal proximal tubular lumen ทำให้แอนติบอดีและระบบ Complement เข้าไปทำลายได้ยาก",
           "ขับถ่ายออกมากับปัสสาวะของสัตว์รังโรค (หนู โค กระบือ สุนัข) ปนเปื้อนในดินและน้ำขังได้นานหลายสัปดาห์ถึงหลายเดือน"
-        ]
+        ],
+        "transmission": "การสัมผัสโดยตรงกับน้ำ ดินโคลน หรือน้ำท่วมขังที่ปนเปื้อนปัสสาวะของหนูหรือสัตว์รังโรค ผ่านบาดแผล รอยถลอก หรือเยื่อบุตา/จมูก/ปาก ขณะเดินลุยน้ำท่วมหรือทำนา"
       },
       "diagnosis": {
         "staining": "Silver impregnation stain (Warthin-Starry หรือ Steiner stain) หรือการส่องด้วย Darkfield microscopy ในระยะแรกที่มีเชื้อในกระแสเลือด",
-        "culture": "อาหารจำเพาะ EMJH (Ellinghausen-McCullough-Johnson-Harris) หรือ Fletcher's medium ใช้เวลาเพาะนาน 2-4 สัปดาห์",
+        "culture": [
+          "อาหารจำเพาะ EMJH (Ellinghausen-McCullough-Johnson-Harris) หรือ Fletcher's medium ใช้เวลาเพาะนาน 2-4 สัปดาห์"
+        ],
         "biochemical": [
           "Microscopic Agglutination Test (MAT): มาตรฐานหลัก (Gold Standard) โดยการเพิ่มขึ้นของระดับ Titers 4 เท่าระหว่างระยะเฉียบพลันและระยะฟื้นตัว หรือ Single titer >= 1:400 ในพื้นที่ระบาด",
           "Leptospira IgM Rapid Test / ELISA: ไวและตรวจได้เร็วในสัปดาห์แรกของการติดเชื้อ",
           "Real-time PCR: ตรวจหาสารพันธุกรรมของเชื้อในเลือดหรือปัสสาวะในระยะแรกที่มีไข้ (Leptospiremic phase)"
+        ],
+        "stains": [
+          "Silver impregnation stain (Warthin-Starry หรือ Steiner stain) หรือการส่องด้วย Darkfield microscopy ในระยะแรกที่มีเชื้อในกระแสเลือด"
         ]
       },
       "clinical": {
@@ -2420,30 +2665,39 @@
         "virulenceFactors": [
           {
             "name": "56-kDa Major Outer Membrane Protein (TSA56)",
-            "desc": "โปรตีนสำคัญบนเยื่อหุ้มเซลล์ทำหน้าที่เป็น Adhesin ยึดเกาะกับ Integrins ของโฮสต์และหลบหลีกภูมิคุ้มกัน มีความแปรปรวนทางสายพันธุ์สูง (Karp, Gilliam, Kato)"
+            "desc": "โปรตีนสำคัญบนเยื่อหุ้มเซลล์ทำหน้าที่เป็น Adhesin ยึดเกาะกับ Integrins ของโฮสต์และหลบหลีกภูมิคุ้มกัน มีความแปรปรวนทางสายพันธุ์สูง (Karp, Gilliam, Kato)",
+            "mechanism": "โปรตีนสำคัญบนเยื่อหุ้มเซลล์ทำหน้าที่เป็น Adhesin ยึดเกาะกับ Integrins ของโฮสต์และหลบหลีกภูมิคุ้มกัน มีความแปรปรวนทางสายพันธุ์สูง (Karp, Gilliam, Kato)"
           },
           {
             "name": "Endothelial Tropism & Obligate Intracellular Survival",
-            "desc": "เข้าสู่เซลล์ Endothelium ผ่าน Induced phagocytosis แล้วหลบหนีออกจาก Phagosome สู่ Cytosol อย่างรวดเร็ว แบ่งตัวจนเซลล์แตก"
+            "desc": "เข้าสู่เซลล์ Endothelium ผ่าน Induced phagocytosis แล้วหลบหนีออกจาก Phagosome สู่ Cytosol อย่างรวดเร็ว แบ่งตัวจนเซลล์แตก",
+            "mechanism": "เข้าสู่เซลล์ Endothelium ผ่าน Induced phagocytosis แล้วหลบหนีออกจาก Phagosome สู่ Cytosol อย่างรวดเร็ว แบ่งตัวจนเซลล์แตก"
           },
           {
             "name": "Perivascular Lymphocytic Vasculitis",
-            "desc": "การทำลายเซลล์เยื่อบุหลอดเลือดฝอยทั่วร่างกาย ทำให้ผนังหลอดเลือดรั่ว (Increased vascular permeability), Interstitial pneumonitis, ARDS, และ Menigoencephalitis"
+            "desc": "การทำลายเซลล์เยื่อบุหลอดเลือดฝอยทั่วร่างกาย ทำให้ผนังหลอดเลือดรั่ว (Increased vascular permeability), Interstitial pneumonitis, ARDS, และ Menigoencephalitis",
+            "mechanism": "การทำลายเซลล์เยื่อบุหลอดเลือดฝอยทั่วร่างกาย ทำให้ผนังหลอดเลือดรั่ว (Increased vascular permeability), Interstitial pneumonitis, ARDS, และ Menigoencephalitis"
           }
         ],
         "immuneEvasion": [
           "แบ่งตัวใน Cytosol ของเซลล์โฮสต์ จึงรอดพ้นจากการทำลายของ Lysosomal enzymes",
           "ไม่มีผนังเซลล์ Peptidoglycan และ LPS แบบดั้งเดิม จึงดื้อยาต่อกลุ่ม Beta-lactams อย่างสมบูรณ์"
-        ]
+        ],
+        "transmission": "การถูกกัดโดยตัวอ่อนของไรอ่อน (Chigger mite larva สกุล Leptotrombidium) ขณะเดินลุยป่าละเมาะ ทุ่งหญ้า ชายป่า ในแถบเอเชียแปซิฟิก (Tsutsugamushi triangle)"
       },
       "diagnosis": {
         "staining": "Obligate intracellular bacteria: ย้อม Gram stain ไม่ติด ต้องย้อมด้วย Giemsa หรือ Gimenez stain พบเชื้อขนาดเล็กในไซโตพลาสซึม",
-        "culture": "เพาะเชื้อยากมาก ต้องใช้เซลล์เพาะเลี้ยง (Cell culture) หรือฉีดเข้าถุงไข่ไก่ฟัก (BSL-3 containment)",
+        "culture": [
+          "เพาะเชื้อยากมาก ต้องใช้เซลล์เพาะเลี้ยง (Cell culture) หรือฉีดเข้าถุงไข่ไก่ฟัก (BSL-3 containment)"
+        ],
         "biochemical": [
           "Therapeutic Diagnosis: 'ไข้ลดลงสู่เกณฑ์ปกติภายใน 24-48 ชั่วโมงหลังได้รับ Doxycycline' ถือเป็นหลักฐานวินิจฉัยทางคลินิกที่สำคัญยิ่ง (Rapid defervescence)",
           "IFA (Indirect Immunofluorescence Assay): Gold standard ทาง Serology แสดงการเพิ่มขึ้น 4 เท่าของ IgG titer",
           "Weil-Felix Reaction: OX-K positive (ส่วน OX-19 และ OX-2 ให้ผลลบ ช่วยแยกจาก Murine/Epidemic typhus และ Spotted fevers)",
           "Lab: Leukopenia ในสัปดาห์แรก, Transaminitis (AST/ALT สูง 2-5 เท่า), Thrombocytopenia"
+        ],
+        "stains": [
+          "Obligate intracellular bacteria: ย้อม Gram stain ไม่ติด ต้องย้อมด้วย Giemsa หรือ Gimenez stain พบเชื้อขนาดเล็กในไซโตพลาสซึม"
         ]
       },
       "clinical": {
@@ -2560,30 +2814,39 @@
         "virulenceFactors": [
           {
             "name": "Vi (Virulence) Capsular Polysaccharide Antigen",
-            "desc": "แคปซูลป้องกันการตรวจจับของ Toll-like receptors, ยับยั้ง Complement opsonization และยับยั้งการจับกินของ Phagocytes"
+            "desc": "แคปซูลป้องกันการตรวจจับของ Toll-like receptors, ยับยั้ง Complement opsonization และยับยั้งการจับกินของ Phagocytes",
+            "mechanism": "แคปซูลป้องกันการตรวจจับของ Toll-like receptors, ยับยั้ง Complement opsonization และยับยั้งการจับกินของ Phagocytes"
           },
           {
             "name": "Type III Secretion System (T3SS-1 and T3SS-2)",
-            "desc": "T3SS-1 ช่วยให้เชื้อบุกรุกเข้า M cells ของ Peyer's patches; T3SS-2 ช่วยให้รอดชีวิตและแบ่งตัวภายใน Macrophages"
+            "desc": "T3SS-1 ช่วยให้เชื้อบุกรุกเข้า M cells ของ Peyer's patches; T3SS-2 ช่วยให้รอดชีวิตและแบ่งตัวภายใน Macrophages",
+            "mechanism": "T3SS-1 ช่วยให้เชื้อบุกรุกเข้า M cells ของ Peyer's patches; T3SS-2 ช่วยให้รอดชีวิตและแบ่งตัวภายใน Macrophages"
           },
           {
             "name": "Facultative Intracellular Survival in Mononuclear Phagocytes",
-            "desc": "หลบซ่อนและเพิ่มจำนวนใน Macrophages ของต่อมน้ำเหลืองและม้าม ก่อนจะหลั่งเข้าสู่กระแสเลือดรอบสอง (Secondary bacteremia)"
+            "desc": "หลบซ่อนและเพิ่มจำนวนใน Macrophages ของต่อมน้ำเหลืองและม้าม ก่อนจะหลั่งเข้าสู่กระแสเลือดรอบสอง (Secondary bacteremia)",
+            "mechanism": "หลบซ่อนและเพิ่มจำนวนใน Macrophages ของต่อมน้ำเหลืองและม้าม ก่อนจะหลั่งเข้าสู่กระแสเลือดรอบสอง (Secondary bacteremia)"
           }
         ],
         "immuneEvasion": [
           "ทนต่อกรดในกระเพาะอาหารปานกลาง (ต้องใช้ Inoculum ขนาด 10^5 - 10^9 ตัว ยกเว้นในคนกินยาลดกรดที่ติดเชื้อง่ายขึ้น)",
           "การสร้าง Biofilm บนผิวหน้านิ่วในถุงน้ำดีทำให้กลายเป็นพาหะเรื้อรัง (Chronic carrier) ตลอดชีวิต"
-        ]
+        ],
+        "transmission": "Fecal-oral route โดยการบริโภคน้ำดื่มหรืออาหารที่ปนเปื้อนอุจจาระหรือปัสสาวะของผู้ป่วยหรือพาหะเรื้อรัง (Chronic gallbladder carrier เช่น แม่ค้าขายอาหาร)"
       },
       "diagnosis": {
         "staining": "Gram-negative motile bacillus with peritrichous flagella (แบคทีเรียแท่งแกรมลบ มีแฟลกเจลลารอบตัว)",
-        "culture": "Bone Marrow Culture: มีความไวสูงสุด (>90% sensitivity) แม้ผู้ป่วยได้รับยาปฏิชีวนะมาก่อน; Blood Culture ไวสูงสุดในสัปดาห์ที่ 1 (60-80%); Stool/Urine Culture ไวในสัปดาห์ที่ 2-3",
+        "culture": [
+          "Bone Marrow Culture: มีความไวสูงสุด (>90% sensitivity) แม้ผู้ป่วยได้รับยาปฏิชีวนะมาก่อน; Blood Culture ไวสูงสุดในสัปดาห์ที่ 1 (60-80%); Stool/Urine Culture ไวในสัปดาห์ที่ 2-3"
+        ],
         "biochemical": [
           "Non-lactose fermenter บน MacConkey agar (โคโลนีใสไม่มีสี)",
           "H2S positive บน Hektoen หรือ TSI (Triple Sugar Iron: K/A with black precipitate + gas)",
           "Urease negative, Indole negative, Motile (เคลื่อนที่ได้ แยกจาก Shigella และ Klebsiella)",
           "CBC: Leukopenia with relative lymphocytosis, Left shift with band forms, Eosinopenia (ขาด Eosinophils เป็นเอกลักษณ์)"
+        ],
+        "stains": [
+          "Gram-negative motile bacillus with peritrichous flagella (แบคทีเรียแท่งแกรมลบ มีแฟลกเจลลารอบตัว)"
         ]
       },
       "clinical": {
@@ -2700,29 +2963,38 @@
         "virulenceFactors": [
           {
             "name": "Glucuronoxylomannan (GXM) Capsule",
-            "desc": "แคปซูลโพลีแซคคาไรด์ขนาดใหญ่ ยับยั้ง Phagocytosis, ยับยั้ง Leukocyte migration และกระตุ้น L-selectin shedding"
+            "desc": "แคปซูลโพลีแซคคาไรด์ขนาดใหญ่ ยับยั้ง Phagocytosis, ยับยั้ง Leukocyte migration และกระตุ้น L-selectin shedding",
+            "mechanism": "แคปซูลโพลีแซคคาไรด์ขนาดใหญ่ ยับยั้ง Phagocytosis, ยับยั้ง Leukocyte migration และกระตุ้น L-selectin shedding"
           },
           {
             "name": "Laccase (Phenoloxidase) Enzyme & Melanin",
-            "desc": "สังเคราะห์เม็ดสี Melanin ในผนังเซลล์จาก Diphenolic compounds ปกป้องเชื้อจากสารอนุมูลอิสระ (ROS) และการทำลายของ Macrophages"
+            "desc": "สังเคราะห์เม็ดสี Melanin ในผนังเซลล์จาก Diphenolic compounds ปกป้องเชื้อจากสารอนุมูลอิสระ (ROS) และการทำลายของ Macrophages",
+            "mechanism": "สังเคราะห์เม็ดสี Melanin ในผนังเซลล์จาก Diphenolic compounds ปกป้องเชื้อจากสารอนุมูลอิสระ (ROS) และการทำลายของ Macrophages"
           },
           {
             "name": "Mannitol & High Intracranial Pressure Production",
-            "desc": "สร้าง Mannitol และเมือกแคปซูลไปอุดตัน Arachnoid villi ทำให้การดูดซึม CSF ลดลง เกิดแรงดันในกะโหลกศีรษะสูงอย่างรุนแรง"
+            "desc": "สร้าง Mannitol และเมือกแคปซูลไปอุดตัน Arachnoid villi ทำให้การดูดซึม CSF ลดลง เกิดแรงดันในกะโหลกศีรษะสูงอย่างรุนแรง",
+            "mechanism": "สร้าง Mannitol และเมือกแคปซูลไปอุดตัน Arachnoid villi ทำให้การดูดซึม CSF ลดลง เกิดแรงดันในกะโหลกศีรษะสูงอย่างรุนแรง"
           }
         ],
         "immuneEvasion": [
           "ยับยั้งการหลั่ง Pro-inflammatory cytokines (TNF-alpha, IL-12) และเหนี่ยวนำให้เกิด Immune paralysis",
           "Phenotypic switching ของขนาดแคปซูลและเซลล์ยักษ์ (Titan cells ขนาดใหญ่ถึง 100 μm) ทำให้เม็ดเลือดขาวกลืนกินไม่ได้"
-        ]
+        ],
+        "transmission": "การสูดดมละอองฝอยของสปอร์หรือเซลล์ยีสต์แห้งจากสิ่งแวดล้อมที่ปนเปื้อนมูลนกพิราบ (Pigeon droppings) เข้าสู่ปอด ในผู้ป่วยภูมิคุ้มกันบกพร่อง (CD4 < 100)"
       },
       "diagnosis": {
         "staining": "India Ink Preparation: Negative contrast แสดงวงใสของแคปซูลรอบเซลล์ยีสต์; Mucicarmine Stain: ย้อมแคปซูลติดสีแดงชมพูสด (Mucicarmine positive ช่วยแยกจาก Histoplasma); Fontana-Masson: ย้อมเมลานินติดสีน้ำตาลดำ",
-        "culture": "Birdseed Agar (Niger seed / Staib medium): โคโลนีเปลี่ยนเป็นสีน้ำตาลเข้มหรือดำเนื่องจากการสร้าง Melanin โดยเอนไซม์ Phenoloxidase; Sabouraud Dextrose Agar (SDA): โคโลนีขาวนวล ผิวมันเงาเป็นเมือกคล้ายครีม (Mucoid)",
+        "culture": [
+          "Birdseed Agar (Niger seed / Staib medium): โคโลนีเปลี่ยนเป็นสีน้ำตาลเข้มหรือดำเนื่องจากการสร้าง Melanin โดยเอนไซม์ Phenoloxidase; Sabouraud Dextrose Agar (SDA): โคโลนีขาวนวล ผิวมันเงาเป็นเมือกคล้ายครีม (Mucoid)"
+        ],
         "biochemical": [
           "Cryptococcal Antigen (CrAg) Lateral Flow Assay: มีความไวและความจำเพาะสูงมาก (>98%) ทั้งในเลือดและ CSF รู้ผลใน 10 นาที",
           "Urease Test: Positive (+) สร้างเอนไซม์ยูรีเอส เปลี่ยนอาหารเป็นสีชมพู (แยกจาก Candida albicans ซึ่งเป็น Urease negative)",
           "LP: Opening pressure สูงมาก (> 200-300 mmH2O), CSF โปรตีนสูง, น้ำตาลต่ำ, เม็ดเลือดขาวเด่นเป็น Mononuclear cells"
+        ],
+        "stains": [
+          "India Ink Preparation: Negative contrast แสดงวงใสของแคปซูลรอบเซลล์ยีสต์; Mucicarmine Stain: ย้อมแคปซูลติดสีแดงชมพูสด (Mucicarmine positive ช่วยแยกจาก Histoplasma); Fontana-Masson: ย้อมเมลานินติดสีน้ำตาลดำ"
         ]
       },
       "clinical": {
@@ -2840,28 +3112,37 @@
         "virulenceFactors": [
           {
             "name": "Intracellular Survival in Phagolysosome",
-            "desc": "ยับยั้งการรวมตัวของ Phagosome-lysosome และควบคุมค่า pH ภายใน Phagolysosome ให้เป็นด่างอ่อนๆ ทำให้เอนไซม์ย่อยสลายไม่ทำงาน"
+            "desc": "ยับยั้งการรวมตัวของ Phagosome-lysosome และควบคุมค่า pH ภายใน Phagolysosome ให้เป็นด่างอ่อนๆ ทำให้เอนไซม์ย่อยสลายไม่ทำงาน",
+            "mechanism": "ยับยั้งการรวมตัวของ Phagosome-lysosome และควบคุมค่า pH ภายใน Phagolysosome ให้เป็นด่างอ่อนๆ ทำให้เอนไซม์ย่อยสลายไม่ทำงาน"
           },
           {
             "name": "Alpha-(1,3)-Glucan in Yeast Cell Wall",
-            "desc": "กลบเกลื่อน Beta-glucan ทำให้ไม่ถูกตรวจจับโดย Dectin-1 receptor บนผิวของ Macrophages"
+            "desc": "กลบเกลื่อน Beta-glucan ทำให้ไม่ถูกตรวจจับโดย Dectin-1 receptor บนผิวของ Macrophages",
+            "mechanism": "กลบเกลื่อน Beta-glucan ทำให้ไม่ถูกตรวจจับโดย Dectin-1 receptor บนผิวของ Macrophages"
           },
           {
             "name": "Adrenal Tropism & Necrosis",
-            "desc": "แพร่กระจายไปทำลายต่อมหมวกไตทั้งสองข้าง ทำให้เกิดภาวะต่อมหมวกไตวายเฉียบพลัน (Addisonian crisis) โซเดียมต่ำ โพแทสเซียมสูง ความดันตก"
+            "desc": "แพร่กระจายไปทำลายต่อมหมวกไตทั้งสองข้าง ทำให้เกิดภาวะต่อมหมวกไตวายเฉียบพลัน (Addisonian crisis) โซเดียมต่ำ โพแทสเซียมสูง ความดันตก",
+            "mechanism": "แพร่กระจายไปทำลายต่อมหมวกไตทั้งสองข้าง ทำให้เกิดภาวะต่อมหมวกไตวายเฉียบพลัน (Addisonian crisis) โซเดียมต่ำ โพแทสเซียมสูง ความดันตก"
           }
         ],
         "immuneEvasion": [
           "ซ่อนตัวอยู่ใน Macrophages หลบหลีกภูมิคุ้มกันแบบ Humoral (แอนติบอดีไม่มีผลในการกำจัดเชื้อ)",
           "ต้องอาศัย Cell-Mediated Immunity (Th1, IFN-gamma, TNF-alpha) ในการควบคุมเชื้อ ผู้ป่วย HIV หรือคนกินยากดภูมิคุ้มกันจึงติดเชื้อรุนแรง"
-        ]
+        ],
+        "transmission": "การสูดดมสปอร์ Microconidia จากดินที่อุดมด้วยมูลนกหรือมูลค้างคาว (Bat/bird guano) เช่น การเข้าไปสำรวจถ้ำ (Spelunking) หรือเล้าไก่เก่าในแถบภาคใต้"
       },
       "diagnosis": {
         "staining": "Wright-Giemsa Stain ของ Bone Marrow, Buffy coat หรือชิ้นเนื้อ: พบ Tiny oval yeasts (2-4 μm) มีขอบใสลวงตา (Pseudocapsule) อัดแน่นเต็ม Cytoplasm ของ Macrophages; GMS / PAS: ติดสีชัดเจน",
-        "culture": "Sabouraud Dextrose Agar ที่ 25°C ขึ้นราสายสีขาวฟู ตรวจพบ Tuberculate macroconidia; ปรับอุณหภูมิเป็น 37°C เพื่อดูการเปลี่ยนเป็น Yeast (ยืนยัน Dimorphism)",
+        "culture": [
+          "Sabouraud Dextrose Agar ที่ 25°C ขึ้นราสายสีขาวฟู ตรวจพบ Tuberculate macroconidia; ปรับอุณหภูมิเป็น 37°C เพื่อดูการเปลี่ยนเป็น Yeast (ยืนยัน Dimorphism)"
+        ],
         "biochemical": [
           "Histoplasma Urine & Serum Antigen EIA: มีความไวสูงมาก (>90%) ในผู้ป่วย Disseminated disease และใช้ติดตามผลการรักษา",
           "Lab: Pancytopenia (จากไขกระดูกถูกแทนที่), Elevated Ferritin สูงมาก (> 10,000 ng/mL), Elevated LDH, Hyponatremia + Hyperkalemia (Addison disease)"
+        ],
+        "stains": [
+          "Wright-Giemsa Stain ของ Bone Marrow, Buffy coat หรือชิ้นเนื้อ: พบ Tiny oval yeasts (2-4 μm) มีขอบใสลวงตา (Pseudocapsule) อัดแน่นเต็ม Cytoplasm ของ Macrophages; GMS / PAS: ติดสีชัดเจน"
         ]
       },
       "clinical": {
@@ -2978,28 +3259,37 @@
         "virulenceFactors": [
           {
             "name": "Thermal Dimorphic Phase Transition",
-            "desc": "เปลี่ยนรูปร่างจาก Conidia/Mold ที่ 25°C เป็น Yeast ที่ 37°C ภายในเซลล์โฮสต์ ซึ่งจำเป็นอย่างยิ่งต่อการก่อโรค"
+            "desc": "เปลี่ยนรูปร่างจาก Conidia/Mold ที่ 25°C เป็น Yeast ที่ 37°C ภายในเซลล์โฮสต์ ซึ่งจำเป็นอย่างยิ่งต่อการก่อโรค",
+            "mechanism": "เปลี่ยนรูปร่างจาก Conidia/Mold ที่ 25°C เป็น Yeast ที่ 37°C ภายในเซลล์โฮสต์ ซึ่งจำเป็นอย่างยิ่งต่อการก่อโรค"
           },
           {
             "name": "Antioxidant Defenses (Catalase-Peroxidase & Melanin)",
-            "desc": "สร้างเอนไซม์ทำลาย ROS และสร้างเมลานินในผนังเซลล์ ช่วยให้รอดชีวิตและเพิ่มจำนวนภายใน Phagosome ของ Macrophages"
+            "desc": "สร้างเอนไซม์ทำลาย ROS และสร้างเมลานินในผนังเซลล์ ช่วยให้รอดชีวิตและเพิ่มจำนวนภายใน Phagosome ของ Macrophages",
+            "mechanism": "สร้างเอนไซม์ทำลาย ROS และสร้างเมลานินในผนังเซลล์ ช่วยให้รอดชีวิตและเพิ่มจำนวนภายใน Phagosome ของ Macrophages"
           },
           {
             "name": "Endothelial Adherence & Hematogenous Dissemination",
-            "desc": "แพร่กระจายไปตามระบบ Reticuloendothelial และเกาะติดเยื่อบุผิว ทำให้เกิดตุ่มเนื้อตายกระจายทั่วผิวหนังและอวัยวะภายใน"
+            "desc": "แพร่กระจายไปตามระบบ Reticuloendothelial และเกาะติดเยื่อบุผิว ทำให้เกิดตุ่มเนื้อตายกระจายทั่วผิวหนังและอวัยวะภายใน",
+            "mechanism": "แพร่กระจายไปตามระบบ Reticuloendothelial และเกาะติดเยื่อบุผิว ทำให้เกิดตุ่มเนื้อตายกระจายทั่วผิวหนังและอวัยวะภายใน"
           }
         ],
         "immuneEvasion": [
           "ซ่อนตัวใน Macrophages ทำให้ภูมิคุ้มกันชนิดแอนติบอดีไม่สามารถกำจัดเชื้อได้",
           "พบการติดเชื้อรุนแรงในผู้ป่วยติดเชื้อ HIV ขั้นก้าวหน้า และผู้ป่วยที่มีแอนติบอดีต้านอินเตอร์เฟอรอนแกมมา (Anti-IFN-gamma autoantibodies / Adult-onset immunodeficiency)"
-        ]
+        ],
+        "transmission": "การสูดดมสปอร์ Conidia จากดินหรือสิ่งแวดล้อมที่สัมพันธ์กับหนูพุกไม้ไผ่ (Bamboo rats สกุล Rhizomys) ในภาคเหนือของไทย (เชียงใหม่ ลำพูน) ในผู้ป่วย HIV (CD4 < 100)"
       },
       "diagnosis": {
         "staining": "Touch smear จากแผลผิวหนัง หรือ Bone Marrow Aspirate ย้อม Wright-Giemsa: พบเซลล์ยีสต์รูปไส้กรอกหรือรูปไข่ (3-8 μm) ที่มี 'เส้นกั้นกลางเซลล์ชัดเจน (Transverse Septum)' ภายในและภายนอก Macrophages โดยไม่มีการแตกหน่อ!",
-        "culture": "Sabouraud Dextrose Agar (SDA) ที่ 25°C: โคโลนีเจริญเร็วและหลั่ง 'Red Diffusible Pigment' สีแดงทับทิมซึมทั่วอาหารเลี้ยงเชื้อ; ที่ 37°C ขึ้นเป็นโคโลนียีสต์สีครีม",
+        "culture": [
+          "Sabouraud Dextrose Agar (SDA) ที่ 25°C: โคโลนีเจริญเร็วและหลั่ง 'Red Diffusible Pigment' สีแดงทับทิมซึมทั่วอาหารเลี้ยงเชื้อ; ที่ 37°C ขึ้นเป็นโคโลนียีสต์สีครีม"
+        ],
         "biochemical": [
           "PCR ตรวจหายีนจำเพาะ MP1 gene หรือ ITS rDNA sequence",
           "CBC: Severe anemia, Leukocytosis with neutrophilia หรือ Leukopenia, Elevated alkaline phosphatase (ALP) สูงมากจากตับโต"
+        ],
+        "stains": [
+          "Touch smear จากแผลผิวหนัง หรือ Bone Marrow Aspirate ย้อม Wright-Giemsa: พบเซลล์ยีสต์รูปไส้กรอกหรือรูปไข่ (3-8 μm) ที่มี 'เส้นกั้นกลางเซลล์ชัดเจน (Transverse Septum)' ภายในและภายนอก Macrophages โดยไม่มีการแตกหน่อ!"
         ]
       },
       "clinical": {
@@ -3116,29 +3406,38 @@
         "virulenceFactors": [
           {
             "name": "Elastases and Serine Proteases",
-            "desc": "เอนไซม์ย่อยสลายอีลาสตินและโปรตีนโครงสร้างในผนังหลอดเลือด ช่วยให้สายราเจาะทะลวงผ่านหลอดเลือดได้อย่างรวดเร็ว"
+            "desc": "เอนไซม์ย่อยสลายอีลาสตินและโปรตีนโครงสร้างในผนังหลอดเลือด ช่วยให้สายราเจาะทะลวงผ่านหลอดเลือดได้อย่างรวดเร็ว",
+            "mechanism": "เอนไซม์ย่อยสลายอีลาสตินและโปรตีนโครงสร้างในผนังหลอดเลือด ช่วยให้สายราเจาะทะลวงผ่านหลอดเลือดได้อย่างรวดเร็ว"
           },
           {
             "name": "Gliotoxin & Secondary Metabolites",
-            "desc": "สารพิษยับยั้งการเคลื่อนที่และการทำงานของ Neutrophils และ Macrophages พร้อมทั้งกระตุ้น Apoptosis ของเซลล์ภูมิคุ้มกัน"
+            "desc": "สารพิษยับยั้งการเคลื่อนที่และการทำงานของ Neutrophils และ Macrophages พร้อมทั้งกระตุ้น Apoptosis ของเซลล์ภูมิคุ้มกัน",
+            "mechanism": "สารพิษยับยั้งการเคลื่อนที่และการทำงานของ Neutrophils และ Macrophages พร้อมทั้งกระตุ้น Apoptosis ของเซลล์ภูมิคุ้มกัน"
           },
           {
             "name": "Thermotolerance (Up to 50°C)",
-            "desc": "ทนความร้อนสูง ทำให้เจริญเติบโตในอุณหภูมิร่างกายมนุษย์ได้อย่างรวดเร็วเมื่อผู้ป่วยมีไข้"
+            "desc": "ทนความร้อนสูง ทำให้เจริญเติบโตในอุณหภูมิร่างกายมนุษย์ได้อย่างรวดเร็วเมื่อผู้ป่วยมีไข้",
+            "mechanism": "ทนความร้อนสูง ทำให้เจริญเติบโตในอุณหภูมิร่างกายมนุษย์ได้อย่างรวดเร็วเมื่อผู้ป่วยมีไข้"
           }
         ],
         "immuneEvasion": [
           "เมลานินในผนัง Conidia ป้องกันการทำลายจากเอนไซม์ใน Lysosome และอนุมูลอิสระ ROS",
           "เม็ดเลือดขาว Neutrophil เป็นด่านป้องกันหลักในการฆ่า Hyphae; ผู้ป่วยที่ Neutrophil ต่ำต่อเนื่องเกิน 10-14 วัน จึงมีความเสี่ยงสูงสุดต่อ Invasive disease"
-        ]
+        ],
+        "transmission": "การสูดดม Conidia (สปอร์) ที่ลอยในอากาศจากฝุ่นซากพืชเน่าเปื่อย ดิน ปุ๋ยหมัก หรือฝุ่นก่อสร้าง ในผู้ป่วยที่มีเม็ดเลือดขาวต่ำ หรือมีโพรงปอดเดิมจากวัณโรค"
       },
       "diagnosis": {
         "staining": "Gomori Methenamine Silver (GMS) หรือ Periodic Acid-Schiff (PAS): ติดสีสายรามีผนังกั้นสม่ำเสมอ แตกแขนงมุมแหลม 45° อย่างชัดเจน กำลังรุกรานหลอดเลือด",
-        "culture": "Sabouraud Dextrose Agar (SDA): โคโลนีเจริญเร็ว ผิวหน้าคล้ายกำมะหยี่สีเขียวอมเทาควันบุหรี่ (Smoky-green) ขอบขาว",
+        "culture": [
+          "Sabouraud Dextrose Agar (SDA): โคโลนีเจริญเร็ว ผิวหน้าคล้ายกำมะหยี่สีเขียวอมเทาควันบุหรี่ (Smoky-green) ขอบขาว"
+        ],
         "biochemical": [
           "Serum and BAL Galactomannan (GM) Antigen Assay: ตรวจแอนติเจนกาแลคโตแมนแนนในเลือดหรือน้ำล้างปอด ให้ผลบวกสูงใน Invasive aspergillosis",
           "(1,3)-Beta-D-Glucan Assay (Fungitell): ให้ผลบวกใน Invasive fungal infections",
           "Chest CT: 'CT Halo Sign' (ก้อนทึบมีฝ้ากระจกฝ้ามัวล้อมรอบ บ่งชี้เลือดออกรอบก้อนเนื้อตาย) ในระยะแรก และ 'Air-Crescent Sign' เมื่อเม็ดเลือดขาวเริ่มฟื้นตัว"
+        ],
+        "stains": [
+          "Gomori Methenamine Silver (GMS) หรือ Periodic Acid-Schiff (PAS): ติดสีสายรามีผนังกั้นสม่ำเสมอ แตกแขนงมุมแหลม 45° อย่างชัดเจน กำลังรุกรานหลอดเลือด"
         ]
       },
       "clinical": {
@@ -3256,28 +3555,37 @@
         "virulenceFactors": [
           {
             "name": "Ketone Reductase & Acidophilic Proliferation",
-            "desc": "เอนไซม์คีโทนรีดักเทสช่วยให้เชื้อนำสารคีโตนในเลือดผู้ป่วย DKA ไปใช้เป็นสารอาหารได้อย่างมีประสิทธิภาพ และเจริญได้ดีมากในสภาวะเลือดเป็นกรด"
+            "desc": "เอนไซม์คีโทนรีดักเทสช่วยให้เชื้อนำสารคีโตนในเลือดผู้ป่วย DKA ไปใช้เป็นสารอาหารได้อย่างมีประสิทธิภาพ และเจริญได้ดีมากในสภาวะเลือดเป็นกรด",
+            "mechanism": "เอนไซม์คีโทนรีดักเทสช่วยให้เชื้อนำสารคีโตนในเลือดผู้ป่วย DKA ไปใช้เป็นสารอาหารได้อย่างมีประสิทธิภาพ และเจริญได้ดีมากในสภาวะเลือดเป็นกรด"
           },
           {
             "name": "High Affinity Iron Uptake (CotH & GRP78 Interaction)",
-            "desc": "ภาวะกรดทำให้ธาตุเหล็กหลุดออกจาก Transferrin เชื้อราจับกับเหล็กอิสระได้ดีเยี่ยม และโปรตีน CotH บนผิวสปอร์จับกับรีเซพเตอร์ GRP78 บนเซลล์เยื่อบุหลอดเลือด นำไปสู่การทะลวงเข้าหลอดเลือดอย่างดุเดือด"
+            "desc": "ภาวะกรดทำให้ธาตุเหล็กหลุดออกจาก Transferrin เชื้อราจับกับเหล็กอิสระได้ดีเยี่ยม และโปรตีน CotH บนผิวสปอร์จับกับรีเซพเตอร์ GRP78 บนเซลล์เยื่อบุหลอดเลือด นำไปสู่การทะลวงเข้าหลอดเลือดอย่างดุเดือด",
+            "mechanism": "ภาวะกรดทำให้ธาตุเหล็กหลุดออกจาก Transferrin เชื้อราจับกับเหล็กอิสระได้ดีเยี่ยม และโปรตีน CotH บนผิวสปอร์จับกับรีเซพเตอร์ GRP78 บนเซลล์เยื่อบุหลอดเลือด นำไปสู่การทะลวงเข้าหลอดเลือดอย่างดุเดือด"
           },
           {
             "name": "Fulminant Thrombosis and Trans-cribriform Invasion",
-            "desc": "ก่อลิ่มเลือดอุดตันเส้นเลือดแดงใหญ่ ทำให้เนื้อเยื่อขาดเลือดตายทันที และเชื้อสามารถกัดกินกระดูกทะลุผ่าน Cribriform plate เข้าสู่สมองได้ภายในไม่กี่ชั่วโมง"
+            "desc": "ก่อลิ่มเลือดอุดตันเส้นเลือดแดงใหญ่ ทำให้เนื้อเยื่อขาดเลือดตายทันที และเชื้อสามารถกัดกินกระดูกทะลุผ่าน Cribriform plate เข้าสู่สมองได้ภายในไม่กี่ชั่วโมง",
+            "mechanism": "ก่อลิ่มเลือดอุดตันเส้นเลือดแดงใหญ่ ทำให้เนื้อเยื่อขาดเลือดตายทันที และเชื้อสามารถกัดกินกระดูกทะลุผ่าน Cribriform plate เข้าสู่สมองได้ภายในไม่กี่ชั่วโมง"
           }
         ],
         "immuneEvasion": [
           "ในคนปกติ Macrophages กินสปอร์ และ Neutrophils ปล่อยอนุมูลอิสระฆ่า Hyphae แต่ในผู้ป่วย DKA กลไกเคโมแท็กซิสและฟาโกไซโทซิสของเม็ดเลือดขาวจะพิการอย่างสิ้นเชิง",
           "ผู้ป่วยที่ได้รับยา Deferoxamine (ยาขับเหล็ก) เชื้อราจะแย่งจับ Deferoxamine มาเป็น Siderophore ส่งเสริมการเจริญเติบโตของเชื้อราอย่างรวดเร็ว (ห้ามใช้ใน Mucor!)"
-        ]
+        ],
+        "transmission": "การสูดดมสปอร์ Sporangiospores จากดิน ขนมปังขึ้นรา หรือฝุ่นพืชเน่าเปื่อยเข้าสู่โพรงจมูกและไซนัส ในผู้ป่วยเบาหวานที่มีกรดคีโตนคั่ง (DKA) หรือผู้ใช้ยา Deferoxamine"
       },
       "diagnosis": {
         "staining": "Biopsy / Frozen Section with KOH Mount หรือ H&E / GMS / PAS: พบ Broad, ribbon-like, non-septate hyphae branching at 90° angles with extensive tissue necrosis and vascular thrombosis",
-        "culture": "Sabouraud Dextrose Agar: เจริญเติบโตเร็วมากจนดันฝาจานเพาะเชื้อหลุด ('Lid-lifter fungus') เส้นใยฟูหนาแน่นสีขาวอมเทาคล้ายปุยฝ้าย peppered ด้วย sporangia สีดำ",
+        "culture": [
+          "Sabouraud Dextrose Agar: เจริญเติบโตเร็วมากจนดันฝาจานเพาะเชื้อหลุด ('Lid-lifter fungus') เส้นใยฟูหนาแน่นสีขาวอมเทาคล้ายปุยฝ้าย peppered ด้วย sporangia สีดำ"
+        ],
         "biochemical": [
           "CRITICAL LAB PEARL: ทั้งการตรวจ (1,3)-Beta-D-Glucan และ Galactomannan ให้ผลเป็น 'NEGATIVE (-)' ทั้งหมด! (ไม่สามารถใช้ตรวจคัดกรอง Mucor ได้)",
           "CT / MRI Craniofacial: พบการทำลายกระดูกโพรงไซนัส, ซีสต์อักเสบในกระบอกตา, และ Cavernous sinus thrombosis"
+        ],
+        "stains": [
+          "Biopsy / Frozen Section with KOH Mount หรือ H&E / GMS / PAS: พบ Broad, ribbon-like, non-septate hyphae branching at 90° angles with extensive tissue necrosis and vascular thrombosis"
         ]
       },
       "clinical": {
@@ -3396,29 +3704,38 @@
         "virulenceFactors": [
           {
             "name": "Exotoxin A (Inhibition of EF-2)",
-            "desc": "กลไกเหมือนคอตีบ (Diphtheria toxin): ทำปฏิกิริยา ADP-ribosylation ต่อ Elongation Factor-2 (EF-2) ยับยั้งการสังเคราะห์โปรตีนของเซลล์โฮสต์โดยสิ้นเชิง"
+            "desc": "กลไกเหมือนคอตีบ (Diphtheria toxin): ทำปฏิกิริยา ADP-ribosylation ต่อ Elongation Factor-2 (EF-2) ยับยั้งการสังเคราะห์โปรตีนของเซลล์โฮสต์โดยสิ้นเชิง",
+            "mechanism": "กลไกเหมือนคอตีบ (Diphtheria toxin): ทำปฏิกิริยา ADP-ribosylation ต่อ Elongation Factor-2 (EF-2) ยับยั้งการสังเคราะห์โปรตีนของเซลล์โฮสต์โดยสิ้นเชิง"
           },
           {
             "name": "Elastase (LasA and LasB)",
-            "desc": "ย่อยสลายเส้นใยอีลาสตินในผนังหลอดเลือด ทำให้ผนังหลอดเลือดเปราะ แตก เลือดออก และเนื้อเยื่อขาดเลือดตาย"
+            "desc": "ย่อยสลายเส้นใยอีลาสตินในผนังหลอดเลือด ทำให้ผนังหลอดเลือดเปราะ แตก เลือดออก และเนื้อเยื่อขาดเลือดตาย",
+            "mechanism": "ย่อยสลายเส้นใยอีลาสตินในผนังหลอดเลือด ทำให้ผนังหลอดเลือดเปราะ แตก เลือดออก และเนื้อเยื่อขาดเลือดตาย"
           },
           {
             "name": "Pyocyanin & Type III Secretion Exotoxins (ExoS, ExoT, ExoU)",
-            "desc": "Pyocyanin สร้างอนุมูลอิสระ ROS ทำลายเยื่อบุผิวทางเดินหายใจ; ExoU เป็น Phospholipase รุนแรงที่เจาะทะลุเยื่อหุ้มเซลล์ทำให้เซลล์สลายตัวทันที"
+            "desc": "Pyocyanin สร้างอนุมูลอิสระ ROS ทำลายเยื่อบุผิวทางเดินหายใจ; ExoU เป็น Phospholipase รุนแรงที่เจาะทะลุเยื่อหุ้มเซลล์ทำให้เซลล์สลายตัวทันที",
+            "mechanism": "Pyocyanin สร้างอนุมูลอิสระ ROS ทำลายเยื่อบุผิวทางเดินหายใจ; ExoU เป็น Phospholipase รุนแรงที่เจาะทะลุเยื่อหุ้มเซลล์ทำให้เซลล์สลายตัวทันที"
           }
         ],
         "immuneEvasion": [
           "สร้าง Alginate slime capsule (Mucoid phenotype) ก่อไบโอฟิล์มหนาแน่นในปอดผู้ป่วย Cystic Fibrosis และท่อช่วยหายใจ",
           "มีกลไกขับยาปฏิชีวนะออกนอกเซลล์ (Efflux pumps MexAB-OprM) และการกลายพันธุ์ปิดรูพรุน OprD ทำให้ดื้อยาได้รอบด้าน"
-        ]
+        ],
+        "transmission": "การติดเชื้อในโรงพยาบาล (Nosocomial) จากสิ่งแวดล้อมชื้น (เครื่องช่วยหายใจ, สายสวน), แผลไฟไหม้รุนแรง, บาดแผลตะปูแทงทะลุรองเท้าผ้าใบ, การแช่อ่างน้ำร้อน (Hot tub folliculitis)"
       },
       "diagnosis": {
         "staining": "Gram-negative slender rod (0.5-0.8 x 1.5-3.0 μm) มีขั้วเดียว แฟลกเจลลัมเดี่ยวเคลื่อนที่เร็ว",
-        "culture": "Blood Agar: โคโลนีแบน ขอบหยัก มีประกายเหลือบเงิน (Metallic sheen), Beta-hemolysis, กลิ่นหอมหวานองุ่น; MacConkey Agar: Non-lactose fermenter (โคโลนีใสไม่มีสี)",
+        "culture": [
+          "Blood Agar: โคโลนีแบน ขอบหยัก มีประกายเหลือบเงิน (Metallic sheen), Beta-hemolysis, กลิ่นหอมหวานองุ่น; MacConkey Agar: Non-lactose fermenter (โคโลนีใสไม่มีสี)"
+        ],
         "biochemical": [
           "Oxidase Positive (+) ภายใน 10 วินาที (แยกจาก Enterobacteriaceae ซึ่งเป็น Oxidase negative)",
           "Catalase Positive (+), เจริญเติบโตได้ที่อุณหภูมิ 42°C (ใช้แยกจาก Pseudomonas สปีชีส์อื่น)",
           "Biopsy: ย้อม Gram stain ของขอบแผลพบเชื้อแกรมลบรอบผนังหลอดเลือด โดยแทบไม่มีเม็ดเลือดขาวนิวโทรฟิลเนื่องจากภาวะ Neutropenia"
+        ],
+        "stains": [
+          "Gram-negative slender rod (0.5-0.8 x 1.5-3.0 μm) มีขั้วเดียว แฟลกเจลลัมเดี่ยวเคลื่อนที่เร็ว"
         ]
       },
       "clinical": {
@@ -3536,29 +3853,38 @@
         "virulenceFactors": [
           {
             "name": "Polysaccharide Capsule (CPS)",
-            "desc": "แคปซูลป้องกันการทำลายจากซีรัม (Serum bactericidal activity) และยับยั้งการจับกินของ Phagocytes"
+            "desc": "แคปซูลป้องกันการทำลายจากซีรัม (Serum bactericidal activity) และยับยั้งการจับกินของ Phagocytes",
+            "mechanism": "แคปซูลป้องกันการทำลายจากซีรัม (Serum bactericidal activity) และยับยั้งการจับกินของ Phagocytes"
           },
           {
             "name": "RTX Cytotoxin (VvhA / Martx)",
-            "desc": "สารพิษเจาะรูพรุนบนเยื่อหุ้มเซลล์ (Pore-forming toxin) ทำลายเซลล์เยื่อบุหลอดเลือด ก่อให้เกิดการรั่วไหลของเลือดและน้ำเหลืองจนกลายเป็น Hemorrhagic bullae"
+            "desc": "สารพิษเจาะรูพรุนบนเยื่อหุ้มเซลล์ (Pore-forming toxin) ทำลายเซลล์เยื่อบุหลอดเลือด ก่อให้เกิดการรั่วไหลของเลือดและน้ำเหลืองจนกลายเป็น Hemorrhagic bullae",
+            "mechanism": "สารพิษเจาะรูพรุนบนเยื่อหุ้มเซลล์ (Pore-forming toxin) ทำลายเซลล์เยื่อบุหลอดเลือด ก่อให้เกิดการรั่วไหลของเลือดและน้ำเหลืองจนกลายเป็น Hemorrhagic bullae"
           },
           {
             "name": "Metalloprotease (VvpE)",
-            "desc": "ย่อยสลายคอลลาเจนและเนื้อเยื่อพังผืด ก่อให้เกิดการตายเน่าของกล้ามเนื้อและการหลุดลอกของผิวหนังอย่างรวดเร็ว"
+            "desc": "ย่อยสลายคอลลาเจนและเนื้อเยื่อพังผืด ก่อให้เกิดการตายเน่าของกล้ามเนื้อและการหลุดลอกของผิวหนังอย่างรวดเร็ว",
+            "mechanism": "ย่อยสลายคอลลาเจนและเนื้อเยื่อพังผืด ก่อให้เกิดการตายเน่าของกล้ามเนื้อและการหลุดลอกของผิวหนังอย่างรวดเร็ว"
           }
         ],
         "immuneEvasion": [
           "ธาตุเหล็กเป็นกุญแจสำคัญ: ผู้ป่วยโรคตับแข็ง (Liver cirrhosis) หรือ Hemochromatosis ที่มีระดับ Transferrin saturation สูงและมีธาตุเหล็กอิสระในเลือด เชื้อจะเจริญเติบโตอย่างรวดเร็วผิดปกติ",
           "หลบหลีกการฆ่าของ Complement ในกระแสเลือดได้อย่างมีประสิทธิภาพ"
-        ]
+        ],
+        "transmission": "การรับประทานอาหารทะเลสุกๆ ดิบๆ (โดยเฉพาะหอยนางรมดิบ Raw oysters) หรือบาดแผลเปิดสัมผัสน้ำทะเล/น้ำกร่อย หรือถูกเงี่ยงปลา/เปลือกหอยทิ่มแทง ในคนตับแข็งหรือเหล็กคั่ง"
       },
       "diagnosis": {
         "staining": "Gram-negative curved / comma-shaped rod ย้อมจากน้ำเจาะตุ่มน้ำหรือจากหนองแผล",
-        "culture": "TCBS Agar: 85% เป็นโคโลนีสีเขียว (Sucrose negative); Blood Agar: เจริญได้ดีเมื่อมีเกลือ NaCl 1-2%",
+        "culture": [
+          "TCBS Agar: 85% เป็นโคโลนีสีเขียว (Sucrose negative); Blood Agar: เจริญได้ดีเมื่อมีเกลือ NaCl 1-2%"
+        ],
         "biochemical": [
           "Oxidase Positive (+), Catalase Positive (+)",
           "Halophilic: ต้องการเกลือโซเดียมในการเจริญเติบโต (แยกจาก Vibrio cholerae ซึ่งเจริญได้ในอาหารที่ไม่มีเกลือ)",
           "CBC & Coagulation: เม็ดเลือดขาวสูงพร้อม Left shift, เกล็ดเลือดต่ำรุนแรง, PT/INR ยาวนาน (DIC)"
+        ],
+        "stains": [
+          "Gram-negative curved / comma-shaped rod ย้อมจากน้ำเจาะตุ่มน้ำหรือจากหนองแผล"
         ]
       },
       "clinical": {
@@ -3675,29 +4001,38 @@
         "virulenceFactors": [
           {
             "name": "Lipooligosaccharide (LOS) Endotoxin Shedding",
-            "desc": "ปลดปล่อยสารพิษเอนโดท็อกซิน LOS ปริมาณมหาศาลเข้าสู่กระแสเลือด กระตุ้น TLR4 บน Macrophages ทำให้เกิด Cytokine storm (TNF-alpha, IL-1, IL-6) ก่อให้เกิด DIC รุนแรงและช็อก"
+            "desc": "ปลดปล่อยสารพิษเอนโดท็อกซิน LOS ปริมาณมหาศาลเข้าสู่กระแสเลือด กระตุ้น TLR4 บน Macrophages ทำให้เกิด Cytokine storm (TNF-alpha, IL-1, IL-6) ก่อให้เกิด DIC รุนแรงและช็อก",
+            "mechanism": "ปลดปล่อยสารพิษเอนโดท็อกซิน LOS ปริมาณมหาศาลเข้าสู่กระแสเลือด กระตุ้น TLR4 บน Macrophages ทำให้เกิด Cytokine storm (TNF-alpha, IL-1, IL-6) ก่อให้เกิด DIC รุนแรงและช็อก"
           },
           {
             "name": "Polysaccharide Capsule (Serogroups A, B, C, W-135, Y)",
-            "desc": "แคปซูลป้องกันการจับกินของ Phagocytes และยับยั้ง Complement-mediated bactericidal activity (วัคซีนสร้างจากแคปซูลเหล่านี้)"
+            "desc": "แคปซูลป้องกันการจับกินของ Phagocytes และยับยั้ง Complement-mediated bactericidal activity (วัคซีนสร้างจากแคปซูลเหล่านี้)",
+            "mechanism": "แคปซูลป้องกันการจับกินของ Phagocytes และยับยั้ง Complement-mediated bactericidal activity (วัคซีนสร้างจากแคปซูลเหล่านี้)"
           },
           {
             "name": "IgA1 Protease & Type IV Pili",
-            "desc": "Pili ยึดเกาะกับเยื่อบุ Nasopharynx อย่างเหนียวแน่น; เอนไซม์ IgA1 Protease ตัดทำลายแอนติบอดี IgA บนผิวเยื่อบุ ทำให้เชื้อบุกรุกเข้าสู่กระแสเลือดได้ง่าย"
+            "desc": "Pili ยึดเกาะกับเยื่อบุ Nasopharynx อย่างเหนียวแน่น; เอนไซม์ IgA1 Protease ตัดทำลายแอนติบอดี IgA บนผิวเยื่อบุ ทำให้เชื้อบุกรุกเข้าสู่กระแสเลือดได้ง่าย",
+            "mechanism": "Pili ยึดเกาะกับเยื่อบุ Nasopharynx อย่างเหนียวแน่น; เอนไซม์ IgA1 Protease ตัดทำลายแอนติบอดี IgA บนผิวเยื่อบุ ทำให้เชื้อบุกรุกเข้าสู่กระแสเลือดได้ง่าย"
           }
         ],
         "immuneEvasion": [
           "ผู้ป่วยที่มีภาวะขาดโปรตีนคอมพลีเมนต์ส่วนปลาย (Terminal Complement Deficiency: C5-C9) หรือผู้ที่ได้รับยา Eculizumab เสี่ยงต่อการติดเชื้อ Neisseria สูงกว่าคนทั่วไปถึง 1,000-10,000 เท่า!",
           "การเปลี่ยนแปลงแอนติเจนบน Pili (Antigenic variation) ทำให้ระบบภูมิคุ้มกันจดจำเชื้อได้ยาก"
-        ]
+        ],
+        "transmission": "การสูดดมละอองฝอยทางเดินหายใจ (Respiratory droplets) หรือสัมผัสสารคัดหลั่งช่องคอ จากการอยู่ร่วมกันอย่างใกล้ชิดและแออัด (หอพักนักศึกษา, ค่ายทหารเกณฑ์)"
       },
       "diagnosis": {
         "staining": "Gram-negative kidney bean-shaped diplococci inside and outside polymorphonuclear leukocytes จากการย้อม CSF, เลือด, หรือหนองจากแผลผื่นเลือดออก",
-        "culture": "Thayer-Martin Medium (VPN: Vancomycin, Polymyxin/Colistin, Nystatin + Trimethoprim) หรือ Chocolate Agar บ่มในตู้ 5% CO2 ที่อุณหภูมิ 37°C",
+        "culture": [
+          "Thayer-Martin Medium (VPN: Vancomycin, Polymyxin/Colistin, Nystatin + Trimethoprim) หรือ Chocolate Agar บ่มในตู้ 5% CO2 ที่อุณหภูมิ 37°C"
+        ],
         "biochemical": [
           "Carbohydrate Utilization: หมักน้ำตาลกลูโคส (Glucose) และมอลโทส (Maltose) ได้กรด ('Maltose and Glucose = Meningitidis'; ส่วน Gonorrhoeae หมัก Glucose อย่างเดียว)",
           "Oxidase Positive (+) และ Catalase Positive (+)",
           "Serogrouping: Latex Agglutination หรือ PCR ตรวจแยก Serogroups A, B, C, W, Y"
+        ],
+        "stains": [
+          "Gram-negative kidney bean-shaped diplococci inside and outside polymorphonuclear leukocytes จากการย้อม CSF, เลือด, หรือหนองจากแผลผื่นเลือดออก"
         ]
       },
       "clinical": {

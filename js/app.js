@@ -725,7 +725,7 @@ class PathoxApp {
     this.hideSuggestions();
     this.selectMicrobe(microbe.id);
     this.toggleDrawer(true);
-    this.activateTab('tab-morphology');
+    this.activateTab('tab-pathogenesis');
   }
 
   selectMicrobe(microbeId) {
@@ -816,212 +816,176 @@ class PathoxApp {
   }
 
   updateDrawer(microbe) {
+    if (!microbe) return;
+
+    // Safe helper: Turn any string or array into a safe Array of strings
+    const toSafeArray = (val) => {
+      if (!val) return [];
+      if (Array.isArray(val)) return val.map(x => typeof x === 'string' ? x : JSON.stringify(x));
+      if (typeof val === 'string') return [val];
+      return [String(val)];
+    };
+
     if (this.drawerPathogenName) this.drawerPathogenName.textContent = microbe.name;
     if (this.drawerThaiName) this.drawerThaiName.textContent = `${microbe.thaiName} · ${microbe.lesionThai || microbe.lesionTitle}`;
 
     // ------------------------------------------------------------------------
-    // Tab 1: Morphological Anatomy & Real Case Photos
+    // Tab 1: กลไก (Pathogenesis & Virulence Factors)
     // ------------------------------------------------------------------------
-    const partsListContainer = document.getElementById('morphology-parts-list');
-    if (partsListContainer) {
-      partsListContainer.innerHTML = '';
-
-      // Render Clinical Cases Switcher inside Drawer Tab 1
-      if (microbe.clinicalCases && microbe.clinicalCases.length > 0) {
-        const casesHeader = document.createElement('div');
-        casesHeader.style.cssText = 'font-size: 0.76rem; font-weight: 700; color: #38bdf8; text-transform: uppercase; margin-bottom: 8px; display: flex; align-items: flex-start; gap: 6px; line-height: 1.4; word-break: break-word; overflow-wrap: break-word;';
-        casesHeader.innerHTML = '<i class="fa-solid fa-images" style="margin-top: 2px; flex-shrink: 0;"></i> <span style="flex: 1; min-width: 0; word-break: break-word;">ภาพเคสจริงทางการแพทย์ (คลิกเพื่อสลับภาพ):</span>';
-        partsListContainer.appendChild(casesHeader);
-
-        microbe.clinicalCases.forEach((c, idx) => {
-          const caseItem = document.createElement('div');
-          caseItem.className = 'part-interactive-item' + (idx === (this.scene?.activeCaseIndex || 0) ? ' selected' : '');
-          caseItem.style.cssText = 'display: flex; gap: 10px; align-items: center; margin-bottom: 8px; cursor: pointer; padding: 8px 10px; border-radius: 10px; background: rgba(0,0,0,0.25); border: 1px solid rgba(255,255,255,0.08); overflow: hidden;';
-          caseItem.innerHTML = `
-            <img src="${c.image}" style="width: 50px; height: 50px; object-fit: cover; border-radius: 8px; border: 1px solid rgba(255,255,255,0.15); flex-shrink: 0;" onerror="this.style.display='none'" />
-            <div style="flex: 1; min-width: 0; overflow: hidden;">
-              <div style="font-size: 0.8rem; font-weight: 700; color: #f8fafc; line-height: 1.35; word-break: break-word; overflow-wrap: break-word; margin-bottom: 2px;">${c.badge || `เคสที่ ${idx+1}`}</div>
-              <div style="font-size: 0.7rem; color: #94a3b8; line-height: 1.3; word-break: break-word; overflow-wrap: break-word;"><i class="fa-solid fa-shield-halved"></i> ${c.source}</div>
-            </div>
-            <i class="fa-solid fa-circle-chevron-right" style="font-size: 0.85rem; color: #38bdf8; flex-shrink: 0; margin-left: 4px;"></i>
-          `;
-          caseItem.addEventListener('click', () => {
-            partsListContainer.querySelectorAll('.part-interactive-item').forEach(el => el.classList.remove('selected'));
-            caseItem.classList.add('selected');
-            if (this.scene) this.scene.setCaseIndex(idx);
+    try {
+      const virulenceContainer = document.getElementById('virulence-factors-container');
+      if (virulenceContainer) {
+        virulenceContainer.innerHTML = '';
+        const vfs = microbe.tabs?.pathogenesis?.virulenceFactors || [];
+        if (vfs.length === 0) {
+          virulenceContainer.innerHTML = '<div style="font-size: 0.8rem; color: #94a3b8;">ไม่มีข้อมูลปัจจัยความรุนแรงระบุ</div>';
+        } else {
+          vfs.forEach((vf) => {
+            const card = document.createElement('div');
+            card.style.cssText = 'margin-bottom: 12px; padding: 10px 12px; border-radius: 8px; background: rgba(244,63,94,0.06); border: 1px solid rgba(244,63,94,0.18);';
+            const mechanismText = vf.mechanism || vf.desc || 'ไม่มีคำอธิบายเพิ่มเติม';
+            card.innerHTML = `
+              <div style="font-size: 0.84rem; font-weight: 700; color: #f43f5e; margin-bottom: 4px; display: flex; align-items: center; gap: 6px;">
+                <i class="fa-solid fa-burst" style="font-size: 0.75rem;"></i>
+                <span>${vf.name}</span>
+              </div>
+              <div style="font-size: 0.8rem; color: #e2e8f0; line-height: 1.5;">
+                ${mechanismText}
+              </div>
+            `;
+            virulenceContainer.appendChild(card);
           });
-          partsListContainer.appendChild(caseItem);
-        });
-
-        const divider = document.createElement('div');
-        divider.style.cssText = 'height: 1px; background: rgba(255,255,255,0.08); margin: 12px 0;';
-        partsListContainer.appendChild(divider);
-
-        const partsHeader = document.createElement('div');
-        partsHeader.style.cssText = 'font-size: 0.76rem; font-weight: 700; color: #94a3b8; text-transform: uppercase; margin-bottom: 8px; display: flex; align-items: flex-start; gap: 6px; line-height: 1.4; word-break: break-word; overflow-wrap: break-word;';
-        partsHeader.innerHTML = '<i class="fa-solid fa-microscope" style="margin-top: 2px; flex-shrink: 0;"></i> <span style="flex: 1; min-width: 0; word-break: break-word;">องค์ประกอบสำคัญของรอยโรค:</span>';
-        partsListContainer.appendChild(partsHeader);
+        }
       }
 
-      if (microbe.morphologicalParts && microbe.morphologicalParts.length > 0) {
-        microbe.morphologicalParts.forEach((part) => {
-          const partItem = document.createElement('div');
-          partItem.className = 'part-interactive-item';
-          partItem.dataset.partId = part.id;
-
-          partItem.innerHTML = `
-            <div class="part-item-header">
-              <span class="part-item-name">
-                <span class="part-color-pill" style="background-color: ${part.color || '#38bdf8'};"></span>
-                ${part.name}
-              </span>
-              <i class="fa-solid fa-crosshairs" style="font-size: 0.75rem; color: var(--accent-cyan);"></i>
-            </div>
-            <div class="part-item-desc">${part.description}</div>
-          `;
-
-          partItem.addEventListener('click', () => {
-            partsListContainer.querySelectorAll('.part-interactive-item').forEach((el) => {
-              el.classList.remove('selected');
-            });
-            partItem.classList.add('selected');
-            if (this.scene) this.scene.focusOnPart(part.id);
+      // Immune Evasion
+      const immuneCard = document.getElementById('immune-evasion-card');
+      const immuneList = document.getElementById('immune-evasion-list');
+      if (immuneList) {
+        immuneList.innerHTML = '';
+        const immuneItems = toSafeArray(microbe.tabs?.pathogenesis?.immuneEvasion);
+        if (immuneItems.length > 0) {
+          if (immuneCard) immuneCard.style.display = 'block';
+          immuneItems.forEach((item) => {
+            const li = document.createElement('li');
+            li.style.cssText = 'font-size: 0.8rem; line-height: 1.5; color: #cbd5e1; margin-bottom: 6px;';
+            li.innerHTML = `<i class="fa-solid fa-shield-virus" style="color: #38bdf8; margin-right: 6px; font-size: 0.75rem;"></i>${item}`;
+            immuneList.appendChild(li);
           });
-
-          partsListContainer.appendChild(partItem);
-        });
+        } else if (immuneCard) {
+          immuneCard.style.display = 'none';
+        }
       }
-    }
 
-    // Highlights
-    const highlightsContainer = document.getElementById('morphology-highlights');
-    if (highlightsContainer) {
-      highlightsContainer.innerHTML = '';
-      const highlights = microbe.tabs?.morphology?.highlights || [];
-      highlights.forEach((hl) => {
-        const li = document.createElement('li');
-        li.textContent = hl;
-        highlightsContainer.appendChild(li);
-      });
-    }
-
-    // ------------------------------------------------------------------------
-    // Tab 2: Pathogenesis & Virulence Factors
-    // ------------------------------------------------------------------------
-    const virulenceContainer = document.getElementById('virulence-factors-container');
-    if (virulenceContainer) {
-      virulenceContainer.innerHTML = '';
-      const vfs = microbe.tabs?.pathogenesis?.virulenceFactors || [];
-      vfs.forEach((vf) => {
-        const card = document.createElement('div');
-        card.style.marginBottom = '10px';
-        card.innerHTML = `
-          <div style="font-size: 0.82rem; font-weight: 700; color: #f43f5e; margin-bottom: 2px;">
-            ✦ ${vf.name}
-          </div>
-          <div style="font-size: 0.78rem; color: #cbd5e1; line-height: 1.45;">
-            ${vf.mechanism}
-          </div>
-        `;
-        virulenceContainer.appendChild(card);
-      });
-    }
-
-    const transEl = document.getElementById('transmission-text');
-    if (transEl) transEl.textContent = microbe.tabs?.pathogenesis?.transmission || 'Direct Contact / Respiratory Droplets';
-
-    // ------------------------------------------------------------------------
-    // Tab 3: Lab Diagnosis & Culture
-    // ------------------------------------------------------------------------
-    const stainsList = document.getElementById('diagnosis-stains');
-    if (stainsList) {
-      stainsList.innerHTML = '';
-      (microbe.tabs?.diagnosis?.stains || []).forEach((s) => {
-        const li = document.createElement('li');
-        li.textContent = s;
-        stainsList.appendChild(li);
-      });
-    }
-
-    const cultureList = document.getElementById('diagnosis-culture');
-    if (cultureList) {
-      cultureList.innerHTML = '';
-      (microbe.tabs?.diagnosis?.culture || []).forEach((c) => {
-        const li = document.createElement('li');
-        li.textContent = c;
-        cultureList.appendChild(li);
-      });
-    }
-
-    const biochemicalCard = document.getElementById('biochemical-card');
-    const biochemicalList = document.getElementById('diagnosis-biochemical');
-    if (biochemicalList) {
-      biochemicalList.innerHTML = '';
-      const bioData = microbe.tabs?.diagnosis?.biochemical || microbe.tabs?.diagnosis?.serology;
-      if (bioData && bioData.length > 0) {
-        if (biochemicalCard) biochemicalCard.style.display = 'block';
-        bioData.forEach((b) => {
-          const li = document.createElement('li');
-          li.textContent = b;
-          biochemicalList.appendChild(li);
-        });
-      } else if (biochemicalCard) {
-        biochemicalCard.style.display = 'none';
+      // Transmission
+      const transEl = document.getElementById('transmission-text');
+      if (transEl) {
+        transEl.textContent = microbe.tabs?.pathogenesis?.transmission || 'การสัมผัสโดยตรง / ละอองฝอยทางเดินหายใจ / พาหะนำโรค';
       }
+    } catch (e) {
+      console.warn('Pathogenesis tab update error:', e);
     }
 
     // ------------------------------------------------------------------------
-    // Tab 4: Clinical Vignettes & NL1 Pearls
+    // Tab 2: วินิจฉัย (Diagnosis & Laboratory)
     // ------------------------------------------------------------------------
-    const vignetteEl = document.getElementById('clinical-vignette-text');
-    if (vignetteEl) vignetteEl.textContent = microbe.tabs?.clinical?.vignette || 'Clinical presentation vignette pending.';
+    try {
+      // Microscopy & Staining
+      const stainsList = document.getElementById('diagnosis-stains');
+      if (stainsList) {
+        stainsList.innerHTML = '';
+        const stains = toSafeArray(microbe.tabs?.diagnosis?.stains || microbe.tabs?.diagnosis?.staining);
+        if (stains.length === 0) {
+          stainsList.innerHTML = '<li style="color: #94a3b8;">ไม่มีข้อมูลการย้อมสี</li>';
+        } else {
+          stains.forEach((s) => {
+            const li = document.createElement('li');
+            li.style.cssText = 'font-size: 0.8rem; line-height: 1.5; color: #cbd5e1; margin-bottom: 6px;';
+            li.innerHTML = `<i class="fa-solid fa-microscope" style="color: #a855f7; margin-right: 6px; font-size: 0.75rem;"></i>${s}`;
+            stainsList.appendChild(li);
+          });
+        }
+      }
 
-    const buzzwordsCloud = document.getElementById('clinical-buzzwords');
-    if (buzzwordsCloud) {
-      buzzwordsCloud.innerHTML = '';
-      (microbe.tabs?.clinical?.buzzwords || []).forEach((bw) => {
-        const tag = document.createElement('span');
-        tag.className = `buzzword-tag ${this.isStudyMode ? 'study-hidden' : ''}`;
-        tag.textContent = bw;
-        tag.addEventListener('click', () => {
-          tag.classList.toggle('revealed');
-        });
-        buzzwordsCloud.appendChild(tag);
-      });
+      // Culture & Colony Morphology
+      const cultureList = document.getElementById('diagnosis-culture');
+      if (cultureList) {
+        cultureList.innerHTML = '';
+        const cultures = toSafeArray(microbe.tabs?.diagnosis?.culture);
+        if (cultures.length === 0) {
+          cultureList.innerHTML = '<li style="color: #94a3b8;">ไม่สามารถเพาะเชื้อได้ในอาหารสังเคราะห์ทั่วไป หรือไม่มีข้อมูล</li>';
+        } else {
+          cultures.forEach((c) => {
+            const li = document.createElement('li');
+            li.style.cssText = 'font-size: 0.8rem; line-height: 1.5; color: #cbd5e1; margin-bottom: 6px;';
+            li.innerHTML = `<i class="fa-solid fa-petri-dish" style="color: #10b981; margin-right: 6px; font-size: 0.75rem;"></i>${c}`;
+            cultureList.appendChild(li);
+          });
+        }
+      }
+
+      // Biochemical & Confirmatory Tests
+      const biochemicalCard = document.getElementById('biochemical-card');
+      const biochemicalList = document.getElementById('diagnosis-biochemical');
+      if (biochemicalList) {
+        biochemicalList.innerHTML = '';
+        const bioData = toSafeArray(
+          microbe.tabs?.diagnosis?.biochemical || 
+          microbe.tabs?.diagnosis?.serology || 
+          microbe.tabs?.diagnosis?.tests
+        );
+        if (bioData.length > 0) {
+          if (biochemicalCard) biochemicalCard.style.display = 'block';
+          bioData.forEach((b) => {
+            const li = document.createElement('li');
+            li.style.cssText = 'font-size: 0.8rem; line-height: 1.5; color: #cbd5e1; margin-bottom: 6px;';
+            li.innerHTML = `<i class="fa-solid fa-vial" style="color: #f59e0b; margin-right: 6px; font-size: 0.75rem;"></i>${b}`;
+            biochemicalList.appendChild(li);
+          });
+        } else if (biochemicalCard) {
+          biochemicalCard.style.display = 'none';
+        }
+      }
+    } catch (e) {
+      console.warn('Diagnosis tab update error:', e);
     }
 
-    const noteEl = document.getElementById('clinical-highyield-note');
-    if (noteEl) noteEl.textContent = microbe.tabs?.clinical?.highYieldNote || '';
-
     // ------------------------------------------------------------------------
-    // Tab 5: Treatment & Antimicrobials
+    // Tab 3: การรักษา (Treatment & Antimicrobials)
     // ------------------------------------------------------------------------
-    const firstlineEl = document.getElementById('treatment-firstline');
-    if (firstlineEl) {
-      firstlineEl.textContent = microbe.tabs?.treatment?.firstLine || 'First line antimicrobial regimen';
-      firstlineEl.className = this.isStudyMode ? 'study-hidden' : '';
-      firstlineEl.onclick = () => {
-        firstlineEl.classList.toggle('revealed');
-      };
-    }
+    try {
+      const firstlineEl = document.getElementById('treatment-firstline');
+      if (firstlineEl) {
+        firstlineEl.textContent = microbe.tabs?.treatment?.firstLine || 'First line antimicrobial regimen according to standard clinical guidelines.';
+        firstlineEl.className = this.isStudyMode ? 'study-hidden' : '';
+        firstlineEl.onclick = () => {
+          firstlineEl.classList.toggle('revealed');
+        };
+      }
 
-    const secondLineEl = document.getElementById('treatment-resistance');
-    if (secondLineEl) {
-      secondLineEl.textContent = 
-        microbe.tabs?.treatment?.woundCare || 
-        microbe.tabs?.treatment?.systemic || 
-        microbe.tabs?.treatment?.allergy || 
-        microbe.tabs?.treatment?.abscessManagement || 
-        microbe.tabs?.treatment?.childrenPregnant || 'Standard wound management protocol';
-    }
+      const altEl = document.getElementById('treatment-alternative');
+      if (altEl) {
+        altEl.textContent = 
+          microbe.tabs?.treatment?.alternative || 
+          microbe.tabs?.treatment?.woundCare || 
+          microbe.tabs?.treatment?.systemic || 
+          microbe.tabs?.treatment?.allergy || 
+          microbe.tabs?.treatment?.abscessManagement || 
+          microbe.tabs?.treatment?.childrenPregnant || 
+          'ยาทางเลือกกรณีแพ้กลุ่มหลักหรือผู้ป่วยกลุ่มเฉพาะ (สตรีมีครรภ์/เด็ก)';
+      }
 
-    const prevEl = document.getElementById('treatment-prevention');
-    if (prevEl) {
-      prevEl.textContent = 
-        microbe.tabs?.treatment?.prevention || 
-        microbe.tabs?.treatment?.reaction || 
-        microbe.tabs?.treatment?.antitoxin || 
-        'Standard clinical infection control protocols';
+      const resEl = document.getElementById('treatment-resistance');
+      if (resEl) {
+        resEl.textContent = 
+          microbe.tabs?.treatment?.resistance || 
+          microbe.tabs?.treatment?.prevention || 
+          microbe.tabs?.treatment?.reaction || 
+          microbe.tabs?.treatment?.antitoxin || 
+          'ข้อควรระวังสำคัญและกลไกการดื้อยาตามแนวทางเวชปฏิบัติ';
+      }
+    } catch (e) {
+      console.warn('Treatment tab update error:', e);
     }
   }
 
@@ -1052,19 +1016,8 @@ class PathoxApp {
 
   handleClickPart(partData) {
     if (!partData) return;
-
     this.toggleDrawer(true);
-    this.activateTab('tab-morphology');
-
-    const partsContainer = document.getElementById('morphology-parts-list');
-    const matchingEl = partsContainer.querySelector(`[data-part-id="${partData.id}"]`);
-    if (matchingEl) {
-      partsContainer.querySelectorAll('.part-interactive-item').forEach((el) => {
-        el.classList.remove('selected');
-      });
-      matchingEl.classList.add('selected');
-      matchingEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-    }
+    this.activateTab('tab-pathogenesis');
   }
 
   updateStudyModeUI() {

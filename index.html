@@ -181,58 +181,27 @@
           </div>
         </div>
 
-        <!-- 5 High-Yield Dimension Tabs Navigation -->
+        <!-- 3 High-Yield Dimension Tabs Navigation -->
         <div class="drawer-tabs">
-          <button class="tab-btn active" data-tab="tab-morphology" title="1. รอยโรค &amp; แผล (Morphology)">
-            <i class="fa-solid fa-shapes"></i>
-            <span>1. รอยโรค</span>
-          </button>
-          <button class="tab-btn" data-tab="tab-pathogenesis" title="2. กลไกก่อโรค &amp; ปัจจัยความรุนแรง (Pathogenesis)">
+          <button class="tab-btn active" data-tab="tab-pathogenesis" title="1. กลไกก่อโรค &amp; ปัจจัยความรุนแรง (Pathogenesis)">
             <i class="fa-solid fa-shield-virus"></i>
-            <span>2. กลไก</span>
+            <span>1. กลไก</span>
           </button>
-          <button class="tab-btn" data-tab="tab-diagnosis" title="3. ตรวจวินิจฉัย &amp; Lab (Diagnosis)">
+          <button class="tab-btn" data-tab="tab-diagnosis" title="2. ตรวจวินิจฉัย &amp; Lab (Diagnosis)">
             <i class="fa-solid fa-flask-vial"></i>
-            <span>3. วินิจฉัย</span>
+            <span>2. วินิจฉัย</span>
           </button>
-          <button class="tab-btn" data-tab="tab-clinical" title="4. ข้อสอบ Clinical &amp; โจทย์ NL1 (Clinical Vignettes)">
-            <i class="fa-solid fa-user-doctor"></i>
-            <span>4. NL1 Case</span>
-          </button>
-          <button class="tab-btn" data-tab="tab-treatment" title="5. ยาและการรักษา First-line (Treatment)">
+          <button class="tab-btn" data-tab="tab-treatment" title="3. ยาและการรักษาตามไกด์ไลน์ (Treatment)">
             <i class="fa-solid fa-pills"></i>
-            <span>5. การรักษา</span>
+            <span>3. การรักษา</span>
           </button>
         </div>
 
         <!-- Tab Contents Area -->
         <div class="drawer-content" id="drawer-content">
           
-          <!-- Tab 1: Morphological Anatomy -->
-          <div class="tab-panel active" id="tab-morphology">
-            <div class="content-card">
-              <div class="content-card-title">
-                <i class="fa-solid fa-camera-retro"></i>
-                <span>ภาพถ่ายเคสจริง &amp; จุดสังเกตสำคัญของรอยโรค</span>
-              </div>
-              <div id="morphology-parts-list">
-                <!-- Injected via JS -->
-              </div>
-            </div>
-
-            <div class="content-card">
-              <div class="content-card-title">
-                <i class="fa-solid fa-microscope"></i>
-                <span>ลักษณะสัณฐานวิทยาสำคัญ (High-Yield Lesion Morphology)</span>
-              </div>
-              <ul class="bullet-list" id="morphology-highlights">
-                <!-- Injected via JS -->
-              </ul>
-            </div>
-          </div>
-
-          <!-- Tab 2: Pathogenesis & Virulence Factors -->
-          <div class="tab-panel" id="tab-pathogenesis">
+          <!-- Tab 1: Pathogenesis & Virulence Factors -->
+          <div class="tab-panel active" id="tab-pathogenesis">
             <div class="content-card">
               <div class="content-card-title">
                 <i class="fa-solid fa-burst"></i>
@@ -241,6 +210,16 @@
               <div id="virulence-factors-container">
                 <!-- Injected via JS -->
               </div>
+            </div>
+
+            <div class="content-card" id="immune-evasion-card">
+              <div class="content-card-title">
+                <i class="fa-solid fa-shield-halved"></i>
+                <span>การหลบหลีกระบบภูมิคุ้มกัน (Immune Evasion)</span>
+              </div>
+              <ul class="bullet-list" id="immune-evasion-list">
+                <!-- Injected via JS -->
+              </ul>
             </div>
 
             <div class="content-card">
@@ -252,12 +231,12 @@
             </div>
           </div>
 
-          <!-- Tab 3: Lab Diagnosis & Culture -->
+          <!-- Tab 2: Lab Diagnosis & Culture -->
           <div class="tab-panel" id="tab-diagnosis">
             <div class="content-card">
               <div class="content-card-title">
                 <i class="fa-solid fa-eye-dropper"></i>
-                <span>การตรวจชิ้นเนื้อ &amp; ย้อมสี (Microscopy &amp; Biopsy)</span>
+                <span>การตรวจย้อมสีและกล้องจุลทรรศน์ (Microscopy &amp; Staining)</span>
               </div>
               <ul class="bullet-list" id="diagnosis-stains">
                 <!-- Injected via JS -->
@@ -267,7 +246,7 @@
             <div class="content-card">
               <div class="content-card-title">
                 <i class="fa-solid fa-petri-dish"></i>
-                <span>การเพาะเชื้อ / ยืนยันเชื้อ (Culture &amp; Confirmatory)</span>
+                <span>การเพาะเชื้อและลักษณะโคโลนี (Culture &amp; Colonial Morphology)</span>
               </div>
               <ul class="bullet-list" id="diagnosis-culture">
                 <!-- Injected via JS -->
@@ -277,7 +256,7 @@
             <div class="content-card" id="biochemical-card">
               <div class="content-card-title">
                 <i class="fa-solid fa-vial-circle-check"></i>
-                <span>การทดสอบทางชีวเคมี / พิเศษ (Biochemical Tests)</span>
+                <span>การทดสอบทางชีวเคมีและยืนยันเชื้อ (Biochemical &amp; Confirmatory)</span>
               </div>
               <ul class="bullet-list" id="diagnosis-biochemical">
                 <!-- Injected via JS -->
@@ -285,61 +264,30 @@
             </div>
           </div>
 
-          <!-- Tab 4: Clinical Vignettes & NL1 Pearls -->
-          <div class="tab-panel" id="tab-clinical">
-            <div class="content-card">
-              <div class="content-card-title">
-                <i class="fa-solid fa-file-waveform"></i>
-                <span>โจทย์เคสคลินิกจำลอง (Clinical Vignette)</span>
-              </div>
-              <div class="vignette-box" id="clinical-vignette-text">
-                <!-- Injected via JS -->
-              </div>
-            </div>
-
-            <div class="content-card">
-              <div class="content-card-title">
-                <i class="fa-solid fa-key"></i>
-                <span>คำบอกใบ้ออกสอบบ่อย (Exam Buzzwords)</span>
-              </div>
-              <div class="buzzwords-tag-cloud" id="clinical-buzzwords">
-                <!-- Injected via JS -->
-              </div>
-            </div>
-
-            <div class="content-card" style="border-left: 3px solid var(--accent-amber);">
-              <div class="content-card-title" style="color: var(--accent-amber);">
-                <i class="fa-solid fa-lightbulb"></i>
-                <span>จุดลวงและสูตรจำข้อสอบ (High-Yield Pearls)</span>
-              </div>
-              <p id="clinical-highyield-note" style="font-size: 0.82rem; line-height: 1.5; color: #fde68a;"></p>
-            </div>
-          </div>
-
-          <!-- Tab 5: Treatment & Antimicrobials -->
+          <!-- Tab 3: Treatment & Antimicrobials -->
           <div class="tab-panel" id="tab-treatment">
-            <div class="content-card">
-              <div class="content-card-title">
+            <div class="content-card" style="border-left: 3px solid #38bdf8;">
+              <div class="content-card-title" style="color: #38bdf8;">
                 <i class="fa-solid fa-prescription"></i>
-                <span>ยาอันดับหนึ่งที่เลือกใช้ (Drug of Choice)</span>
+                <span>ยาอันดับหนึ่งตามมาตรฐานสากล (First-Line Drug of Choice - DOC)</span>
               </div>
-              <p id="treatment-firstline" style="font-size: 0.84rem; font-weight: 600; color: #38bdf8; line-height: 1.5;"></p>
+              <p id="treatment-firstline" style="font-size: 0.84rem; font-weight: 600; color: #f8fafc; line-height: 1.5;"></p>
             </div>
 
-            <div class="content-card">
-              <div class="content-card-title">
-                <i class="fa-solid fa-shield-halved"></i>
-                <span>การดูแลแผล / ทางเลือก (Wound Care &amp; Secondary Prevention)</span>
+            <div class="content-card" style="border-left: 3px solid #fde68a;">
+              <div class="content-card-title" style="color: #fde68a;">
+                <i class="fa-solid fa-arrows-split-up-and-left"></i>
+                <span>ยาทางเลือกในกรณีพิเศษ (Alternative Regimens &amp; Special Populations)</span>
+              </div>
+              <p id="treatment-alternative" style="font-size: 0.82rem; line-height: 1.5; color: #cbd5e1;"></p>
+            </div>
+
+            <div class="content-card" style="border-left: 3px solid #f43f5e;">
+              <div class="content-card-title" style="color: #f43f5e;">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <span>กลไกการดื้อยาและข้อควรระวังสำคัญ (Resistance &amp; Critical Warnings)</span>
               </div>
               <p id="treatment-resistance" style="font-size: 0.82rem; line-height: 1.5; color: #fda4af;"></p>
-            </div>
-
-            <div class="content-card">
-              <div class="content-card-title">
-                <i class="fa-solid fa-syringe"></i>
-                <span>การป้องกันและวัคซีน (Prevention &amp; Prophylaxis)</span>
-              </div>
-              <p id="treatment-prevention" style="font-size: 0.82rem; line-height: 1.5; color: var(--text-main);"></p>
             </div>
           </div>
 
