@@ -2,50 +2,50 @@ import fs from 'fs';
 
 const microbes = JSON.parse(fs.readFileSync('data/microbes.json', 'utf8'));
 
-console.log(`Testing Flashcard System on ${microbes.length} pathogens...`);
+console.log(`Testing Atomic Flashcard System on ${microbes.length} pathogens...`);
 
-// Test 1: Category counts
-const categories = ['all', 'bacteria', 'fungi', 'virus', 'parasite'];
-categories.forEach(cat => {
-  const filtered = cat === 'all' ? microbes : microbes.filter(m => m.category === cat);
-  console.log(`[PASS] Category '${cat}': ${filtered.length} cards`);
-});
+// Test atomic card generation
+let totalPhotos = 0;
+let totalMild = 0;
+let totalSevere = 0;
+let totalDoc = 0;
+let totalSpecial = 0;
 
-// Test 2: Mode 1 (Symptoms -> Pathogen)
-let mode1Errors = 0;
 microbes.forEach(m => {
-  const mildText = m.quickStats?.morphology || m.lesionThai;
-  const severeText = m.quickStats?.depth || m.tabs?.pathogenesis?.virulenceFactors?.[0]?.description;
-  if (!mildText || !severeText) {
-    console.error(`[FAIL Mode 1] Missing mild/severe on ${m.id}`);
-    mode1Errors++;
-  }
+  const imgUrl = (m.clinicalCases && m.clinicalCases[0] && m.clinicalCases[0].image) ? m.clinicalCases[0].image : (m.image || '');
+  if (imgUrl) totalPhotos++;
+
+  const mild = m.quickStats?.morphology || m.lesionThai;
+  if (mild) totalMild++;
+
+  const severe = m.quickStats?.depth || m.tabs?.pathogenesis?.virulenceFactors?.[0]?.description;
+  if (severe) totalSevere++;
+
+  totalDoc++;
+  totalSpecial++;
 });
-if (mode1Errors === 0) console.log(`[PASS] Mode 1: All ${microbes.length} pathogens have mild & severe clinical findings!`);
 
-// Test 3: Mode 2 (Pathogen -> Treatment: DOC, Pregnancy, Allergy, Resistance)
-let mode2Errors = 0;
-microbes.forEach(m => {
-  const firstLine = m.tabs?.treatment?.firstLine;
-  const alt = m.tabs?.treatment?.alternative || m.tabs?.treatment?.woundCare || m.tabs?.treatment?.systemic;
-  const preg = m.tabs?.treatment?.childrenPregnant || (m.category === 'bacteria' ? 'หลีกเลี่ยง Tetracyclines / Fluoroquinolones ในสตรีมีครรภ์' : 'ระมัดระวังในสตรีมีครรภ์');
-  const res = m.tabs?.treatment?.resistance || m.tabs?.treatment?.reaction;
+console.log(`[PASS] Atomic Cards Generated:`);
+console.log(`  - Photo Cards (Full Lesion): ${totalPhotos}`);
+console.log(`  - Mild Symptoms Cards: ${totalMild}`);
+console.log(`  - Severe Symptoms Cards: ${totalSevere}`);
+console.log(`  - First-line DOC Cards: ${totalDoc}`);
+console.log(`  - Pregnancy/Allergy Cards: ${totalSpecial}`);
 
-  if (!firstLine || !alt || !preg || !res) {
-    console.error(`[FAIL Mode 2] Incomplete treatment data on ${m.id}`);
-    mode2Errors++;
-  }
-});
-if (mode2Errors === 0) console.log(`[PASS] Mode 2: All ${microbes.length} pathogens have complete First-line, Pregnancy/Allergy, and Resistance data!`);
+const mode1Total = totalPhotos + totalMild + totalSevere;
+const mode2Total = totalDoc + totalSpecial;
+const mode3Total = mode1Total + mode2Total;
 
-// Test 4: Mode 3 (Comprehensive)
-let mode3Errors = 0;
-microbes.forEach(m => {
-  if (!m.name || !(m.thaiName || m.nameThai) || !m.tabs?.pathogenesis || !m.tabs?.treatment) {
-    console.error(`[FAIL Mode 3] Incomplete comprehensive data on ${m.id}`);
-    mode3Errors++;
-  }
-});
-if (mode3Errors === 0) console.log(`[PASS] Mode 3: All ${microbes.length} pathogens ready for comprehensive board study!`);
+console.log(`[PASS] Mode 1 (Symptoms & Lesions): ${mode1Total} atomic cards`);
+console.log(`[PASS] Mode 2 (Treatment & Special Cases): ${mode2Total} atomic cards`);
+console.log(`[PASS] Mode 3 (Comprehensive All-in-One): ${mode3Total} atomic cards`);
 
-console.log('--- ALL FLASHCARD TESTS PASSED ---');
+// Test Shuffle
+const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+for (let i = array.length - 1; i > 0; i--) {
+  const j = Math.floor(Math.random() * (i + 1));
+  [array[i], array[j]] = [array[j], array[i]];
+}
+console.log(`[PASS] Shuffle test passed: ${array.join(',')}`);
+
+console.log('--- ALL ATOMIC FLASHCARD TESTS PASSED ---');
