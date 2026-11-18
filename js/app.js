@@ -654,6 +654,7 @@ class PathoxApp {
       'vibrio-vulnificus': 'Surgical Debridement ด่วน + IV Ceftriaxone + Doxycycline',
       'neisseria-meningitidis': 'Ceftriaxone หรือ Cefotaxime (+ Dexamethasone ก่อนหรือพร้อมยาเข็มแรก)'
     };
+    if (m.flashcard?.doc) return m.flashcard.doc;
     if (map[m.id]) return map[m.id];
     const raw = m.tabs?.treatment?.firstLine || '';
     const firstSentence = raw.split(';')[0]?.split('.')[0] || raw;
@@ -661,6 +662,12 @@ class PathoxApp {
   }
 
   getConciseSpecial(m) {
+    if (m.flashcard?.pregnancy || m.flashcard?.allergy) {
+      return {
+        preg: m.flashcard.pregnancy || m.tabs?.treatment?.childrenPregnant || 'ระมัดระวังการใช้ยาในสตรีมีครรภ์',
+        alt: m.flashcard.allergy || m.tabs?.treatment?.alternative || 'ยาทางเลือกตามความไวของเชื้อ'
+      };
+    }
     const map = {
       'variola-virus': {
         preg: 'Tecovirimat ยังคงเป็นยาหลักในหญิงตั้งครรภ์หากติดเชื้อรุนแรง',
@@ -796,9 +803,10 @@ class PathoxApp {
         ? m.clinicalCases[0].caption
         : (m.lesionThai || 'ภาพรอยโรคทางคลินิก (CDC/WHO)');
 
-      const mildText = m.quickStats?.morphology || m.lesionThai;
-      const severeText = (m.quickStats?.depth ? `${m.quickStats.depth}${m.quickStats.palpation ? ` (${m.quickStats.palpation})` : ''}` : '')
-        || (m.tabs?.pathogenesis?.virulenceFactors?.[0]?.description);
+      const mildText = m.flashcard?.mild || m.quickStats?.morphology || m.lesionThai;
+      const severeText = m.flashcard?.severe
+        || (m.quickStats?.depth ? `${m.quickStats.depth}${m.quickStats.palpation ? ` (${m.quickStats.palpation})` : ''}` : '')
+        || (m.tabs?.pathogenesis?.virulenceFactors?.[0]?.mechanism || m.tabs?.pathogenesis?.virulenceFactors?.[0]?.description);
       const transmissionText = m.tabs?.pathogenesis?.transmission || '';
 
       const cleanDoc = this.getConciseDoc(m);
