@@ -353,6 +353,28 @@ class PathoxApp {
       }
     });
 
+    const applySharePayload = (enabled, shareUrl, qrDataUrl) => {
+      if (checkbox) checkbox.checked = !!enabled;
+      updateUI(!!enabled);
+
+      const liveText = document.getElementById('live-tunnel-url-text');
+      const liveBtn = document.getElementById('btn-copy-live-url');
+      const qrImg = document.getElementById('live-qr-image');
+
+      if (enabled && shareUrl) {
+        if (liveText) liveText.textContent = shareUrl;
+        if (liveBtn) liveBtn.dataset.copy = shareUrl;
+        if (qrImg && qrDataUrl) {
+          qrImg.src = qrDataUrl;
+          qrImg.style.opacity = '1';
+        }
+      } else {
+        if (liveText) liveText.textContent = '🔒 ตัดสัญญาณแล้ว (เปิดสวิตช์ด้านบนเพื่อสุ่มลิงก์ & QR ใหม่)';
+        if (liveBtn) liveBtn.dataset.copy = '';
+        if (qrImg) qrImg.style.opacity = '0.15';
+      }
+    };
+
     // Password Form Submission
     passForm?.addEventListener('submit', async (e) => {
       e.preventDefault();
@@ -376,34 +398,12 @@ class PathoxApp {
           if (shareBtnIcon) shareBtnIcon.className = 'fa-solid fa-share-nodes';
           modal.classList.add('active');
 
-          const shareUrl = res.fullShareUrl || res.tunnelUrl;
-          if (shareUrl) {
-            const liveText = document.getElementById('live-tunnel-url-text');
-            const liveBtn = document.getElementById('btn-copy-live-url');
-            if (liveText) liveText.textContent = shareUrl;
-            if (liveBtn) liveBtn.dataset.copy = shareUrl;
-          }
-          if (res.qrCodeDataUrl) {
-            const qrImg = document.getElementById('live-qr-image');
-            if (qrImg) qrImg.src = res.qrCodeDataUrl;
-          }
+          applySharePayload(res.enabled !== false, res.fullShareUrl, res.qrCodeDataUrl);
         } else {
           showPassError();
         }
       } catch (err) {
-        // Fallback verification for offline or direct execution
-        if (entered === '2549gmail') {
-          this.isAdminUnlocked = true;
-          this.adminPassword = entered;
-          sessionStorage.setItem('pathox_admin_auth', 'true');
-          sessionStorage.setItem('pathox_admin_pass', entered);
-
-          closePassModal();
-          if (shareBtnIcon) shareBtnIcon.className = 'fa-solid fa-share-nodes';
-          modal.classList.add('active');
-        } else {
-          showPassError();
-        }
+        showPassError();
       }
     });
 
@@ -441,22 +441,18 @@ class PathoxApp {
       }
     };
 
-    // Fetch initial status
-    fetch('/api/access-control')
+    // Fetch initial status (Guests only see status dot; Share URL & QR are only fetched with Admin password)
+    const savedPass = this.adminPassword || sessionStorage.getItem('pathox_admin_pass') || '';
+    fetch('/api/access-control', {
+      headers: savedPass ? { 'x-admin-password': savedPass } : {}
+    })
       .then(r => r.json())
       .then(d => {
-        if (checkbox) checkbox.checked = !!d.enabled;
-        updateUI(!!d.enabled);
-        const shareUrl = d.fullShareUrl || d.tunnelUrl;
-        if (shareUrl) {
-          const liveText = document.getElementById('live-tunnel-url-text');
-          const liveBtn = document.getElementById('btn-copy-live-url');
-          if (liveText) liveText.textContent = shareUrl;
-          if (liveBtn) liveBtn.dataset.copy = shareUrl;
-        }
-        if (d.qrCodeDataUrl) {
-          const qrImg = document.getElementById('live-qr-image');
-          if (qrImg) qrImg.src = d.qrCodeDataUrl;
+        if (d.fullShareUrl || !d.enabled) {
+          applySharePayload(!!d.enabled, d.fullShareUrl, d.qrCodeDataUrl);
+        } else {
+          if (checkbox) checkbox.checked = !!d.enabled;
+          updateUI(!!d.enabled);
         }
       })
       .catch(() => {});
@@ -465,7 +461,7 @@ class PathoxApp {
     checkbox?.addEventListener('change', async () => {
       const isEnabled = checkbox.checked;
       updateUI(isEnabled);
-      const pass = this.adminPassword || sessionStorage.getItem('pathox_admin_pass') || '2549gmail';
+      const pass = this.adminPassword || sessionStorage.getItem('pathox_admin_pass') || '';
       try {
         const resp = await fetch('/api/access-control', {
           method: 'POST',
@@ -473,15 +469,8 @@ class PathoxApp {
           body: JSON.stringify({ enabled: isEnabled, password: pass })
         });
         const res = await resp.json();
-        if (res.fullShareUrl) {
-          const liveText = document.getElementById('live-tunnel-url-text');
-          const liveBtn = document.getElementById('btn-copy-live-url');
-          if (liveText) liveText.textContent = res.fullShareUrl;
-          if (liveBtn) liveBtn.dataset.copy = res.fullShareUrl;
-        }
-        if (res.qrCodeDataUrl) {
-          const qrImg = document.getElementById('live-qr-image');
-          if (qrImg) qrImg.src = res.qrCodeDataUrl;
+        if (resp.ok) {
+          applySharePayload(!!res.enabled, res.fullShareUrl, res.qrCodeDataUrl);
         }
       } catch (e) {
         console.error('Failed to update access control:', e);
@@ -490,7 +479,7 @@ class PathoxApp {
 
     // Rotate Token Button (Revoke old links and QR codes)
     btnRotateToken?.addEventListener('click', async () => {
-      const pass = this.adminPassword || sessionStorage.getItem('pathox_admin_pass') || '2549gmail';
+      const pass = this.adminPassword || sessionStorage.getItem('pathox_admin_pass') || '';
       const originalHtml = btnRotateToken.innerHTML;
       try {
         btnRotateToken.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> <span>กำลังสร้างรหัสใหม่...</span>';
@@ -503,17 +492,8 @@ class PathoxApp {
         });
         const res = await resp.json();
 
-        if (res.success && res.fullShareUrl) {
-          const liveText = document.getElementById('live-tunnel-url-text');
-          const liveBtn = document.getElementById('btn-copy-live-url');
-          const qrImg = document.getElementById('live-qr-image');
-
-          if (liveText) liveText.textContent = res.fullShareUrl;
-          if (liveBtn) liveBtn.dataset.copy = res.fullShareUrl;
-          if (qrImg && res.qrCodeDataUrl) qrImg.src = res.qrCodeDataUrl;
-
-          if (checkbox) checkbox.checked = true;
-          updateUI(true);
+        if (resp.ok && res.success && res.fullShareUrl) {
+          applySharePayload(true, res.fullShareUrl, res.qrCodeDataUrl);
 
           btnRotateToken.innerHTML = '<i class="fa-solid fa-check" style="color: #4ade80;"></i> <span style="color: #4ade80;">ออกรหัสและ QR ใหม่สำเร็จ!</span>';
           setTimeout(() => {

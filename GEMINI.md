@@ -37,3 +37,17 @@ When the user provides a new lecture file (PDF, slides, text notes):
 3. Ingest and cache using `node scripts/ingest_lecture.mjs <file.json>`.
 4. Validate with `node scripts/ingest_lecture.mjs --validate`.
 5. Verify on `http://localhost:3000/`.
+
+---
+
+## 👑 Access Control & Master Link (ลิงก์แม่ & ระบบแชร์)
+- **Master Link (ลิงก์แม่ — สำหรับเจ้าของระบบ & บอทโนเอล):**
+  `https://pathox-micro-78588364560.asia-southeast1.run.app/master`
+  - เข้าได้ตลอดเวลา **ไม่เคยโดน Kill Switch** แม้สวิตช์แชร์สาธารณะจะปิดอยู่
+  - จำเป็นต้องกรอกรหัสผ่านเจ้าของระบบ (`ADMIN_PASSWORD`, default: `2549gmail`) เพื่อปลดล็อกเข้าแอป
+  - เมื่อผู้ใช้ขอลิงก์แอป ให้ส่งลิงก์แม่ `/master` นี้ให้เสมอ!
+- **Guest Share Link / QR Code (`/?token=ptx_...`):**
+  - สุ่มจากปุ่ม **"แชร์"** มุมบนขวา
+  - ผู้เข้าใช้งานผ่านลิงก์/QR Code นี้สามารถเข้าดูแอปได้ทันที **โดยไม่ต้องใส่รหัสผ่านใดๆ**
+  - หากกดปุ่ม **"แชร์"** จะยังคงต้องใส่รหัสผ่านเจ้าของระบบเสมอ
+  - ควบคุมด้วย **Kill Switch** และปุ่ม **Rotate Token** ได้ตลอดเวลาโดยไม่กระทบเซสชันของเจ้าของระบบ
