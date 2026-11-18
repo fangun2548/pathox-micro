@@ -227,18 +227,20 @@ const server = http.createServer(async (req, res) => {
             return;
           }
 
+          const baseUrl = getAppUrl(req);
+
           // Case A: Rotate Token (Revoke old link & QR and generate fresh one)
           if (data.rotateToken) {
             publicAccessEnabled = true;
             currentShareToken = generateShareToken();
-            await updateQrCode();
+            await updateQrCode(req);
             console.log(`[TOKEN ROTATED] New Token: ${currentShareToken}`);
             res.writeHead(200, { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' });
             res.end(JSON.stringify({
               success: true,
               enabled: true,
               token: currentShareToken,
-              fullShareUrl: `${LIVE_TUNNEL_URL}/?token=${currentShareToken}`,
+              fullShareUrl: `${baseUrl}/?token=${currentShareToken}`,
               qrCodeDataUrl: currentQrDataUrl
             }));
             return;
@@ -250,7 +252,7 @@ const server = http.createServer(async (req, res) => {
             if (publicAccessEnabled) {
               // Always generate a fresh token when re-enabling so old channels cannot be reused!
               currentShareToken = generateShareToken();
-              await updateQrCode();
+              await updateQrCode(req);
               console.log(`[ACCESS ENABLED] Fresh Token: ${currentShareToken}`);
             } else {
               // Kill Switch: revoke all tokens immediately!
@@ -265,7 +267,7 @@ const server = http.createServer(async (req, res) => {
             success: true,
             enabled: publicAccessEnabled,
             token: currentShareToken,
-            fullShareUrl: currentShareToken ? `${LIVE_TUNNEL_URL}/?token=${currentShareToken}` : null,
+            fullShareUrl: currentShareToken ? `${baseUrl}/?token=${currentShareToken}` : null,
             qrCodeDataUrl: currentQrDataUrl
           }));
         } catch (e) {
@@ -276,12 +278,14 @@ const server = http.createServer(async (req, res) => {
       return;
     } else {
       const isHost = isLocalhost(req);
-      const authorized = isHost || (dataPasswordMatch(req));
+      const authorized = isHost || isAdmin(req) || (dataPasswordMatch(req));
+      const baseUrl = getAppUrl(req);
+      if (authorized && currentShareToken) await updateQrCode(req);
       res.writeHead(200, { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' });
       res.end(JSON.stringify({
         enabled: publicAccessEnabled,
         isHost: isHost,
-        fullShareUrl: authorized && currentShareToken ? `${LIVE_TUNNEL_URL}/?token=${currentShareToken}` : undefined,
+        fullShareUrl: authorized && currentShareToken ? `${baseUrl}/?token=${currentShareToken}` : undefined,
         qrCodeDataUrl: authorized ? currentQrDataUrl : undefined
       }));
       return;
@@ -297,8 +301,8 @@ const server = http.createServer(async (req, res) => {
   // GATEKEEPER: Check Authorization for External Visitors
   // --------------------------------------------------------------------------
   if (!isLocalhost(req)) {
-    // 1. If Kill Switch is active (disabled), show Kill Switch blocked page
-    if (!publicAccessEnabled) {
+    // 1. If Kill Switch is active (disabled), show Kill Switch blocked page (unless authenticated Admin)
+    if (!publicAccessEnabled && !isAdmin(req)) {
       res.writeHead(403, { 'Content-Type': 'text/html; charset=utf-8' });
       res.end(`
         <!DOCTYPE html>
@@ -309,7 +313,7 @@ const server = http.createServer(async (req, res) => {
           <title>Access Suspended · Pathox-Micro</title>
           <style>
             body { background: #080c16; color: #f8fafc; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0; padding: 20px; box-sizing: border-box; text-align: center; }
-            .card { background: #0f172a; padding: 40px 30px; border-radius: 24px; border: 1px solid rgba(244, 63, 94, 0.4); max-width: 460px; box-shadow: 0 25px 60px rgba(0,0,0,0.9); }
+            .card { background: #0f172a; padding: 40px 30px; border-radius: 24px; border: 1px solid rgba(244, 63, 94, 0.4); max-width: 460px; width: 100%; box-shadow: 0 25px 60px rgba(0,0,0,0.9); }
             .icon { font-size: 3.5rem; margin-bottom: 16px; }
             h2 { margin: 0 0 12px; color: #f43f5e; font-size: 1.5rem; font-weight: 800; }
             p { color: #94a3b8; font-size: 0.95rem; line-height: 1.6; margin: 0 0 20px; }
@@ -322,6 +326,17 @@ const server = http.createServer(async (req, res) => {
             <h2>การเข้าถึงถูกระงับ (Access Revoked)</h2>
             <div class="badge">KILL SWITCH ACTIVE</div>
             <p style="margin-top: 16px;">เจ้าของระบบได้ทำการตัดการเชื่อมต่อเรียบร้อยแล้ว ลิงก์และ QR Code เดิมจะไม่สามารถใช้งานได้อีกต่อไป</p>
+            <div style="margin-top: 22px; padding-top: 16px; border-top: 1px solid rgba(255,255,255,0.08);">
+              <button type="button" onclick="document.getElementById('admin-resume-box').style.display='block'; this.style.display='none';" style="background: transparent; border: none; color: #64748b; font-size: 0.8rem; cursor: pointer; text-decoration: underline;">
+                🔑 สำหรับเจ้าของระบบ (Admin Login)
+              </button>
+              <div id="admin-resume-box" style="display: none; margin-top: 10px;">
+                <form action="/api/admin-login" method="POST" style="display: flex; gap: 8px; justify-content: center; align-items: center;">
+                  <input type="password" name="password" placeholder="รหัสผ่านผู้ดูแล..." required style="padding: 8px 12px; border-radius: 8px; border: 1px solid #334155; background: #080c16; color: #fff; font-size: 0.85rem; width: 170px;">
+                  <button type="submit" style="padding: 8px 14px; border-radius: 8px; border: none; background: #38bdf8; color: #080c16; font-weight: 700; font-size: 0.85rem; cursor: pointer;">เข้าสู่ระบบ</button>
+                </form>
+              </div>
+            </div>
           </div>
         </body>
         </html>
